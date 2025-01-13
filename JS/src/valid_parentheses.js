@@ -6,7 +6,9 @@ function isValid(s) {
   if (s.length % 2 !== 0) {
     return false;
   }
+
   const stack = [];
+
   for (const char of s) {
     if (char === "(" || char === "{" || char === "[") {
       stack.push(char);
@@ -24,6 +26,7 @@ function isValid(s) {
       }
     }
   }
+
   return stack.length === 0;
 }
 
