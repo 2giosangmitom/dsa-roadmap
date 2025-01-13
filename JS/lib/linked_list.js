@@ -23,6 +23,24 @@ class ListNode {
 
     return head;
   }
+
+  /**
+   * @returns {string}
+   */
+  toString() {
+    let head = this;
+    let s = "";
+
+    while (head) {
+      s = s.concat(head.val.toString());
+      if (head.next) {
+        s = s.concat(" -> ");
+      }
+      head = head.next;
+    }
+
+    return s;
+  }
 }
 
 export { ListNode };

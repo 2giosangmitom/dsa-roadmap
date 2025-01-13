@@ -32,4 +32,9 @@ describe("ListNode", () => {
     const list = ListNode.of();
     assert.strictEqual(list, null);
   });
+
+  it("return string representation of linked list correctly", () => {
+    const list = ListNode.of(1, 2, 3, 4).toString();
+    assert.strictEqual(list, "1 -> 2 -> 3 -> 4");
+  });
 });
