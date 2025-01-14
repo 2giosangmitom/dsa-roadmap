@@ -23,5 +23,5 @@ build-test: create_dir
 		echo "Usage: make build file=./path/to/your_test.cc"; \
 		exit 1; \
 	fi
-	@echo "Compiling: $(file) -> build/$(notdir $(file:.cc=))"
+	@echo "Compiling $(file) -> build/$(notdir $(file:.cc=))"
 	@$(CXX) $(CXX_FLAGS) $(GTEST_FLAGS) $(file) -o build/$(notdir $(file:.cc=))
