@@ -57,7 +57,7 @@ function buildTest(file) {
 
   // Check if the test file includes "linked_list.hpp" to link with the library
   const includesLinkedList = readFileSync(file, "utf8").includes(
-    '#include "linked_list.hpp"',
+    "ListNode",
   );
 
   if (includesLinkedList) {
