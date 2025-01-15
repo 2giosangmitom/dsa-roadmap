@@ -13,7 +13,7 @@ jobs:
         uses: DeterminateSystems/nix-installer-action@v16
 
       - name: Build
-        run: nix develop --command bash -c "cd CC/ && node build.js build-all"
+        run: nix develop --command bash -c "cd CC/ && python build.py build-all"
 
       - name: Run tests
-        run: nix develop --command bash -c "cd CC/ && node build.js run-all"
+        run: nix develop --command bash -c "cd CC/ && python build.py run-all"

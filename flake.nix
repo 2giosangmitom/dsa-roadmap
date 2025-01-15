@@ -22,6 +22,7 @@
           nodejs_23
           clang
           gtest
+          python3
         ];
         shellHook = ''
           export GTEST="${pkgs.gtest}"
