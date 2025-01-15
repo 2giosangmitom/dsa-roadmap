@@ -10,7 +10,7 @@ const BUILD_DIR = "build";
 // Compiler and flags
 const CXX = "clang++";
 const CXX_FLAGS = "-std=c++23 -Wall -Wextra";
-const GTEST_FLAGS = "-lgtest -lgtest_main";
+const GTEST_FLAGS = `-I${process.env.GTEST_DEV} -lgtest -lgtest_main`;
 
 // Ensure the build directory exists
 function createDir() {
@@ -56,14 +56,15 @@ function buildTest(file) {
   const outputFile = join(BUILD_DIR, testName);
 
   // Check if the test file includes "linked_list.hpp" to link with the library
-  const includesLinkedList = readFileSync(file, "utf8").includes(
-    "ListNode",
-  );
+  const includesLinkedList = readFileSync(file, "utf8").includes("ListNode");
 
   if (includesLinkedList) {
     console.log(`Compiling ${file} with linked_list.o -> ${outputFile}`);
     execSync(
-      `${CXX} ${CXX_FLAGS} ${GTEST_FLAGS} ${join(BUILD_DIR, "linked_list.o")} ${file} -o ${outputFile}`,
+      `${CXX} ${CXX_FLAGS} ${GTEST_FLAGS} ${join(
+        BUILD_DIR,
+        "linked_list.o"
+      )} ${file} -o ${outputFile}`
     );
   } else {
     console.log(`Compiling ${file} -> ${outputFile}`);
@@ -80,6 +81,19 @@ function buildAll() {
   testFiles.forEach((file) => {
     buildTest(file);
   });
+}
+
+// Run all tests
+function runAll() {
+  const executables = [
+    ...readdirSync(BUILD_DIR)
+      .filter((file) => !file.endsWith(".o"))
+      .map((file) => join(BUILD_DIR, file)),
+  ];
+
+  for (const file of executables) {
+    execSync(file, { stdio: "inherit" });
+  }
 }
 
 // Clean build directory
@@ -105,7 +119,11 @@ if (args.includes("build-all")) {
   clean();
 } else if (args.includes("build-lib")) {
   buildLib();
+} else if (args.includes("run-all")) {
+  runAll();
 } else {
-  console.error("Usage: node build.js <build-all|build-test|build-lib|clean>");
+  console.error(
+    "Usage: node build.js <build-all|build-test|build-lib|run-all|clean>"
+  );
   process.exit(1);
 }

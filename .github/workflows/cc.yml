@@ -1,0 +1,23 @@
+name: C++
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v16
+
+      - name: Build
+        run: nix develop --command bash -c "cd CC/ && node build.js build-all"
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Run tests
+        run: nix develop --command bash -c "cd CC/ && node build.js run-all"
