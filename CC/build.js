@@ -78,7 +78,6 @@ function buildAll() {
 
   const testFiles = getTestFiles();
   testFiles.forEach((file) => {
-    console.log(`Building ${file}`);
     buildTest(file);
   });
 }
