@@ -1,6 +1,6 @@
-name: JavaScript
+name: Test
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -15,5 +15,11 @@ jobs:
       - name: Config Nix cache
         uses: DeterminateSystems/magic-nix-cache-action@main
 
-      - name: Run tests
+      - name: Build
+        run: nix develop --command bash -c "cd CC/ && python build.py build-all"
+
+      - name: Run C++ tests
+        run: nix develop --command bash -c "cd CC/ && python build.py run-all"
+
+      - name: Run JS tests
         run: nix develop --command bash -c "cd JS/ && node --test"
