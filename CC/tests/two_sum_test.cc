@@ -2,7 +2,7 @@
 #include <gtest/gtest.h>
 #include <vector>
 
-class TwoSumTest : public ::testing::Test {
+class TwoSumTest : public testing::Test {
 protected:
   Solution solution;
 };

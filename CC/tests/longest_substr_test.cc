@@ -1,7 +1,7 @@
 #include "../src/longest_substr.hpp"
 #include <gtest/gtest.h>
 
-class LongestSubstrTest : public ::testing::Test {
+class LongestSubstrTest : public testing::Test {
 protected:
   Solution solution;
 };

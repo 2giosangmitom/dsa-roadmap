@@ -13,7 +13,7 @@ public:
     for (size_t i = 0; i < nums.size(); i++) {
       int remainder = target - nums[i];
 
-      if (hashMap.find(remainder) == nullptr) {
+      if (!hashMap.contains(remainder)) {
         hashMap.insert({nums[i], i});
       } else {
         return vector<int>{hashMap[remainder], static_cast<int>(i)};

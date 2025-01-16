@@ -1,7 +1,7 @@
 #include "../src/add_two_numbers.hpp"
 #include <gtest/gtest.h>
 
-class AddTwoNumbersTest : public ::testing::Test {
+class AddTwoNumbersTest : public testing::Test {
 protected:
   Solution solution;
 
