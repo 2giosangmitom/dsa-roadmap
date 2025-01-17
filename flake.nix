@@ -1,5 +1,5 @@
 {
-  description = "LeetCode solutions implemented in JS and C++";
+  description = "LeetCode solutions implemented in JS";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
@@ -20,9 +20,6 @@
       default = pkgs.mkShellNoCC {
         buildInputs = with pkgs; [
           nodejs_23
-          clang
-          gtest
-          python3
         ];
         shellHook = ''
           export GTEST="${pkgs.gtest}"

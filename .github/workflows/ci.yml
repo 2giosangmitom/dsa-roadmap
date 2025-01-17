@@ -15,11 +15,5 @@ jobs:
       - name: Config Nix cache
         uses: DeterminateSystems/magic-nix-cache-action@main
 
-      - name: Build
-        run: nix develop --command bash -c "cd CC/ && ./build.sh build-all"
-
-      - name: Run C++ tests
-        run: nix develop --command bash -c "cd CC/ && ./build.sh run-all"
-
       - name: Run JS tests
-        run: nix develop --command bash -c "cd JS/ && node --test"
+        run: nix develop --command bash -c "node --test"
