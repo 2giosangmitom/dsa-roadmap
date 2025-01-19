@@ -21,10 +21,6 @@
         buildInputs = with pkgs; [
           nodejs_23
         ];
-        shellHook = ''
-          export GTEST="${pkgs.gtest}"
-          export GTEST_DEV="${pkgs.gtest.dev}/include"
-        '';
       };
     });
     formatter = forAllSystems (pkgs: system: pkgs.alejandra);
