@@ -10,7 +10,7 @@ function isValid(s) {
 	const stack = [];
 
 	for (const char of s) {
-		if (char === "(" || char === "{" || char === "[") {
+		if (/[[({]/.test(char)) {
 			stack.push(char);
 		} else {
 			if (stack.length === 0) {
