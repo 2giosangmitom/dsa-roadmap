@@ -8,7 +8,6 @@ function deleteNode(prevNode, node) {
 	if (prevNode) {
 		prevNode.next = node.next;
 	}
-	node = null;
 }
 
 /**
