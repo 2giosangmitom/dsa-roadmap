@@ -20,6 +20,7 @@
       default = pkgs.mkShellNoCC {
         buildInputs = with pkgs; [
           nodejs_23
+          pnpm
         ];
       };
     });
