@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { strStr } from "../src/find_idx_of_the_first_occur_str.js";
 
-describe("strStr", { concurrency: true, timeout: 5000 }, () => {
+describe("strStr", { concurrency: true, timeout: 1000 }, () => {
 	it('should return 0 when "sad" is found in "sadbutsad" at index 0', () => {
 		const haystack = "sadbutsad";
 		const needle = "sad";

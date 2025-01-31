@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { searchInsert } from "../src/search_insert_position.js";
 
-describe("searchInsert", { concurrency: true, timeout: 5000 }, () => {
+describe("searchInsert", { concurrency: true, timeout: 1000 }, () => {
 	it("should return 2 for input [1, 3, 5, 6] and target 5", () => {
 		const nums = [1, 3, 5, 6];
 		const target = 5;

@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { generateMatrix } from "../src/spiral_matrix_2.js";
 
-describe("spiral matrix 2", { concurrency: true, timeout: 5000 }, () => {
+describe("spiral matrix 2", { concurrency: true, timeout: 1000 }, () => {
 	it("should return [[1,2,3],[8,9,4],[7,6,5]] for input 3", () => {
 		const n = 3;
 		const expected = [

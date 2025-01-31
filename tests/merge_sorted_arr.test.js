@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { merge } from "../src/merge_sorted_arr.js";
 
-describe("merge sorted array", { concurrency: true, timeout: 5000 }, () => {
+describe("merge sorted array", { concurrency: true, timeout: 1000 }, () => {
 	it("should change array to [1,2,3,4,5,6]", () => {
 		const arr1 = [1, 2, 3, 0, 0, 0];
 		const arr2 = [4, 5, 6];

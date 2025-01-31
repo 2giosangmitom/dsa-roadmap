@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { multiply } from "../src/multiply_strings.js";
 
-describe("multiply strings", { concurrency: true, timeout: 5000 }, () => {
+describe("multiply strings", { concurrency: true, timeout: 1000 }, () => {
 	it("should return '6' for input '2' and '3'", () => {
 		const result = multiply("2", "3");
 		assert.strictEqual(result, "6");

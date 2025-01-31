@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { isValid } from "../src/valid_parentheses.js";
 
-describe("isValid", { concurrency: true, timeout: 5000 }, () => {
+describe("isValid", { concurrency: true, timeout: 1000 }, () => {
 	it('should return true for the input "()"', () => {
 		const s = "()";
 		const result = isValid(s);

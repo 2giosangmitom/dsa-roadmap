@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { twoSum } from "../src/two_sum.js";
 
-describe("Two Sum", { concurrency: true, timeout: 5000 }, () => {
+describe("Two Sum", { concurrency: true, timeout: 1000 }, () => {
 	it("should return [0, 1] for [2, 7, 11, 15] and target 9", () => {
 		const nums = [2, 7, 11, 15];
 		const target = 9;

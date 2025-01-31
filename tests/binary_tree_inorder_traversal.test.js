@@ -3,7 +3,7 @@ import { describe, it } from "node:test";
 import { TreeNode } from "../lib/binary_tree.js";
 import { inorderTraversal } from "../src/binary_tree_inorder_traversal.js";
 
-describe("inorderTraversal", { concurrency: true, timeout: 5000 }, () => {
+describe("inorderTraversal", { concurrency: true, timeout: 1000 }, () => {
 	it("should return an empty array for an empty tree", () => {
 		assert.deepStrictEqual(inorderTraversal(null), []);
 	});

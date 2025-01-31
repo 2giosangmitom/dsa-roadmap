@@ -7,7 +7,7 @@ import { maxSubArray, maxSubArray2 } from "../src/maximum_subarray.js";
  * @param {string} name
  */
 function runTests(callback, name) {
-	describe(name, { concurrency: true, timeout: 5000 }, () => {
+	describe(name, { concurrency: true, timeout: 1000 }, () => {
 		it("should return the largest sum for a mixed array", () => {
 			const nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
 			const result = callback(nums);

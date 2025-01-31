@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { removeDuplicates } from "../src/remove_duplicates_2.js";
 
-describe("removeDuplicates2", { concurrency: true, timeout: 5000 }, () => {
+describe("removeDuplicates2", { concurrency: true, timeout: 1000 }, () => {
 	it("should return 7 for input [0,0,1,1,1,1,2,3,3]", () => {
 		const nums = [0, 0, 1, 1, 1, 1, 2, 3, 3];
 		const expected = 7;

@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { maxProfit } from "../src/best_time_to_buy.js";
 
-describe("maxProfit", { concurrency: true, timeout: 5000 }, () => {
+describe("maxProfit", { concurrency: true, timeout: 1000 }, () => {
 	it("should return 5 for input [7,1,5,3,6,4]", () => {
 		const prices = [7, 1, 5, 3, 6, 4];
 		const expected = 5;

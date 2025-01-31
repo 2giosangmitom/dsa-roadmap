@@ -3,7 +3,7 @@ import { describe, it } from "node:test";
 import { ListNode } from "../lib/linked_list.js";
 import { deleteDuplicates } from "../src/remove_dups_from_sorted_list.js";
 
-describe("deleteDuplicates", { concurrency: true, timeout: 5000 }, () => {
+describe("deleteDuplicates", { concurrency: true, timeout: 1000 }, () => {
 	it("should return 1 -> 2 for input 1 -> 1 -> 2", () => {
 		const list = ListNode.of(1, 1, 2);
 		const expected = ListNode.of(1, 2);

@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { canAliceWin } from "../src/stone_removal_game.js";
 
-describe("Stone Removal Game", () => {
+describe("Stone Removal Game", { concurrency: true, timeout: 1000 }, () => {
 	it("should return true when n = 12", () => {
 		const result = canAliceWin(12);
 		assert.strictEqual(result, true);

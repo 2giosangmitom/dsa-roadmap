@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { lengthOfLastWord } from "../src/length_of_last_word.js";
 
-describe("lengthOfLastWord", { concurrency: true, timeout: 5000 }, () => {
+describe("lengthOfLastWord", { concurrency: true, timeout: 1000 }, () => {
 	it("should return 5 for input 'Hello World'", () => {
 		const s = "Hello World";
 		const expected = 5;

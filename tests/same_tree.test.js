@@ -4,7 +4,7 @@ import { TreeNode } from "../lib/binary_tree.js";
 import { isSameTree, isSameTree2 } from "../src/same_tree.js";
 
 function runTest(name, callback) {
-	describe(name, { concurrency: true, timeout: 5000 }, () => {
+	describe(name, { concurrency: true, timeout: 1000 }, () => {
 		it("should return true for [1,2,3] [1,2,3]", () => {
 			const t1 = TreeNode.of(1, 2, 3);
 			const t2 = TreeNode.of(1, 2, 3);

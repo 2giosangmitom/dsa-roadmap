@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { myAtoi } from "../src/atoi.js";
 
-describe("myAtoi", { concurrency: true, timeout: 5000 }, () => {
+describe("myAtoi", { concurrency: true, timeout: 1000 }, () => {
 	it('should return 42 for the input "42"', () => {
 		const result = myAtoi("42");
 		assert.strictEqual(result, 42);

@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { removeElement } from "../src/remove_element.js";
 
-describe("removeElement", { concurrency: true, timeout: 5000 }, () => {
+describe("removeElement", { concurrency: true, timeout: 1000 }, () => {
 	it("should return 2 and modify the array to [2, 2, _, _] for the input [3, 2, 2, 3] and val = 3", () => {
 		const nums = [3, 2, 2, 3];
 		const val = 3;

@@ -3,7 +3,7 @@ import { describe, it } from "node:test";
 import { ListNode } from "../lib/linked_list.js";
 import { mergeTwoLists } from "../src/merge_two_sorted_lists.js";
 
-describe("mergeTwoLists", { concurrency: true, timeout: 5000 }, () => {
+describe("mergeTwoLists", { concurrency: true, timeout: 1000 }, () => {
 	it("should merge two sorted lists correctly", () => {
 		const l1 = ListNode.of(1, 2, 4);
 		const l2 = ListNode.of(1, 3, 4);

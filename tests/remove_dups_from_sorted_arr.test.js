@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { removeDuplicates } from "../src/remove_dups_from_sorted_arr.js";
 
-describe("removeDuplicates", { concurrency: true, timeout: 5000 }, () => {
+describe("removeDuplicates", { concurrency: true, timeout: 1000 }, () => {
 	it("should return 2 for the input [1, 1, 2]", () => {
 		const nums = [1, 1, 2];
 		const result = removeDuplicates(nums);

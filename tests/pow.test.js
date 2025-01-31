@@ -3,7 +3,7 @@ import { describe, it } from "node:test";
 import { myPow, myPow2 } from "../src/pow.js";
 
 function runTests(name, callback) {
-	describe(name, { concurrency: true, timeout: 5000 }, () => {
+	describe(name, { concurrency: true, timeout: 1000 }, () => {
 		it("should return 1024.00000 for x = 2.00000 and n = 10", () => {
 			const result = callback(2.0, 10);
 			assert.strictEqual(result.toFixed(5), "1024.00000");

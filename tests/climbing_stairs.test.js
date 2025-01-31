@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { climbStairs } from "../src/climbing_stairs.js";
 
-describe("climbStairs", { concurrency: true, timeout: 5000 }, () => {
+describe("climbStairs", { concurrency: true, timeout: 1000 }, () => {
 	it("return 34 for input 8", () => {
 		const n = 8;
 		const expected = 34;

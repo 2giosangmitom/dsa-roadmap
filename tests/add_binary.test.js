@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { addBinary } from "../src/add_binary.js";
 
-describe("addBinary", { concurrency: true, timeout: 5000 }, () => {
+describe("addBinary", { concurrency: true, timeout: 1000 }, () => {
 	it("should return 100 for input '11', '1'", () => {
 		const a = "11";
 		const b = "1";

@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { longestCommonPrefix } from "../src/longest_common_prefix.js";
 
-describe("longestCommonPrefix", { concurrency: true, timeout: 5000 }, () => {
+describe("longestCommonPrefix", { concurrency: true, timeout: 1000 }, () => {
 	it('should return "fl" for the input ["flower", "flow", "flight"]', () => {
 		const strs = ["flower", "flow", "flight"];
 		const result = longestCommonPrefix(strs);

@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { groupAnagrams } from "../src/group_anagrams.js";
 
-describe("groupAnagrams", { concurrency: true, timeout: 5000 }, () => {
+describe("groupAnagrams", { concurrency: true, timeout: 1000 }, () => {
 	it("should group anagrams correctly for ['eat', 'tea', 'tan', 'ate', 'nat', 'bat']", () => {
 		const input = ["eat", "tea", "tan", "ate", "nat", "bat"];
 		const output = groupAnagrams(input);

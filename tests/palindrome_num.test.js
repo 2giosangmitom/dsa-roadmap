@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { isPalindrome } from "../src/palindrome_num.js";
 
-describe("isPalindrome", { concurrency: true, timeout: 5000 }, () => {
+describe("isPalindrome", { concurrency: true, timeout: 1000 }, () => {
 	it("should return true for a single-digit number", () => {
 		assert.strictEqual(isPalindrome(7), true);
 	});

@@ -3,7 +3,7 @@ import { describe, it } from "node:test";
 import { ListNode } from "../lib/linked_list.js";
 import { addTwoNumbers } from "../src/add_two_numbers.js";
 
-describe("addTwoNumbers", { concurrency: true, timeout: 5000 }, () => {
+describe("addTwoNumbers", { concurrency: true, timeout: 1000 }, () => {
 	it("should add two linked lists and return the correct result", () => {
 		const l1 = ListNode.of(2, 4, 3);
 		const l2 = ListNode.of(5, 6, 4);

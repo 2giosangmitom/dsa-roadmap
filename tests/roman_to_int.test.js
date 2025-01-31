@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { romanToInt } from "../src/roman_to_int.js";
 
-describe("romanToInt", { concurrency: true, timeout: 5000 }, () => {
+describe("romanToInt", { concurrency: true, timeout: 1000 }, () => {
 	it('should return 3 for the input "III"', () => {
 		const result = romanToInt("III");
 		assert.strictEqual(result, 3);

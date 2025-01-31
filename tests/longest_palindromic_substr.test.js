@@ -4,7 +4,7 @@ import { lengthOfLongestSubstring } from "../src/longest_substr.js";
 
 describe(
 	"lengthOfLongestSubstring",
-	{ concurrency: true, timeout: 5000 },
+	{ concurrency: true, timeout: 1000 },
 	() => {
 		it('should return 3 for the input "abcabcbb"', () => {
 			const input = "abcabcbb";

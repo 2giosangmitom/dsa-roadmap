@@ -2,7 +2,7 @@ import assert from "node:assert";
 import { describe, it } from "node:test";
 import { reverse } from "../src/reverse_integer.js";
 
-describe("reverse integer", { concurrency: true, timeout: 5000 }, () => {
+describe("reverse integer", { concurrency: true, timeout: 1000 }, () => {
 	it("should reverse a positive number", () => {
 		const input = 123;
 
