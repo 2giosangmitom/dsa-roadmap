@@ -1,0 +1,23 @@
+name: Test C
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          sudo apt update
+          sudo apt install libcriterion-dev uthash-dev -y
+
+      - name: Build Project
+        run: make all
+        working-directory: C
+
+      - name: Run Tests
+        run: ./build/tests
+        working-directory: C
