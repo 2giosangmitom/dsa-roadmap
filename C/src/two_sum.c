@@ -56,9 +56,7 @@ int *twoSum(int *nums, int numsSize, int target, int *returnSize) {
     add(&m, nums[i], i);
   }
 
-  *returnSize = 1;
-  int *res = malloc(sizeof(int));
-  res[0] = -1;
   release(&m);
-  return res;
+  *returnSize = 0;
+  return NULL;
 }
