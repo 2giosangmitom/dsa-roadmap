@@ -14,6 +14,9 @@ struct ListNode {
 // Returns NULL if values_c <= 0
 struct ListNode *create_list(int *values, int values_c);
 
+// Represent a linked list in string
+char *list_to_str(struct ListNode *head);
+
 // Release all allocated memories
 void free_list(struct ListNode *head);
 

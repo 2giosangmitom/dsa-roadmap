@@ -1,4 +1,5 @@
 #include "linked_list.h"
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -19,6 +20,37 @@ struct ListNode *create_list(int *values, int values_c) {
   }
 
   return head;
+}
+
+// Represent a linked list in string
+char *list_to_str(struct ListNode *head) {
+  if (!head) {
+    return strdup("Empty list");
+  }
+
+  size_t length = 0;
+  struct ListNode *curr = head;
+
+  while (curr) {
+    length += snprintf(NULL, 0, "%d", curr->val) + 4; // Number + " -> "
+    curr = curr->next;
+  }
+
+  char *res = malloc(length);
+  if (!res)
+    return NULL;
+
+  curr = head;
+  char *ptr = res;
+  while (curr) {
+    ptr += sprintf(ptr, "%d", curr->val);
+    if (curr->next) {
+      ptr += sprintf(ptr, " -> ");
+    }
+    curr = curr->next;
+  }
+
+  return res;
 }
 
 // Release all allocated memories
