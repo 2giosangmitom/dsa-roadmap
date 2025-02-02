@@ -1,5 +1,5 @@
 #include "../lib/linked_list.h"
-#include "../src/add_two_numbers.h"
+#include "../src/add_two_numbers.c"
 #include <criterion/criterion.h>
 
 Test(add_two_numbers, case1) {

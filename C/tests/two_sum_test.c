@@ -1,4 +1,4 @@
-#include "../src/two_sum.h"
+#include "../src/two_sum.c"
 #include "../utils/algorithm.h"
 #include <criterion/criterion.h>
 #include <stdlib.h>
