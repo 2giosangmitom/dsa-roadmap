@@ -13,7 +13,8 @@ struct ListNode *create_list(int *values, int values_c) {
 
   struct ListNode *head = NULL;
   for (int i = values_c - 1; i >= 0; i--) {
-    struct ListNode *new_node = malloc(sizeof(struct ListNode));
+    struct ListNode *new_node =
+        (struct ListNode *)malloc(sizeof(struct ListNode));
     if (!new_node) {
       free_list(head); // Clean up allocated nodes before returning NULL
       return NULL;
@@ -45,7 +46,7 @@ char *list_to_str(struct ListNode *head) {
     curr = curr->next;
   }
 
-  char *res = malloc(length);
+  char *res = (char *)malloc(length);
   if (!res) {
     return NULL;
   }

@@ -15,7 +15,7 @@ void add(map_entry **m, int num, int index) {
   HASH_FIND_INT(*m, &num, e);
 
   if (e == NULL) {
-    e = malloc(sizeof(*e));
+    e = (map_entry *)malloc(sizeof(*e));
     e->index = index;
     e->num = num;
     HASH_ADD_INT(*m, num, e);
@@ -46,7 +46,7 @@ int *twoSum(int *nums, int numsSize, int target, int *returnSize) {
 
     if (e != NULL) {
       *returnSize = 2;
-      int *res = malloc(sizeof(int) * 2);
+      int *res = (int *)malloc(sizeof(int) * 2);
       res[0] = e->index;
       res[1] = i;
       release(&m);
