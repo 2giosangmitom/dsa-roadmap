@@ -1,6 +1,6 @@
 # Compiler and flags
 CC = clang
-CFLAGS = -Wall -Wextra -g -std=c23
+CFLAGS = -Wall -Wextra -g3 -O2 -std=c23
 LDFLAGS = -lcriterion
 
 # Directories
