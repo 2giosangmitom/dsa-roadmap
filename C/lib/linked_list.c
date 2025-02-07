@@ -4,8 +4,6 @@
 #include <string.h>
 
 // Create a singly linked list from an array
-// Returns the head pointer of the list if values_c > 0
-// Returns NULL if values_c <= 0
 struct ListNode *create_list(int *values, int values_c) {
   if (values_c <= 0) {
     return NULL;
@@ -16,7 +14,7 @@ struct ListNode *create_list(int *values, int values_c) {
     struct ListNode *new_node =
         (struct ListNode *)malloc(sizeof(struct ListNode));
     if (!new_node) {
-      free_list(head); // Clean up allocated nodes before returning NULL
+      free_list(head);
       return NULL;
     }
 
@@ -34,10 +32,9 @@ char *list_to_str(struct ListNode *head) {
     return strdup("Empty list");
   }
 
-  size_t length = 0;
+  size_t length = 1;
   struct ListNode *curr = head;
 
-  // Calculate the length of the string
   while (curr) {
     length += snprintf(NULL, 0, "%d", curr->val);
     if (curr->next) {
@@ -53,10 +50,17 @@ char *list_to_str(struct ListNode *head) {
 
   curr = head;
   char *ptr = res;
+  size_t remaining = length;
+
   while (curr) {
-    ptr += sprintf(ptr, "%d", curr->val);
+    int written = snprintf(ptr, remaining, "%d", curr->val);
+    ptr += written;
+    remaining -= written;
+
     if (curr->next) {
-      ptr += sprintf(ptr, " -> ");
+      written = snprintf(ptr, remaining, " -> ");
+      ptr += written;
+      remaining -= written;
     }
     curr = curr->next;
   }
