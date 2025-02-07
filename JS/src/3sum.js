@@ -2,7 +2,7 @@
  * @param {number} left
  * @param {number[]} nums
  * @param {number} target
- * @return {number[]}
+ * @return {number[][]}
  */
 function twoSum(left, nums, target) {
   const result = [];
@@ -17,8 +17,7 @@ function twoSum(left, nums, target) {
       while (left < right && nums[left] === nums[left - 1]) {
         left++;
       }
-    }
-    if (sum < target) {
+    } else if (sum < target) {
       left++;
     } else {
       right--;
@@ -47,7 +46,7 @@ function threeSum(nums) {
 
     const pairs = twoSum(i + 1, nums, -nums[i]);
     for (const pair of pairs) {
-      res.push([...pair, nums[i]].sort((a, b) => a - b));
+      res.push([nums[i], ...pair]);
     }
   }
 
