@@ -30,6 +30,24 @@ function runTests(name, callback) {
 
       assert.strictEqual(actual, expected);
     });
+
+    it("should return 0 for input [1]", () => {
+      const height = [1];
+      const expected = 0;
+
+      const actual = callback(height);
+
+      assert.strictEqual(actual, expected);
+    });
+
+    it("should return 0 for input [0, 1, 0]", () => {
+      const height = [0, 1, 0];
+      const expected = 0;
+
+      const actual = callback(height);
+
+      assert.strictEqual(actual, expected);
+    });
   });
 }
 
