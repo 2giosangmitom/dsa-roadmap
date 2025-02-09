@@ -3,7 +3,7 @@
 using namespace TwoSum;
 
 class TwoSumTest : public testing::Test {
-public:
+protected:
   Solution s;
 };
 

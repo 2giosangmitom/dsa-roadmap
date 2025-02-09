@@ -17,16 +17,14 @@ jobs:
         run: |
           sudo apt install libgtest-dev -y
           cd /usr/src/gtest
-          sudo mkdir build
-          cd build
-          sudo cmake ..
-          sudo make
-          sudo make install
+          sudo cmake -B build
+          sudo cmake --build build
+          sudo cp build/lib/*.a /usr/lib
 
       - name: Build
         run: |
           cmake -B build
-          cmake --build
+          cmake --build build
         working-directory: C++
 
       - name: Run tests
