@@ -1,6 +1,5 @@
 #include "../src/3sum.hpp"
 #include <gtest/gtest.h>
-using namespace ThreeSum;
 
 class ThreeSumTest : public testing::Test {
 protected:

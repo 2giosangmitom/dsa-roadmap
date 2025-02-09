@@ -1,6 +1,5 @@
 #include "../src/two_sum.hpp"
 #include <gtest/gtest.h>
-using namespace TwoSum;
 
 class TwoSumTest : public testing::Test {
 protected:

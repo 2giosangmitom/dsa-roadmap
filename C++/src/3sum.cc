@@ -1,8 +1,7 @@
 #include "3sum.hpp"
 #include <algorithm>
 
-vector<vector<int>> ThreeSum::Solution::twoSum(int left, vector<int> &nums,
-                                               int target) {
+vector<vector<int>> Solution::twoSum(int left, vector<int> &nums, int target) {
   int right = nums.size() - 1;
   vector<vector<int>> res;
 
@@ -25,7 +24,7 @@ vector<vector<int>> ThreeSum::Solution::twoSum(int left, vector<int> &nums,
   return res;
 }
 
-vector<vector<int>> ThreeSum::Solution::threeSum(vector<int> &nums) {
+vector<vector<int>> Solution::threeSum(vector<int> &nums) {
   sort(nums.begin(), nums.end());
 
   vector<vector<int>> res;

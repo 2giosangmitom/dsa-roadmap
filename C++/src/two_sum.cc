@@ -1,7 +1,7 @@
 #include "two_sum.hpp"
 #include <map>
 
-vector<int> TwoSum::Solution::twoSum(vector<int> &nums, int target) {
+vector<int> Solution::twoSum(vector<int> &nums, int target) {
   map<int, int> hash_table;
 
   for (size_t i = 0; i < nums.size(); i++) {

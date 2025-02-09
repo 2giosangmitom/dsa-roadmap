@@ -3,8 +3,6 @@
 #include <vector>
 using namespace std;
 
-namespace ThreeSum {
-
 class Solution {
 private:
   vector<vector<int>> twoSum(int left, vector<int> &nums, int target);
@@ -12,5 +10,3 @@ private:
 public:
   vector<vector<int>> threeSum(vector<int> &nums);
 };
-
-} // namespace ThreeSum
