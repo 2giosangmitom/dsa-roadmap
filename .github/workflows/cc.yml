@@ -1,0 +1,36 @@
+name: Test C++
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt install libgtest-dev -y
+          cd /usr/src/gtest
+          sudo mkdir build
+          cd build
+          sudo cmake ..
+          sudo make
+          sudo make install
+
+      - name: Build
+        run: |
+          cmake -B build
+          cmake --build
+        working-directory: C++
+
+      - name: Run tests
+        run: |
+          cd build
+          ctest
+        working-directory: C++
