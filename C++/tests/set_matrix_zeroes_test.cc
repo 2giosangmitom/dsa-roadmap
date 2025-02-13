@@ -5,9 +5,9 @@ class SetMatrixZeroesTest : public testing::Test {
 protected:
   Solution s;
 
-  void runTest(void (Solution::*func)(std::vector<std::vector<int>> &),
-               std::vector<std::vector<int>> matrix,
-               const std::vector<std::vector<int>> &expected) {
+  void runTest(void (Solution::*func)(vector<vector<int>> &),
+               vector<vector<int>> matrix,
+               const vector<vector<int>> &expected) {
     (s.*func)(matrix);
     EXPECT_EQ(matrix, expected);
   }
