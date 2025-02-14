@@ -18,12 +18,12 @@ struct ListNode {
 
   // Represent the linked list in string
   string to_string() const;
-
-  // Overload equality operator
-  friend bool operator==(const ListNode &lhs, const ListNode &rhs);
-
-  // Add ostream operator
-  friend ostream &operator<<(ostream &os, ListNode *head);
 };
+
+// Add ostream operator
+ostream &operator<<(ostream &os, ListNode *head);
+
+// Overload equality operator
+bool operator==(const ListNode &lhs, const ListNode &rhs);
 
 void free_list(ListNode *head);
