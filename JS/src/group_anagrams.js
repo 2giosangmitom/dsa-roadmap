@@ -3,25 +3,25 @@
  * @return {string[][]}
  */
 function groupAnagrams(strs) {
-	const map = {};
+  const map = {};
 
-	for (const s of strs) {
-		const key = s.split("").sort().join("");
-		if (key in map) {
-			map[key].push(s);
-		} else {
-			const newGroup = [s];
-			map[key] = newGroup;
-		}
-	}
+  for (const s of strs) {
+    const key = s.split("").sort().join("");
+    if (key in map) {
+      map[key].push(s);
+    } else {
+      const newGroup = [s];
+      map[key] = newGroup;
+    }
+  }
 
-	/** @type {string[][]} */
-	const result = [];
-	for (const v of Object.values(map)) {
-		result.push(v);
-	}
+  /** @type {string[][]} */
+  const result = [];
+  for (const v of Object.values(map)) {
+    result.push(v);
+  }
 
-	return result;
+  return result;
 }
 
 export { groupAnagrams };
