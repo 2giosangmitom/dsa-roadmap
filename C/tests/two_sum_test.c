@@ -1,5 +1,5 @@
+#include "../lib/array.h"
 #include "../src/two_sum.h"
-#include "../utils/array.h"
 #include <criterion/criterion.h>
 #include <stdlib.h>
 #include <string.h>

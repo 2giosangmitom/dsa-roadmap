@@ -9,9 +9,8 @@ set(CMAKE_CC_COMPILER clang)
 file(GLOB SRC_FILES "src/*.c")
 file(GLOB TEST_FILES "tests/*.c")
 file(GLOB LIB_FILES "lib/*.c")
-file(GLOB UTIL_FILES "utils/*.c")
 
-add_executable(tests ${LIB_FILES} ${SRC_FILES} ${TEST_FILES} ${UTIL_FILES})
+add_executable(tests ${LIB_FILES} ${SRC_FILES} ${TEST_FILES})
 target_compile_options(
   tests PRIVATE -Wall -Wextra -Wpedantic -g -O2
 )

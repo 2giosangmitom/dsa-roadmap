@@ -1,4 +1,4 @@
-#include "array.h"
+#include "../lib/array.h"
 #include <criterion/criterion.h>
 
 Test(ArrayUtilsTest, format_arr_case1) {
