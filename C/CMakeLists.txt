@@ -3,7 +3,7 @@ project(leetcode LANGUAGES C)
 
 set(CMAKE_C_STANDARD 23)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-set(CMAKE_CC_COMPILER clang)
+set(CMAKE_C_COMPILER clang)
 
 # Collect source files
 file(GLOB SRC_FILES "src/*.c")
