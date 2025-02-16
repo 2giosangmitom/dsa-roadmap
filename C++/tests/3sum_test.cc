@@ -42,3 +42,60 @@ TEST_F(ThreeSumTest, case6) {
                                   {-4, 2, 2},  {-2, -2, 4}, {-2, 0, 2}};
   EXPECT_EQ(s.threeSum(nums), expected);
 }
+
+TEST_F(ThreeSumTest, case7) {
+  vector<int> nums = {-1, -1, 2, 2, 0, 0, 1, 1};
+  vector<vector<int>> expected = {{-1, -1, 2}, {-1, 0, 1}};
+  EXPECT_EQ(s.threeSum(nums), expected);
+}
+
+TEST_F(ThreeSumTest, case8) {
+  vector<int> nums = {-5, 2, 3, 0, 0, -2, -1, 1};
+  vector<vector<int>> expected = {
+      {-5, 2, 3}, {-2, -1, 3}, {-2, 0, 2}, {-1, 0, 1}};
+  EXPECT_EQ(s.threeSum(nums), expected);
+}
+
+TEST_F(ThreeSumTest, case9) {
+  vector<int> nums = {-3, -2, -1, 0, 1, 2, 3};
+  vector<vector<int>> expected = {
+      {-3, 0, 3}, {-3, 1, 2}, {-2, -1, 3}, {-2, 0, 2}, {-1, 0, 1}};
+  EXPECT_EQ(s.threeSum(nums), expected);
+}
+
+TEST_F(ThreeSumTest, case10) {
+  vector<int> nums = {4, -1, -4, 2, -2, 1};
+  vector<vector<int>> expected = {};
+  EXPECT_EQ(s.threeSum(nums), expected);
+}
+
+TEST_F(ThreeSumTest, case11) {
+  vector<int> nums = {0, 1, 1, -2, -1, 2, -1};
+  vector<vector<int>> expected = {
+      {-2, 0, 2}, {-2, 1, 1}, {-1, -1, 2}, {-1, 0, 1}};
+  EXPECT_EQ(s.threeSum(nums), expected);
+}
+
+TEST_F(ThreeSumTest, case12) {
+  vector<int> nums = {3, 3, 3, 3, 3};
+  vector<vector<int>> expected = {};
+  EXPECT_EQ(s.threeSum(nums), expected);
+}
+
+TEST_F(ThreeSumTest, case13) {
+  vector<int> nums = {0, 0, 0, 0};
+  vector<vector<int>> expected = {{0, 0, 0}};
+  EXPECT_EQ(s.threeSum(nums), expected);
+}
+
+TEST_F(ThreeSumTest, case14) {
+  vector<int> nums = {1, -1, -1, 0};
+  vector<vector<int>> expected = {{-1, 0, 1}};
+  EXPECT_EQ(s.threeSum(nums), expected);
+}
+
+TEST_F(ThreeSumTest, case15) {
+  vector<int> nums = {-10, -3, 1, 2, 3, 5, 7};
+  vector<vector<int>> expected = {{-10, 3, 7}, {-3, 1, 2}};
+  EXPECT_EQ(s.threeSum(nums), expected);
+}
