@@ -1,6 +1,6 @@
 import assert from "node:assert";
 import { describe, it } from "node:test";
-import { TreeNode } from "./binary_tree.js";
+import { TreeNode } from "../lib/binary_tree.js";
 
 describe("TreeNode", { concurrency: true, timeout: 1000 }, () => {
   it("should create correct Tree with [0, null, 1, 2]", () => {

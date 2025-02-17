@@ -1,6 +1,6 @@
 import assert from "node:assert";
 import { describe, it } from "node:test";
-import { ListNode } from "./linked_list.js";
+import { ListNode } from "../lib/linked_list.js";
 
 describe("ListNode", () => {
   it("should create a ListNode with the correct value and next node", () => {
