@@ -12,6 +12,6 @@ file(GLOB LIB_FILES "lib/*.c")
 
 add_executable(tests ${LIB_FILES} ${SRC_FILES} ${TEST_FILES})
 target_compile_options(
-  tests PRIVATE -Wall -Wextra -Wpedantic -g -O2
+  tests PRIVATE -Wall -Wextra -Wpedantic -g
 )
 target_link_options(tests PRIVATE -fsanitize=address -lcriterion)
