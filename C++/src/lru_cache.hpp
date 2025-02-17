@@ -7,9 +7,9 @@ using namespace std;
 
 class LRUCache {
 private:
-  size_t capacity;
-  list<int> lru_list;
-  unordered_map<int, pair<int, list<int>::iterator>> cache;
+  int capacity;
+  list<pair<int, int>> lru_list; // Used to store values of the cache
+  unordered_map<int, list<pair<int, int>>::iterator> cache;
 
 public:
   LRUCache(int capacity);

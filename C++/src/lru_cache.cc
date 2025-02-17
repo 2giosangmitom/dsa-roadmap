@@ -1,37 +1,38 @@
 #include "lru_cache.hpp"
 
-LRUCache::LRUCache(int capacity) : capacity{size_t(capacity)} {}
+LRUCache::LRUCache(int capacity) : capacity{capacity} {}
 
 int LRUCache::get(int key) {
   auto it = cache.find(key);
-  if (it == cache.end())
-    return -1; // Key not found
+  if (it == cache.end()) {
+    return -1;
+  }
 
-  // Move accessed key to front
-  lru_list.erase(it->second.second);
-  lru_list.push_front(key);
-  it->second.second = lru_list.begin();
+  auto val = *(it->second);
+  lru_list.erase(it->second);
+  lru_list.push_back(val);
+  it->second = --lru_list.end();
 
-  return it->second.first;
+  return val.second;
 }
 
 void LRUCache::put(int key, int value) {
   auto it = cache.find(key);
-
   if (it != cache.end()) {
-    // Update existing key's value and move it to front
-    lru_list.erase(it->second.second);
-    lru_list.push_front(key);
-    it->second = {value, lru_list.begin()};
+    // Update existing cache
+    lru_list.erase(it->second);
+    lru_list.push_back({key, value});
+    cache[key] = --lru_list.end();
   } else {
-    if (cache.size() == capacity) {
-      // Remove least recently used element
-      int lru_key = lru_list.back();
-      lru_list.pop_back();
-      cache.erase(lru_key);
+    lru_list.push_back({key, value});
+    cache[key] = --lru_list.end();
+
+    // If adding the cache caused overflow of the capacity,
+    // remove the least recently used cache
+    if (cache.size() > static_cast<size_t>(capacity)) {
+      auto key = lru_list.begin()->first;
+      cache.erase(key);
+      lru_list.pop_front();
     }
-    // Insert new key-value pair
-    lru_list.push_front(key);
-    cache[key] = {value, lru_list.begin()};
   }
 }
