@@ -36,3 +36,15 @@ Test(ArrayUtilsTest, format_arr_large_numbers) {
 
   free(result);
 }
+
+Test(ArrayUtilsTest, format_arr_empty) {
+  int *nums = NULL;
+  int nums_size = 0;
+  char expected[] = "[]";
+
+  char *result = format_arr(nums, nums_size);
+
+  cr_expect_str_eq(result, expected);
+
+  free(result);
+}
