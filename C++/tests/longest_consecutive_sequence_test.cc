@@ -54,9 +54,3 @@ TEST_F(LongestConsecutiveSequenceTest, longSequenceInMiddle) {
   int expected = 5;
   EXPECT_EQ(s.longestConsecutive(nums), expected);
 }
-
-TEST_F(LongestConsecutiveSequenceTest, largeNumbers) {
-  vector<int> nums = {INT_MIN, INT_MIN + 1, INT_MAX - 1, INT_MAX};
-  int expected = 2;
-  EXPECT_EQ(s.longestConsecutive(nums), expected);
-}

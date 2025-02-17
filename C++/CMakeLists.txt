@@ -19,7 +19,7 @@ file(GLOB LIB_FILES "lib/*.cc")
 add_executable(tests ${LIB_FILES} ${SRC_FILES} ${TEST_FILES})
 target_link_libraries(tests GTest::gtest_main)
 target_compile_options(
-  tests PRIVATE -Wall -Wextra -Wpedantic -g -O2
+  tests PRIVATE -Wall -Wextra -Wpedantic -g
 )
 target_link_options(tests PRIVATE -fsanitize=address)
 
