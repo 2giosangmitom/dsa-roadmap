@@ -4,5 +4,5 @@
 
 class Solution {
 public:
-  bool hasCycle(ListNode *head);
+  ListNode *middleNode(ListNode *head);
 };
