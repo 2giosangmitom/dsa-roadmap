@@ -1,21 +1,58 @@
-import assert from "node:assert";
-import { describe, it } from "node:test";
+import { test, expect } from "vitest";
 import { isPowerOfTwo } from "../src/power_of_two.js";
 
-describe("isPowerOfTwo", { concurrency: true, timeout: 1000 }, () => {
-  it("should return true for 16", () => {
-    assert.equal(isPowerOfTwo(16), true);
-  });
+test("should return true for 16", () => {
+  const input = 16;
 
-  it("should return false for 3", () => {
-    assert.equal(isPowerOfTwo(3), false);
-  });
+  const result = isPowerOfTwo(input);
 
-  it("should return false for negative number", () => {
-    assert.equal(isPowerOfTwo(-16), false);
-  });
+  expect(result).toBe(true);
+});
 
-  it("should return false for 0", () => {
-    assert.equal(isPowerOfTwo(), false);
-  });
+test("should return false for 3", () => {
+  const input = 3;
+
+  const result = isPowerOfTwo(input);
+
+  expect(result).toBe(false);
+});
+
+test("should return false for negative number", () => {
+  const input = -1;
+
+  const result = isPowerOfTwo(input);
+
+  expect(result).toBe(false);
+});
+
+test("should return false for 0", () => {
+  const input = 0;
+
+  const result = isPowerOfTwo(input);
+
+  expect(result).toBe(false);
+});
+
+test("should return true for 1", () => {
+  const input = 1;
+
+  const result = isPowerOfTwo(input);
+
+  expect(result).toBe(true);
+});
+
+test("should return true for 64", () => {
+  const input = 64;
+
+  const result = isPowerOfTwo(input);
+
+  expect(result).toBe(true);
+});
+
+test("should return false for 100", () => {
+  const input = 100;
+
+  const result = isPowerOfTwo(input);
+
+  expect(result).toBe(false);
 });

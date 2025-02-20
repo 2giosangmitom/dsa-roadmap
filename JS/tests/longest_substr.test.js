@@ -1,65 +1,44 @@
-import assert from "node:assert";
-import { describe, it } from "node:test";
+import { test, expect } from "vitest";
 import { lengthOfLongestSubstring } from "../src/longest_substr.js";
 
-describe(
-  "lengthOfLongestSubstring",
-  { concurrency: true, timeout: 1000 },
-  () => {
-    it('should return 3 for the input "abcabcbb"', () => {
-      const input = "abcabcbb";
+test('should return 3 for the input "abcabcbb"', () => {
+  const input = "abcabcbb";
+  const result = lengthOfLongestSubstring(input);
+  expect(result).toBe(3);
+});
 
-      const result = lengthOfLongestSubstring(input);
+test('should return 1 for the input "bbbbb"', () => {
+  const input = "bbbbb";
+  const result = lengthOfLongestSubstring(input);
+  expect(result).toBe(1);
+});
 
-      assert.strictEqual(result, 3);
-    });
+test('should return 3 for the input "pwwkew"', () => {
+  const input = "pwwkew";
+  const result = lengthOfLongestSubstring(input);
+  expect(result).toBe(3);
+});
 
-    it('should return 1 for the input "bbbbb"', () => {
-      const input = "bbbbb";
+test("should return 0 for an empty string", () => {
+  const input = "";
+  const result = lengthOfLongestSubstring(input);
+  expect(result).toBe(0);
+});
 
-      const result = lengthOfLongestSubstring(input);
+test("should return 1 for a single character string", () => {
+  const input = "a";
+  const result = lengthOfLongestSubstring(input);
+  expect(result).toBe(1);
+});
 
-      assert.strictEqual(result, 1);
-    });
+test('should return 3 for the input "dvdf"', () => {
+  const input = "dvdf";
+  const result = lengthOfLongestSubstring(input);
+  expect(result).toBe(3);
+});
 
-    it('should return 3 for the input "pwwkew"', () => {
-      const input = "pwwkew";
-
-      const result = lengthOfLongestSubstring(input);
-
-      assert.strictEqual(result, 3);
-    });
-
-    it("should return 0 for an empty string", () => {
-      const input = "";
-
-      const result = lengthOfLongestSubstring(input);
-
-      assert.strictEqual(result, 0);
-    });
-
-    it("should return 1 for a single character string", () => {
-      const input = "a";
-
-      const result = lengthOfLongestSubstring(input);
-
-      assert.strictEqual(result, 1);
-    });
-
-    it('should return 3 for the input "dvdf"', () => {
-      const input = "dvdf";
-
-      const result = lengthOfLongestSubstring(input);
-
-      assert.strictEqual(result, 3);
-    });
-
-    it('should return 2 for the input "abba"', () => {
-      const input = "abba";
-
-      const result = lengthOfLongestSubstring(input);
-
-      assert.strictEqual(result, 2);
-    });
-  },
-);
+test('should return 2 for the input "abba"', () => {
+  const input = "abba";
+  const result = lengthOfLongestSubstring(input);
+  expect(result).toBe(2);
+});

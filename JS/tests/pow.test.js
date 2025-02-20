@@ -1,65 +1,34 @@
-import assert from "node:assert";
-import { describe, it } from "node:test";
+import { describe, it, expect } from "vitest";
 import { myPow, myPow2 } from "../src/pow.js";
 
-function runTests(name, callback) {
-  describe(name, { concurrency: true, timeout: 1000 }, () => {
-    it("should return 1024.00000 for x = 2.00000 and n = 10", () => {
-      const result = callback(2.0, 10);
-      assert.strictEqual(result.toFixed(5), "1024.00000");
-    });
+const testCases = [
+  { x: 2.0, n: 10, expected: 1024.0 },
+  { x: 2.1, n: 3, expected: 9.261 },
+  { x: 2.0, n: -2, expected: 0.25 },
+  { x: -2.0, n: 4, expected: 16.0 },
+  { x: -2.0, n: 3, expected: -8.0 },
+  { x: 1.0, n: 0, expected: 1.0 },
+  { x: 0.99999, n: 1000, expected: 0.99005 },
+  { x: 1.5, n: -3, expected: 0.2963 },
+  { x: 2.0, n: -31, expected: 0.0 },
+  { x: 0.99999, n: -9999, expected: 1.10516 },
+  { x: 1.00001, n: 9999, expected: 1.10516 },
+];
 
-    it("should return 9.26100 for x = 2.10000 and n = 3", () => {
-      const result = callback(2.1, 3);
-      assert.strictEqual(result.toFixed(5), "9.26100");
-    });
-
-    it("should return 0.25000 for x = 2.00000 and n = -2", () => {
-      const result = callback(2.0, -2);
-      assert.strictEqual(result.toFixed(5), "0.25000");
-    });
-
-    it("should return 16.00000 for x = -2.00000 and n = 4", () => {
-      const result = callback(-2.0, 4);
-      assert.strictEqual(result.toFixed(5), "16.00000");
-    });
-
-    it("should return -8.00000 for x = -2.00000 and n = 3", () => {
-      const result = callback(-2.0, 3);
-      assert.strictEqual(result.toFixed(5), "-8.00000");
-    });
-
-    it("should return 1.00000 for x = 1.00000 and n = 0", () => {
-      const result = callback(1.0, 0);
-      assert.strictEqual(result.toFixed(5), "1.00000");
-    });
-
-    it("should handle very small fractional base for x = 0.99999 and n = 1000", () => {
-      const result = callback(0.99999, 1000);
-      assert.strictEqual(result.toFixed(5), "0.99005");
-    });
-
-    it("should handle negative exponent for x = 1.50000 and n = -3", () => {
-      const result = callback(1.5, -3);
-      assert.strictEqual(result.toFixed(5), "0.29630");
-    });
-
-    it("should handle large negative exponent for x = 2.00000 and n = -31", () => {
-      const result = callback(2.0, -31);
-      assert.strictEqual(result.toFixed(5), "0.00000");
-    });
-
-    it("should return a small positive value for x = 0.99999 and n = -9999", () => {
-      const result = callback(0.99999, -9999);
-      assert.strictEqual(result.toFixed(5), "1.10516");
-    });
-
-    it("should return a large positive value for x = 1.00001 and n = 9999", () => {
-      const result = callback(1.00001, 9999);
-      assert.strictEqual(result.toFixed(5), "1.10516");
+describe("pow", () => {
+  testCases.forEach(({ x, n, expected }) => {
+    it(`should return ${expected} for x = ${x} and n = ${n}`, () => {
+      const result = myPow(x, n);
+      expect(Number(result.toFixed(5))).toBe(expected);
     });
   });
-}
+});
 
-runTests("pow", myPow);
-runTests("pow2", myPow2);
+describe("pow2", () => {
+  testCases.forEach(({ x, n, expected }) => {
+    it(`should return ${expected} for x = ${x} and n = ${n}`, () => {
+      const result = myPow2(x, n);
+      expect(Number(result.toFixed(5))).toBe(expected);
+    });
+  });
+});

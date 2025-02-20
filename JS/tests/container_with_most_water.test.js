@@ -1,55 +1,33 @@
 import { maxArea, maxArea2 } from "../src/container_with_most_water.js";
-import assert from "node:assert";
-import { describe, it } from "node:test";
+import { describe, it, expect } from "vitest";
 
-function runTests(name, callback) {
-  describe(name, { concurrency: true, timeout: 1000 }, () => {
-    it("should return 24 for input [2, 7, 8, 3, 7, 6]", () => {
-      const height = [2, 7, 8, 3, 7, 6];
-      const expected = 24;
+const testCases = [
+  { nums: [2, 7, 8, 3, 7, 6], expected: 24 },
+  { nums: [1, 8, 6, 2, 5, 4, 8, 3, 7], expected: 49 },
+  { nums: [1, 1], expected: 1 },
+  { nums: [1], expected: 0 },
+  { nums: [0, 1, 0], expected: 0 },
+  { nums: [4, 3, 2, 1, 4], expected: 16 },
+  { nums: [1, 2, 1], expected: 2 },
+  { nums: [1, 3, 2, 5, 25, 24, 5], expected: 24 },
+  { nums: [1, 2, 4, 3], expected: 4 },
+  { nums: [6, 9, 3, 4, 5, 8], expected: 32 },
+];
 
-      const actual = callback(height);
-
-      assert.strictEqual(actual, expected);
-    });
-
-    it("should return 49 for input [1,8,6,2,5,4,8,3,7]", () => {
-      const height = [1, 8, 6, 2, 5, 4, 8, 3, 7];
-      const expected = 49;
-
-      const actual = callback(height);
-
-      assert.strictEqual(actual, expected);
-    });
-
-    it("should return 1 for input [1, 1]", () => {
-      const height = [1, 1];
-      const expected = 1;
-
-      const actual = callback(height);
-
-      assert.strictEqual(actual, expected);
-    });
-
-    it("should return 0 for input [1]", () => {
-      const height = [1];
-      const expected = 0;
-
-      const actual = callback(height);
-
-      assert.strictEqual(actual, expected);
-    });
-
-    it("should return 0 for input [0, 1, 0]", () => {
-      const height = [0, 1, 0];
-      const expected = 0;
-
-      const actual = callback(height);
-
-      assert.strictEqual(actual, expected);
+describe("maxArea", () => {
+  testCases.forEach(({ nums, expected }) => {
+    it(`should return ${expected} for input ${JSON.stringify(nums)}`, () => {
+      const actual = maxArea(nums);
+      expect(actual).toBe(expected);
     });
   });
-}
+});
 
-runTests("maxArea", maxArea);
-runTests("maxArea2", maxArea2);
+describe("maxArea2", () => {
+  testCases.forEach(({ nums, expected }) => {
+    it(`should return ${expected} for input ${JSON.stringify(nums)}`, () => {
+      const actual = maxArea2(nums);
+      expect(actual).toBe(expected);
+    });
+  });
+});

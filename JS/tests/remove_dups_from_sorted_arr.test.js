@@ -1,47 +1,44 @@
-import assert from "node:assert";
-import { describe, it } from "node:test";
+import { expect, test } from "vitest";
 import { removeDuplicates } from "../src/remove_dups_from_sorted_arr.js";
 
-describe("removeDuplicates", { concurrency: true, timeout: 1000 }, () => {
-  it("should return 2 for the input [1, 1, 2]", () => {
-    const nums = [1, 1, 2];
-    const result = removeDuplicates(nums);
-    assert.strictEqual(result, 2);
-    assert.deepStrictEqual(nums.slice(0, result), [1, 2]);
-  });
+const testCases = [
+  {
+    input: [1, 1, 2],
+    expectedLength: 2,
+    expectedArray: [1, 2],
+  },
+  {
+    input: [0, 0, 1, 1, 1, 2, 2, 3, 3, 4],
+    expectedLength: 5,
+    expectedArray: [0, 1, 2, 3, 4],
+  },
+  {
+    input: [1, 1, 1, 1, 1],
+    expectedLength: 1,
+    expectedArray: [1],
+  },
+  {
+    input: [1, 2, 2, 3, 3, 4],
+    expectedLength: 4,
+    expectedArray: [1, 2, 3, 4],
+  },
+  {
+    input: [10, 20, 30, 30, 30, 40],
+    expectedLength: 4,
+    expectedArray: [10, 20, 30, 40],
+  },
+  {
+    input: [5],
+    expectedLength: 1,
+    expectedArray: [5],
+  },
+];
 
-  it("should return 5 for the input [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]", () => {
-    const nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
+testCases.forEach(({ input, expectedLength, expectedArray }) => {
+  test(`should return ${expectedLength} for input ${JSON.stringify(input)}`, () => {
+    const nums = [...input];
     const result = removeDuplicates(nums);
-    assert.strictEqual(result, 5);
-    assert.deepStrictEqual(nums.slice(0, result), [0, 1, 2, 3, 4]);
-  });
-
-  it("should return 1 for the input [1, 1, 1, 1, 1]", () => {
-    const nums = [1, 1, 1, 1, 1];
-    const result = removeDuplicates(nums);
-    assert.strictEqual(result, 1);
-    assert.deepStrictEqual(nums.slice(0, result), [1]);
-  });
-
-  it("should return 3 for the input [1, 2, 2, 3, 3, 4]", () => {
-    const nums = [1, 2, 2, 3, 3, 4];
-    const result = removeDuplicates(nums);
-    assert.strictEqual(result, 4);
-    assert.deepStrictEqual(nums.slice(0, result), [1, 2, 3, 4]);
-  });
-
-  it("should return 4 for the input [10, 20, 30, 30, 30, 40]", () => {
-    const nums = [10, 20, 30, 30, 30, 40];
-    const result = removeDuplicates(nums);
-    assert.strictEqual(result, 4);
-    assert.deepStrictEqual(nums.slice(0, result), [10, 20, 30, 40]);
-  });
-
-  it("should return 1 for the input [5]", () => {
-    const nums = [5];
-    const result = removeDuplicates(nums);
-    assert.strictEqual(result, 1);
-    assert.deepStrictEqual(nums.slice(0, result), [5]);
+    expect(result).toBe(expectedLength);
+    expect(nums.slice(0, result)).toEqual(expectedArray);
   });
 });

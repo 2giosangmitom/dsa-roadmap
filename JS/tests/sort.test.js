@@ -1,5 +1,4 @@
-import assert from "node:assert";
-import { describe, it } from "node:test";
+import { expect, describe, it } from "vitest";
 import {
   sortArray,
   bubbleSort,
@@ -7,47 +6,96 @@ import {
   sortMethod,
 } from "../src/sort.js";
 
-function runTests(name, callback) {
-  describe(name, { concurrency: true, timeout: 1000 }, () => {
-    it("should return a sorted array for [3, 1, 2]", () => {
-      assert.deepStrictEqual(callback([3, 1, 2]), [1, 2, 3]);
-    });
+const testCases = [
+  {
+    name: "should return a sorted array for [3, 1, 2]",
+    input: [3, 1, 2],
+    expected: [1, 2, 3],
+  },
+  {
+    name: "should return an empty array for []",
+    input: [],
+    expected: [],
+  },
+  {
+    name: "should handle negative numbers [-3, -1, -2]",
+    input: [-3, -1, -2],
+    expected: [-3, -2, -1],
+  },
+  {
+    name: "should return the same array for already sorted input [1, 2, 3]",
+    input: [1, 2, 3],
+    expected: [1, 2, 3],
+  },
+  {
+    name: "should handle mixed positive and negative numbers [3, -1, 2, -5, 0]",
+    input: [3, -1, 2, -5, 0],
+    expected: [-5, -1, 0, 2, 3],
+  },
+  {
+    name: "should handle duplicate numbers [4, 2, 2, 3, 1]",
+    input: [4, 2, 2, 3, 1],
+    expected: [1, 2, 2, 3, 4],
+  },
+  {
+    name: "should handle array with all identical elements [7, 7, 7, 7, 7]",
+    input: [7, 7, 7, 7, 7],
+    expected: [7, 7, 7, 7, 7],
+  },
+];
 
-    it("should return an empty array for []", () => {
-      assert.deepStrictEqual(callback([]), []);
-    });
-
-    it("should handle negative numbers [-3, -1, -2]", () => {
-      assert.deepStrictEqual(callback([-3, -1, -2]), [-3, -2, -1]);
-    });
-
-    it("should return the same array for already sorted input [1, 2, 3]", () => {
-      assert.deepStrictEqual(callback([1, 2, 3]), [1, 2, 3]);
-    });
-
-    it("should handle mixed positive and negative numbers [3, -1, 2, -5, 0]", () => {
-      assert.deepStrictEqual(callback([3, -1, 2, -5, 0]), [-5, -1, 0, 2, 3]);
-    });
-
-    it("should handle duplicate numbers [4, 2, 2, 3, 1]", () => {
-      assert.deepStrictEqual(callback([4, 2, 2, 3, 1]), [1, 2, 2, 3, 4]);
-    });
-
-    it("should handle large array correctly", () => {
-      const nums = Array.from({ length: 20000 }, () =>
-        Math.floor(Math.random() * 100000),
-      );
-      const expected = [...nums].sort((a, b) => a - b);
-      assert.deepStrictEqual(callback(nums), expected);
-    });
-
-    it("should handle array with all identical elements [7, 7, 7, 7, 7]", () => {
-      assert.deepStrictEqual(callback([7, 7, 7, 7, 7]), [7, 7, 7, 7, 7]);
-    });
+describe("merge sort", () => {
+  it.each(testCases)("$name", ({ input, expected }) => {
+    expect(sortArray(input)).toEqual(expected);
   });
-}
 
-runTests("merge sort", sortArray);
-runTests("bubble sort", bubbleSort);
-runTests("insertion sort", insertionSort);
-runTests("sort method", sortMethod);
+  it("should handle large array correctly", () => {
+    const nums = Array.from({ length: 20000 }, () =>
+      Math.floor(Math.random() * 100000),
+    );
+    const expected = [...nums].sort((a, b) => a - b);
+    expect(sortArray(nums)).toEqual(expected);
+  });
+});
+
+describe("bubble sort", () => {
+  it.each(testCases)("$name", ({ input, expected }) => {
+    expect(bubbleSort(input)).toEqual(expected);
+  });
+
+  it("should handle large array correctly", () => {
+    const nums = Array.from({ length: 20000 }, () =>
+      Math.floor(Math.random() * 100000),
+    );
+    const expected = [...nums].sort((a, b) => a - b);
+    expect(bubbleSort(nums)).toEqual(expected);
+  });
+});
+
+describe("insertion sort", () => {
+  it.each(testCases)("$name", ({ input, expected }) => {
+    expect(insertionSort(input)).toEqual(expected);
+  });
+
+  it("should handle large array correctly", () => {
+    const nums = Array.from({ length: 20000 }, () =>
+      Math.floor(Math.random() * 100000),
+    );
+    const expected = [...nums].sort((a, b) => a - b);
+    expect(insertionSort(nums)).toEqual(expected);
+  });
+});
+
+describe("sort method", () => {
+  it.each(testCases)("$name", ({ input, expected }) => {
+    expect(sortMethod(input)).toEqual(expected);
+  });
+
+  it("should handle large array correctly", () => {
+    const nums = Array.from({ length: 20000 }, () =>
+      Math.floor(Math.random() * 100000),
+    );
+    const expected = [...nums].sort((a, b) => a - b);
+    expect(sortMethod(nums)).toEqual(expected);
+  });
+});

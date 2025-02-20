@@ -1,7 +1,11 @@
 {
   "name": "leetcode",
   "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
   "devDependencies": {
-    "prettier": "^3.5.1"
+    "prettier": "^3.5.1",
+    "vitest": "^3.0.6"
   }
 }

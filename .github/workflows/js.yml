@@ -18,6 +18,10 @@ jobs:
         with:
           node-version: latest
 
+      - name: Install dependencies
+        run: npm install
+        working-directory: JS
+
       - name: Run JS tests
-        run: node --test
+        run: npm run test
         working-directory: JS

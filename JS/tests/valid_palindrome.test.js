@@ -1,52 +1,48 @@
-import assert from "node:assert";
-import { describe, it } from "node:test";
+import { describe, it, expect } from "vitest";
 import { isPalindrome, isPalindrome2 } from "../src/valid_palindrome.js";
 
-function runTests(name, callback) {
-  describe(name, { concurrency: true, timeout: 1000 }, () => {
-    it("should return true for input 'A man, a plan, a canal: Panama'", () => {
-      const s = "A man, a plan, a canal: Panama";
-      const expected = true;
-      const actual = callback(s);
-      assert.equal(actual, expected);
-    });
+const testCases = [
+  {
+    input: "A man, a plan, a canal: Panama",
+    expected: true,
+    description:
+      "should return true for palindrome with spaces and punctuation",
+  },
+  {
+    input: "racecar",
+    expected: true,
+    description: "should return true for simple palindrome",
+  },
+  {
+    input: "hello",
+    expected: false,
+    description: "should return false for non-palindrome",
+  },
+  {
+    input: " ",
+    expected: true,
+    description: "should return true for empty string",
+  },
+  {
+    input: "No lemon, no melon",
+    expected: true,
+    description: "should return true for case-insensitive palindrome",
+  },
+  {
+    input: "123abc321",
+    expected: false,
+    description: "should return false for alphanumeric non-palindrome",
+  },
+];
 
-    it("should return true for input 'racecar'", () => {
-      const s = "racecar";
-      const expected = true;
-      const actual = callback(s);
-      assert.equal(actual, expected);
-    });
-
-    it("should return false for input 'hello'", () => {
-      const s = "hello";
-      const expected = false;
-      const actual = callback(s);
-      assert.equal(actual, expected);
-    });
-
-    it("should return true for input ' ' (empty string)", () => {
-      const s = " ";
-      const expected = true;
-      const actual = callback(s);
-      assert.equal(actual, expected);
-    });
-
-    it("should return true for input 'No lemon, no melon'", () => {
-      const s = "No lemon, no melon";
-      const expected = true;
-      const actual = callback(s);
-      assert.equal(actual, expected);
-    });
-
-    it("should return false for input '123abc321'", () => {
-      const s = "123abc321";
-      const expected = false;
-      const actual = callback(s);
-      assert.equal(actual, expected);
-    });
+describe("isPalindrome", () => {
+  it.each(testCases)("$description", ({ input, expected }) => {
+    expect(isPalindrome(input)).toBe(expected);
   });
-}
+});
 
-runTests("isPalindrome", isPalindrome);
-runTests("isPalindrome2", isPalindrome2);
+describe("isPalindrome2", () => {
+  it.each(testCases)("$description", ({ input, expected }) => {
+    expect(isPalindrome2(input)).toBe(expected);
+  });
+});
