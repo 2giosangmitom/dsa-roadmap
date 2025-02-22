@@ -40,7 +40,7 @@ function threeSum(nums) {
     if (nums[i] > 0) {
       break;
     }
-    if (i > 0 && nums[i] == nums[i - 1]) {
+    if (i > 0 && nums[i] === nums[i - 1]) {
       continue;
     }
 

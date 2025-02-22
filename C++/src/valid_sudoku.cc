@@ -1,12 +1,12 @@
 #include "valid_sudoku.hpp"
 
 #include <array>
-#include <set>
+#include <unordered_set>
 
 bool Solution::isValidSudoku(vector<vector<char>> &board) {
-  array<set<char>, 9> row_sets;
-  array<set<char>, 9> col_sets;
-  array<array<set<char>, 3>, 3> subgrid_sets;
+  array<unordered_set<char>, 9> row_sets;
+  array<unordered_set<char>, 9> col_sets;
+  array<array<unordered_set<char>, 3>, 3> subgrid_sets;
 
   for (int i = 0; i < 9; i++) {
     for (int j = 0; j < 9; j++) {

@@ -1,8 +1,8 @@
 #include "two_sum.hpp"
-#include <map>
+#include <unordered_map>
 
 vector<int> Solution::twoSum(vector<int> &nums, int target) {
-  map<int, int> hash_table;
+  unordered_map<int, int> hash_table;
 
   for (size_t i = 0; i < nums.size(); i++) {
     int complement = target - nums[i];
