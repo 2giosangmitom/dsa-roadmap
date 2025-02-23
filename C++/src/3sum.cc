@@ -1,8 +1,9 @@
 #include "3sum.hpp"
 #include <algorithm>
 
-vector<vector<int>> Solution::twoSum(int left, vector<int> &nums, int target) {
-  int right = nums.size() - 1;
+vector<vector<int>> Solution::twoSum(size_t left, vector<int> &nums,
+                                     int target) {
+  size_t right = nums.size() - 1;
   vector<vector<int>> res;
 
   while (left < right) {

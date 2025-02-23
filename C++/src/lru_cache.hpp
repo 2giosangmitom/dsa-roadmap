@@ -12,7 +12,7 @@ private:
   unordered_map<int, list<pair<int, int>>::iterator> cache;
 
 public:
-  LRUCache(int capacity);
+  LRUCache(int size);
   int get(int key);
   void put(int key, int value);
 };

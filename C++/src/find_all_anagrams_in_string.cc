@@ -1,38 +1,37 @@
 #include "find_all_anagrams_in_string.hpp"
 #include <array>
+#include <cstddef>
 #include <vector>
 
 vector<int> Solution::findAnagrams(string s, string p) {
-  int len_s = s.size();
-  int len_p = p.size();
+  const size_t len_s = s.size();
+  const size_t len_p = p.size();
 
   if (len_p > len_s) {
     return {};
   }
 
-  array<int, 26> frequencies;
-  array<int, 26> expected_frequencies;
-  frequencies.fill(0);
-  expected_frequencies.fill(0);
+  std::array<int, 26> frequencies = {};
+  std::array<int, 26> expected_frequencies = {};
 
-  vector<int> result;
+  std::vector<int> result;
+  result.reserve(len_s - len_p + 1); // Optimize memory allocation
 
-  for (const char &c : p) {
-    expected_frequencies[int{c} - int{'a'}]++;
+  for (char c : p) {
+    expected_frequencies[size_t(c) - 'a']++;
   }
 
-  int left = 0, right = 0;
-  while (right < len_s) {
-    frequencies[int{s[right]} - int{'a'}]++;
+  size_t left = 0;
+  for (size_t right = 0; right < len_s; right++) {
+    frequencies[size_t(s[right]) - 'a']++;
 
-    if (right - left + 1 == len_p) {
-      if (expected_frequencies == frequencies) {
-        result.push_back(left);
+    if (right >= len_p - 1) {
+      if (frequencies == expected_frequencies) {
+        result.push_back(static_cast<int>(left));
       }
-      frequencies[int{s[left]} - int{'a'}]--;
+      frequencies[size_t(s[left]) - 'a']--;
       left++;
     }
-    right++;
   }
 
   return result;

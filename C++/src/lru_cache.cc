@@ -1,6 +1,6 @@
 #include "lru_cache.hpp"
 
-LRUCache::LRUCache(int capacity) : capacity{capacity} {}
+LRUCache::LRUCache(int size) : capacity{size} {}
 
 int LRUCache::get(int key) {
   auto it = cache.find(key);
@@ -30,8 +30,8 @@ void LRUCache::put(int key, int value) {
     // If adding the cache caused overflow of the capacity,
     // remove the least recently used cache
     if (cache.size() > static_cast<size_t>(capacity)) {
-      auto key = lru_list.begin()->first;
-      cache.erase(key);
+      auto need_del = lru_list.begin()->first;
+      cache.erase(need_del);
       lru_list.pop_front();
     }
   }
