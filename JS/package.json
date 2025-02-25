@@ -5,7 +5,7 @@
     "test": "vitest run"
   },
   "devDependencies": {
-    "prettier": "^3.5.1",
-    "vitest": "^3.0.6"
+    "prettier": "^3.5.2",
+    "vitest": "^3.0.7"
   }
 }
