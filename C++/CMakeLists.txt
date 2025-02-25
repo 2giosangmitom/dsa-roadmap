@@ -24,3 +24,7 @@ target_link_libraries(tests GTest::gtest_main)
 # Link ASAN
 target_compile_options(tests PRIVATE -fsanitize=address)
 target_link_options(tests PRIVATE -fsanitize=address)
+
+# Enable GoogleTest discovery for ctest command
+include(GoogleTest)
+gtest_discover_tests(tests)
