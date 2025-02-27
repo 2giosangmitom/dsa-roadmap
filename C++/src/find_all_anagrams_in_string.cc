@@ -11,10 +11,10 @@ vector<int> Solution::findAnagrams(string s, string p) {
     return {};
   }
 
-   array<int, 26> frequencies = {};
-   array<int, 26> expected_frequencies = {};
+  array<int, 26> frequencies = {};
+  array<int, 26> expected_frequencies = {};
 
-   vector<int> result;
+  vector<int> result;
   result.reserve(len_s - len_p + 1); // Optimize memory allocation
 
   for (char c : p) {
