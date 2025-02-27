@@ -30,7 +30,7 @@ function maxArea2(height) {
     const area = Math.min(height[left], height[right]) * (right - left);
     max = Math.max(area, max);
 
-    if (height[left] == height[right]) {
+    if (height[left] === height[right]) {
       left++;
       right--;
     } else if (height[left] < height[right]) {
