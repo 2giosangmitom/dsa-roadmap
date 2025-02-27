@@ -2,11 +2,18 @@ version = 1
 
 [[analyzers]]
 name = "javascript"
-enabled = true
 
 [analyzers.meta]
 environment = ["nodejs", "vitest"]
 
 [[analyzers]]
 name = "cxx"
-enabled = true
+
+[[transformers]]
+name = "clang-format"
+
+[[transformers]]
+name = "standardjs"
+
+[[transformers]]
+name = "prettier"
