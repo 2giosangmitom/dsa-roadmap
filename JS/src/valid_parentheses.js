@@ -2,34 +2,34 @@
  * @param {string[]} s
  * @returns {boolean}
  */
-function isValid(s) {
+function isValid (s) {
   if (s.length % 2 !== 0) {
-    return false;
+    return false
   }
 
-  const stack = [];
+  const stack = []
 
   for (const char of s) {
     if (/[[({]/.test(char)) {
-      stack.push(char);
+      stack.push(char)
     } else {
       if (stack.length === 0) {
-        return false;
+        return false
       }
 
-      if (char === ")" && stack[stack.length - 1] === "(") {
-        stack.pop();
-      } else if (char === "}" && stack[stack.length - 1] === "{") {
-        stack.pop();
-      } else if (char === "]" && stack[stack.length - 1] === "[") {
-        stack.pop();
+      if (char === ')' && stack[stack.length - 1] === '(') {
+        stack.pop()
+      } else if (char === '}' && stack[stack.length - 1] === '{') {
+        stack.pop()
+      } else if (char === ']' && stack[stack.length - 1] === '[') {
+        stack.pop()
       } else {
-        return false;
+        return false
       }
     }
   }
 
-  return stack.length === 0;
+  return stack.length === 0
 }
 
-export { isValid };
+export { isValid }
