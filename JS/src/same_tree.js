@@ -1,5 +1,3 @@
-import { TreeNode } from "../lib/binary_tree.js";
-
 /**
  * @param {TreeNode} p
  * @param {TreeNode} q
