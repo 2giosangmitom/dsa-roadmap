@@ -58,3 +58,9 @@ describe("isSameTree", () => {
     expect(isSameTree(t1, t2)).toEqual(expected);
   });
 });
+
+describe("isSameTree2", () => {
+  it.each(testCases)("$name", ({ t1, t2, expected }) => {
+    expect(isSameTree2(t1, t2)).toEqual(expected);
+  });
+});
