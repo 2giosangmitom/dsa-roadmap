@@ -3,25 +3,25 @@
  * @param {number} target
  * @return {number}
  */
-function searchInsert (nums, target) {
-  let left = 0
-  let right = nums.length - 1
+function searchInsert(nums, target) {
+  let left = 0;
+  let right = nums.length - 1;
 
   while (left <= right) {
-    const mid = Math.floor(left + (right - left) / 2)
+    const mid = Math.floor(left + (right - left) / 2);
 
     if (nums[mid] === target) {
-      return mid
+      return mid;
     }
 
     if (nums[mid] < target) {
-      left = mid + 1
+      left = mid + 1;
     } else {
-      right = mid - 1
+      right = mid - 1;
     }
   }
 
-  return left
+  return left;
 }
 
-export { searchInsert }
+export { searchInsert };

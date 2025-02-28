@@ -1,33 +1,33 @@
-import { TreeNode } from '../lib/binary_tree.js'
+import { TreeNode } from "../lib/binary_tree.js";
 
 /**
  * @param {TreeNode} root
  * @return {number[]}
  */
-function inorderTraversal (root) {
-  if (!root) return []
+function inorderTraversal(root) {
+  if (!root) return [];
 
   /** @type {number[]} */
-  const res = []
+  const res = [];
 
   /** @type {TreeNode[]} */
-  const stack = []
+  const stack = [];
 
-  let current = root
+  let current = root;
 
   while (stack.length > 0 || current !== null) {
     while (current) {
-      stack.push(current)
-      current = current.left
+      stack.push(current);
+      current = current.left;
     }
 
-    current = stack.pop()
-    res.push(current.val)
+    current = stack.pop();
+    res.push(current.val);
 
-    current = current.right
+    current = current.right;
   }
 
-  return res
+  return res;
 }
 
-export { inorderTraversal }
+export { inorderTraversal };
