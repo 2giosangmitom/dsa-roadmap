@@ -1,5 +1,3 @@
-import { ListNode } from "../lib/linked_list.js";
-
 /**
  * @param {ListNode} prevNode
  * @param {ListNode} node
