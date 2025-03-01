@@ -1,22 +1,11 @@
 #include "linked_list.hpp"
 #include <sstream>
 
-// ==========================
-// Constructors
-// ==========================
-
-// Default constructor: initializes value to 0 and next pointer to nullptr
 ListNode::ListNode() : val{0}, next{nullptr} {}
-
-// Constructor: initializes the node with a given value
 ListNode::ListNode(int val) : val{val}, next{nullptr} {}
-
-// Constructor: initializes the node with a given value and next pointer
 ListNode::ListNode(int val, ListNode *next) : val{val}, next{next} {}
 
-// ==========================
 // Free memory for linked list
-// ==========================
 void free_list(ListNode *head) {
   ListNode *current = head;
   ListNode *next;
@@ -28,9 +17,7 @@ void free_list(ListNode *head) {
   }
 }
 
-// ==========================
 // Create a linked list from vector
-// ==========================
 ListNode *ListNode::from(const vector<int> &nums) {
   if (nums.empty())
     return nullptr; // Return nullptr for empty input
@@ -53,9 +40,7 @@ ListNode *ListNode::from(const vector<int> &nums) {
   return head;
 }
 
-// ==========================
 // Overload equality operator (==)
-// ==========================
 bool operator==(const ListNode &lhs, const ListNode &rhs) {
   const ListNode *cur1 = &lhs, *cur2 = &rhs;
 
@@ -70,9 +55,7 @@ bool operator==(const ListNode &lhs, const ListNode &rhs) {
   return cur1 == nullptr && cur2 == nullptr;
 }
 
-// ==========================
 // Convert linked list to string representation
-// ==========================
 string ListNode::to_string() const {
   stringstream ss;
   const ListNode *current = this;
@@ -88,9 +71,7 @@ string ListNode::to_string() const {
   return ss.str();
 }
 
-// ==========================
 // Overload output stream operator (<<)
-// ==========================
 ostream &operator<<(ostream &os, ListNode *head) {
   if (head) {
     os << head->to_string(); // Print list using to_string()
