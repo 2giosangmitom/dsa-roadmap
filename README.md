@@ -9,6 +9,7 @@
 | Two Pointers  | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/)                                                      | [C++](./C++/solutions_125/solutions_125.hpp)                                                    | Easy       |
 | Math          | [Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/description) | [C++](./C++/solutions_1780/solutions_1780.hpp)                                                  | Medium     |
 | Binary Search | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)                          | [C++](./C++/solutions_33/solutions_33.hpp)                                                      | Medium     |
+| Linked List   | [Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/)        | [C++](./C++/solutions_430/solutions_430.hpp)                                                    | Medium     |
 
 ## InterviewBit
 
