@@ -1,38 +1,38 @@
 #include "linked_list.hpp"
+
 #include <sstream>
 
 ListNode::ListNode() : val{0}, next{nullptr} {}
 ListNode::ListNode(int val) : val{val}, next{nullptr} {}
 ListNode::ListNode(int val, ListNode *next) : val{val}, next{next} {}
 
-// Free memory for linked list
+// Free dynamically allocated memory for linked list
 void free_list(ListNode *head) {
   ListNode *current = head;
   ListNode *next;
 
   while (current) {
-    next = current->next; // Store next node before deleting current
-    delete current;       // Free current node
-    current = next;       // Move to next node
+    next = current->next;  // Store next node before deleting current
+    delete current;        // Free current node
+    current = next;        // Move to next node
   }
 }
 
 // Create a linked list from vector
 ListNode *ListNode::from(const vector<int> &nums) {
-  if (nums.empty())
-    return nullptr; // Return nullptr for empty input
+  if (nums.empty()) return nullptr;  // Return nullptr for empty input
 
-  ListNode *head = nullptr;    // Head of linked list
-  ListNode *current = nullptr; // Pointer to track current node
+  ListNode *head = nullptr;     // Head of linked list
+  ListNode *current = nullptr;  // Pointer to track current node
 
-  for (auto it = nums.begin(); it != nums.end(); it++) {
+  for (int num : nums) {
     if (!head) {
       // Initialize head for the first element
-      head = new ListNode(*it);
+      head = new ListNode(num);
       current = head;
     } else {
       // Create new node and link it to the current list
-      current->next = new ListNode(*it);
+      current->next = new ListNode(num);
       current = current->next;
     }
   }
@@ -40,14 +40,13 @@ ListNode *ListNode::from(const vector<int> &nums) {
   return head;
 }
 
-// Overload equality operator (==)
+// Overload equality operator
 bool operator==(const ListNode &lhs, const ListNode &rhs) {
   const ListNode *cur1 = &lhs, *cur2 = &rhs;
 
   while (cur1 && cur2) {
-    if (cur1->val != cur2->val) // Compare values of nodes
-      return false;
-    cur1 = cur1->next; // Move to next node
+    if (cur1->val != cur2->val) return false;
+    cur1 = cur1->next;
     cur2 = cur2->next;
   }
 
@@ -55,15 +54,15 @@ bool operator==(const ListNode &lhs, const ListNode &rhs) {
   return cur1 == nullptr && cur2 == nullptr;
 }
 
-// Convert linked list to string representation
+// Represent the linked list in string
 string ListNode::to_string() const {
   stringstream ss;
   const ListNode *current = this;
 
-  while (current) {
-    ss << current->val; // Append node value
+  while (current != nullptr) {
+    ss << current->val;
     if (current->next) {
-      ss << " -> "; // Add separator if not the last node
+      ss << " -> ";
     }
     current = current->next;
   }
@@ -71,12 +70,12 @@ string ListNode::to_string() const {
   return ss.str();
 }
 
-// Overload output stream operator (<<)
+// Overload ostream operator
 ostream &operator<<(ostream &os, ListNode *head) {
-  if (head) {
-    os << head->to_string(); // Print list using to_string()
+  if (head != nullptr) {
+    os << head->to_string();
   } else {
-    os << "Empty"; // Handle case where list is nullptr
+    os << "Empty";
   }
   return os;
 }
