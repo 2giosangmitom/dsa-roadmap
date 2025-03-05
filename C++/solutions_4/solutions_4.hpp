@@ -1,3 +1,4 @@
+#include <cmath>
 #include <cstdint>
 #include <vector>
 using namespace std;
@@ -5,39 +6,36 @@ using namespace std;
 class Solution {
  public:
   double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
-    int n = nums1.size();
-    int m = nums2.size();
-
     // Optimization: ensure the nums1 is always smaller
-    if (n > m) {
-      swap(nums1, nums2);
-      swap(n, m);
+    if (nums2.size() < nums1.size()) {
+      return findMedianSortedArrays(nums2, nums1);
     }
 
-    int total_len = n + m;
+    int m = nums1.size(), n = nums2.size();
     // Divide the merged array into two partitions
-    int half = (total_len + 1) / 2;
-    int left = 0, right = n;
+    int half_total_len = (m + n) / 2;
+    int left = 0, right = m - 1;
 
     while (true) {
-      int l1_i = (left + right) / 2;
-      int l2_i = half - l1_i;
+      int L1_index = floor((left + right) / 2.0);
+      int L2_index = half_total_len - (L1_index + 1) - 1;
 
-      int L1 = (l1_i > 0) ? nums1[l1_i - 1] : INT32_MIN;
-      int L2 = (l2_i > 0) ? nums2[l2_i - 1] : INT32_MIN;
-      int R1 = (l1_i < n) ? nums1[l1_i] : INT32_MAX;
-      int R2 = (l2_i < m) ? nums2[l2_i] : INT32_MAX;
+      int L1 = (L1_index < 0) ? INT32_MIN : nums1[L1_index];
+      int R1 = (L1_index >= m - 1) ? INT32_MAX : nums1[L1_index + 1];
+      int L2 = (L2_index < 0) ? INT32_MIN : nums2[L2_index];
+      int R2 = (L2_index >= n - 1) ? INT32_MAX : nums2[L2_index + 1];
 
       if (L1 <= R2 && L2 <= R1) {
         // Correct slice
-        if (total_len % 2 == 0) {
+        if ((m + n) % 2 == 0) {
           return (max(L1, L2) + min(R1, R2)) / 2.0;
+        } else {
+          return min(R1, R2);
         }
-        return max(L1, L2);
-      } else if (L1 > R2) {
-        right = l1_i - 1;
+      } else if (L2 > R1) {
+        left = L1_index + 1;
       } else {
-        left = l1_i + 1;
+        right = L1_index - 1;
       }
     }
   }
