@@ -8,12 +8,14 @@ class Solution {
     int n = nums1.size();
     int m = nums2.size();
 
+    // Optimization: ensure the nums1 is always smaller
     if (n > m) {
       swap(nums1, nums2);
       swap(n, m);
     }
 
     int total_len = n + m;
+    // Divide the merged array into two partitions
     int half = (total_len + 1) / 2;
     int left = 0, right = n;
 
@@ -27,6 +29,7 @@ class Solution {
       int R2 = (l2_i < m) ? nums2[l2_i] : INT32_MAX;
 
       if (L1 <= R2 && L2 <= R1) {
+        // Correct slice
         if (total_len % 2 == 0) {
           return (max(L1, L2) + min(R1, R2)) / 2.0;
         }
