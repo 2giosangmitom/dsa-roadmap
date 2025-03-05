@@ -10,6 +10,7 @@
 | Math          | [Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/description) | [C++](./C++/solutions_1780/solutions_1780.hpp)                                                  | Medium     |
 | Binary Search | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)                          | [C++](./C++/solutions_33/solutions_33.hpp)                                                      | Medium     |
 | Linked List   | [Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/)        | [C++](./C++/solutions_430/solutions_430.hpp)                                                    | Medium     |
+| Binary Search | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)                                | [C++](./C++/solutions_4/solutions_4.hpp)                                                        | Hard       |
 
 ## InterviewBit
 
