@@ -1,5 +1,7 @@
 # practice
 
+This repository contains some LeetCode and InterviewBit solutions implemented in C++ and JavaScript.
+
 ## LeetCode
 
 | Topic                                | Link                                                                                                                                        | Solutions                                                                                       | Difficulty |
@@ -13,6 +15,7 @@
 | Binary Search, Array                 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)                                       | [C++](./C++/solutions_4/solutions_4.hpp)                                                        | Hard       |
 | Binary Search, Matrix                | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/)                                                         | [C++](./C++/solutions_74/solutions_74.hpp)                                                      | Medium     |
 | Sliding Window, Hash Table, Hash Set | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | [C++](./C++/solutions_3/solutions_3.hpp)                                                        | Medium     |
+| Binary Search, Array                 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/description/)                                                           | [C++](./C++/solutions_162/solutions_162.hpp)                                                    | Medium     |
 
 ## InterviewBit
 
