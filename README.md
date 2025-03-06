@@ -17,7 +17,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Sliding Window, Hash Table, Hash Set | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C++](./C++/solutions_3/solutions_3.hpp)                                                        | Medium     |
 | Binary Search, Array                 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/)                                                           | [C++](./C++/solutions_162/solutions_162.hpp)                                                    | Medium     |
 | Array                                | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                                                         | [C++](./C++/solutions_88/solutions_88.hpp)                                                      | Easy       |
-| Array                                | [Remove Element](https://leetcode.com/problems/remove-element/)                                                                 | [C++](./C++/solutions_27/solutions_27.hpp)                                                      | Easy       |
+| Array, Two Pointers                  | [Remove Element](https://leetcode.com/problems/remove-element/)                                                                 | [C++](./C++/solutions_27/solutions_27.hpp)                                                      | Easy       |
 
 ## InterviewBit
 
