@@ -16,9 +16,11 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Binary Search, Matrix                | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/)                                                         | [C++](./C++/solutions_74/solutions_74.hpp)                                                      | Medium     |
 | Sliding Window, Hash Table, Hash Set | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | [C++](./C++/solutions_3/solutions_3.hpp)                                                        | Medium     |
 | Binary Search, Array                 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/description/)                                                           | [C++](./C++/solutions_162/solutions_162.hpp)                                                    | Medium     |
+| Array                                | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description)                                                          | [C++](./C++/solutions_88/solutions_88.hpp)                                                      | Easy       |
 
 ## InterviewBit
 
 | Topic         | Link                                                                                  | Solutions                                                    | Difficulty |
 | ------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ---------- |
 | Binary Search | [WoodCutting Made Easy](https://www.interviewbit.com/problems/woodcutting-made-easy/) | [C++](./C++/solutions_woodcutting/solutions_woodcutting.hpp) | Medium     |
+
