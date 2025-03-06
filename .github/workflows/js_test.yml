@@ -1,4 +1,4 @@
-name: Test JS
+name: Test JavaScript
 
 on: [push, pull_request]
 
@@ -20,8 +20,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: JS
+        working-directory: JavaScript
 
-      - name: Run JS tests
+      - name: Run JavaScript tests
         run: npm run test
-        working-directory: JS
+        working-directory: JavaScript
