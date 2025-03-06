@@ -14,15 +14,10 @@ class Solutions_27_Test
 };
 
 TEST_P(Solutions_27_Test, ) {
-  vector<int> nums;
-  int val;
-  int expected;
-  vector<int> expected_nums;
-  tie(nums, val, expected, expected_nums) = GetParam();
+  auto [nums, val, expected, expected_nums] = GetParam();
 
   int actual = solution.removeElement(nums, val);
-
-  auto p = nums | std::ranges::views::take(expected);
+  auto p = nums | ranges::views::take(actual);
 
   EXPECT_EQ(actual, expected);
   EXPECT_TRUE(ranges::equal(p, expected_nums));
