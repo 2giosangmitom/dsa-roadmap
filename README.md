@@ -19,6 +19,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Array                                | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                                                         | [C++](./C++/solutions_88/solutions_88.hpp)                                                      | Easy       |
 | Array, Two Pointers                  | [Remove Element](https://leetcode.com/problems/remove-element/)                                                                 | [C++](./C++/solutions_27/solutions_27.hpp)                                                      | Easy       |
 | Two Pointers, Array                  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)                       | [C++](./C++/solutions_26/solutions_26.hpp)                                                      | Easy       |
+| Matrix, Math, Hash Table             | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)                             | [C++](./C++/solutions_2965/solutions_2965.hpp)                                                  | Easy       |
 
 ## InterviewBit
 
