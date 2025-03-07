@@ -7,15 +7,11 @@ using namespace std;
 class Solution {
  public:
   vector<int> findMissingAndRepeatedValues(vector<vector<int>>& grid) {
-    long actual_sum = 0;
+    int actual_sum = 0;
     long actual_sum_square = 0;
-    long expected_sum = 0;
-    long expected_sum_square = 0;
-
-    for (size_t i = 1; i <= grid.size() * grid.size(); i++) {
-      expected_sum += i;
-      expected_sum_square += i * i;
-    }
+    int n = grid.size() * grid.size();
+    int expected_sum = (n * (1 + n)) / 2;
+    long expected_sum_square = (n * (1L + n) * (2L * n + 1L)) / 6L;
 
     for (size_t i = 0; i < grid.size(); i++) {
       for (size_t j = 0; j < grid.size(); j++) {
