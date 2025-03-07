@@ -24,6 +24,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Array                                | [Rotate Array](https://leetcode.com/problems/rotate-array/)                                                                     | [C++](./C++/solutions_189/solutions_189.hpp)                                                    | Medium     |
 | Math                                 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                               | [C++](./C++/solutions_7/solutions_7.hpp)                                                        | Medium     |
 | Two Pointers, Math                   | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                                   | [C++](./C++/solutions_5/solutions_5.hpp)                                                        | Medium     |
+| String                               | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                                               | [C++](./C++/solutions_8/solutions_8.hpp)                                                        | Medium     |
 
 ## InterviewBit
 
