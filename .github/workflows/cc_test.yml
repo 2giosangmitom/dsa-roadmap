@@ -1,6 +1,10 @@
 name: Test C++
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
 
 permissions:
   contents: read
@@ -8,27 +12,19 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: |
-          sudo apt install libgtest-dev -y
-          cd /usr/src/gtest
-          sudo cmake -B build
-          sudo cmake --build build
-          sudo cp build/lib/*.a /usr/lib
-
-      - name: Build
-        run: |
-          cmake -B build
-          cmake --build build
-        working-directory: C++
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@main
 
       - name: Run tests
         run: |
+          nix-shell
+          cd C++
+          cmake -B build
+          cmake --build build
           cd build
           ctest
-        working-directory: C++
