@@ -22,9 +22,6 @@ jobs:
 
       - name: Run tests
         run: |
-          nix-shell
-          cd C++
-          cmake -B build
-          cmake --build build
-          cd build
-          ctest
+          nix-shell --command "cd C++ && cmake -B build"
+          nix-shell --command "cd C++ && cmake --build build"
+          nix-shell --command "cd C++ && ctest --test-dir build"

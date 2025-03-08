@@ -22,7 +22,5 @@ jobs:
 
       - name: Run JavaScript tests
         run: |
-          nix-shell
-          cd JavaScript
-          npm install
-          npm run test
+          nix-shell --command "cd JavaScript && npm install"
+          nix-shell --command "cd JavaScript && npm test"
