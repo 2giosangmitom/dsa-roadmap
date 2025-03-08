@@ -7,5 +7,7 @@ in
       nodejs_23
       gtest
       cmake
+      clang
     ];
+    CXX = "clang++";
   }
