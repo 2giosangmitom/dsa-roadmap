@@ -32,6 +32,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Array                                 | [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/)               | [C++](./C++/solutions_747/solutions_747.hpp)                                                    | Easy       |
 | Math                                  | [Water Bottles](https://leetcode.com/problems/water-bottles/)                                                                   | [C++](./C++/solutions_1518/solutions_1518.hpp)                                                  | Easy       |
 | Two Pointers                          | [Reverse String](https://leetcode.com/problems/reverse-string/)                                                                 | [C++](./C++/solutions_344/solutions_344.hpp)                                                    | Easy       |
+| Math, Number Theory                   | [Count Primes](https://leetcode.com/problems/count-primes/)                                                                     | [C++](./C++/solutions_204/solutions_204.hpp)                                                    | Medium     |
 
 ## InterviewBit
 
