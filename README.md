@@ -33,6 +33,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Math                                  | [Water Bottles](https://leetcode.com/problems/water-bottles/)                                                                   | [C++](./C++/solutions_1518/solutions_1518.hpp)                                                  | Easy       |
 | Two Pointers                          | [Reverse String](https://leetcode.com/problems/reverse-string/)                                                                 | [C++](./C++/solutions_344/solutions_344.hpp)                                                    | Easy       |
 | Math, Number Theory                   | [Count Primes](https://leetcode.com/problems/count-primes/)                                                                     | [C++](./C++/solutions_204/solutions_204.hpp)                                                    | Medium     |
+| Math, Number Theory                   | [Add Digits](https://leetcode.com/problems/add-digits/)                                                                         | [C++](./C++/solutions_258/solutions_258.hpp)                                                    | Easy       |
 
 ## InterviewBit
 
