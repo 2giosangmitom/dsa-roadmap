@@ -30,6 +30,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Math                                  | [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/)                                                         | [JavaScript](./JavaScript/solutions_3360/solutions_3360.js)                                     | Easy       |
 | Binary Search                         | [Binary Search](https://leetcode.com/problems/binary-search/)                                                                   | [C++](./C++/solutions_704/solutions_704.hpp)                                                    | Easy       |
 | Array                                 | [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/)               | [C++](./C++/solutions_747/solutions_747.hpp)                                                    | Easy       |
+| Math                                  | [Water Bottles](https://leetcode.com/problems/water-bottles/)                                                                   | [C++](./C++/solutions_1518/solutions_1518.hpp)                                                  | Easy       |
 
 ## InterviewBit
 
