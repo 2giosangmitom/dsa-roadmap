@@ -31,6 +31,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Binary Search                         | [Binary Search](https://leetcode.com/problems/binary-search/)                                                                   | [C++](./C++/solutions_704/solutions_704.hpp)                                                    | Easy       |
 | Array                                 | [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/)               | [C++](./C++/solutions_747/solutions_747.hpp)                                                    | Easy       |
 | Math                                  | [Water Bottles](https://leetcode.com/problems/water-bottles/)                                                                   | [C++](./C++/solutions_1518/solutions_1518.hpp)                                                  | Easy       |
+| Two Pointers                          | [Reverse String](https://leetcode.com/problems/reverse-string/)                                                                 | [C++](./C++/solutions_344/solutions_344.hpp)                                                    | Easy       |
 
 ## InterviewBit
 
