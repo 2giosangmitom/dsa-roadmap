@@ -10,14 +10,14 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # Set compiler flags
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic -Werror -g")
 
-file(GLOB LIB_FILES "lib/*.cc")
+# Source files
 file(GLOB SRC_FILES "**/*.cc")
 
 # Enable testing
 find_package(GTest REQUIRED)
 enable_testing()
 
-add_executable(leetcode_test ${SRC_FILES} ${LIB_FILES})
+add_executable(leetcode_test ${SRC_FILES})
 target_link_libraries(leetcode_test GTest::gtest_main)
 
 # Link ASAN
