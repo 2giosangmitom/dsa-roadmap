@@ -28,6 +28,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Binary Search, Prefix Sum, Randomized | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)                                               | [C++](./C++/solutions_528/solutions_528.hpp)                                                    | Medium     |
 | Two Pointers, Hash Table              | [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/)                   | [C++](./C++/solutions_2570/solutions_2570.hpp)                                                  | Easy       |
 | Math                                  | [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/)                                                         | [JavaScript](./JavaScript/solutions_3360/solutions_3360.js)                                     | Easy       |
+| Binary Search                         | [Binary Search](https://leetcode.com/problems/binary-search/)                                                                   | [C++](./C++/solutions_704/solutions_704.hpp)                                                    | Easy       |
 
 ## InterviewBit
 
