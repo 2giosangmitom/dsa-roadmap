@@ -10,7 +10,7 @@ class WoodCuttingTest
   Solution solution;
 };
 
-TEST_P(WoodCuttingTest, SolveTest) {
+TEST_P(WoodCuttingTest, ) {
   auto [heights, k, expected] = GetParam();
   int actual = solution.solve(heights, k);
   EXPECT_EQ(actual, expected);
