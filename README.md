@@ -36,6 +36,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Math, Number Theory                   | [Add Digits](https://leetcode.com/problems/add-digits/)                                                                                     | [C++](./C++/solutions_258/solutions_258.hpp)                                                    | Easy       |
 | Two Pointers                          | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)                                       | [C++](./C++/solutions_167/solutions_167.hpp)                                                    | Medium     |
 | Sliding Window                        | [Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | [C++](./C++/solutions_1358/solutions_1358.hpp)                                                  | Medium     |
+| Two Pointers                          | [3Sum](https://leetcode.com/problems/3sum/)                                                                                                 | [C++](./C++/solutions_15/solutions_15.hpp)                                                      | Medium     |
 
 ## InterviewBit
 
