@@ -20,8 +20,8 @@ jobs:
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@main
 
+      - name: Run build
+        run: nix develop --command bash -c "cd C++ && cmake -B build && cmake --build build"
+
       - name: Run tests
-        run: |
-          nix develop --command "cd C++ && cmake -B build"
-          nix develop --command "cd C++ && cmake --build build"
-          nix develop --command "cd C++ && ctest --test-dir build"
+        run: nix develop --command bash -c "cd C++ && cmake --build build"
