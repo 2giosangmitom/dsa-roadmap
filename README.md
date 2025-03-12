@@ -40,6 +40,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | String                                | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                                               | [C++](./C++/solutions_14/solutions_14.hpp)                                                      | Easy       |
 | Two Pointers                          | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                                                       | [C++](./C++/solutions_11/solutions_11.hpp)                                                      | Medium     |
 | Math                                  | [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                                       | [C++](./C++/solutions_9/solutions_9.hpp)                                                        | Easy       |
+| Hash Set                              | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                                                                 | [C++](./C++/solutions_36/solutions_36.hpp)                                                      | Medium     |
 
 ## InterviewBit
 
