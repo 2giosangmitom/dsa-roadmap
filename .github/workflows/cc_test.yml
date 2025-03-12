@@ -24,4 +24,4 @@ jobs:
         run: nix develop --command bash -c "cd C++ && cmake -B build && cmake --build build"
 
       - name: Run tests
-        run: nix develop --command bash -c "cd C++ && cmake --build build"
+        run: nix develop --command bash -c "cd C++ && ctest --test-dir build"
