@@ -38,6 +38,8 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Sliding Window                        | [Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | [C++](./C++/solutions_1358/solutions_1358.hpp)                                                  | Medium     |
 | Two Pointers                          | [3Sum](https://leetcode.com/problems/3sum/)                                                                                                 | [C++](./C++/solutions_15/solutions_15.hpp)                                                      | Medium     |
 | String                                | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                                               | [C++](./C++/solutions_14/solutions_14.hpp)                                                      | Easy       |
+| Two Pointers                          | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                                                       | [C++](./C++/solutions_11/solutions_11.hpp)                                                      | Medium     |
+| Math                                  | [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                                       | [C++](./C++/solutions_9/solutions_9.hpp)                                                        | Easy       |
 
 ## InterviewBit
 
