@@ -15,7 +15,7 @@
         nodejs_23
         gtest
         cmake
-        llvmPackages.libcxxClang
+        clang
       ];
       CC = "clang";
       CXX = "clang++";

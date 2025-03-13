@@ -42,6 +42,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Math                                  | [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                                           | [C++](./C++/solutions_9/solutions_9.hpp)                                                        | Easy       |
 | Hash Set                              | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                                                                     | [C++](./C++/solutions_36/solutions_36.hpp)                                                      | Medium     |
 | Binary Search                         | [Maximum Count of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/) | [C++](./C++/solutions_2529/solutions_2529.hpp)                                                  | Easy       |
+| Hash Table                            | [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)                                                                     | [C++](./C++/solutions_1512/solutions_1512.hpp)                                                  | Easy       |
 
 ## InterviewBit
 
