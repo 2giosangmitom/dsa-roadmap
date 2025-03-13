@@ -1,5 +1,5 @@
 import { canAliceWin } from "./solutions_3360.js";
-import { test, expect } from "vitest";
+import { test, expect, describe } from "vitest";
 
 const testCases = [
   { n: 12, expected: true },
@@ -14,9 +14,11 @@ const testCases = [
   { n: 49, expected: true },
 ];
 
-testCases.forEach(({ n, expected }, index) => {
-  test(`case ${index}`, () => {
-    const result = canAliceWin(n);
-    expect(result).toBe(expected);
+describe("canAliceWin", () => {
+  testCases.forEach(({ n, expected }, index) => {
+    test(`case ${index}`, () => {
+      const result = canAliceWin(n);
+      expect(result).toBe(expected);
+    });
   });
 });

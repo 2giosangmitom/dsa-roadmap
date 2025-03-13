@@ -43,6 +43,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Hash Set                              | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                                                                     | [C++](./C++/solutions_36/solutions_36.hpp)                                                      | Medium     |
 | Binary Search                         | [Maximum Count of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/) | [C++](./C++/solutions_2529/solutions_2529.hpp)                                                  | Easy       |
 | Hash Table                            | [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)                                                                     | [C++](./C++/solutions_1512/solutions_1512.hpp)                                                  | Easy       |
+| Two Pointers                          | [Next Permutation](https://leetcode.com/problems/next-permutation/)                                                                             | [C++](./C++/solutions_31/solutions_31.hpp)                                                      | Medium     |
 
 ## InterviewBit
 
