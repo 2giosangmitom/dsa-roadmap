@@ -15,8 +15,9 @@
         nodejs_23
         gtest
         cmake
-        clang
+        llvmPackages.libcxxClang
       ];
+      CC = "clang";
       CXX = "clang++";
     };
     formatter.${system} = pkgs.alejandra;
