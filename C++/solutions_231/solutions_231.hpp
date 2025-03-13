@@ -18,7 +18,7 @@ class Solution {
     }
 
     double t = log2(n);
-    double x = (int)t;
+    double x = trunc(t);
 
     return x == t;
   }
