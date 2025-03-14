@@ -17,8 +17,8 @@
         cmake
         clang
       ];
-      CC = "clang";
-      CXX = "clang++";
+      CC = "${pkgs.clang}/bin/clang";
+      CXX = "${pkgs.clang}/bin/clang++";
     };
     formatter.${system} = pkgs.alejandra;
   };
