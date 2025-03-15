@@ -1,1 +1,3 @@
-BasedOnStyle: Google
+BasedOnStyle: LLVM
+IndentWidth: 2
+SortIncludes: CaseInsensitive

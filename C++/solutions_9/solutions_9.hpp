@@ -1,7 +1,7 @@
 #pragma once
 
 class Solution {
- public:
+public:
   bool isPalindrome(int x) {
     // Negative numbers and numbers ending in 0 (except 0 itself) are not
     // palindromes

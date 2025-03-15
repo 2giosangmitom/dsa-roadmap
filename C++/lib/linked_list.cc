@@ -1,5 +1,4 @@
 #include "linked_list.hpp"
-
 #include <sstream>
 
 ListNode::ListNode() : val{0}, next{nullptr} {}
@@ -12,18 +11,19 @@ void free_list(ListNode *head) {
   ListNode *next;
 
   while (current) {
-    next = current->next;  // Store next node before deleting current
-    delete current;        // Free current node
-    current = next;        // Move to next node
+    next = current->next; // Store next node before deleting current
+    delete current;       // Free current node
+    current = next;       // Move to next node
   }
 }
 
 // Create a linked list from vector
 ListNode *ListNode::from(const vector<int> &nums) {
-  if (nums.empty()) return nullptr;  // Return nullptr for empty input
+  if (nums.empty())
+    return nullptr; // Return nullptr for empty input
 
-  ListNode *head = nullptr;     // Head of linked list
-  ListNode *current = nullptr;  // Pointer to track current node
+  ListNode *head = nullptr;    // Head of linked list
+  ListNode *current = nullptr; // Pointer to track current node
 
   for (int num : nums) {
     if (!head) {
@@ -45,7 +45,8 @@ bool operator==(const ListNode &lhs, const ListNode &rhs) {
   const ListNode *cur1 = &lhs, *cur2 = &rhs;
 
   while (cur1 && cur2) {
-    if (cur1->val != cur2->val) return false;
+    if (cur1->val != cur2->val)
+      return false;
     cur1 = cur1->next;
     cur2 = cur2->next;
   }

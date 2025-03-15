@@ -1,13 +1,10 @@
-#include <gtest/gtest.h>
-
-#include <tuple>
-
-#include "gtest/gtest.h"
 #include "solutions_1780.hpp"
+#include <gtest/gtest.h>
+#include <tuple>
 using namespace std;
 
 class Solutions_1780_Test : public testing::TestWithParam<tuple<int, bool>> {
- protected:
+protected:
   Solution solution;
 };
 

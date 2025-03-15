@@ -3,11 +3,11 @@
 #include "../lib/linked_list.hpp"
 
 class Solution {
- public:
-  ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-    ListNode* res = nullptr;
+public:
+  ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
+    ListNode *res = nullptr;
     int carry = 0;
-    ListNode* head = res;
+    ListNode *head = res;
 
     while (l1 != nullptr || l2 != nullptr || carry != 0) {
       int digit1 = l1 ? l1->val : 0;
@@ -17,7 +17,7 @@ class Solution {
       int digit = sum % 10;
       carry = sum / 10;
 
-      ListNode* new_node = new ListNode(digit);
+      ListNode *new_node = new ListNode(digit);
       if (!head) {
         res = new_node;
         head = res;

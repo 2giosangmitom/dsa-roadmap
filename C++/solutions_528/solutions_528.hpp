@@ -5,12 +5,12 @@
 using namespace std;
 
 class Solution {
- private:
+private:
   vector<int> prefix_sums;
   vector<int> weights;
 
- public:
-  Solution(vector<int>& w) : weights{w} {
+public:
+  Solution(vector<int> &w) : weights{w} {
     prefix_sums.resize(weights.size());
 
     prefix_sums[0] = weights[0];

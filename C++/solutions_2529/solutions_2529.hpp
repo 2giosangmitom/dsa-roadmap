@@ -4,8 +4,8 @@
 using namespace std;
 
 class Solution {
- public:
-  int maximumCount(vector<int>& nums) {
+public:
+  int maximumCount(vector<int> &nums) {
     int lower = lower_bound(nums);
     int upper = upper_bound(nums);
 
@@ -14,8 +14,8 @@ class Solution {
     return max(positive, negative);
   }
 
- private:
-  int lower_bound(const vector<int>& nums) {
+private:
+  int lower_bound(const vector<int> &nums) {
     int left = 0;
     int right = nums.size() - 1;
 
@@ -32,7 +32,7 @@ class Solution {
     return nums[left] > 0 ? left : -1;
   }
 
-  int upper_bound(const vector<int>& nums) {
+  int upper_bound(const vector<int> &nums) {
     int left = 0;
     int right = nums.size() - 1;
 

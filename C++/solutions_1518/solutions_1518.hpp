@@ -1,7 +1,7 @@
 #pragma once
 
 class Solution {
- public:
+public:
   int numWaterBottles(int numBottles, int numExchange) {
     int result = 0;
     while (numBottles >= numExchange) {

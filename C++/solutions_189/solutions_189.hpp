@@ -5,8 +5,8 @@
 using namespace std;
 
 class Solution {
- public:
-  void rotate(vector<int>& nums, int k) {
+public:
+  void rotate(vector<int> &nums, int k) {
     k %= nums.size();
 
     if (k != 0) {

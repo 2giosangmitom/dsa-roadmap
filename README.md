@@ -45,6 +45,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Hash Table                            | [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)                                                                     | [C++](./C++/solutions_1512/solutions_1512.hpp)                                                  | Easy       |
 | Two Pointers                          | [Next Permutation](https://leetcode.com/problems/next-permutation/)                                                                             | [C++](./C++/solutions_31/solutions_31.hpp)                                                      | Medium     |
 | Math                                  | [Power of Two](https://leetcode.com/problems/power-of-two/)                                                                                     | [C++](./C++/solutions_231/solutions_231.hpp)                                                    | Easy       |
+| Matrix                                | [Flood Fill](https://leetcode.com/problems/flood-fill/)                                                                                         | [C++](./C++/solutions_733/solutions_733.hpp)                                                    | Easy       |
 
 ## InterviewBit
 

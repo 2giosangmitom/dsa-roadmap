@@ -1,12 +1,10 @@
-#include <gtest/gtest.h>
-
-#include <tuple>
-
 #include "solutions_14.hpp"
+#include <gtest/gtest.h>
+#include <tuple>
 
 class Solutions_14_Test
     : public testing::TestWithParam<tuple<vector<string>, string>> {
- protected:
+protected:
   Solution solution;
 };
 

@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
- public:
+public:
   vector<vector<int>> mergeArrays(vector<vector<int>> &nums1,
                                   vector<vector<int>> &nums2) {
     map<int, int> e;

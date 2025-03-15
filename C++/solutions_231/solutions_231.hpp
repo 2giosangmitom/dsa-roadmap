@@ -3,7 +3,7 @@
 #include <cmath>
 
 class Solution {
- public:
+public:
   bool isPowerOfTwo(int n) {
     if (n <= 0) {
       return false;

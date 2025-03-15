@@ -5,8 +5,8 @@
 using namespace std;
 
 class Solution {
- public:
-  void nextPermutation(vector<int>& nums) {
+public:
+  void nextPermutation(vector<int> &nums) {
     int left = nums.size() - 2;
 
     while (left >= 0 && nums[left] >= nums[left + 1]) {

@@ -1,16 +1,14 @@
+#include "solutions_27.hpp"
 #include <gtest/gtest.h>
-
 #include <ranges>
 #include <tuple>
 
-#include "solutions_27.hpp"
-
 class Solutions_27_Test
     : public testing::TestWithParam<tuple<vector<int>, int, int, vector<int>>> {
- protected:
+protected:
   Solution solution;
 
- public:
+public:
 };
 
 TEST_P(Solutions_27_Test, ) {

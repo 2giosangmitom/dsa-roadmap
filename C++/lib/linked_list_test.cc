@@ -1,12 +1,10 @@
 #include "linked_list.hpp"
-
 #include <gtest/gtest.h>
-
 #include <vector>
 using namespace std;
 
 class LinkedList_From_Test : public testing::Test {
- protected:
+protected:
   void check(vector<int> &nums, ListNode *expected) {
     auto actual = ListNode::from(nums);
 
@@ -42,7 +40,7 @@ TEST_F(LinkedList_From_Test, case3) {
 }
 
 class LinkedList_ToString_Test : public testing::Test {
- protected:
+protected:
   void check(vector<int> &nums, string expected) {
     auto actual = ListNode::from(nums);
 

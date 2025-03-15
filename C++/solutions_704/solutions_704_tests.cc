@@ -1,10 +1,9 @@
-#include <gtest/gtest.h>
-
 #include "solutions_704.hpp"
+#include <gtest/gtest.h>
 
 class Solutions_704_Test
     : public testing::TestWithParam<tuple<vector<int>, int, int>> {
- protected:
+protected:
   Solution solution;
 };
 

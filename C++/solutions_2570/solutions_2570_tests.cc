@@ -1,11 +1,10 @@
-#include <gtest/gtest.h>
-
 #include "solutions_2570.hpp"
+#include <gtest/gtest.h>
 
 class Solutions_2570_Test
     : public testing::TestWithParam<tuple<
           vector<vector<int>>, vector<vector<int>>, vector<vector<int>>>> {
- protected:
+protected:
   Solution solution;
 };
 

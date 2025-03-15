@@ -6,7 +6,7 @@
 using namespace std;
 
 class Solution {
- public:
+public:
   int lengthOfLongestSubstring(string s) {
     // The last position of the character
     unordered_map<char, size_t> last_seen;

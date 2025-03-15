@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
- public:
+public:
   vector<int> twoSum(vector<int> &nums, int target) {
     unordered_map<int, int> map;
 

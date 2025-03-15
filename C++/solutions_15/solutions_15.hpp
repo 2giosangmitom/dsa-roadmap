@@ -5,8 +5,8 @@
 using namespace std;
 
 class Solution {
- private:
-  vector<vector<int>> twoSum(vector<int>& nums, int left, int target) {
+private:
+  vector<vector<int>> twoSum(vector<int> &nums, int left, int target) {
     int right = nums.size() - 1;
 
     vector<vector<int>> result;
@@ -32,8 +32,8 @@ class Solution {
     return result;
   }
 
- public:
-  vector<vector<int>> threeSum(vector<int>& nums) {
+public:
+  vector<vector<int>> threeSum(vector<int> &nums) {
     sort(nums.begin(), nums.end());
 
     vector<vector<int>> result;
