@@ -7,16 +7,29 @@ public:
   double myPow(double x, int n) {
     if (x == 0)
       return 0;
-
     if (n == 0)
       return 1;
 
-    double p = myPow(x, abs(n) / 2);
-    p *= p;
-    if (n % 2 == 1) {
-      p *= x;
+    long N = n;
+    if (N < 0) {
+      x = 1 / x;
+      N = -N;
     }
 
-    return n < 0 ? 1 / p : p;
+    double result = helper(x, N);
+    return result;
+  }
+
+private:
+  double helper(double x, long n) {
+    if (n == 0)
+      return 1;
+
+    double half = helper(x, n / 2);
+    if (n % 2 == 0) {
+      return half * half;
+    } else {
+      return half * half * x;
+    }
   }
 };
