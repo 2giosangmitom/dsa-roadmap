@@ -47,6 +47,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Math                                  | [Power of Two](https://leetcode.com/problems/power-of-two/)                                                                                     | [C++](./C++/solutions_231/solutions_231.hpp)                                                    | Easy       |
 | Matrix                                | [Flood Fill](https://leetcode.com/problems/flood-fill/)                                                                                         | [C++](./C++/solutions_733/solutions_733.hpp)                                                    | Easy       |
 | Sliding Window                        | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)                               | [C++](./C++/solutions_424/solutions_424.hpp)                                                    | Medium     |
+| Math                                  | [Pow(x, n)](https://leetcode.com/problems/powx-n/)                                                                                              | [C++](./C++/solutions_50/solutions_50.hpp)                                                      | Medium     |
 
 ## InterviewBit
 
