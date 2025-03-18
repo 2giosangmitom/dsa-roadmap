@@ -52,6 +52,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Binary Search                         | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [C++](./C++/solutions_34/solutions_34.hpp)                                                      | Medium     |
 | Stack                                 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                                                                             | [C++](./C++/solutions_20/solutions_20.hpp)                                                      | Easy       |
 | Linked List                           | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                                                             | [C++](./C++/solutions_876/solutions_876.hpp)                                                    | Easy       |
+| Linked List, Hash Table               | [LRU Cache](https://leetcode.com/problems/lru-cache/)                                                                                             | [C++](./C++/solutions_146/solutions_146.hpp)                                                    | Medium     |
 
 ## InterviewBit
 
