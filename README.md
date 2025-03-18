@@ -50,6 +50,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Math                                  | [Pow(x, n)](https://leetcode.com/problems/powx-n/)                                                                                                | [C++](./C++/solutions_50/solutions_50.hpp)                                                      | Medium     |
 | Linked List                           | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)                                               | [C++](./C++/solutions_19/solutions_19.hpp)                                                      | Medium     |
 | Binary Search                         | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [C++](./C++/solutions_34/solutions_34.hpp)                                                      | Medium     |
+| Stack                                 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                                                                             | [C++](./C++/solutions_20/solutions_20.hpp)                                                      | Easy       |
 
 ## InterviewBit
 
