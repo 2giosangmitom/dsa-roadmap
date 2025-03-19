@@ -3,19 +3,18 @@
  * @return {boolean}
  */
 function canAliceWin(n) {
-  if (n < 10) return false;
+	if (n < 10) return false;
 
-  n -= 10;
+	let remaining = n - 10;
+	let decrement = 9;
+	let isAliceTurn = true;
 
-  let temp = 9;
-  let res = true;
+	while (remaining >= decrement) {
+		remaining -= decrement--;
+		isAliceTurn = !isAliceTurn;
+	}
 
-  while (n - temp >= 0) {
-    n -= temp--;
-    res = !res;
-  }
-
-  return res;
+	return isAliceTurn;
 }
 
 export { canAliceWin };

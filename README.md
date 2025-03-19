@@ -53,6 +53,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Stack                                 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                                                                             | [C++](./C++/solutions_20/solutions_20.hpp)                                                      | Easy       |
 | Linked List                           | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                                                             | [C++](./C++/solutions_876/solutions_876.hpp)                                                    | Easy       |
 | Linked List, Hash Table               | [LRU Cache](https://leetcode.com/problems/lru-cache/)                                                                                             | [C++](./C++/solutions_146/solutions_146.hpp)                                                    | Medium     |
+| Sorting, Array                        | [Sort an Array](https://leetcode.com/problems/sort-an-array/)                                                                                     | [JavaScript](./JavaScript/solutions_912/solutions_912.js)                                       | Medium     |
 
 ## InterviewBit
 
