@@ -18,14 +18,14 @@ function quickSort(nums, left, right) {
 	const pivotValue = nums[right];
 	let pivotIndex = left;
 
-	for (let i = left; i < right; i++) {
+	for (let i = left; i <= right; i++) {
 		if (nums[i] <= pivotValue) {
-			[nums[i], nums[pivotIndex]] = [nums[pivotIndex], nums[i]];
-			pivotIndex++;
+			const temp = nums[i];
+			nums[i] = nums[pivotIndex];
+			nums[pivotIndex] = temp;
+			if (i !== right) pivotIndex++;
 		}
 	}
-
-	[nums[pivotIndex], nums[right]] = [nums[right], nums[pivotIndex]];
 
 	quickSort(nums, left, pivotIndex - 1);
 	quickSort(nums, pivotIndex + 1, right);
