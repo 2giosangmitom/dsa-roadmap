@@ -10,11 +10,11 @@ public:
     int right = s.size() - 1;
 
     while (left < right) {
-      if (!isalpha(s[left]) && !isdigit(s[left])) {
+      if (!isalnum(s[left])) {
         left++;
         continue;
       }
-      if (!isalpha(s[right]) && !isdigit(s[right])) {
+      if (!isalnum(s[right])) {
         right--;
         continue;
       }
