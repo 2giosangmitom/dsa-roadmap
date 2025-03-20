@@ -1,7 +1,7 @@
 #pragma once
 
+#include <stack>
 #include <string>
-#include <vector>
 using namespace std;
 
 class Solution {
@@ -12,19 +12,19 @@ public:
       return false;
     }
 
-    vector<char> stack = {};
+    stack<char> stack = {};
     for (int i = 0; i < length; i++) {
       if (s[i] == '(' || s[i] == '{' || s[i] == '[') {
-        stack.push_back(s[i]);
+        stack.push(s[i]);
       } else {
         if (stack.empty()) {
           return false;
         }
 
-        if ((s[i] == ')' && stack.back() == '(') ||
-            (s[i] == '}' && stack.back() == '{') ||
-            (s[i] == ']' && stack.back() == '[')) {
-          stack.pop_back();
+        if ((s[i] == ')' && stack.top() == '(') ||
+            (s[i] == '}' && stack.top() == '{') ||
+            (s[i] == ']' && stack.top() == '[')) {
+          stack.pop();
         } else {
           return false;
         }
