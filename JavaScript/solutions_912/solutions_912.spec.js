@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { mergeSort, sortArray } from "./solutions_912.js";
+import { mergeSort, quickSort } from "./solutions_912.js";
 
 const testCases = [
 	{ nums: [5, 2, 3, 1], expected: [1, 2, 3, 5] },
@@ -16,10 +16,11 @@ const testCases = [
 	{ nums: [-5, -1, 0, 2, -3, 4], expected: [-5, -3, -1, 0, 2, 4] },
 ];
 
-describe("sortArray", () => {
+describe("quickSort", () => {
 	testCases.forEach(({ nums, expected }, index) => {
 		test(`case ${index}`, () => {
-			const result = sortArray(Array.from(nums));
+			const result = Array.from(nums);
+			quickSort(result, 0, result.length - 1);
 			expect(result).toEqual(expected);
 		});
 	});
