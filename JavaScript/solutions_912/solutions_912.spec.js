@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { mergeSort, quickSort } from "./solutions_912.js";
+import { heapSort, mergeSort, quickSort } from "./solutions_912.js";
 
 const testCases = [
 	{ nums: [5, 2, 3, 1], expected: [1, 2, 3, 5] },
@@ -31,6 +31,16 @@ describe("mergeSort", () => {
 		test(`case ${index}`, () => {
 			const result = Array.from(nums);
 			mergeSort(result, 0, result.length - 1);
+			expect(result).toEqual(expected);
+		});
+	});
+});
+
+describe("heapSort", () => {
+	testCases.forEach(({ nums, expected }, index) => {
+		test(`case ${index}`, () => {
+			const result = Array.from(nums);
+			heapSort(result, 0, result.length - 1);
 			expect(result).toEqual(expected);
 		});
 	});
