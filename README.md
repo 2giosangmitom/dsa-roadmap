@@ -54,6 +54,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Linked List                           | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                                                             | [C++](./C++/solutions_876/solutions_876.hpp)                                                    | Easy       |
 | Linked List, Hash Table               | [LRU Cache](https://leetcode.com/problems/lru-cache/)                                                                                             | [C++](./C++/solutions_146/solutions_146.hpp)                                                    | Medium     |
 | Sorting, Array                        | [Sort an Array](https://leetcode.com/problems/sort-an-array/)                                                                                     | [JavaScript](./JavaScript/solutions_912/solutions_912.js)                                       | Medium     |
+| Two Pointers                          | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)                                   | [JavaScript](./JavaScript/solutions_80/solutions_80.js)                                         | Medium     |
 
 ## InterviewBit
 
