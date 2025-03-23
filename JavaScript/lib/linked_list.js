@@ -25,6 +25,22 @@ class ListNode {
 
 		return head;
 	}
+
+	/**
+	 * @returns {string} The string representation of the Linked List
+	 */
+	toString() {
+		let result = "";
+
+		for (let current = this; current !== null; current = current.next) {
+			result += current.val;
+			if (current.next !== null) {
+				result += " -> ";
+			}
+		}
+
+		return result;
+	}
 }
 
 export { ListNode };
