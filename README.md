@@ -56,6 +56,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Sorting, Array                        | [Sort an Array](https://leetcode.com/problems/sort-an-array/)                                                                                     | [JavaScript](./JavaScript/solutions_912/solutions_912.js)                                       | Medium     |
 | Two Pointers                          | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)                                   | [JavaScript](./JavaScript/solutions_80/solutions_80.js)                                         | Medium     |
 | Hash Set                              | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)                                                       | [JavaScript](./JavaScript/solutions_128/solutions_128.js)                                       | Medium     |
+| Linked List                           | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)                                               | [JavaScript](./JavaScript/solutions_160/solutions_160.js)                                       | Easy       |
 
 ## InterviewBit
 
