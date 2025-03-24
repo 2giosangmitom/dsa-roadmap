@@ -58,6 +58,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Hash Set                              | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)                                                       | [JavaScript](./JavaScript/solutions_128/solutions_128.js)                                       | Medium     |
 | Linked List                           | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)                                               | [JavaScript](./JavaScript/solutions_160/solutions_160.js)                                       | Easy       |
 | Array, Backtracking                   | [Permutations](https://leetcode.com/problems/permutations/)                                                                                       | [JavaScript](./JavaScript/solutions_46/solutions_46.js)                                         | Medium     |
+| Array, Backtracking                   | [Permutations II](https://leetcode.com/problems/permutations-ii/)                                                                                 | [JavaScript](./JavaScript/solutions_47/solutions_47.js)                                         | Medium     |
 
 ## InterviewBit
 
