@@ -3,27 +3,34 @@
  * @return {number[]}
  */
 function nextGreaterElements(nums) {
+	// The monotonic stack to stores all next greater elements's index
 	const candidates = [];
 	const result = new Array(nums.length);
 
-	const checkCandidate = (index) => {
+	// Loop through the array twice to handle the circular nature
+	for (let i = 2 * nums.length - 1; i >= 0; i--) {
+		const currentIndex = i % nums.length;
+
+		// Pop elements from the stack while the element at the top of the stack
+		// not greater than current element
 		while (
 			candidates.length !== 0 &&
-			nums[candidates[candidates.length - 1]] <= nums[index]
+			nums[candidates[candidates.length - 1]] <= nums[currentIndex]
 		) {
 			candidates.pop();
 		}
 
+		// The stack becomes empty if the no candidates is greater than current element
+		// so assign -1 to the current result
 		if (candidates.length === 0) {
-			result[index] = -1;
+			result[currentIndex] = -1;
 		} else {
-			result[index] = nums[candidates[candidates.length - 1]];
+			// The top element of the stack is the next greater element of current element
+			result[currentIndex] = nums[candidates[candidates.length - 1]];
 		}
-	};
 
-	for (let i = 2 * nums.length - 1; i >= 0; i--) {
-		checkCandidate(i % nums.length);
-		candidates.push(i % nums.length);
+		// Push the current index to the stack
+		candidates.push(currentIndex);
 	}
 
 	return result;
