@@ -62,6 +62,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Array, Backtracking                   | [Permutations](https://leetcode.com/problems/permutations/)                                                                                       | [JavaScript](./JavaScript/solutions_46/solutions_46.js)                                             | Medium     |
 | Array, Backtracking                   | [Permutations II](https://leetcode.com/problems/permutations-ii/)                                                                                 | [JavaScript](./JavaScript/solutions_47/solutions_47.js)                                             | Medium     |
 | Matrix, Hash Set                      | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                                                                             | [C++](./C++/solutions_73/solutions_73.hpp) ,[JavaScript](./JavaScript/solutions_73/solutions_73.js) | Medium     |
+| Monotonic Stack                       | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)                                                                 | [JavaScript](./JavaScript/solutions_503/solutions_503.js)                                           | Medium     |
 
 ## InterviewBit
 
