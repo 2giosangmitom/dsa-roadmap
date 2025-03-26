@@ -2,6 +2,8 @@
 
 This repository contains some LeetCode and InterviewBit solutions implemented in C++ and JavaScript.
 
+![loc](https://tokei.rs/b1/github/2giosangmitom/practice?category=code&style=flat-square)
+
 ## LeetCode
 
 | Topic                                 | Link                                                                                                                                              | Solutions                                                                                           | Difficulty |
