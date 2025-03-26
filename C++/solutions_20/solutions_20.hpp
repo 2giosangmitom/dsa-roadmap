@@ -12,7 +12,7 @@ public:
       return false;
     }
 
-    stack<char> stack = {};
+    stack<char> stack;
     for (int i = 0; i < length; i++) {
       if (s[i] == '(' || s[i] == '{' || s[i] == '[') {
         stack.push(s[i]);
