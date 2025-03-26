@@ -59,6 +59,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Linked List                           | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)                                               | [JavaScript](./JavaScript/solutions_160/solutions_160.js)                                       | Easy       |
 | Array, Backtracking                   | [Permutations](https://leetcode.com/problems/permutations/)                                                                                       | [JavaScript](./JavaScript/solutions_46/solutions_46.js)                                         | Medium     |
 | Array, Backtracking                   | [Permutations II](https://leetcode.com/problems/permutations-ii/)                                                                                 | [JavaScript](./JavaScript/solutions_47/solutions_47.js)                                         | Medium     |
+| Matrix, Hash Set                      | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                                                                             | [JavaScript](./JavaScript/solutions_73/solutions_73.js)                                         | Medium     |
 
 ## InterviewBit
 
