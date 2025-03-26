@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { setZeroes } from "./solutions_73.js";
+import { setZeroes, setZeroes2 } from "./solutions_73.js";
 
 const testCases = [
 	{
@@ -31,8 +31,18 @@ const testCases = [
 describe("setZeroes", () => {
 	testCases.forEach(({ matrix, expected }, index) => {
 		test(`case ${index}`, () => {
-			const actual = Array.from(matrix);
+			const actual = Array.from(matrix, (v) => Array.from(v));
 			setZeroes(actual);
+			expect(actual).toStrictEqual(expected);
+		});
+	});
+});
+
+describe("setZeroes2", () => {
+	testCases.forEach(({ matrix, expected }, index) => {
+		test(`case ${index}`, () => {
+			const actual = Array.from(matrix, (v) => Array.from(v));
+			setZeroes2(actual);
 			expect(actual).toStrictEqual(expected);
 		});
 	});

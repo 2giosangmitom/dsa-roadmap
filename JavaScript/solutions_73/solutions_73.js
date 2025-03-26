@@ -31,4 +31,59 @@ function setZeroes(matrix) {
 	}
 }
 
-export { setZeroes };
+/**
+ * @param {number[][]} matrix
+ * @return {void} Do not return anything, modify matrix in-place instead.
+ */
+function setZeroes2(matrix) {
+	let firstRowHasZero = false;
+	let firstColHasZero = false;
+
+	const cols = matrix.length;
+	const rows = matrix[0].length;
+
+	for (let i = 0; i < rows; i++) {
+		if (matrix[0][i] === 0) {
+			firstColHasZero = true;
+			break;
+		}
+	}
+
+	for (let i = 0; i < cols; i++) {
+		if (matrix[i][0] === 0) {
+			firstRowHasZero = true;
+			break;
+		}
+	}
+
+	for (let i = 1; i < cols; i++) {
+		for (let j = 1; j < rows; j++) {
+			if (matrix[i][j] === 0) {
+				matrix[0][j] = 0;
+				matrix[i][0] = 0;
+			}
+		}
+	}
+
+	for (let i = 1; i < cols; i++) {
+		for (let j = 1; j < rows; j++) {
+			if (matrix[0][j] === 0 || matrix[i][0] === 0) {
+				matrix[i][j] = 0;
+			}
+		}
+	}
+
+	if (firstRowHasZero) {
+		for (let i = 0; i < cols; i++) {
+			matrix[i][0] = 0;
+		}
+	}
+
+	if (firstColHasZero) {
+		for (let i = 0; i < rows; i++) {
+			matrix[0][i] = 0;
+		}
+	}
+}
+
+export { setZeroes, setZeroes2 };
