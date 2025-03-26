@@ -1,5 +1,5 @@
+import { describe, expect, test } from "vitest";
 import { nextGreaterElements } from "./solutions_503.js";
-import { describe, test, expect } from "vitest";
 
 const testCases = [
 	{ nums: [1, 2, 1], expected: [2, -1, 2] },
