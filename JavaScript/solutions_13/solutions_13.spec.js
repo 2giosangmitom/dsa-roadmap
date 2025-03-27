@@ -1,5 +1,5 @@
+import { describe, expect, test } from "vitest";
 import { romanToInt } from "./solutions_13.js";
-import { describe, test, expect } from "vitest";
 
 const testCases = [
 	{ s: "III", expected: 3 },
