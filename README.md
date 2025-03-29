@@ -65,6 +65,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Monotonic Stack                       | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)                                                                 | [JavaScript](./JavaScript/solutions_503/solutions_503.js)                                           | Medium     |
 | Math, Hash Table                      | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                                                               | [JavaScript](./JavaScript/solutions_13/solutions_13.js)                                             | Easy       |
 | Backtracking                          | [Combinations](https://leetcode.com/problems/combinations/)                                                                                       | [JavaScript](./JavaScript/solutions_77/solutions_77.js)                                             | Medium     |
+| Math, Array                           | [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)                                                                         | [C++](./C++/solutions_227/solutions_227.hpp)                                                        | Medium     |
 
 ## InterviewBit
 
