@@ -67,6 +67,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Backtracking                          | [Combinations](https://leetcode.com/problems/combinations/)                                                                                       | [JavaScript](./JavaScript/solutions_77/solutions_77.js)                                                 | Medium     |
 | Math, Array                           | [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)                                                                         | [C++](./C++/solutions_227/solutions_227.hpp)                                                            | Medium     |
 | Stack                                 | [Basic Calculator](https://leetcode.com/problems/basic-calculator/)                                                                               | [C++](./C++/solutions_224/solutions_224.hpp), [JavaScript](./JavaScript/solutions_224/solutions_224.js) | Hard       |
+| Stack                                 | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)                               | [JavaScript](./JavaScript/solutions_1047/solutions_1047.js)                                             | Easy       |
 
 ## InterviewBit
 
