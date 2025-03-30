@@ -7,46 +7,39 @@ using namespace std;
 class Solution {
 public:
   int calculate(const string &s) {
-    stack<int> stack;
-    int result = 0;
-    int current_number = 0;
-    int sign = 1;
-    size_t len = s.size();
+    stack<int> stack;       // Stack to manage nested expressions
+    int result = 0;         // Stores the running sum of evaluated expressions
+    int current_number = 0; // Stores the number being built
+    int sign = 1;           // Tracks the current sign (1 for '+', -1 for '-')
 
-    for (size_t i = 0; i < len; i++) {
-      char current_char = s[i];
-
+    for (char current_char : s) {
       if (isdigit(current_char)) {
+        // Build the current number from consecutive digits
         current_number = current_number * 10 + (current_char - '0');
       } else if (current_char == '+' || current_char == '-') {
-        // If the current_char is an operator, add the current_number to result
-        // after multiplying it by its sign.
+        // Apply the previous number and update the sign for the next number
         result += current_number * sign;
-
-        // Reset the current_number to 0 and update the sign.
+        sign = (current_char == '+') ? 1 : -1;
         current_number = 0;
-        sign = current_char == '+' ? 1 : -1;
       } else if (current_char == '(') {
-        // If current_char is an opening parenthesis, a new nested expression is
-        // starting. Save the current result and sign by pushing to the stack
-        // and reset the sign and result.
+        // Push the current result and sign onto the stack before entering a
+        // nested expression
         stack.push(result);
-        stack.push(sign); // This is the sign of the nested expression.
+        stack.push(sign);
         result = 0;
         sign = 1;
       } else if (current_char == ')') {
-        // Finalize the result of the current nested expression.
-        result += sign * current_number;
-
-        result *= stack.top(); // Apply the sign of the nested expression.
+        // Apply the last computed number before exiting the nested expression
+        result += current_number * sign;
+        result *= stack.top(); // Retrieve the sign before '('
         stack.pop();
-        result += stack.top(); // Add result of the current nested expression to
-                               // previous result.
+        result += stack.top(); // Retrieve the result before '('
         stack.pop();
         current_number = 0;
       }
     }
 
+    // Add any remaining number in the expression
     return result + current_number * sign;
   }
 };
