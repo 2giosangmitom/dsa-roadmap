@@ -69,7 +69,7 @@ This repository contains some LeetCode and InterviewBit solutions implemented in
 | Stack                                 | [Basic Calculator](https://leetcode.com/problems/basic-calculator/)                                                                               | [C++](./C++/solutions_224/solutions_224.hpp), [JavaScript](./JavaScript/solutions_224/solutions_224.js) | Hard       |
 | Stack                                 | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)                               | [JavaScript](./JavaScript/solutions_1047/solutions_1047.js)                                             | Easy       |
 | Stack, Queue                          | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)                                                       | [JavaScript](./JavaScript/solutions_232/solutions_232.js)                                               | Easy       |
-| Deque, Sliding Window                 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                                                   | [JavaScript](./JavaScript/solutions_239/solutions_239.js)                                               | Hard       |
+| Deque, Sliding Window                 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                                                   | [C++](./C++/solutions_239/solutions_239.hpp), [JavaScript](./JavaScript/solutions_239/solutions_239.js) | Hard       |
 
 ## InterviewBit
 
