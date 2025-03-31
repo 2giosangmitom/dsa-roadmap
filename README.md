@@ -111,3 +111,29 @@ Each topic includes **curated LeetCode problems** and explanations to help you b
 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                                   | [C++](./C++/solutions_36/solutions_36.hpp)                                                          | Medium     |
 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)                   | [JavaScript](./JavaScript/solutions_128/solutions_128.js)                                           | Medium     |
 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                                         | [C++](./C++/solutions_73/solutions_73.hpp) ,[JavaScript](./JavaScript/solutions_73/solutions_73.js) | Medium     |
+
+### Sliding Window
+
+- [ ] : Add introduction to Sliding Window
+
+| Link                                                                                                                                        | Solutions                                      | Difficulty |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
+| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)             | [C++](./C++/solutions_3/solutions_3.hpp)       | Medium     |
+| [Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | [C++](./C++/solutions_1358/solutions_1358.hpp) | Medium     |
+| [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)                           | [C++](./C++/solutions_424/solutions_424.hpp)   | Medium     |
+
+### Binary Search
+
+- [ ] : Add introduction to Binary Search
+
+| Link                                                                                                                                              | Solutions                                                                                               | Difficulty |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ---------- |
+| [Binary Search](https://leetcode.com/problems/binary-search/)                                                                                     | [C++](./C++/solutions_704/solutions_704.hpp)                                                            | Easy       |
+| [Maximum Count of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/)   | [C++](./C++/solutions_2529/solutions_2529.hpp)                                                          | Easy       |
+| [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [C++](./C++/solutions_34/solutions_34.hpp)                                                              | Medium     |
+| [WoodCutting Made Easy](https://www.interviewbit.com/problems/woodcutting-made-easy/)                                                             | [C++](./C++/solutions_woodcutting/solutions_woodcutting.hpp)                                            | Medium     |
+| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)                                                   | [C++](./C++/solutions_33/solutions_33.hpp)                                                              | Medium     |
+| [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)                                                         | [C++](./C++/solutions_4/solutions_4.hpp)                                                                | Hard       |
+| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)                                                                           | [C++](./C++/solutions_74/solutions_74.hpp)                                                              | Medium     |
+| [Find Peak Element](https://leetcode.com/problems/find-peak-element/)                                                                             | [C++](./C++/solutions_162/solutions_162.hpp)                                                            | Medium     |
+| [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)                                                                 | [C++](./C++/solutions_528/solutions_528.hpp), [JavaScript](./JavaScript/solutions_528/solutions_528.js) | Medium     |
