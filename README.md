@@ -17,4 +17,40 @@ Before diving into these coding problems, It's important to ensure you have a so
 - Know about simple data structures like array and linked list.
 - Be familiar with algebra, including logarithms and exponents.
 - Understand the basic of recursion.
-- Understand how big O notation and complexity analysis work.
+- Understand how Big O notation and complexity analysis work.
+
+## The Roadmap
+
+```mermaid
+---
+title: DSA Roadmap
+---
+flowchart TD
+    A[Two Pointers]
+    B[Hash Maps and Sets]
+    C[Linked Lists]
+    D[Fast and Slow Pointers]
+    E[Binary Search]
+    F[Sliding Window]
+    G[Prefix Sums]
+    J[Stacks and Queues]
+    R[Heaps]
+    T[Trees]
+    W[Intervals]
+    Q[Sort and Search]
+    U[Tries]
+    X[Graphs]
+    Y[Backtracking]
+    K[Dynamic Programming]
+    O[Bit Manipulation]
+    V[Greedy]
+    M[Math and Geometry]
+    A --> B
+    B --> C & E & F & G & J
+    C --> D & J
+    J --> R
+    R --> T & W & Q
+    T --> U & X & Y
+    Y --> K
+    K --> O & V & M
+```
