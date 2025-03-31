@@ -166,3 +166,11 @@ Each topic includes **curated LeetCode problems** and explanations to help you b
 | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | [JavaScript](./JavaScript/solutions_1047/solutions_1047.js)                                             | Easy       |
 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)                         | [JavaScript](./JavaScript/solutions_232/solutions_232.js)                                               | Easy       |
 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                     | [C++](./C++/solutions_239/solutions_239.hpp), [JavaScript](./JavaScript/solutions_239/solutions_239.js) | Hard       |
+
+### Backtracking
+
+| Link                                                              | Solutions                                               | Difficulty |
+| ----------------------------------------------------------------- | ------------------------------------------------------- | ---------- |
+| [Permutations](https://leetcode.com/problems/permutations/)       | [JavaScript](./JavaScript/solutions_46/solutions_46.js) | Medium     |
+| [Permutations II](https://leetcode.com/problems/permutations-ii/) | [JavaScript](./JavaScript/solutions_47/solutions_47.js) | Medium     |
+| [Combinations](https://leetcode.com/problems/combinations/)       | [JavaScript](./JavaScript/solutions_77/solutions_77.js) | Medium     |
