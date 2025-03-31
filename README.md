@@ -137,3 +137,19 @@ Each topic includes **curated LeetCode problems** and explanations to help you b
 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)                                                                           | [C++](./C++/solutions_74/solutions_74.hpp)                                                              | Medium     |
 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/)                                                                             | [C++](./C++/solutions_162/solutions_162.hpp)                                                            | Medium     |
 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)                                                                 | [C++](./C++/solutions_528/solutions_528.hpp), [JavaScript](./JavaScript/solutions_528/solutions_528.js) | Medium     |
+
+### Math
+
+| Link                                                                                                                      | Solutions                                                   | Difficulty |
+| ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | ---------- |
+| [Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/) | [C++](./C++/solutions_1780/solutions_1780.hpp)              | Medium     |
+| [Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/)                           | [C++](./C++/solutions_2523/solutions_2523.hpp)              | Medium     |
+| [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                         | [C++](./C++/solutions_7/solutions_7.hpp)                    | Medium     |
+| [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/)                                                   | [JavaScript](./JavaScript/solutions_3360/solutions_3360.js) | Easy       |
+| [Water Bottles](https://leetcode.com/problems/water-bottles/)                                                             | [C++](./C++/solutions_1518/solutions_1518.hpp)              | Easy       |
+| [Count Primes](https://leetcode.com/problems/count-primes/)                                                               | [C++](./C++/solutions_204/solutions_204.hpp)                | Medium     |
+| [Add Digits](https://leetcode.com/problems/add-digits/)                                                                   | [C++](./C++/solutions_258/solutions_258.hpp)                | Easy       |
+| [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                     | [C++](./C++/solutions_9/solutions_9.hpp)                    | Easy       |
+| [Power of Two](https://leetcode.com/problems/power-of-two/)                                                               | [C++](./C++/solutions_231/solutions_231.hpp)                | Easy       |
+| [Pow(x, n)](https://leetcode.com/problems/powx-n/)                                                                        | [C++](./C++/solutions_50/solutions_50.hpp)                  | Medium     |
+| [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)                                                 | [C++](./C++/solutions_227/solutions_227.hpp)                | Medium     |
