@@ -67,7 +67,7 @@ Each topic includes **curated LeetCode problems** and explanations to help you b
 
 ### Two Pointers
 
-- [ ]: Add introduction to Two Pointers
+- [ ] : Add introduction to Two Pointers
 
 | Link                                                                                                            | Solutions                                               | Difficulty |
 | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | ---------- |
@@ -82,3 +82,32 @@ Each topic includes **curated LeetCode problems** and explanations to help you b
 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                   | [C++](./C++/solutions_5/solutions_5.hpp)                | Medium     |
 | [Next Permutation](https://leetcode.com/problems/next-permutation/)                                             | [C++](./C++/solutions_31/solutions_31.hpp)              | Medium     |
 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [JavaScript](./JavaScript/solutions_80/solutions_80.js) | Medium     |
+
+### Linked Lists
+
+- [ ] : Add introduction to Linked Lists
+
+| Link                                                                                                              | Solutions                                                 | Difficulty |
+| ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ---------- |
+| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                                 | [C++](./C++/solutions_2/solutions_2.hpp)                  | Medium     |
+| [Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/) | [C++](./C++/solutions_430/solutions_430.hpp)              | Medium     |
+| [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)               | [C++](./C++/solutions_19/solutions_19.hpp)                | Medium     |
+| [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                             | [C++](./C++/solutions_876/solutions_876.hpp)              | Easy       |
+| [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)               | [JavaScript](./JavaScript/solutions_160/solutions_160.js) | Easy       |
+| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                             | [C++](./C++/solutions_141/solutions_141.hpp)              | Easy       |
+
+### Hash Maps and Hash Sets
+
+- [ ] : Add introduction to Hash Maps and Hash Sets
+
+| Link                                                                                                          | Solutions                                                                                           | Difficulty |
+| ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------- |
+| [LRU Cache](https://leetcode.com/problems/lru-cache/)                                                         | [C++](./C++/solutions_146/solutions_146.hpp)                                                        | Medium     |
+| [Two Sum](https://leetcode.com/problems/two-sum/)                                                             | [C++](./C++/solutions_1/solutions_1.hpp), [JavaScript](./JavaScript/solutions_1/solutions_1.js)     | Easy       |
+| [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)           | [C++](./C++/solutions_2965/solutions_2965.hpp)                                                      | Easy       |
+| [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) | [C++](./C++/solutions_2570/solutions_2570.hpp)                                                      | Easy       |
+| [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)                                   | [C++](./C++/solutions_1512/solutions_1512.hpp)                                                      | Easy       |
+| [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                           | [JavaScript](./JavaScript/solutions_13/solutions_13.js)                                             | Easy       |
+| [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                                   | [C++](./C++/solutions_36/solutions_36.hpp)                                                          | Medium     |
+| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)                   | [JavaScript](./JavaScript/solutions_128/solutions_128.js)                                           | Medium     |
+| [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                                         | [C++](./C++/solutions_73/solutions_73.hpp) ,[JavaScript](./JavaScript/solutions_73/solutions_73.js) | Medium     |
