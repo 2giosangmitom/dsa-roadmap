@@ -153,3 +153,16 @@ Each topic includes **curated LeetCode problems** and explanations to help you b
 | [Power of Two](https://leetcode.com/problems/power-of-two/)                                                               | [C++](./C++/solutions_231/solutions_231.hpp)                | Easy       |
 | [Pow(x, n)](https://leetcode.com/problems/powx-n/)                                                                        | [C++](./C++/solutions_50/solutions_50.hpp)                  | Medium     |
 | [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)                                                 | [C++](./C++/solutions_227/solutions_227.hpp)                | Medium     |
+
+### Stacks and Queues
+
+- [ ] : Add introduction to Stacks and Queues
+
+| Link                                                                                                                | Solutions                                                                                               | Difficulty |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ---------- |
+| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                                               | [C++](./C++/solutions_20/solutions_20.hpp)                                                              | Easy       |
+| [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)                                   | [JavaScript](./JavaScript/solutions_503/solutions_503.js)                                               | Medium     |
+| [Basic Calculator](https://leetcode.com/problems/basic-calculator/)                                                 | [C++](./C++/solutions_224/solutions_224.hpp), [JavaScript](./JavaScript/solutions_224/solutions_224.js) | Hard       |
+| [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | [JavaScript](./JavaScript/solutions_1047/solutions_1047.js)                                             | Easy       |
+| [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)                         | [JavaScript](./JavaScript/solutions_232/solutions_232.js)                                               | Easy       |
+| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                     | [C++](./C++/solutions_239/solutions_239.hpp), [JavaScript](./JavaScript/solutions_239/solutions_239.js) | Hard       |
