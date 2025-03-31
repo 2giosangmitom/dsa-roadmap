@@ -69,19 +69,21 @@ Each topic includes **curated LeetCode problems** and explanations to help you b
 
 - [ ] : Add introduction to Two Pointers
 
-| Link                                                                                                            | Solutions                                               | Difficulty |
-| --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | ---------- |
-| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                             | [C++](./C++/solutions_125/solutions_125.hpp)            | Easy       |
-| [Remove Element](https://leetcode.com/problems/remove-element/)                                                 | [C++](./C++/solutions_27/solutions_27.hpp)              | Easy       |
-| [Reverse String](https://leetcode.com/problems/reverse-string/)                                                 | [C++](./C++/solutions_344/solutions_344.hpp)            | Easy       |
-| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                           | [C++](./C++/solutions_11/solutions_11.hpp)              | Medium     |
-| [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/)   | [C++](./C++/solutions_2570/solutions_2570.hpp)          | Easy       |
-| [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)       | [C++](./C++/solutions_26/solutions_26.hpp)              | Easy       |
-| [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)           | [C++](./C++/solutions_167/solutions_167.hpp)            | Medium     |
-| [3Sum](https://leetcode.com/problems/3sum/)                                                                     | [C++](./C++/solutions_15/solutions_15.hpp)              | Medium     |
-| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                   | [C++](./C++/solutions_5/solutions_5.hpp)                | Medium     |
-| [Next Permutation](https://leetcode.com/problems/next-permutation/)                                             | [C++](./C++/solutions_31/solutions_31.hpp)              | Medium     |
-| [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [JavaScript](./JavaScript/solutions_80/solutions_80.js) | Medium     |
+| Link                                                                                                            | Solutions                                                                                               | Difficulty |
+| --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ---------- |
+| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                             | [C++](./C++/solutions_125/solutions_125.hpp)                                                            | Easy       |
+| [Remove Element](https://leetcode.com/problems/remove-element/)                                                 | [C++](./C++/solutions_27/solutions_27.hpp)                                                              | Easy       |
+| [Reverse String](https://leetcode.com/problems/reverse-string/)                                                 | [C++](./C++/solutions_344/solutions_344.hpp)                                                            | Easy       |
+| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                           | [C++](./C++/solutions_11/solutions_11.hpp)                                                              | Medium     |
+| [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/)   | [C++](./C++/solutions_2570/solutions_2570.hpp)                                                          | Easy       |
+| [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                                         | [C++](./C++/solutions_88/solutions_88.hpp)                                                              | Easy       |
+| [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)       | [C++](./C++/solutions_26/solutions_26.hpp)                                                              | Easy       |
+| [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)           | [C++](./C++/solutions_167/solutions_167.hpp)                                                            | Medium     |
+| [3Sum](https://leetcode.com/problems/3sum/)                                                                     | [C++](./C++/solutions_15/solutions_15.hpp)                                                              | Medium     |
+| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                   | [C++](./C++/solutions_5/solutions_5.hpp)                                                                | Medium     |
+| [Next Permutation](https://leetcode.com/problems/next-permutation/)                                             | [C++](./C++/solutions_31/solutions_31.hpp)                                                              | Medium     |
+| [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [JavaScript](./JavaScript/solutions_80/solutions_80.js)                                                 | Medium     |
+| [Rotate Array](https://leetcode.com/problems/rotate-array/)                                                     | [C++](./C++/solutions_189/solutions_189.hpp), [JavaScript](./JavaScript/solutions_189/solutions_189.js) | Medium     |
 
 ### Linked Lists
 
@@ -174,3 +176,18 @@ Each topic includes **curated LeetCode problems** and explanations to help you b
 | [Permutations](https://leetcode.com/problems/permutations/)       | [JavaScript](./JavaScript/solutions_46/solutions_46.js) | Medium     |
 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | [JavaScript](./JavaScript/solutions_47/solutions_47.js) | Medium     |
 | [Combinations](https://leetcode.com/problems/combinations/)       | [JavaScript](./JavaScript/solutions_77/solutions_77.js) | Medium     |
+
+### Sort and Search
+
+| Link                                                          | Solutions                                                 | Difficulty |
+| ------------------------------------------------------------- | --------------------------------------------------------- | ---------- |
+| [Sort an Array](https://leetcode.com/problems/sort-an-array/) | [JavaScript](./JavaScript/solutions_912/solutions_912.js) | Medium     |
+
+### Must try
+
+| Link                                                                                                              | Solutions                                    | Difficulty |
+| ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
+| [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                     | [C++](./C++/solutions_14/solutions_14.hpp)   | Easy       |
+| [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                                 | [C++](./C++/solutions_8/solutions_8.hpp)     | Medium     |
+| [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/) | [C++](./C++/solutions_747/solutions_747.hpp) | Easy       |
+| [Flood Fill](https://leetcode.com/problems/flood-fill/)                                                           | [C++](./C++/solutions_733/solutions_733.hpp) | Easy       |
