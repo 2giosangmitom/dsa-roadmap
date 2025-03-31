@@ -21,40 +21,42 @@ Before diving into the roadmap, ensure you have a solid foundation in these key 
 
 ## The Roadmap
 
-This roadmap follows a **progressive learning approach**, covering essential patterns and problem-solving strategies:
+This is my roadmap to learn DSA.
 
 ```mermaid
 ---
 title: DSA Roadmap
 ---
 flowchart TD
-    A[Two Pointers]
-    B[Hash Maps and Sets]
-    C[Linked Lists]
-    D[Fast and Slow Pointers]
-    E[Binary Search]
-    F[Sliding Window]
-    G[Prefix Sums]
-    J[Stacks and Queues]
-    R[Heaps]
-    T[Trees]
-    W[Intervals]
-    Q[Sort and Search]
-    U[Tries]
-    X[Graphs]
-    Y[Backtracking]
-    K[Dynamic Programming]
-    O[Bit Manipulation]
-    V[Greedy]
-    M[Math and Geometry]
-    A --> B
-    B --> C & E & F & G & J
-    C --> D & J
-    J --> R
-    R --> T & W & Q
-    T --> U & X & Y
-    Y --> K
-    K --> O & V & M
+    %% Basic Foundations
+    A[Two Pointers] --> B[Hash Maps and Sets]
+    A --> C[Linked Lists]
+    B --> E[Binary Search]
+    B --> F[Sliding Window]
+    B --> G[Prefix Sums]
+    
+    %% Intermediate Concepts
+    C --> D[Fast and Slow Pointers]
+    C --> J[Stacks and Queues]
+    J --> R[Heaps]
+    
+    %% Advanced Data Structures
+    R --> T[Trees]
+    R --> W[Intervals]
+    R --> Q[Sort and Search]
+    T --> U[Tries]
+    T --> X[Graphs]
+    X --> Y[Backtracking]
+    
+    %% Problem-Solving Techniques
+    Y --> K[Dynamic Programming]
+    K --> O[Bit Manipulation]
+    K --> V[Greedy]
+    K --> M[Math and Geometry]
+    
+    %% Additional Paths
+    W --> Q
+    Q --> E
 ```
 
 Each topic includes **curated LeetCode problems** and explanations to help you build a **strong problem-solving foundation**.
