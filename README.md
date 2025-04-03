@@ -169,6 +169,12 @@ Each topic includes **curated LeetCode problems** and explanations to help you b
 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)                         | [JavaScript](./JavaScript/solutions_232/solutions_232.js)                                               | Easy       |
 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                     | [C++](./C++/solutions_239/solutions_239.hpp), [JavaScript](./JavaScript/solutions_239/solutions_239.js) | Hard       |
 
+### Heaps
+
+| Link                                                                              | Solutions                                                 | Difficulty |
+| --------------------------------------------------------------------------------- | --------------------------------------------------------- | ---------- |
+| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [JavaScript](./JavaScript/solutions_347/solutions_347.js) | Medium     |
+
 ### Backtracking
 
 | Link                                                              | Solutions                                               | Difficulty |

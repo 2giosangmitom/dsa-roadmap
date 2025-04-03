@@ -1,5 +1,5 @@
-import { subsets } from "./solutions_78.js";
 import { describe, expect, test } from "vitest";
+import { subsets } from "./solutions_78.js";
 
 const testCases = [
 	{

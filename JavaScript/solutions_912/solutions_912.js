@@ -84,9 +84,7 @@ function heapify(nums, n, index) {
 	}
 
 	if (index !== max) {
-		const tmp = nums[index];
-		nums[index] = nums[max];
-		nums[max] = tmp;
+		[nums[index], nums[max]] = [nums[max], nums[index]];
 		heapify(nums, n, max);
 	}
 }
@@ -102,9 +100,7 @@ function heapSort(nums) {
 	}
 
 	for (let i = nums.length - 1; i > 0; i--) {
-		const tmp = nums[0];
-		nums[0] = nums[i];
-		nums[i] = tmp;
+		[nums[0], nums[i]] = [nums[i], nums[0]];
 		heapify(nums, i, 0);
 	}
 }
