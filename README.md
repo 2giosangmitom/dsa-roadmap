@@ -174,6 +174,7 @@ Each topic includes **curated LeetCode problems** and explanations to help you b
 | Link                                                                              | Solutions                                                 | Difficulty |
 | --------------------------------------------------------------------------------- | --------------------------------------------------------- | ---------- |
 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [JavaScript](./JavaScript/solutions_347/solutions_347.js) | Medium     |
+| [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/)       | [C++](./C++/solutions_692/solutions_692.hpp)              | Medium     |
 
 ### Backtracking
 
