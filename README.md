@@ -66,6 +66,12 @@ flowchart TD
 > [!NOTE]
 > All solutions in this repository are written in **C++ only**. If you're not familiar with C++, I highly recommend learning the basic syntax and core concepts before diving into the problems.
 
+### Hash Maps & Hash Sets
+
+| Link                           | Solutions                                | Difficulty |
+| ------------------------------ | ---------------------------------------- | ---------- |
+| [Two Sum](https://dub.sh/lc-1) | [C++](./src/solutions_1/solutions_1.hpp) | Easy       |
+
 ## 📌 Final Thoughts
 
 This roadmap is a **living document**. I will continue to refine it as I grow and learn more.
