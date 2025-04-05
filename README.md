@@ -171,12 +171,13 @@ Each topic includes **curated LeetCode problems** and explanations to help you b
 
 ### Heaps
 
-| Link                                                                                        | Solutions                                                                                           | Difficulty |
-| ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------- |
-| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)           | [JavaScript](./JavaScript/solutions_347/solutions_347.js)                                           | Medium     |
-| [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/)                 | [C++](./C++/solutions_692/solutions_692.hpp)                                                        | Medium     |
-| [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)                 | [C++](./C++/solutions_23/solutions_23.hpp), [JavaScript](./JavaScript/solutions_23/solutions_23.js) | Hard       |
-| [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | [C++](./C++/solutions_295/solutions_295.hpp)                                                        | Hard       |
+| Link                                                                                              | Solutions                                                                                           | Difficulty |
+| ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------- |
+| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                 | [JavaScript](./JavaScript/solutions_347/solutions_347.js)                                           | Medium     |
+| [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/)                       | [C++](./C++/solutions_692/solutions_692.hpp)                                                        | Medium     |
+| [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)                       | [C++](./C++/solutions_23/solutions_23.hpp), [JavaScript](./JavaScript/solutions_23/solutions_23.js) | Hard       |
+| [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)       | [C++](./C++/solutions_295/solutions_295.hpp)                                                        | Hard       |
+| [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [C++](./C++/solutions_215/solutions_215.hpp)                                                        | Medium     |
 
 ### Backtracking
 
