@@ -15,10 +15,8 @@
       packages = with pkgs; [
         gtest
         cmake
-        clang
+        gcc
       ];
-      CC = "${pkgs.clang}/bin/clang";
-      CXX = "${pkgs.clang}/bin/clang++";
     };
     formatter.${system} = pkgs.alejandra;
   };
