@@ -11,12 +11,13 @@
     system = "x86_64-linux";
     pkgs = import nixpkgs {inherit system;};
   in {
-    devShells.${system}.default = pkgs.mkShell {
+    devShells.${system}.default = pkgs.mkShellNoCC {
       packages = with pkgs; [
         gtest
         cmake
-        gcc
+        clang
       ];
+      CXX = "${pkgs.clang}/bin/clang++";
     };
     formatter.${system} = pkgs.alejandra;
   };

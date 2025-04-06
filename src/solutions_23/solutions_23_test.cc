@@ -18,7 +18,11 @@ TEST_P(Solutions_23_Test, ) {
   }
 
   auto result = unique_ptr<ListNode>(solution.mergeKLists(list_nodes));
-  EXPECT_EQ(*result.get(), *expected_list.get());
+  if (result.get() == nullptr) {
+    EXPECT_EQ(result.get(), expected_list.get());
+  } else {
+    EXPECT_EQ(*result.get(), *expected_list.get());
+  }
 }
 
 INSTANTIATE_TEST_SUITE_P(
