@@ -168,6 +168,12 @@ flowchart TD
 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)       | [C++](./src/solutions_295/solutions_295.hpp) | Hard       |
 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [C++](./src/solutions_215/solutions_215.hpp) | Medium     |
 
+### Intervals
+
+| Link                                                              | Solutions                                  | Difficulty |
+| ----------------------------------------------------------------- | ------------------------------------------ | ---------- |
+| [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [C++](./src/solutions_56/solutions_56.hpp) | Medium     |
+
 ### Backtracking
 
 | Link                                                              | Solutions | Difficulty |
