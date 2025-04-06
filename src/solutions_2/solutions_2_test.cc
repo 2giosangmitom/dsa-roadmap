@@ -12,9 +12,9 @@ protected:
 
 TEST_P(Solutions_2_Test, AddTwoNumbers) {
   auto [l1_values, l2_values, expected_values] = GetParam();
-  auto l1 = make_list(l1_values);
-  auto l2 = make_list(l2_values);
-  auto expected = make_list(expected_values);
+  auto l1 = unique_ptr<ListNode>(make_list(l1_values));
+  auto l2 = unique_ptr<ListNode>(make_list(l2_values));
+  auto expected = unique_ptr<ListNode>(make_list(expected_values));
 
   auto actual = solution.addTwoNumbers(l1.get(), l2.get());
 

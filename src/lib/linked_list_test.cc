@@ -6,7 +6,9 @@
 
 class LinkedListTest : public testing::TestWithParam<vector<int>> {
 protected:
-  unique_ptr<ListNode> makeListFromParam() { return make_list(GetParam()); }
+  unique_ptr<ListNode> makeListFromParam() {
+    return unique_ptr<ListNode>(make_list(GetParam()));
+  }
 };
 
 // --- Test: Create List ---

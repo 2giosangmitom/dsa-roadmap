@@ -9,8 +9,8 @@ protected:
 
 TEST_P(Solutions_19_Test, ) {
   auto [head_values, pos, expected_values] = GetParam();
-  auto head = make_list(head_values);
-  auto expected = make_list(expected_values);
+  auto head = unique_ptr<ListNode>(make_list(head_values));
+  auto expected = unique_ptr<ListNode>(make_list(expected_values));
 
   ListNode *actual = solution.removeNthFromEnd(head.get(), pos);
 

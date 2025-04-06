@@ -10,14 +10,14 @@ ListNode::ListNode(int val, ListNode *next) : val{val}, next{next} {}
 ListNode::~ListNode() { delete next; }
 
 // Factory function to create linked list
-unique_ptr<ListNode> make_list(const vector<int> &list) {
-  unique_ptr<ListNode> head;
-  ListNode *current = head.get();
+ListNode *make_list(const vector<int> &list) {
+  ListNode *head = nullptr;
+  ListNode *current = head;
 
   for (const int &val : list) {
     auto new_node = new ListNode(val);
     if (current == nullptr) {
-      head.reset(new_node);
+      head = new_node;
       current = new_node;
     } else {
       current->next = new_node;

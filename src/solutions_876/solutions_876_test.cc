@@ -10,7 +10,7 @@ protected:
 
 TEST_P(Solutions_876_Test, ) {
   auto [nums, index] = GetParam();
-  auto head = make_list(nums);
+  auto head = unique_ptr<ListNode>(make_list(nums));
   ListNode *expected = head.get();
   for (int i = 0; i < index; i++) {
     expected = expected->next;
