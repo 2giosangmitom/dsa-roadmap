@@ -66,11 +66,17 @@ flowchart TD
 > [!NOTE]
 > All solutions in this repository are written in **C++ only**. If you're not familiar with C++, I highly recommend learning the basic syntax and core concepts before diving into the problems.
 
+### Linked Lists
+
+| Link                                                              | Solutions                                | Difficulty |
+| ----------------------------------------------------------------- | ---------------------------------------- | ---------- |
+| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [C++](./src/solutions_2/solutions_2.hpp) | Medium     |
+
 ### Hash Maps & Hash Sets
 
-| Link                           | Solutions                                | Difficulty |
-| ------------------------------ | ---------------------------------------- | ---------- |
-| [Two Sum](https://dub.sh/lc-1) | [C++](./src/solutions_1/solutions_1.hpp) | Easy       |
+| Link                                              | Solutions                                | Difficulty |
+| ------------------------------------------------- | ---------------------------------------- | ---------- |
+| [Two Sum](https://leetcode.com/problems/two-sum/) | [C++](./src/solutions_1/solutions_1.hpp) | Easy       |
 
 ## 📌 Final Thoughts
 
