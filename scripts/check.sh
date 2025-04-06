@@ -12,8 +12,7 @@ MISSINGS=()
 
 files=$(find "src/" -type f -name "solutions_*.hpp")
 for solution in $files; do
-  filename=$(basename "$solution")
-  if ! contains "$filename"; then
+  if ! contains "$solution"; then
     MISSINGS+=("$solution")
   fi
 done

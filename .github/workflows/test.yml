@@ -1,0 +1,27 @@
+name: Test C++
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@main
+
+      - name: Run build
+        run: nix develop --command bash -c "cmake -B build && cmake --build build"
+
+      - name: Run tests
+        run: nix develop --command bash -c "ctest --test-dir build"
