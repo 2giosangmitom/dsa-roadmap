@@ -104,9 +104,9 @@ flowchart TD
 | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)           | [C++](./src/solutions_2965/solutions_2965.hpp) | Easy       |
 | [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) | [C++](./src/solutions_2570/solutions_2570.hpp) | Easy       |
 | [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)                                   | [C++](./src/solutions_1512/solutions_1512.hpp) | Easy       |
-| [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                           | Pending                                        | Easy       |
+| [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                           | [C++](./src/solutions_13/solutions_13.hpp)     | Easy       |
 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                                   | [C++](./src/solutions_36/solutions_36.hpp)     | Medium     |
-| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)                   | Pending                                        | Medium     |
+| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)                   | [C++](./src/solutions_128/solutions_128.hpp)   | Medium     |
 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                                         | [C++](./src/solutions_73/solutions_73.hpp)     | Medium     |
 
 ### Sliding Window
