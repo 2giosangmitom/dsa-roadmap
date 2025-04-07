@@ -81,7 +81,7 @@ flowchart TD
 | [3Sum](https://leetcode.com/problems/3sum/)                                                                     | [C++](./src/solutions_15/solutions_15.hpp)     | Medium     |
 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                   | [C++](./src/solutions_5/solutions_5.hpp)       | Medium     |
 | [Next Permutation](https://leetcode.com/problems/next-permutation/)                                             | [C++](./src/solutions_31/solutions_31.hpp)     | Medium     |
-| [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | Pending                                        | Medium     |
+| [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [C++](./src/solutions_80/solutions_80.hpp)     | Medium     |
 | [Rotate Array](https://leetcode.com/problems/rotate-array/)                                                     | [C++](./src/solutions_189/solutions_189.hpp)   | Medium     |
 
 ### Linked Lists
