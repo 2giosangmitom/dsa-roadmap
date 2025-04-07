@@ -1,12 +1,12 @@
 #include "solutions_128.hpp"
 #include <gtest/gtest.h>
 
-class Solutions_128 : public testing::TestWithParam<tuple<vector<int>, int>> {
+class Solutions_128_Test : public testing::TestWithParam<tuple<vector<int>, int>> {
 protected:
   Solution solutions;
 };
 
-TEST_P(Solutions_128, ) {
+TEST_P(Solutions_128_Test, ) {
   auto [input, expected] = GetParam();
 
   int actual = solutions.longestConsecutive(input);
@@ -15,7 +15,7 @@ TEST_P(Solutions_128, ) {
 }
 
 INSTANTIATE_TEST_SUITE_P(
-    , Solutions_128,
+    , Solutions_128_Test,
     testing::Values(make_tuple(vector<int>{}, 0),
                     make_tuple(vector<int>{100}, 1),
                     make_tuple(vector<int>{10, 30, 50}, 1),

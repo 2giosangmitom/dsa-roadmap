@@ -138,7 +138,7 @@ flowchart TD
 | [Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/) | [C++](./src/solutions_1780/solutions_1780.hpp) | Medium     |
 | [Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/)                           | [C++](./src/solutions_2523/solutions_2523.hpp) | Medium     |
 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                         | [C++](./src/solutions_7/solutions_7.hpp)       | Medium     |
-| [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/)                                                   | Pending                                        | Easy       |
+| [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/)                                                   | [C++](./src/solutions_3360/solutions_3360.hpp) | Easy       |
 | [Water Bottles](https://leetcode.com/problems/water-bottles/)                                                             | [C++](./src/solutions_1518/solutions_1518.hpp) | Easy       |
 | [Count Primes](https://leetcode.com/problems/count-primes/)                                                               | [C++](./src/solutions_204/solutions_204.hpp)   | Medium     |
 | [Add Digits](https://leetcode.com/problems/add-digits/)                                                                   | [C++](./src/solutions_258/solutions_258.hpp)   | Easy       |
