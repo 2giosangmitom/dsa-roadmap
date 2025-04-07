@@ -170,9 +170,10 @@ flowchart TD
 
 ### Intervals
 
-| Link                                                              | Solutions                                  | Difficulty |
-| ----------------------------------------------------------------- | ------------------------------------------ | ---------- |
-| [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [C++](./src/solutions_56/solutions_56.hpp) | Medium     |
+| Link                                                                                      | Solutions                                    | Difficulty |
+| ----------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
+| [Merge Intervals](https://leetcode.com/problems/merge-intervals/)                         | [C++](./src/solutions_56/solutions_56.hpp)   | Medium     |
+| [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | [C++](./src/solutions_986/solutions_986.hpp) | Medium     |
 
 ### Backtracking
 
