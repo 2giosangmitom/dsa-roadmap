@@ -152,7 +152,7 @@ flowchart TD
 | Link                                                                                                                | Solutions                                    | Difficulty |
 | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                                               | [C++](./src/solutions_20/solutions_20.hpp)   | Easy       |
-| [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)                                   | Pending                                      | Medium     |
+| [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)                                   | [C++](./src/solutions_503/solutions_503.hpp) | Medium     |
 | [Basic Calculator](https://leetcode.com/problems/basic-calculator/)                                                 | [C++](./src/solutions_224/solutions_224.hpp) | Hard       |
 | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | Pending                                      | Easy       |
 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)                         | Pending                                      | Easy       |
