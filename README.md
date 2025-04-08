@@ -156,7 +156,7 @@ flowchart TD
 
 | Link                                                                                              | Solutions                                    | Difficulty |
 | ------------------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
-| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                 | Pending                                      | Medium     |
+| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                 | [C++](./src/solutions_347/solutions_347.hpp) | Medium     |
 | [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/)                       | [C++](./src/solutions_692/solutions_692.hpp) | Medium     |
 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)                       | [C++](./src/solutions_23/solutions_23.hpp)   | Hard       |
 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)       | [C++](./src/solutions_295/solutions_295.hpp) | Hard       |
