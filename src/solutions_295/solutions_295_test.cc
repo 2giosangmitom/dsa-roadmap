@@ -1,9 +1,7 @@
 #include "solutions_295.hpp"
 #include <gtest/gtest.h>
 
-class Solutions_295_Test : public testing::Test {};
-
-TEST_F(Solutions_295_Test, case1) {
+TEST(Solutions_295_Test, case1) {
   MedianFinder s;
 
   s.addNum(1);
@@ -16,7 +14,7 @@ TEST_F(Solutions_295_Test, case1) {
   EXPECT_EQ(s.findMedian(), 2);
 }
 
-TEST_F(Solutions_295_Test, case2) {
+TEST(Solutions_295_Test, case2) {
   MedianFinder s;
 
   s.addNum(-1);
@@ -29,13 +27,13 @@ TEST_F(Solutions_295_Test, case2) {
   EXPECT_EQ(s.findMedian(), -2);
 }
 
-TEST_F(Solutions_295_Test, singleElement) {
+TEST(Solutions_295_Test, singleElement) {
   MedianFinder s;
   s.addNum(42);
   EXPECT_EQ(s.findMedian(), 42);
 }
 
-TEST_F(Solutions_295_Test, evenNumberOfElements) {
+TEST(Solutions_295_Test, evenNumberOfElements) {
   MedianFinder s;
   s.addNum(10);
   s.addNum(20);
@@ -44,7 +42,7 @@ TEST_F(Solutions_295_Test, evenNumberOfElements) {
   EXPECT_EQ(s.findMedian(), 25);
 }
 
-TEST_F(Solutions_295_Test, withDuplicates) {
+TEST(Solutions_295_Test, withDuplicates) {
   MedianFinder s;
   s.addNum(5);
   s.addNum(15);
@@ -53,7 +51,7 @@ TEST_F(Solutions_295_Test, withDuplicates) {
   EXPECT_EQ(s.findMedian(), 5);
 }
 
-TEST_F(Solutions_295_Test, highLowAlternating) {
+TEST(Solutions_295_Test, highLowAlternating) {
   MedianFinder s;
   s.addNum(1000);
   EXPECT_EQ(s.findMedian(), 1000);
