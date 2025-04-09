@@ -169,6 +169,12 @@ flowchart TD
 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/)                         | [C++](./src/solutions_56/solutions_56.hpp)   | Medium     |
 | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | [C++](./src/solutions_986/solutions_986.hpp) | Medium     |
 
+### Prefix Sum
+
+| Link                                                                                    | Solutions                                    | Difficulty |
+| --------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
+| [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) | [C++](./src/solutions_303/solutions_303.hpp) | Easy       |
+
 ### Backtracking
 
 | Link                                                              | Solutions | Difficulty |
@@ -195,7 +201,6 @@ flowchart TD
 
 ## 📌 Final Thoughts
 
-This roadmap is a **living document**. I will continue to refine it as I grow and learn more.
-Whether you're just starting out or revisiting DSA for interviews, I hope this resource helps guide your journey.
+I will continue to refine this roadmap as I grow and learn more. Whether you're just starting out or revisiting DSA for interviews, I hope this resource helps guide your journey.
 
 Happy coding! ✨
