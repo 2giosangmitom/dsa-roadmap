@@ -4,6 +4,7 @@
 #include <vector>
 using namespace std;
 
+// Definition for a linked list node
 struct ListNode {
   int val;
   ListNode *next;
