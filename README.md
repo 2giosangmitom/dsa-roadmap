@@ -177,6 +177,12 @@ flowchart TD
 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)               | [C++](./src/solutions_560/solutions_560.hpp) | Medium     |
 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [C++](./src/solutions_238/solutions_238.hpp) | Medium     |
 
+### Trees
+
+| Link                                                                    | Solutions                                    | Difficulty |
+| ----------------------------------------------------------------------- | -------------------------------------------- | ---------- |
+| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [C++](./src/solutions_226/solutions_226.hpp) | Easy       |
+
 ### Backtracking
 
 | Link                                                              | Solutions | Difficulty |
