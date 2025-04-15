@@ -6,9 +6,6 @@ ListNode::ListNode() : val{0}, next{nullptr} {}
 ListNode::ListNode(int val) : val{val}, next{nullptr} {}
 ListNode::ListNode(int val, ListNode *next) : val{val}, next{next} {}
 
-// Destructor
-ListNode::~ListNode() { delete next; }
-
 // Factory function to create linked list
 ListNode *make_list(const vector<int> &list) {
   ListNode *head = nullptr;
@@ -57,3 +54,16 @@ string to_string(const ListNode &list) {
 
   return result;
 };
+
+// Release dynamic allocated memory for linked list
+void delete_list(initializer_list<ListNode *> heads) {
+  for (auto head : heads) {
+    ListNode *curr = head;
+
+    while (curr != nullptr) {
+      ListNode *next_node = curr->next;
+      delete curr;
+      curr = next_node;
+    }
+  }
+}

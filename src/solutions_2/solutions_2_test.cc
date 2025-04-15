@@ -1,6 +1,5 @@
 #include "solutions_2.hpp"
 #include <gtest/gtest.h>
-#include <memory>
 #include <tuple>
 #include <vector>
 
@@ -12,16 +11,15 @@ protected:
 
 TEST_P(Solutions_2_Test, AddTwoNumbers) {
   auto [l1_values, l2_values, expected_values] = GetParam();
-  auto l1 = unique_ptr<ListNode>(make_list(l1_values));
-  auto l2 = unique_ptr<ListNode>(make_list(l2_values));
-  auto expected = unique_ptr<ListNode>(make_list(expected_values));
+  auto l1 = make_list(l1_values);
+  auto l2 = make_list(l2_values);
+  auto expected = make_list(expected_values);
 
-  auto actual = solution.addTwoNumbers(l1.get(), l2.get());
+  auto actual = solution.addTwoNumbers(l1, l2);
 
   EXPECT_EQ(*actual, *expected);
 
-  // Since the actual return a raw pointer, we have to delete it manually
-  delete actual;
+  delete_list({actual, l1, l2, expected});
 }
 
 INSTANTIATE_TEST_SUITE_P(

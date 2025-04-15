@@ -10,27 +10,29 @@ protected:
 
 TEST_P(Solutions_160_Test, ) {
   auto [headA_vals, headB_vals, intersect_idx] = GetParam();
-  auto headA = unique_ptr<ListNode>(make_list(headA_vals));
-  auto headB = unique_ptr<ListNode>(make_list(headB_vals));
+  auto headA = make_list(headA_vals);
+  auto headB = make_list(headB_vals);
 
   // Create intersection
-  ListNode *intersect_node = intersect_idx == -1 ? nullptr : headA.get();
+  ListNode *intersect_node = intersect_idx == -1 ? nullptr : headA;
   for (int i = 0; i <= intersect_idx; i++) {
     intersect_node = intersect_node->next;
   }
 
   // Connect tailB with intersect_node
-  ListNode *tailB = headB.get();
+  ListNode *tailB = headB;
   while (tailB->next != nullptr) {
     tailB = tailB->next;
   }
   tailB->next = intersect_node;
 
-  ListNode *actual = solution.getIntersectionNode(headA.get(), headB.get());
+  ListNode *actual = solution.getIntersectionNode(headA, headB);
   EXPECT_EQ(actual, intersect_node);
 
   // Disconnect tailB and intersect_node to avoid double free
   tailB->next = nullptr;
+
+  delete_list({headA, headB});
 }
 
 INSTANTIATE_TEST_SUITE_P(

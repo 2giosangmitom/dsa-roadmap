@@ -1,6 +1,5 @@
 #include "solutions_23.hpp"
 #include <gtest/gtest.h>
-#include <memory>
 #include <vector>
 
 class Solutions_23_Test
@@ -11,18 +10,20 @@ protected:
 
 TEST_P(Solutions_23_Test, ) {
   auto [lists, expected] = GetParam();
-  auto expected_list = unique_ptr<ListNode>(make_list(expected));
+  auto expected_list = make_list(expected);
   vector<ListNode *> list_nodes;
   for (const auto &list : lists) {
     list_nodes.push_back(make_list(list));
   }
 
-  auto result = unique_ptr<ListNode>(solution.mergeKLists(list_nodes));
-  if (result.get() == nullptr) {
-    EXPECT_EQ(result.get(), expected_list.get());
+  auto result = solution.mergeKLists(list_nodes);
+  if (result == nullptr) {
+    EXPECT_EQ(result, expected_list);
   } else {
-    EXPECT_EQ(*result.get(), *expected_list.get());
+    EXPECT_EQ(*result, *expected_list);
   }
+
+  delete_list({result, expected_list});
 }
 
 INSTANTIATE_TEST_SUITE_P(

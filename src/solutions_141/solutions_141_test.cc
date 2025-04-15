@@ -1,6 +1,5 @@
 #include "solutions_141.hpp"
 #include <gtest/gtest.h>
-#include <memory>
 
 class Solutions_141_Test : public testing::Test {
 protected:
@@ -12,8 +11,9 @@ protected:
 };
 
 TEST_F(Solutions_141_Test, case1) {
-  auto head = unique_ptr<ListNode>(make_list({1, 2, 3, 4}));
-  check(head.get(), false);
+  auto head = make_list({1, 2, 3, 4});
+  check(head, false);
+  delete_list({head});
 }
 
 TEST_F(Solutions_141_Test, case2) {
@@ -21,7 +21,7 @@ TEST_F(Solutions_141_Test, case2) {
   head->next->next->next->next->next = head->next; // Create cycle
   check(head, true);
   head->next->next->next->next->next = nullptr; // Break cycle before freeing
-  delete head;
+  delete_list({head});
 }
 
 TEST_F(Solutions_141_Test, case3) {
@@ -32,12 +32,13 @@ TEST_F(Solutions_141_Test, case3) {
 TEST_F(Solutions_141_Test, case4) {
   ListNode *head = make_list({1});
   check(head, false);
-  delete head;
+  delete_list({head});
 }
 
 TEST_F(Solutions_141_Test, case5) {
-  auto head = unique_ptr<ListNode>(make_list({1, 2, 3}));
+  auto head = make_list({1, 2, 3});
   head->next->next->next = head->next; // Create cycle
-  check(head.get(), true);
+  check(head, true);
   head->next->next->next = nullptr; // Break cycle before freeing
+  delete_list({head});
 }

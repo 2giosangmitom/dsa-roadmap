@@ -10,16 +10,18 @@ protected:
 
 TEST_P(Solutions_876_Test, ) {
   auto [nums, index] = GetParam();
-  auto head = unique_ptr<ListNode>(make_list(nums));
-  ListNode *expected = head.get();
+  auto head = make_list(nums);
+  ListNode *expected = head;
   for (int i = 0; i < index; i++) {
     expected = expected->next;
   }
 
-  ListNode *actual = solution.middleNode(head.get());
+  ListNode *actual = solution.middleNode(head);
 
   ASSERT_NE(actual, nullptr);
   EXPECT_EQ(actual, expected);
+
+  delete_list({head});
 }
 
 INSTANTIATE_TEST_SUITE_P(

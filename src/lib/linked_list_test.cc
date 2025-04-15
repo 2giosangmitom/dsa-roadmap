@@ -1,52 +1,55 @@
 #include "linked_list.hpp"
 #include <gtest/gtest.h>
-#include <memory>
 #include <string>
 #include <vector>
 
-class LinkedListTest : public testing::TestWithParam<vector<int>> {
-protected:
-  unique_ptr<ListNode> makeListFromParam() {
-    return unique_ptr<ListNode>(make_list(GetParam()));
-  }
-};
+class LinkedListTest : public testing::TestWithParam<vector<int>> {};
 
 // --- Test: Create List ---
 TEST_P(LinkedListTest, CreateList) {
-  auto list = makeListFromParam();
+  auto list = make_list(GetParam());
 
   const auto &param = GetParam();
 
-  ListNode *current = list.get();
+  ListNode *current = list;
   for (size_t i = 0; i < param.size(); ++i) {
     ASSERT_NE(current, nullptr);
     EXPECT_EQ(current->val, param[i]);
     current = current->next;
   }
   EXPECT_EQ(current, nullptr); // End of list
+
+  delete_list({list});
 }
 
 // --- Test: Check equality between lists ---
 TEST_P(LinkedListTest, Equal) {
-  auto listA = makeListFromParam();
-  auto listB = makeListFromParam();
+  auto listA = make_list(GetParam());
+  auto listB = make_list(GetParam());
+
   EXPECT_TRUE(*listA == *listB);
+
+  delete_list({listA, listB});
 }
 
 // --- Test: Check inequality between lists ---
 TEST_P(LinkedListTest, InEqual) {
-  auto listA = makeListFromParam();
-  auto listB = makeListFromParam();
+  auto listA = make_list(GetParam());
+  auto listB = make_list(GetParam());
+
   // Modify listB to make it different from listA
   if (listB->next) {
     listB->next->val += 1; // Change the value of the second node
   }
+
   EXPECT_FALSE(*listA == *listB);
+
+  delete_list({listA, listB});
 }
 
 // --- Test: to_string function ---
 TEST_P(LinkedListTest, ToString) {
-  auto list = makeListFromParam();
+  auto list = make_list(GetParam());
   string result = to_string(*list);
 
   const auto &param = GetParam();
@@ -59,6 +62,8 @@ TEST_P(LinkedListTest, ToString) {
   }
 
   EXPECT_EQ(result, expected);
+
+  delete_list({list});
 }
 
 INSTANTIATE_TEST_SUITE_P(
