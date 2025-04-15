@@ -179,10 +179,11 @@ flowchart TD
 
 ### Trees
 
-| Link                                                                        | Solutions                                    | Difficulty |
-| --------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
-| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)     | [C++](./src/solutions_226/solutions_226.hpp) | Easy       |
-| [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | [C++](./src/solutions_110/solutions_110.hpp) | Easy       |
+| Link                                                                                      | Solutions                                    | Difficulty |
+| ----------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
+| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                   | [C++](./src/solutions_226/solutions_226.hpp) | Easy       |
+| [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)               | [C++](./src/solutions_110/solutions_110.hpp) | Easy       |
+| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | [C++](./src/solutions_199/solutions_199.hpp) | Medium     |
 
 ### Backtracking
 
