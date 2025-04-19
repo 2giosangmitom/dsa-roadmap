@@ -179,13 +179,14 @@ flowchart TD
 
 ### Trees
 
-| Link                                                                                        | Solutions                                    | Difficulty |
-| ------------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
-| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                     | [C++](./src/solutions_226/solutions_226.hpp) | Easy       |
-| [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)                 | [C++](./src/solutions_110/solutions_110.hpp) | Easy       |
-| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)   | [C++](./src/solutions_199/solutions_199.hpp) | Medium     |
-| [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/) | [C++](./src/solutions_662/solutions_662.hpp) | Medium     |
-| [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)   | [C++](./src/solutions_98/solutions_98.hpp)   | Medium     |
+| Link                                                                                                             | Solutions                                    | Difficulty |
+| ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
+| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                                          | [C++](./src/solutions_226/solutions_226.hpp) | Easy       |
+| [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)                                      | [C++](./src/solutions_110/solutions_110.hpp) | Easy       |
+| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)                        | [C++](./src/solutions_199/solutions_199.hpp) | Medium     |
+| [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/)                      | [C++](./src/solutions_662/solutions_662.hpp) | Medium     |
+| [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)                        | [C++](./src/solutions_98/solutions_98.hpp)   | Medium     |
+| [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | [C++](./src/solutions_236/solutions_236.hpp) | Medium     |
 
 ### Backtracking
 
