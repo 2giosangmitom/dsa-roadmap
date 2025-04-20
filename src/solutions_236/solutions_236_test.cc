@@ -14,7 +14,7 @@ TEST_F(Solutions_236_Test, case1) {
   auto actual = solutions.lowestCommonAncestor(root, p, q);
   EXPECT_EQ(actual, root);
 
-  delete root;
+  delete_tree(root);
 }
 
 TEST_F(Solutions_236_Test, case2) {
@@ -25,7 +25,7 @@ TEST_F(Solutions_236_Test, case2) {
   auto actual = solutions.lowestCommonAncestor(root, p, q);
   EXPECT_EQ(actual, p);
 
-  delete root;
+  delete_tree(root);
 }
 
 TEST_F(Solutions_236_Test, case3) {
@@ -36,5 +36,5 @@ TEST_F(Solutions_236_Test, case3) {
   auto actual = solutions.lowestCommonAncestor(root, p, q);
   EXPECT_EQ(actual, root);
 
-  delete root;
+  delete_tree(root);
 }

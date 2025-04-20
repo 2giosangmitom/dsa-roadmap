@@ -7,7 +7,7 @@ TEST(TreeNodeTest, DefaultConstructor) {
   EXPECT_EQ(node->val, 0);
   EXPECT_EQ(node->left, nullptr);
   EXPECT_EQ(node->right, nullptr);
-  delete node;
+  delete_tree(node);
 }
 
 TEST(TreeNodeTest, ValueConstructor) {
@@ -15,7 +15,7 @@ TEST(TreeNodeTest, ValueConstructor) {
   EXPECT_EQ(node->val, 42);
   EXPECT_EQ(node->left, nullptr);
   EXPECT_EQ(node->right, nullptr);
-  delete node;
+  delete_tree(node);
 }
 
 TEST(TreeNodeTest, FullConstructor) {
@@ -25,7 +25,7 @@ TEST(TreeNodeTest, FullConstructor) {
   EXPECT_EQ(node->val, 3);
   EXPECT_EQ(node->left, left);
   EXPECT_EQ(node->right, right);
-  delete node; // safely deletes entire tree
+  delete_tree(node); // safely deletes entire tree
 }
 
 // --- Test make_tree function ---
@@ -35,8 +35,8 @@ TEST(BinaryTree, MakeTree_Complete) {
       new TreeNode(1, new TreeNode(2, new TreeNode(4), new TreeNode(5)),
                    new TreeNode(3, new TreeNode(6), new TreeNode(7)));
   EXPECT_EQ(*root, *expected);
-  delete root;
-  delete expected;
+  delete_tree(root);
+  delete_tree(expected);
 }
 
 TEST(BinaryTree, MakeTree_WithNulls) {
@@ -44,8 +44,8 @@ TEST(BinaryTree, MakeTree_WithNulls) {
   TreeNode *expected =
       new TreeNode(1, new TreeNode(2, new TreeNode(3), nullptr), nullptr);
   EXPECT_EQ(*root, *expected);
-  delete root;
-  delete expected;
+  delete_tree(root);
+  delete_tree(expected);
 }
 
 TEST(BinaryTree, MakeTree_Empty) {
@@ -58,30 +58,30 @@ TEST(BinaryTree, Equals_SameStructureAndValues) {
   TreeNode *a = make_tree({1, 2, 3});
   TreeNode *b = make_tree({1, 2, 3});
   EXPECT_TRUE(*a == *b);
-  delete a;
-  delete b;
+  delete_tree(a);
+  delete_tree(b);
 }
 
 TEST(BinaryTree, Equals_DifferentStructure) {
   TreeNode *a = make_tree({1, 2, 3});
   TreeNode *b = make_tree({1, nullptr, 2});
   EXPECT_FALSE(*a == *b);
-  delete a;
-  delete b;
+  delete_tree(a);
+  delete_tree(b);
 }
 
 TEST(BinaryTree, Equals_DifferentValues) {
   TreeNode *a = make_tree({1, 2, 3});
   TreeNode *b = make_tree({1, 2, 4});
   EXPECT_FALSE(*a == *b);
-  delete a;
-  delete b;
+  delete_tree(a);
+  delete_tree(b);
 }
 
 TEST(BinaryTree, Equals_DeepEqual) {
   TreeNode *root = make_tree({5, 1, 9, nullptr, 3, 6});
   TreeNode *copy = make_tree({5, 1, 9, nullptr, 3, 6});
   EXPECT_TRUE(*root == *copy);
-  delete root;
-  delete copy;
+  delete_tree(root);
+  delete_tree(copy);
 }

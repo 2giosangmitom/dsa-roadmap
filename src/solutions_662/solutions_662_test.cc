@@ -17,7 +17,7 @@ TEST_P(Solutions_662_Test, ) {
 
   EXPECT_EQ(actual, expected);
 
-  delete tree;
+  delete_tree(tree);
 }
 
 INSTANTIATE_TEST_SUITE_P(

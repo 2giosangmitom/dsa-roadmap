@@ -8,12 +8,6 @@ TreeNode::TreeNode(int x) : val{x}, left{nullptr}, right{nullptr} {}
 TreeNode::TreeNode(int x, TreeNode *left, TreeNode *right)
     : val{x}, left{left}, right{right} {}
 
-// Destructor
-TreeNode::~TreeNode() {
-  delete left;
-  delete right;
-}
-
 // Factory function to create a binary tree using level-order traversal
 TreeNode *make_tree(const vector<any> &values) {
   if (values.empty())
@@ -72,4 +66,15 @@ bool operator==(const TreeNode &lhs, const TreeNode &rhs) {
   }
 
   return left_stack.empty() && right_stack.empty();
+}
+
+// Release dynamic allocated memories used by the tree
+void delete_tree(TreeNode *root) {
+  if (root == nullptr) {
+    return;
+  }
+
+  delete_tree(root->left);
+  delete_tree(root->right);
+  delete root;
 }

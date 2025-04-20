@@ -14,7 +14,7 @@ TEST_P(Solutions_199_Test, ) {
   auto actual = solution.rightSideView(tree);
 
   EXPECT_EQ(actual, expected);
-  delete tree;
+  delete_tree(tree);
 }
 
 INSTANTIATE_TEST_SUITE_P(

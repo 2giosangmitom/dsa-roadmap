@@ -20,8 +20,8 @@ TEST_P(Solutions_226_Test, ) {
     EXPECT_EQ(*actual, *expected_tree);
   }
 
-  delete root;
-  delete expected_tree;
+  delete_tree(root);
+  delete_tree(expected_tree);
 }
 
 INSTANTIATE_TEST_SUITE_P(

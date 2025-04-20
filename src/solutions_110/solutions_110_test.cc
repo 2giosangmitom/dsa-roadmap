@@ -1,6 +1,5 @@
 #include "solutions_110.hpp"
 #include <gtest/gtest.h>
-#include <memory>
 #include <tuple>
 
 class Solutions_110_Test
@@ -11,10 +10,12 @@ protected:
 
 TEST_P(Solutions_110_Test, ) {
   auto [input, expected] = GetParam();
-  auto root = unique_ptr<TreeNode>(make_tree(input));
+  auto root = make_tree(input);
 
-  bool actual = sol.isBalanced(root.get());
+  bool actual = sol.isBalanced(root);
   EXPECT_EQ(actual, expected);
+
+  delete_tree(root);
 }
 
 INSTANTIATE_TEST_SUITE_P(

@@ -17,7 +17,7 @@ TEST_P(Solutions_98_Test, ) {
   auto actual = solutions.isValidBST(root);
   EXPECT_EQ(actual, expected);
 
-  delete root;
+  delete_tree(root);
 }
 
 INSTANTIATE_TEST_SUITE_P(
