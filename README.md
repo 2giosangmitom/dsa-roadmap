@@ -199,9 +199,10 @@ flowchart TD
 
 ### Sort and Search
 
-| Link                                                          | Solutions | Difficulty |
-| ------------------------------------------------------------- | --------- | ---------- |
-| [Sort an Array](https://leetcode.com/problems/sort-an-array/) | Pending   | Medium     |
+| Link                                                          | Solutions                                    | Difficulty |
+| ------------------------------------------------------------- | -------------------------------------------- | ---------- |
+| [Sort an Array](https://leetcode.com/problems/sort-an-array/) | Pending                                      | Medium     |
+| [Sort List](https://leetcode.com/problems/sort-list)          | [C++](./src/solutions_148/solutions_148.hpp) | Medium     |
 
 ### Must try
 
