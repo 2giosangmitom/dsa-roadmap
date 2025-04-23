@@ -201,7 +201,7 @@ flowchart TD
 
 | Link                                                          | Solutions                                    | Difficulty |
 | ------------------------------------------------------------- | -------------------------------------------- | ---------- |
-| [Sort an Array](https://leetcode.com/problems/sort-an-array/) | Pending                                      | Medium     |
+| [Sort an Array](https://leetcode.com/problems/sort-an-array/) | [C++](./src/solutions_912/solutions_912.hpp) | Medium     |
 | [Sort List](https://leetcode.com/problems/sort-list)          | [C++](./src/solutions_148/solutions_148.hpp) | Medium     |
 
 ### Must try
