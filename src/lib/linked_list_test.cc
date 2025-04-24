@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-class LinkedListTest : public testing::TestWithParam<vector<int>> {};
+class LinkedListTest : public testing::TestWithParam<std::vector<int>> {};
 
 // --- Test: Create List ---
 TEST_P(LinkedListTest, CreateList) {
@@ -50,12 +50,12 @@ TEST_P(LinkedListTest, InEqual) {
 // --- Test: to_string function ---
 TEST_P(LinkedListTest, ToString) {
   auto list = make_list(GetParam());
-  string result = list->to_string();
+  std::string result = list->to_string();
 
   const auto &param = GetParam();
-  string expected = "";
+  std::string expected = "";
   for (size_t i = 0; i < param.size(); ++i) {
-    expected += to_string(param[i]);
+    expected += std::to_string(param[i]);
     if (i < param.size() - 1) {
       expected += " -> ";
     }
@@ -66,8 +66,10 @@ TEST_P(LinkedListTest, ToString) {
   delete_list({list});
 }
 
-INSTANTIATE_TEST_SUITE_P(
-    , LinkedListTest,
-    testing::Values(vector<int>{1, 2, 3}, vector<int>{4, 5, 6},
-                    vector<int>{10, 20, 30}, vector<int>{99, 100, 101},
-                    vector<int>{1, 2, 3}, vector<int>{10, 20, 30}));
+INSTANTIATE_TEST_SUITE_P(, LinkedListTest,
+                         testing::Values(std::vector<int>{1, 2, 3},
+                                         std::vector<int>{4, 5, 6},
+                                         std::vector<int>{10, 20, 30},
+                                         std::vector<int>{99, 100, 101},
+                                         std::vector<int>{1, 2, 3},
+                                         std::vector<int>{10, 20, 30}));

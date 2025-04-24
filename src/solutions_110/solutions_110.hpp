@@ -18,7 +18,7 @@ private:
       return -1;
     }
 
-    return 1 + max(left_height, right_height);
+    return 1 + std::max(left_height, right_height);
   }
 
 public:

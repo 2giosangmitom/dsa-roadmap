@@ -2,6 +2,7 @@
 
 #include "../lib/linked_list.hpp"
 #include <cmath>
+using namespace std;
 
 class Solution {
 private:

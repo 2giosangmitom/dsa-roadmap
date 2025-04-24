@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../lib/linked_list.hpp"
+using namespace std;
 
 class Solution {
 public:

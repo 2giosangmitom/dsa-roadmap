@@ -3,8 +3,9 @@
 #include <tuple>
 #include <vector>
 
-class Solutions_2_Test : public testing::TestWithParam<
-                             tuple<vector<int>, vector<int>, vector<int>>> {
+class Solutions_2_Test
+    : public testing::TestWithParam<
+          std::tuple<std::vector<int>, std::vector<int>, std::vector<int>>> {
 protected:
   Solution solution;
 };
@@ -24,11 +25,15 @@ TEST_P(Solutions_2_Test, AddTwoNumbers) {
 
 INSTANTIATE_TEST_SUITE_P(
     , Solutions_2_Test,
-    testing::Values(
-        make_tuple(vector<int>{2, 4, 3}, vector<int>{5, 6, 4},
-                   vector<int>{7, 0, 8}),
-        make_tuple(vector<int>{0}, vector<int>{0}, vector<int>{0}),
-        make_tuple(vector<int>{9, 9, 9, 9, 9, 9, 9}, vector<int>{9, 9, 9, 9},
-                   vector<int>{8, 9, 9, 9, 0, 0, 0, 1}),
-        make_tuple(vector<int>{1, 8}, vector<int>{0}, vector<int>{1, 8}),
-        make_tuple(vector<int>{5}, vector<int>{5}, vector<int>{0, 1})));
+    testing::Values(make_tuple(std::vector<int>{2, 4, 3},
+                               std::vector<int>{5, 6, 4},
+                               std::vector<int>{7, 0, 8}),
+                    make_tuple(std::vector<int>{0}, std::vector<int>{0},
+                               std::vector<int>{0}),
+                    make_tuple(std::vector<int>{9, 9, 9, 9, 9, 9, 9},
+                               std::vector<int>{9, 9, 9, 9},
+                               std::vector<int>{8, 9, 9, 9, 0, 0, 0, 1}),
+                    make_tuple(std::vector<int>{1, 8}, std::vector<int>{0},
+                               std::vector<int>{1, 8}),
+                    make_tuple(std::vector<int>{5}, std::vector<int>{5},
+                               std::vector<int>{0, 1})));

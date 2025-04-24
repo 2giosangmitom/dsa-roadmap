@@ -3,7 +3,8 @@
 #include <tuple>
 
 class Solutions_160_Test
-    : public testing::TestWithParam<tuple<vector<int>, vector<int>, int>> {
+    : public testing::TestWithParam<
+          std::tuple<std::vector<int>, std::vector<int>, int>> {
 protected:
   Solution solution;
 };
@@ -37,7 +38,8 @@ TEST_P(Solutions_160_Test, ) {
 
 INSTANTIATE_TEST_SUITE_P(
     , Solutions_160_Test,
-    testing::Values(make_tuple(vector<int>{4, 1, 8, 4, 5}, vector<int>{5, 6, 1},
-                               2),
-                    make_tuple(vector<int>{1, 9, 1, 2, 4}, vector<int>{3}, 3),
-                    make_tuple(vector<int>{2, 6, 4}, vector<int>{1, 5}, -1)));
+    testing::Values(
+        make_tuple(std::vector<int>{4, 1, 8, 4, 5}, std::vector<int>{5, 6, 1},
+                   2),
+        make_tuple(std::vector<int>{1, 9, 1, 2, 4}, std::vector<int>{3}, 3),
+        make_tuple(std::vector<int>{2, 6, 4}, std::vector<int>{1, 5}, -1)));

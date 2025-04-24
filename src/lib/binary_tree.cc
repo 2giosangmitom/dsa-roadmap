@@ -9,12 +9,12 @@ TreeNode::TreeNode(int x, TreeNode *left, TreeNode *right)
     : val{x}, left{left}, right{right} {}
 
 // Factory function to create a binary tree using level-order traversal
-TreeNode *make_tree(const vector<any> &values) {
+TreeNode *make_tree(const std::vector<std::any> &values) {
   if (values.empty())
     return nullptr;
 
   TreeNode *root = new TreeNode(any_cast<int>(values[0]));
-  queue<TreeNode *> queue;
+  std::queue<TreeNode *> queue;
   queue.push(root);
 
   size_t i = 1;
@@ -40,7 +40,7 @@ TreeNode *make_tree(const vector<any> &values) {
 
 // Overload equality operator
 bool operator==(const TreeNode &lhs, const TreeNode &rhs) {
-  stack<const TreeNode *> left_stack, right_stack;
+  std::stack<const TreeNode *> left_stack, right_stack;
   left_stack.push(&lhs);
   right_stack.push(&rhs);
 

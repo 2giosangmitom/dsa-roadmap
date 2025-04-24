@@ -8,7 +8,7 @@ ListNode::ListNode(int val) : val{val}, next{nullptr} {}
 ListNode::ListNode(int val, ListNode *next) : val{val}, next{next} {}
 
 // Factory function to create linked list
-ListNode *make_list(const vector<int> &list) {
+ListNode *make_list(const std::vector<int> &list) {
   ListNode *head = nullptr;
   ListNode *current = head;
 
@@ -27,8 +27,8 @@ ListNode *make_list(const vector<int> &list) {
 }
 
 // Represent list in string
-string ListNode::to_string() const {
-  stringstream result;
+std::string ListNode::to_string() const {
+  std::stringstream result;
 
   for (auto head = this; head != nullptr; head = head->next) {
     result << std::to_string(head->val);
@@ -41,7 +41,7 @@ string ListNode::to_string() const {
 }
 
 // Overload output operator
-ostream &operator<<(ostream &os, ListNode *head) {
+std::ostream &operator<<(std::ostream &os, ListNode *head) {
   os << head->to_string();
   return os;
 }
@@ -63,7 +63,7 @@ bool operator==(const ListNode &lhs, const ListNode &rhs) {
 }
 
 // Release dynamic allocated memory for linked list
-void delete_list(initializer_list<ListNode *> heads) {
+void delete_list(std::initializer_list<ListNode *> heads) {
   for (auto head : heads) {
     ListNode *curr = head;
 

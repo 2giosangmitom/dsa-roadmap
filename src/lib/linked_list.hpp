@@ -3,7 +3,6 @@
 #include <initializer_list>
 #include <string>
 #include <vector>
-using namespace std;
 
 // Definition for a linked list node
 struct ListNode {
@@ -16,17 +15,17 @@ struct ListNode {
   ListNode(int val, ListNode *next);
 
   // Represent list in string
-  string to_string() const;
+  std::string to_string() const;
 };
 
 // Factory function to create linked list
-ListNode *make_list(const vector<int> &list);
+ListNode *make_list(const std::vector<int> &list);
 
 // Overload equality operator
 bool operator==(const ListNode &lhs, const ListNode &rhs);
 
 // Release dynamic allocated memory for linked list
-void delete_list(initializer_list<ListNode *> heads);
+void delete_list(std::initializer_list<ListNode *> heads);
 
 // Overload output operator
-ostream &operator<<(ostream &os, ListNode *head);
+std::ostream &operator<<(std::ostream &os, ListNode *head);

@@ -2,7 +2,6 @@
 
 #include <any>
 #include <vector>
-using namespace std;
 
 // Definition for a binary tree node
 struct TreeNode {
@@ -17,7 +16,7 @@ struct TreeNode {
 };
 
 // Factory function to create a binary tree using level-order traversal
-TreeNode *make_tree(const vector<any> &values);
+TreeNode *make_tree(const std::vector<std::any> &values);
 
 // Overload equality operator
 bool operator==(const TreeNode &lhs, const TreeNode &rhs);

@@ -2,6 +2,7 @@
 
 #include "../lib/binary_tree.hpp"
 #include <deque>
+using namespace std;
 
 class Solution {
 public:

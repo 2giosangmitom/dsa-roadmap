@@ -3,6 +3,7 @@
 #include "../lib/binary_tree.hpp"
 #include <cmath>
 #include <cstdint>
+using namespace std;
 
 class Solution {
 public:
