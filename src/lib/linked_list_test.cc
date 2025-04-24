@@ -50,7 +50,7 @@ TEST_P(LinkedListTest, InEqual) {
 // --- Test: to_string function ---
 TEST_P(LinkedListTest, ToString) {
   auto list = make_list(GetParam());
-  string result = to_string(*list);
+  string result = list->to_string();
 
   const auto &param = GetParam();
   string expected = "";
