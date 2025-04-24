@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int romanToInt(string s) {
     unordered_map<char, int> pairs = {
         {'I', 1},   {'V', 5},   {'X', 10},   {'L', 50},

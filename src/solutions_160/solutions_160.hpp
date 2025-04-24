@@ -3,7 +3,7 @@
 #include "../lib/linked_list.hpp"
 
 class Solution {
-public:
+ public:
   ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
     ListNode *ptr_1 = headA;
     ListNode *ptr_2 = headB;

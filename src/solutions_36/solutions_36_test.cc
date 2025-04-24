@@ -1,12 +1,14 @@
 #include "solutions_36.hpp"
+
 #include <gtest/gtest.h>
+
 #include <tuple>
 #include <vector>
 using namespace std;
 
 class Solutions_36_Test
     : public testing::TestWithParam<tuple<vector<vector<char>>, bool>> {
-protected:
+ protected:
   Solution sol;
 };
 

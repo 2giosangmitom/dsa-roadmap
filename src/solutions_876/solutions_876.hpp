@@ -4,7 +4,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   ListNode *middleNode(ListNode *head) {
     ListNode *slow = head, *fast = head;
 

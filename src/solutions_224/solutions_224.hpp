@@ -5,12 +5,12 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int calculate(const string &s) {
-    stack<int> stack;       // Stack to manage nested expressions
-    int result = 0;         // Stores the running sum of evaluated expressions
-    int current_number = 0; // Stores the number being built
-    int sign = 1;           // Tracks the current sign (1 for '+', -1 for '-')
+    stack<int> stack;        // Stack to manage nested expressions
+    int result = 0;          // Stores the running sum of evaluated expressions
+    int current_number = 0;  // Stores the number being built
+    int sign = 1;            // Tracks the current sign (1 for '+', -1 for '-')
 
     for (char current_char : s) {
       if (isdigit(current_char)) {
@@ -31,9 +31,9 @@ public:
       } else if (current_char == ')') {
         // Apply the last computed number before exiting the nested expression
         result += current_number * sign;
-        result *= stack.top(); // Retrieve the sign before '('
+        result *= stack.top();  // Retrieve the sign before '('
         stack.pop();
-        result += stack.top(); // Retrieve the result before '('
+        result += stack.top();  // Retrieve the result before '('
         stack.pop();
         current_number = 0;
       }

@@ -4,11 +4,10 @@
 using namespace std;
 
 class Solution {
-private:
+ private:
   size_t expandCenter(const string &s, int left, int right) {
     while (left >= 0 && right < int(s.size())) {
-      if (s[left] != s[right])
-        break;
+      if (s[left] != s[right]) break;
       left--;
       right++;
     }
@@ -16,7 +15,7 @@ private:
     return right - left - 1;
   }
 
-public:
+ public:
   string longestPalindrome(string s) {
     string result = "";
 

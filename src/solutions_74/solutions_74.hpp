@@ -4,7 +4,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   bool searchMatrix(vector<vector<int>> &matrix, int target) {
     int left = 0;
     int right = matrix.size() * matrix[0].size() - 1;

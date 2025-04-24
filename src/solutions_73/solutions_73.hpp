@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   void setZeroes(vector<vector<int>> &matrix) {
     unordered_set<int> cols;
     unordered_set<int> rows;

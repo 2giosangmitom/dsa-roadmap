@@ -4,7 +4,7 @@
 using namespace std;
 
 class Solution {
-private:
+ private:
   int lower_bound(vector<int> &nums, int target) {
     int left = 0;
     int right = nums.size() - 1;
@@ -43,7 +43,7 @@ private:
     return nums[right] == target ? right : -1;
   }
 
-public:
+ public:
   vector<int> searchRange(vector<int> &nums, int target) {
     if (nums.empty()) {
       return {-1, -1};

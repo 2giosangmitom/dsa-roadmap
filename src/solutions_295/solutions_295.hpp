@@ -5,11 +5,11 @@
 using namespace std;
 
 class MedianFinder {
-private:
-  priority_queue<int> left_half;                          // Max-heap
-  priority_queue<int, vector<int>, greater<>> right_half; // Min-heap
+ private:
+  priority_queue<int> left_half;                           // Max-heap
+  priority_queue<int, vector<int>, greater<>> right_half;  // Min-heap
 
-public:
+ public:
   MedianFinder() {}
 
   void addNum(int num) {

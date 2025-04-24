@@ -4,10 +4,10 @@
 using namespace std;
 
 class NumArray {
-private:
+ private:
   vector<int> prefix_sum;
 
-public:
+ public:
   NumArray(vector<int> &nums) {
     prefix_sum.resize(nums.size());
     prefix_sum[0] = nums[0];

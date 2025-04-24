@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
-private:
+ private:
   bool cut_enough_wood(int H, vector<int> &A, int B) {
     long res = 0;
 
@@ -18,7 +18,7 @@ private:
     return res >= B;
   }
 
-public:
+ public:
   int solve(vector<int> &A, int B) {
     int left = 0;
     int right = *max_element(A.begin(), A.end());

@@ -2,7 +2,7 @@
 
 // Definition for a Node.
 class Node {
-public:
+ public:
   int val;
   Node *prev;
   Node *next;
@@ -13,7 +13,7 @@ public:
 };
 
 class Solution {
-public:
+ public:
   Node *flatten(Node *head) {
     Node *current = head;
 
@@ -31,8 +31,7 @@ public:
         }
         child_node->next = next;
 
-        if (next != nullptr)
-          next->prev = child_node;
+        if (next != nullptr) next->prev = child_node;
 
         current->child = nullptr;
       }

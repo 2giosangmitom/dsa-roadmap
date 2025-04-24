@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   vector<vector<int>> merge(vector<vector<int>> &intervals) {
     sort(intervals.begin(), intervals.end(),
          [](auto a, auto b) { return a[0] < b[0]; });

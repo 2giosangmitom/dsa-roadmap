@@ -1,8 +1,9 @@
 #include "solutions_236.hpp"
+
 #include <gtest/gtest.h>
 
 class Solutions_236_Test : public testing::Test {
-protected:
+ protected:
   Solution solutions;
 };
 

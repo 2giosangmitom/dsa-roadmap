@@ -4,7 +4,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int dominantIndex(vector<int> &nums) {
     int max_i = 0;
     int second_max = -1;
@@ -14,8 +14,7 @@ public:
         second_max = nums[max_i];
         max_i = i;
       } else {
-        if (nums[i] > second_max)
-          second_max = nums[i];
+        if (nums[i] > second_max) second_max = nums[i];
       }
     }
 

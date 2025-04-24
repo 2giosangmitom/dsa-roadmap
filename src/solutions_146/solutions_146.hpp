@@ -5,13 +5,12 @@
 using namespace std;
 
 class LRUCache {
-public:
+ public:
   LRUCache(int capacity) : capacity{capacity} { caches.reserve(capacity); }
 
   int get(int key) {
     auto it = caches.find(key);
-    if (it == caches.end())
-      return -1;
+    if (it == caches.end()) return -1;
 
     // Move accessed element to the back
     lru_list.splice(lru_list.end(), lru_list, it->second);
@@ -39,7 +38,7 @@ public:
     caches[key] = --lru_list.end();
   }
 
-private:
+ private:
   int capacity;
   list<pair<int, int>> lru_list;
   unordered_map<int, list<pair<int, int>>::iterator> caches;

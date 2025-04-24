@@ -1,10 +1,12 @@
 #include "solutions_528.hpp"
+
 #include <gtest/gtest.h>
+
 #include <unordered_map>
 #include <vector>
 
 class Solutions_528_Test : public testing::TestWithParam<vector<int>> {
-protected:
+ protected:
   void check_distribution(vector<int> &weights) {
     int numSimulations = 100000;
     Solution sol(weights);

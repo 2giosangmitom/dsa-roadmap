@@ -1,14 +1,14 @@
 #pragma once
 
-#include "../lib/binary_tree.hpp"
 #include <stack>
+
+#include "../lib/binary_tree.hpp"
 using namespace std;
 
 class Solution {
-public:
+ public:
   TreeNode *invertTree(TreeNode *root) {
-    if (root == nullptr)
-      return nullptr;
+    if (root == nullptr) return nullptr;
 
     stack<TreeNode *> stack;
     stack.push(root);

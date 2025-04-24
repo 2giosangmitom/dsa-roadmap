@@ -3,7 +3,7 @@
 #include "../lib/linked_list.hpp"
 
 class Solution {
-public:
+ public:
   ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
     ListNode *res = nullptr;
     int carry = 0;

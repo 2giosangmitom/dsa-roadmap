@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   vector<int> maxSlidingWindow(vector<int> &nums, int k) {
     deque<pair<int, int>> deque;
     vector<int> result;

@@ -3,11 +3,10 @@
 #include "../lib/linked_list.hpp"
 
 class Solution {
-public:
+ public:
   // Merge sort for linked list
   ListNode *sortList(ListNode *head) {
-    if (!head || !head->next)
-      return head;
+    if (!head || !head->next) return head;
 
     ListNode *middle = split(head);
     ListNode *left_head = sortList(head);
@@ -41,7 +40,7 @@ public:
     return dummy.next;
   }
 
-private:
+ private:
   ListNode *split(ListNode *head) {
     ListNode *fast = head;
     ListNode *slow = head;

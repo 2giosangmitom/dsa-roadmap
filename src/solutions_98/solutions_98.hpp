@@ -1,15 +1,16 @@
 #pragma once
 
-#include "../lib/binary_tree.hpp"
 #include <cmath>
 #include <cstdint>
+
+#include "../lib/binary_tree.hpp"
 using namespace std;
 
 class Solution {
-public:
+ public:
   bool isValidBST(TreeNode *root) { return helper(root, INT64_MIN, INT64_MAX); }
 
-private:
+ private:
   bool helper(TreeNode *root, long lower_bound, long upper_bound) {
     if (root == nullptr) {
       return true;

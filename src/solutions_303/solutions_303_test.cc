@@ -1,5 +1,7 @@
 #include "solutions_303.hpp"
+
 #include <gtest/gtest.h>
+
 #include <tuple>
 
 class Solutions_303_Test
@@ -32,9 +34,9 @@ INSTANTIATE_TEST_SUITE_P(
             vector<tuple<int, int, int>>{
                 {0, 0, 10}, {0, 1, 0}, {0, 2, 10}, {1, 3, -10}, {2, 4, 10}}),
         make_tuple(vector<int>{5}, vector<tuple<int, int, int>>{{0, 0, 5}}),
-        make_tuple(vector<int>{1, -1}, vector<tuple<int, int, int>>{{0, 0, 1},
-                                                                    {1, 1, -1},
-                                                                    {0, 1, 0}}),
+        make_tuple(vector<int>{1, -1},
+                   vector<tuple<int, int, int>>{
+                       {0, 0, 1}, {1, 1, -1}, {0, 1, 0}}),
         make_tuple(vector<int>{0, 0, 0, 0, 0},
                    vector<tuple<int, int, int>>{
                        {0, 4, 0}, {1, 3, 0}, {2, 2, 0}}),

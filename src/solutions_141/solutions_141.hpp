@@ -3,7 +3,7 @@
 #include "../lib/linked_list.hpp"
 
 class Solution {
-public:
+ public:
   bool hasCycle(ListNode *head) {
     ListNode *slow = head, *fast = head;
 

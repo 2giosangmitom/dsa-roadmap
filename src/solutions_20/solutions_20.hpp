@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   bool isValid(string s) {
     int length = s.length();
     if (length % 2 != 0) {

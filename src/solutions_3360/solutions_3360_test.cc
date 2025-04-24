@@ -1,9 +1,10 @@
 #include "solutions_3360.hpp"
+
 #include <gtest/gtest.h>
 using namespace std;
 
 class Solutions_3360_Test : public testing::TestWithParam<tuple<int, bool>> {
-protected:
+ protected:
   Solution solutions;
 };
 

@@ -1,4 +1,5 @@
 #include "solutions_295.hpp"
+
 #include <gtest/gtest.h>
 
 TEST(Solutions_295_Test, case1) {

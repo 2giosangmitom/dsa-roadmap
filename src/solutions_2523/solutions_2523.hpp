@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
-private:
+ private:
   vector<bool> sieve(int right) {
     vector<bool> res(right + 1, true);
     res[0] = res[1] = false;
@@ -21,12 +21,10 @@ private:
     return res;
   }
 
-public:
+ public:
   vector<int> closestPrimes(int left, int right) {
-    if (left == right)
-      return {-1, -1};
-    if (left <= 2)
-      return {2, 3};
+    if (left == right) return {-1, -1};
+    if (left <= 2) return {2, 3};
 
     auto primes = sieve(right);
     int prev_prime = -1;

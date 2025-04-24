@@ -7,7 +7,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   // Heap sort (if you don't want to implement a heap) :)
   vector<int> sortArray(vector<int> &nums) {
     make_heap(nums.begin(), nums.end());
@@ -31,7 +31,7 @@ public:
     return nums;
   }
 
-private:
+ private:
   void quick_sort(vector<int> &nums, int64_t left, int64_t right) {
     if (left >= right) {
       return;

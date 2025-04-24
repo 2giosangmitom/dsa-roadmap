@@ -4,11 +4,11 @@
 using namespace std;
 
 class MyQueue {
-private:
+ private:
   stack<int> enqueue_stack;
   stack<int> dequeue_stack;
 
-public:
+ public:
   MyQueue() {}
 
   void push(int x) { enqueue_stack.push(x); }

@@ -1,12 +1,14 @@
 #include "solutions_162.hpp"
+
 #include <gtest/gtest.h>
+
 #include <tuple>
 #include <unordered_set>
 #include <vector>
 
 class Solutions_162_Test
     : public testing::TestWithParam<tuple<vector<int>, unordered_set<int>>> {
-protected:
+ protected:
   Solution solution;
 };
 

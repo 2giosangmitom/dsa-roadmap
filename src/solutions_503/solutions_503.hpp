@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   vector<int> nextGreaterElements(vector<int> &nums) {
     stack<int> stack;
     vector<int> res(nums.size());

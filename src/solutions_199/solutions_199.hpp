@@ -1,15 +1,15 @@
 #pragma once
 
-#include "../lib/binary_tree.hpp"
 #include <queue>
 #include <vector>
+
+#include "../lib/binary_tree.hpp"
 using namespace std;
 
 class Solution {
-public:
+ public:
   vector<int> rightSideView(TreeNode *root) {
-    if (root == nullptr)
-      return {};
+    if (root == nullptr) return {};
     vector<int> result;
     queue<TreeNode *> nodes;
     nodes.push(root);

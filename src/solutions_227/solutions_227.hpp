@@ -4,12 +4,11 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int calculate(string s) {
     int len = s.length();
 
-    if (len == 0)
-      return 0;
+    if (len == 0) return 0;
 
     int current_number = 0;
     int last_number = 0;

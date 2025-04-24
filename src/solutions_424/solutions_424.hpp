@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int characterReplacement(string s, int k) {
     unordered_map<char, int> freq;
     size_t left = 0, right = 0;

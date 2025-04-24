@@ -1,4 +1,5 @@
 #include "solutions_232.hpp"
+
 #include <gtest/gtest.h>
 
 TEST(MyQueueTest, BasicOperations) {

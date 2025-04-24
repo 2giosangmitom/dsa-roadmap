@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   vector<int> findMissingAndRepeatedValues(vector<vector<int>> &grid) {
     int actual_sum = 0;
     long actual_sum_square = 0;
@@ -21,9 +21,9 @@ public:
     }
 
     // (a + b)(a - b) = (a^2 - b^2)
-    long q = actual_sum_square - expected_sum_square; // a^2 - b^2
-    long p = actual_sum - expected_sum;               // a - b
-    long r = q / p;                                   // a + b
+    long q = actual_sum_square - expected_sum_square;  // a^2 - b^2
+    long p = actual_sum - expected_sum;                // a - b
+    long r = q / p;                                    // a + b
 
     int a = (p + r) / 2;
     int b = r - a;

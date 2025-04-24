@@ -4,7 +4,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   vector<vector<int>> intervalIntersection(vector<vector<int>> &firstList,
                                            vector<vector<int>> &secondList) {
     vector<vector<int>> intersections;
@@ -18,8 +18,7 @@ public:
         swap(A, B);
       }
 
-      if (A[1] >= B[0])
-        intersections.push_back({B[0], min(A[1], B[1])});
+      if (A[1] >= B[0]) intersections.push_back({B[0], min(A[1], B[1])});
 
       if (firstList[i][1] < secondList[j][1]) {
         i++;

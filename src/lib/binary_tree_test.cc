@@ -1,4 +1,5 @@
 #include "binary_tree.hpp"
+
 #include <gtest/gtest.h>
 
 // --- Test TreeNode constructors ---
@@ -25,7 +26,7 @@ TEST(TreeNodeTest, FullConstructor) {
   EXPECT_EQ(node->val, 3);
   EXPECT_EQ(node->left, left);
   EXPECT_EQ(node->right, right);
-  delete_tree(node); // safely deletes entire tree
+  delete_tree(node);  // safely deletes entire tree
 }
 
 // --- Test make_tree function ---

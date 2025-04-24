@@ -3,7 +3,7 @@
 #include "../lib/linked_list.hpp"
 
 class Solution {
-public:
+ public:
   ListNode *removeNthFromEnd(ListNode *head, int n) {
     ListNode dummy = ListNode();
     dummy.next = head;
@@ -13,8 +13,7 @@ public:
 
     // Move leader n steps ahead
     for (int i = 1; i <= n; i++) {
-      if (leader == nullptr)
-        return nullptr; // Avoid out-of-bound errors
+      if (leader == nullptr) return nullptr;  // Avoid out-of-bound errors
       leader = leader->next;
     }
 

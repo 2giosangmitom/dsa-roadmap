@@ -1,12 +1,14 @@
 #include "solutions_2.hpp"
+
 #include <gtest/gtest.h>
+
 #include <tuple>
 #include <vector>
 
 class Solutions_2_Test
     : public testing::TestWithParam<
           std::tuple<std::vector<int>, std::vector<int>, std::vector<int>>> {
-protected:
+ protected:
   Solution solution;
 };
 

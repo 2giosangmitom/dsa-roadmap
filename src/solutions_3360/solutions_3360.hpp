@@ -1,7 +1,7 @@
 #pragma once
 
 class Solution {
-public:
+ public:
   bool canAliceWin(int n) {
     int count = 0;
     int i = 10;

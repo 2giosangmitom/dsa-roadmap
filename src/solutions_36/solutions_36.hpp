@@ -6,7 +6,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   bool isValidSudoku(vector<vector<char>> &board) {
     array<unordered_set<char>, 9> col_set;
     array<unordered_set<char>, 9> row_set;
@@ -16,8 +16,7 @@ public:
       for (int j = 0; j < 9; j++) {
         char c = board[i][j];
 
-        if (c == '.')
-          continue;
+        if (c == '.') continue;
 
         if (row_set[i].contains(c) || cell_set[i / 3][j / 3].contains(c) ||
             col_set[j].contains(c)) {

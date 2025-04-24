@@ -3,12 +3,11 @@
 #include "../lib/binary_tree.hpp"
 
 class Solution {
-private:
+ private:
   TreeNode *lca = nullptr;
 
   bool dfs(TreeNode *&node, TreeNode *&p, TreeNode *&q) {
-    if (!node)
-      return false;
+    if (!node) return false;
 
     bool node_is_p_or_q = node == p || node == q;
     bool dfs_left = dfs(node->left, p, q);
@@ -21,7 +20,7 @@ private:
     return node_is_p_or_q || dfs_left || dfs_right;
   }
 
-public:
+ public:
   TreeNode *lowestCommonAncestor(TreeNode *root, TreeNode *p, TreeNode *q) {
     dfs(root, p, q);
     return lca;

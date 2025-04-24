@@ -1,10 +1,11 @@
 #pragma once
 
-#include "../lib/binary_tree.hpp"
 #include <cstdlib>
 
+#include "../lib/binary_tree.hpp"
+
 class Solution {
-private:
+ private:
   int get_height_imbalanced(TreeNode *root) {
     if (root == nullptr) {
       return 0;
@@ -21,6 +22,6 @@ private:
     return 1 + std::max(left_height, right_height);
   }
 
-public:
+ public:
   bool isBalanced(TreeNode *root) { return get_height_imbalanced(root) != -1; }
 };

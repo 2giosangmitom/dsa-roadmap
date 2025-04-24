@@ -1,11 +1,13 @@
 #include "solutions_430.hpp"
+
 #include <gtest/gtest.h>
+
 #include <sstream>
 #include <string>
 using namespace std;
 
 class Solutions_430_Test : public testing::Test {
-protected:
+ protected:
   Solution solution;
 };
 
@@ -33,11 +35,10 @@ string to_string(Node *head) {
 
 // Create a linked list from vector
 Node *create_list(const vector<int> &nums) {
-  if (nums.empty())
-    return nullptr; // Return nullptr for empty input
+  if (nums.empty()) return nullptr;  // Return nullptr for empty input
 
-  Node *head = nullptr;    // Head of linked list
-  Node *current = nullptr; // Pointer to track current node
+  Node *head = nullptr;     // Head of linked list
+  Node *current = nullptr;  // Pointer to track current node
 
   for (int num : nums) {
     if (!head) {

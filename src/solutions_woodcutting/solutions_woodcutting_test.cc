@@ -1,10 +1,12 @@
 #include "solutions_woodcutting.hpp"
+
 #include <gtest/gtest.h>
+
 #include <tuple>
 
 class WoodCuttingTest
     : public testing::TestWithParam<tuple<vector<int>, int, int>> {
-protected:
+ protected:
   Solution solution;
 };
 

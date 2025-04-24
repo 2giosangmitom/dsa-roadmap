@@ -1,9 +1,11 @@
 #include "solutions_3.hpp"
+
 #include <gtest/gtest.h>
+
 #include <tuple>
 
 class Solutions_3_Test : public testing::TestWithParam<tuple<string, int>> {
-protected:
+ protected:
   Solution solution;
 };
 

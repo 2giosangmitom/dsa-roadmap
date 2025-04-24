@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int numIdenticalPairs(vector<int> &nums) {
     unordered_map<int, int> freq;
     int result = 0;

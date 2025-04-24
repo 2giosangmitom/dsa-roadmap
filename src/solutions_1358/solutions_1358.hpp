@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int numberOfSubstrings(string s) {
     int total = 0;
     int len = s.size();

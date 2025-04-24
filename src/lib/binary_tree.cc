@@ -1,4 +1,5 @@
 #include "binary_tree.hpp"
+
 #include <queue>
 #include <stack>
 
@@ -10,8 +11,7 @@ TreeNode::TreeNode(int x, TreeNode *left, TreeNode *right)
 
 // Factory function to create a binary tree using level-order traversal
 TreeNode *make_tree(const std::vector<std::any> &values) {
-  if (values.empty())
-    return nullptr;
+  if (values.empty()) return nullptr;
 
   TreeNode *root = new TreeNode(any_cast<int>(values[0]));
   std::queue<TreeNode *> queue;
@@ -50,14 +50,11 @@ bool operator==(const TreeNode &lhs, const TreeNode &rhs) {
     left_stack.pop();
     right_stack.pop();
 
-    if (l == nullptr && r == nullptr)
-      continue;
+    if (l == nullptr && r == nullptr) continue;
 
-    if (l == nullptr || r == nullptr)
-      return false;
+    if (l == nullptr || r == nullptr) return false;
 
-    if (l->val != r->val)
-      return false;
+    if (l->val != r->val) return false;
 
     left_stack.push(l->right);
     left_stack.push(l->left);

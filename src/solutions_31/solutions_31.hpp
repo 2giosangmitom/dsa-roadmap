@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   void nextPermutation(vector<int> &nums) {
     int left = nums.size() - 2;
 

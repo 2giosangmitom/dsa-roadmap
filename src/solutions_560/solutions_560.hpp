@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   int subarraySum(vector<int> &nums, int k) {
     int result = 0;
 

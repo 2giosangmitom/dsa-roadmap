@@ -1,5 +1,7 @@
 #include "linked_list.hpp"
+
 #include <gtest/gtest.h>
+
 #include <string>
 #include <vector>
 
@@ -17,7 +19,7 @@ TEST_P(LinkedListTest, CreateList) {
     EXPECT_EQ(current->val, param[i]);
     current = current->next;
   }
-  EXPECT_EQ(current, nullptr); // End of list
+  EXPECT_EQ(current, nullptr);  // End of list
 
   delete_list({list});
 }
@@ -39,7 +41,7 @@ TEST_P(LinkedListTest, InEqual) {
 
   // Modify listB to make it different from listA
   if (listB->next) {
-    listB->next->val += 1; // Change the value of the second node
+    listB->next->val += 1;  // Change the value of the second node
   }
 
   EXPECT_FALSE(*listA == *listB);

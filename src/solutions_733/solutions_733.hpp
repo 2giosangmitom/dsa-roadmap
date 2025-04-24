@@ -4,7 +4,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   vector<vector<int>> floodFill(vector<vector<int>> &image, int sr, int sc,
                                 int color) {
     int old_color = image[sr][sc];
@@ -12,11 +12,10 @@ public:
     return image;
   }
 
-private:
+ private:
   void solve(vector<vector<int>> &image, int x, int y, int old_color,
              int color) {
-    if (old_color == color || image[x][y] == color)
-      return;
+    if (old_color == color || image[x][y] == color) return;
 
     image[x][y] = color;
 

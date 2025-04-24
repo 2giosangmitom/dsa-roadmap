@@ -5,10 +5,10 @@
 using namespace std;
 
 class Solution {
-private:
+ private:
   vector<int> prefix_sums;
 
-public:
+ public:
   Solution(vector<int> &w) {
     prefix_sums.resize(w.size());
 

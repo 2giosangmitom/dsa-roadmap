@@ -7,7 +7,7 @@
 using namespace std;
 
 class Solution {
-private:
+ private:
   void heapify(unordered_map<string, int> &freq, vector<string> &keys, int n,
                int index) {
     int max = index;
@@ -35,7 +35,7 @@ private:
     }
   }
 
-public:
+ public:
   vector<string> topKFrequent(vector<string> &words, int k) {
     unordered_map<string, int> freq;
 

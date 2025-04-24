@@ -5,7 +5,7 @@
 using namespace std;
 
 class Solution {
-private:
+ private:
   vector<vector<int>> twoSum(vector<int> &nums, int left, int target) {
     int right = nums.size() - 1;
 
@@ -32,7 +32,7 @@ private:
     return result;
   }
 
-public:
+ public:
   vector<vector<int>> threeSum(vector<int> &nums) {
     sort(nums.begin(), nums.end());
 

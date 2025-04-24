@@ -1,10 +1,12 @@
 #include "solutions_110.hpp"
+
 #include <gtest/gtest.h>
+
 #include <tuple>
 
 class Solutions_110_Test
     : public testing::TestWithParam<std::tuple<std::vector<std::any>, bool>> {
-protected:
+ protected:
   Solution sol;
 };
 
