@@ -40,6 +40,12 @@ string ListNode::to_string() const {
   return result.str();
 }
 
+// Overload output operator
+ostream &operator<<(ostream &os, ListNode *head) {
+  os << head->to_string();
+  return os;
+}
+
 // Overload equality operator
 bool operator==(const ListNode &lhs, const ListNode &rhs) {
   auto currentA = &lhs;

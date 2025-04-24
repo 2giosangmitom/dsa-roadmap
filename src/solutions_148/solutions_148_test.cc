@@ -31,9 +31,8 @@ TEST_P(Solutions_148_Test, insertion_sort) {
   if (!actual) {
     EXPECT_TRUE(expected_list == nullptr);
   } else {
-    EXPECT_EQ(*actual, *expected_list)
-        << "Actual: " << actual->to_string() << endl
-        << "Expected: " << expected_list->to_string();
+    EXPECT_EQ(*actual, *expected_list) << "Actual: " << actual << endl
+                                       << "Expected: " << expected_list;
   }
   delete_list({actual, expected_list});
 }

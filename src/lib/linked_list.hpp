@@ -27,3 +27,6 @@ bool operator==(const ListNode &lhs, const ListNode &rhs);
 
 // Release dynamic allocated memory for linked list
 void delete_list(initializer_list<ListNode *> heads);
+
+// Overload output operator
+ostream &operator<<(ostream &os, ListNode *head);
