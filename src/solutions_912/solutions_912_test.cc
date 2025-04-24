@@ -8,10 +8,26 @@ protected:
   Solution solutions;
 };
 
-TEST_P(Solutions_912_Test, ) {
+TEST_P(Solutions_912_Test, heap_sort) {
   auto [nums, expected] = GetParam();
 
   auto actual = solutions.sortArray(nums);
+
+  EXPECT_EQ(actual, expected);
+}
+
+TEST_P(Solutions_912_Test, quick_sort) {
+  auto [nums, expected] = GetParam();
+
+  auto actual = solutions.sortArray2(nums);
+
+  EXPECT_EQ(actual, expected);
+}
+
+TEST_P(Solutions_912_Test, quick_sort2) {
+  auto [nums, expected] = GetParam();
+
+  auto actual = solutions.sortArray3(nums);
 
   EXPECT_EQ(actual, expected);
 }
