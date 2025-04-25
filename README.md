@@ -203,6 +203,7 @@ flowchart TD
 | ------------------------------------------------------------- | -------------------------------------------- | ---------- |
 | [Sort an Array](https://leetcode.com/problems/sort-an-array/) | [C++](./src/solutions_912/solutions_912.hpp) | Medium     |
 | [Sort List](https://leetcode.com/problems/sort-list)          | [C++](./src/solutions_148/solutions_148.hpp) | Medium     |
+| [Sort Colors](https://leetcode.com/problems/sort-colors)      | [C++](./src/solutions_75/solutions_75.hpp)   | Medium     |
 
 ### Must try
 
