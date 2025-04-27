@@ -39,7 +39,7 @@ flowchart TD
     %% Advanced Data Structures
     R --> T[Trees]
     R --> W[Intervals]
-    R --> Q[Sort and Search]
+    R --> Q[Sort]
     T --> U[Tries]
     T --> X[Graphs]
     X --> Y[Backtracking]
@@ -197,7 +197,7 @@ flowchart TD
 | [Combinations](https://leetcode.com/problems/combinations/)       | Pending   | Medium     |
 | [Subsets](https://leetcode.com/problems/subsets/)                 | Pending   | Medium     |
 
-### Sort and Search
+### Sort
 
 | Link                                                          | Solutions                                    | Difficulty |
 | ------------------------------------------------------------- | -------------------------------------------- | ---------- |
