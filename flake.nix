@@ -16,6 +16,7 @@
         gtest
         cmake
         clang
+        gnumake
       ];
       CXX = "${pkgs.clang}/bin/clang++";
     };
