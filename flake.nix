@@ -1,5 +1,5 @@
 {
-  description = "Learning DSA with LeetCode: A structured roadmap for mastering Data Structures and Algorithms";
+  description = "Learning DSA with LeetCode";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
