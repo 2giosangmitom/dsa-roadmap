@@ -2,9 +2,7 @@ name: Test C++
 
 on:
   push:
-    branches: [master]
   pull_request:
-    branches: [master]
 
 permissions:
   contents: read
@@ -21,7 +19,7 @@ jobs:
         uses: DeterminateSystems/nix-installer-action@main
 
       - name: Run build
-        run: nix develop --command bash -c "cmake -B build && cmake --build build"
+        run: nix develop --command bash -c "make build"
 
       - name: Run tests
-        run: nix develop --command bash -c "ctest --test-dir build"
+        run: nix develop --command bash -c "make test"
