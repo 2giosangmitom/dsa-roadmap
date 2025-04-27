@@ -1,19 +1,12 @@
 # LeetCode Patterns
 
-Welcome to this **DSA Roadmap** - a structured guide designed to help you **learn and master Data Structures and Algorithms (DSA)** efficiently.
+Hello 😹, welcome to this LeetCode roadmap.
 
 ![Lines of Code](https://tokei.rs/b1/github/2giosangmitom/practice?category=code&style=flat-square)
 
 ## 📚 Prerequisites
 
-Before diving in, make sure you're comfortable with the following:
-
-- One programming language (C++, Java, Python, etc.)
-- Basic programming concepts (variables, loops, functions, OOP)
-- Familiarity with arrays and linked lists
-- Basic recursion
-- Time and space complexity (Big-O notation)
-- Algebra fundamentals (logarithms, exponents, modular arithmetic)
+Know how to write a function in any programming language :)
 
 ## 🗺️ The Roadmap
 
