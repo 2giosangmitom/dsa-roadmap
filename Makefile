@@ -4,7 +4,10 @@ generate:
 build: generate
 	cmake --build build
 
-test:
+test: build
 	ctest --test-dir build
 
-.PHONY: generate build test
+clean:
+	rm -rf build/
+
+.PHONY: generate build test clean
