@@ -181,6 +181,7 @@ flowchart TD
 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)                                                            | [C++](./src/solutions_199/solutions_199.hpp) | Medium     |
 | [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/)                                                          | [C++](./src/solutions_662/solutions_662.hpp) | Medium     |
 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)                                                            | [C++](./src/solutions_98/solutions_98.hpp)   | Medium     |
+| [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)                                                         | [C++](./src/solutions_230/solutions_230.hpp) | Medium     |
 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)                                     | [C++](./src/solutions_236/solutions_236.hpp) | Medium     |
 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | [C++](./src/solutions_105/solutions_105.hpp) | Medium     |
 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum)                                                           | [C++](./src/solutions_124/solutions_124.hpp) | Hard       |
