@@ -188,6 +188,7 @@ flowchart TD
 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum)                                                           | [C++](./src/solutions_124/solutions_124.hpp) | Hard       |
 | [Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree)                                 | [C++](./src/solutions_987/solutions_987.hpp) | Hard       |
 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)                                         | [C++](./src/solutions_297/solutions_297.hpp) | Hard       |
+| [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)                               | [C++](./src/solutions_108/solutions_108.hpp) | Easy       |
 
 ### Backtracking
 
