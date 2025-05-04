@@ -175,6 +175,7 @@ flowchart TD
 | Link                                                                                                                                                 | Solutions                                    | Difficulty |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)                                                         | [C++](./src/solutions_94/solutions_94.hpp)   | Easy       |
+| [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)                                                           | [C++](./src/solutions_104/solutions_104.hpp) | Easy       |
 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree)                                                                                       | [C++](./src/solutions_101/solutions_101.hpp) | Easy       |
 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                                                                              | [C++](./src/solutions_226/solutions_226.hpp) | Easy       |
 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)                                                                          | [C++](./src/solutions_110/solutions_110.hpp) | Easy       |
