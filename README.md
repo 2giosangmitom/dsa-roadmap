@@ -77,6 +77,7 @@ flowchart TD
 | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                                                  | [C++](./src/solutions_2/solutions_2.hpp)     | Medium     |
 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii?envType=problem-list-v2&envId=linked-list)           | [C++](./src/solutions_92/solutions_92.hpp)   | Medium     |
+| [Rotate List](https://leetcode.com/problems/rotate-list)                                                                           | [C++](./src/solutions_61/solutions_61.hpp)   | Medium     |
 | [Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/)                  | [C++](./src/solutions_430/solutions_430.hpp) | Medium     |
 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements?envType=problem-list-v2&envId=linked-list) | [C++](./src/solutions_203/solutions_203.hpp) | Easy       |
 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)                                | [C++](./src/solutions_19/solutions_19.hpp)   | Medium     |
