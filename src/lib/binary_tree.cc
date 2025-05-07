@@ -4,15 +4,36 @@
 #include <stack>
 
 // Constructors
+/**
+ * @brief Default constructor for TreeNode
+ */
 TreeNode::TreeNode() : val{0}, left{nullptr}, right{nullptr} {}
+
+/**
+ * @brief Constructor for TreeNode with a value
+ * @param x Value to be assigned to the node
+ */
 TreeNode::TreeNode(int x) : val{x}, left{nullptr}, right{nullptr} {}
+
+/**
+ * @brief Constructor for TreeNode with a value, left and right children
+ * @param x Value to be assigned to the node
+ * @param left Pointer to the left child node
+ * @param right Pointer to the right child node
+ */
 TreeNode::TreeNode(int x, TreeNode *left, TreeNode *right)
     : val{x}, left{left}, right{right} {}
 
 // Factory function to create a binary tree using level-order traversal
+/**
+ * @brief Factory function to create a binary tree using level-order traversal
+ * @param values Vector of values to create the tree from
+ * @return Pointer to the root of the created binary tree
+ */
 TreeNode *make_tree(const std::vector<std::any> &values) {
   if (values.empty()) return nullptr;
 
+  // Create the root node
   TreeNode *root = new TreeNode(any_cast<int>(values[0]));
   std::queue<TreeNode *> queue;
   queue.push(root);
@@ -22,12 +43,14 @@ TreeNode *make_tree(const std::vector<std::any> &values) {
     TreeNode *front = queue.front();
     queue.pop();
 
+    // Create the left child node if it exists
     if (i < values.size() && values[i].type() != typeid(nullptr)) {
       front->left = new TreeNode(any_cast<int>(values[i]));
       queue.push(front->left);
     }
     ++i;
 
+    // Create the right child node if it exists
     if (i < values.size() && values[i].type() != typeid(nullptr)) {
       front->right = new TreeNode(any_cast<int>(values[i]));
       queue.push(front->right);
@@ -39,6 +62,12 @@ TreeNode *make_tree(const std::vector<std::any> &values) {
 }
 
 // Overload equality operator
+/**
+ * @brief Overload equality operator to compare two binary trees
+ * @param lhs Left-hand side tree to compare
+ * @param rhs Right-hand side tree to compare
+ * @return True if the trees are equal, false otherwise
+ */
 bool operator==(const TreeNode &lhs, const TreeNode &rhs) {
   std::stack<const TreeNode *> left_stack, right_stack;
   left_stack.push(&lhs);
@@ -66,6 +95,10 @@ bool operator==(const TreeNode &lhs, const TreeNode &rhs) {
 }
 
 // Release dynamic allocated memories used by the tree
+/**
+ * @brief Release dynamic allocated memories used by the tree
+ * @param root Pointer to the root of the tree
+ */
 void delete_tree(TreeNode *root) {
   if (root == nullptr) {
     return;
