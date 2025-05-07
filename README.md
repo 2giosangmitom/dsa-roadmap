@@ -126,11 +126,9 @@ flowchart TD
 | Link                                                                                                                      | Solutions                                      | Difficulty |
 | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
 | [Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/) | [C++](./src/solutions_1780/solutions_1780.hpp) | Medium     |
-| [Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/)                           | [C++](./src/solutions_2523/solutions_2523.hpp) | Medium     |
 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                         | [C++](./src/solutions_7/solutions_7.hpp)       | Medium     |
 | [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/)                                                   | [C++](./src/solutions_3360/solutions_3360.hpp) | Easy       |
 | [Water Bottles](https://leetcode.com/problems/water-bottles/)                                                             | [C++](./src/solutions_1518/solutions_1518.hpp) | Easy       |
-| [Count Primes](https://leetcode.com/problems/count-primes/)                                                               | [C++](./src/solutions_204/solutions_204.hpp)   | Medium     |
 | [Add Digits](https://leetcode.com/problems/add-digits/)                                                                   | [C++](./src/solutions_258/solutions_258.hpp)   | Easy       |
 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                     | [C++](./src/solutions_9/solutions_9.hpp)       | Easy       |
 | [Power of Two](https://leetcode.com/problems/power-of-two/)                                                               | [C++](./src/solutions_231/solutions_231.hpp)   | Easy       |
@@ -210,6 +208,14 @@ flowchart TD
 | [Sort an Array](https://leetcode.com/problems/sort-an-array/) | [C++](./src/solutions_912/solutions_912.hpp) | Medium     |
 | [Sort List](https://leetcode.com/problems/sort-list)          | [C++](./src/solutions_148/solutions_148.hpp) | Medium     |
 | [Sort Colors](https://leetcode.com/problems/sort-colors)      | [C++](./src/solutions_75/solutions_75.hpp)   | Medium     |
+
+### Number Theory
+
+| Link                                                                                            | Solutions                                      | Difficulty |
+| ----------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
+| [Three Divisors](https://leetcode.com/problems/three-divisors)                                  | [C++](./src/solutions_1952/solutions_1952.hpp) | Easy       |
+| [Count Primes](https://leetcode.com/problems/count-primes/)                                     | [C++](./src/solutions_204/solutions_204.hpp)   | Medium     |
+| [Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/) | [C++](./src/solutions_2523/solutions_2523.hpp) | Medium     |
 
 ### Must try
 
