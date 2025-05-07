@@ -23,6 +23,7 @@ flowchart TD
     B --> E[Binary Search]
     B --> F[Sliding Window]
     B --> G[Prefix Sums]
+    B --> L[Number Theory]
 
     %% Intermediate Concepts
     C --> D[Fast and Slow Pointers]
@@ -171,6 +172,14 @@ flowchart TD
 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)               | [C++](./src/solutions_560/solutions_560.hpp) | Medium     |
 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [C++](./src/solutions_238/solutions_238.hpp) | Medium     |
 
+### Number Theory
+
+| Link                                                                                            | Solutions                                      | Difficulty |
+| ----------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
+| [Three Divisors](https://leetcode.com/problems/three-divisors)                                  | [C++](./src/solutions_1952/solutions_1952.hpp) | Easy       |
+| [Count Primes](https://leetcode.com/problems/count-primes/)                                     | [C++](./src/solutions_204/solutions_204.hpp)   | Medium     |
+| [Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/) | [C++](./src/solutions_2523/solutions_2523.hpp) | Medium     |
+
 ### Trees
 
 | Link                                                                                                                                                 | Solutions                                    | Difficulty |
@@ -208,14 +217,6 @@ flowchart TD
 | [Sort an Array](https://leetcode.com/problems/sort-an-array/) | [C++](./src/solutions_912/solutions_912.hpp) | Medium     |
 | [Sort List](https://leetcode.com/problems/sort-list)          | [C++](./src/solutions_148/solutions_148.hpp) | Medium     |
 | [Sort Colors](https://leetcode.com/problems/sort-colors)      | [C++](./src/solutions_75/solutions_75.hpp)   | Medium     |
-
-### Number Theory
-
-| Link                                                                                            | Solutions                                      | Difficulty |
-| ----------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
-| [Three Divisors](https://leetcode.com/problems/three-divisors)                                  | [C++](./src/solutions_1952/solutions_1952.hpp) | Easy       |
-| [Count Primes](https://leetcode.com/problems/count-primes/)                                     | [C++](./src/solutions_204/solutions_204.hpp)   | Medium     |
-| [Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/) | [C++](./src/solutions_2523/solutions_2523.hpp) | Medium     |
 
 ### Must try
 
