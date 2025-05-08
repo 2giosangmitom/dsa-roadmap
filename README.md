@@ -179,6 +179,7 @@ flowchart TD
 | [Three Divisors](https://leetcode.com/problems/three-divisors)                                  | [C++](./src/solutions_1952/solutions_1952.hpp) | Easy       |
 | [Count Primes](https://leetcode.com/problems/count-primes/)                                     | [C++](./src/solutions_204/solutions_204.hpp)   | Medium     |
 | [Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/) | [C++](./src/solutions_2523/solutions_2523.hpp) | Medium     |
+| [Ugly Number](https://leetcode.com/problems/ugly-number)                                        | [C++](./src/solutions_263/solutions_263.hpp)   | Easy       |
 
 ### Trees
 
