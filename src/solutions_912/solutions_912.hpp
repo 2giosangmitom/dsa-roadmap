@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <cstdint>
 #include <random>
+#include <span>
 #include <vector>
 using namespace std;
 
@@ -28,6 +29,12 @@ class Solution {
   // Quick sort (using random pivot)
   vector<int> sortArray3(vector<int> &nums) {
     quick_sort2(nums, 0, nums.size() - 1);
+    return nums;
+  }
+
+  // Merge sort
+  vector<int> sortArray4(vector<int> &nums) {
+    merge_sort(nums);
     return nums;
   }
 
@@ -74,5 +81,31 @@ class Solution {
 
     quick_sort2(nums, left, j - 1);
     quick_sort2(nums, j + 1, right);
+  }
+
+  void merge(std::span<int> origin, std::span<int> left, std::span<int> right) {
+    size_t i = 0, j = 0, k = 0;
+
+    while (i < left.size() && j < right.size()) {
+      origin[k++] = (left[i] < right[j]) ? left[i++] : right[j++];
+    }
+
+    while (i < left.size()) origin[k++] = left[i++];
+    while (j < right.size()) origin[k++] = right[j++];
+  }
+
+  void merge_sort(std::span<int> nums) {
+    if (nums.size() <= 1) return;
+
+    size_t mid = nums.size() / 2;
+
+    std::vector<int> buffer(nums.begin(), nums.end());
+    auto left = std::span<int>(buffer.data(), mid);
+    auto right = std::span<int>(buffer.data() + mid, buffer.size() - mid);
+
+    merge_sort(left);
+    merge_sort(right);
+
+    merge(nums, left, right);
   }
 };
