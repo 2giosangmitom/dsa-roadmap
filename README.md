@@ -85,6 +85,7 @@ flowchart TD
 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                                              | [C++](./src/solutions_876/solutions_876.hpp) | Easy       |
 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)                                | [C++](./src/solutions_160/solutions_160.hpp) | Easy       |
 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                                              | [C++](./src/solutions_141/solutions_141.hpp) | Easy       |
+| [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)                                                           | [C++](./src/solutions_24/solutions_24.hpp)   | Medium     |
 
 ### Hash Maps and Hash Sets
 
