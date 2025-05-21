@@ -209,6 +209,7 @@ flowchart TD
 | Link                                                                                     | Solutions                                    | Difficulty |
 | ---------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | [C++](./src/solutions_208/solutions_208.hpp) | Medium     |
+| [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)            | [C++](./src/solutions_14/solutions_14.hpp)   | Easy       |
 
 ### Backtracking
 
@@ -234,7 +235,6 @@ flowchart TD
 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                                 | [C++](./src/solutions_8/solutions_8.hpp)     | Medium     |
 | [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/) | [C++](./src/solutions_747/solutions_747.hpp) | Easy       |
 | [Flood Fill](https://leetcode.com/problems/flood-fill/)                                                           | [C++](./src/solutions_733/solutions_733.hpp) | Easy       |
-| [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                     | [C++](./src/solutions_14/solutions_14.hpp)   | Easy       |
 
 ## 📌 Final Thoughts
 
