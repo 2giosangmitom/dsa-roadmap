@@ -206,10 +206,11 @@ flowchart TD
 
 ### Tries
 
-| Link                                                                                     | Solutions                                    | Difficulty |
-| ---------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
-| [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | [C++](./src/solutions_208/solutions_208.hpp) | Medium     |
-| [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)            | [C++](./src/solutions_14/solutions_14.hpp)   | Easy       |
+| Link                                                                                                                   | Solutions                                    | Difficulty |
+| ---------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
+| [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)                               | [C++](./src/solutions_208/solutions_208.hpp) | Medium     |
+| [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                          | [C++](./src/solutions_14/solutions_14.hpp)   | Easy       |
+| [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure) | [C++](./src/solutions_211/solutions_211.hpp) | Medium     |
 
 ### Backtracking
 
