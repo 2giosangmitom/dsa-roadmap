@@ -136,6 +136,7 @@ flowchart TD
 | [Power of Two](https://leetcode.com/problems/power-of-two/)                                                               | [C++](./src/solutions_231/solutions_231.hpp)   | Easy       |
 | [Pow(x, n)](https://leetcode.com/problems/powx-n/)                                                                        | [C++](./src/solutions_50/solutions_50.hpp)     | Medium     |
 | [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)                                                 | [C++](./src/solutions_227/solutions_227.hpp)   | Medium     |
+| [Rotate Image](https://leetcode.com/problems/rotate-image)                                                                | [C++](./src/solutions_48/solutions_48.hpp)     | Medium     |
 
 ### Stacks and Queues
 
