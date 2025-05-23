@@ -231,9 +231,10 @@ flowchart TD
 
 ### Dynamic Programming
 
-| Link                                                                | Solutions                                    | Difficulty |
-| ------------------------------------------------------------------- | -------------------------------------------- | ---------- |
-| [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle) | [C++](./src/solutions_118/solutions_118.hpp) | Easy       |
+| Link                                                                      | Solutions                                    | Difficulty |
+| ------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
+| [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)       | [C++](./src/solutions_118/solutions_118.hpp) | Easy       |
+| [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii) | [C++](./src/solutions_119/solutions_119.hpp) | Easy       |
 
 ### Must try
 
