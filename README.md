@@ -229,6 +229,12 @@ flowchart TD
 | [Sort List](https://leetcode.com/problems/sort-list)          | [C++](./src/solutions_148/solutions_148.hpp) | Medium     |
 | [Sort Colors](https://leetcode.com/problems/sort-colors)      | [C++](./src/solutions_75/solutions_75.hpp)   | Medium     |
 
+### Dynamic Programming
+
+| Link                                                                | Solutions                                    | Difficulty |
+| ------------------------------------------------------------------- | -------------------------------------------- | ---------- |
+| [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle) | [C++](./src/solutions_118/solutions_118.hpp) | Easy       |
+
 ### Must try
 
 | Link                                                                                                              | Solutions                                    | Difficulty |
