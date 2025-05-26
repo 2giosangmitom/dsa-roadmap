@@ -100,6 +100,7 @@ flowchart TD
 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                                   | [C++](./src/solutions_36/solutions_36.hpp)     | Medium     |
 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)                   | [C++](./src/solutions_128/solutions_128.hpp)   | Medium     |
 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                                         | [C++](./src/solutions_73/solutions_73.hpp)     | Medium     |
+| [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)                                 | [C++](./src/solutions_219/solutions_219.hpp)   | Easy       |
 
 ### Sliding Window
 
