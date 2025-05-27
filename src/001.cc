@@ -50,6 +50,7 @@ TEST(SolutionTest, TwoSum) {
 
   for (auto &item : test_cases.value()) {
     auto result = solution.twoSum(item.nums, item.target);
-    EXPECT_EQ(result, item.expected);
+    EXPECT_EQ(result, item.expected) << std::format(
+        "Failed for nums: {}, target: {}", item.nums, item.target);
   }
 }
