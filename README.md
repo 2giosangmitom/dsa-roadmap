@@ -47,6 +47,12 @@ flowchart TD
 > All solutions in this repository are written in **C++ only**. If you're not familiar with C++, I highly recommend learning the basic syntax and core concepts before diving into the problems.
 > You can find a great resource for learning C++ [here](https://www.learncpp.com/).
 
+### Linked Lists
+
+| Link                                                              | Solutions           | Difficulty |
+| ----------------------------------------------------------------- | ------------------- | ---------- |
+| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [C++](./src/002.cc) | Medium     |
+
 ### Hash Maps and Sets
 
 | Link                                              | Solutions           | Difficulty |
