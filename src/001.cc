@@ -1,7 +1,7 @@
+#include "utils.hh"
 #include <gtest/gtest.h>
 #include <nlohmann/json.hpp>
 #include <unordered_map>
-#include <utils.hh>
 #include <vector>
 
 class Solution {

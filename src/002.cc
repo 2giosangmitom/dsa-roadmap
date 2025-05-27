@@ -1,6 +1,6 @@
+#include "linked_list.hh"
 #include "utils.hh"
 #include <gtest/gtest.h>
-#include <linked_list.hh>
 #include <nlohmann/json.hpp>
 #include <vector>
 
@@ -14,13 +14,15 @@ public:
     while (l1 != nullptr || l2 != nullptr || carry != 0) {
       int digit1 = l1 != nullptr ? l1->val : 0;
       int digit2 = l2 != nullptr ? l2->val : 0;
-      int sum = digit1 + digit2 + carry; // Calculate the sum of the two digits and carry
+      // Calculate the sum of the two digits and carry
+      int sum = digit1 + digit2 + carry;
 
       // Calculate the digit to store in the current node and the new carry
       int digit = sum % 10;
       carry = sum / 10;
 
-      // Create a new node with the calculated digit and move the current pointer
+      // Create a new node with the calculated digit and move the current
+      // pointer
       curr->next = new ListNode(digit);
       curr = curr->next;
 
@@ -36,6 +38,7 @@ public:
   }
 };
 
+//-- Test cases for the addTwoNumbers function
 struct Data {
   std::vector<int> l1;
   std::vector<int> l2;
