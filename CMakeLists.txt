@@ -1,47 +1,54 @@
-cmake_minimum_required(VERSION 3.14)
-project("LeetCode_Cpp" LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.16)
+project(leetcode-cpp LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-if(NOT CMAKE_BUILD_TYPE)
-  set(CMAKE_BUILD_TYPE Debug CACHE STRING "Build type" FORCE)
+# Warnings for all targets
+set(COMMON_WARNINGS -Wall -Wextra -Wpedantic)
+
+# Enable ASAN only in Debug builds
+set(ASAN_COMPILE_FLAGS "")
+set(ASAN_LINK_FLAGS "")
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+  set(ASAN_COMPILE_FLAGS -fsanitize=address -fno-omit-frame-pointer)
+  set(ASAN_LINK_FLAGS -fsanitize=address)
 endif()
 
-option(ENABLE_ASAN "Enable AddressSanitizer" ON)
-
-if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
-  set(CMAKE_CXX_FLAGS_DEBUG "-Wno-#warnings -Wall -Wextra -O0 -g")
-  if(ENABLE_ASAN)
-    set(ASAN_FLAGS "-fsanitize=address")
-  endif()
-endif()
-
+# GoogleTest setup
 enable_testing()
 find_package(GTest REQUIRED)
 include(GoogleTest)
 
-file(GLOB_RECURSE LIB_SRC_FILES "${CMAKE_CURRENT_SOURCE_DIR}/src/lib/*.cc")
-list(FILTER LIB_SRC_FILES EXCLUDE REGEX ".*_test.cc$")
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+add_compile_definitions(TEST_DATA_DIR="${CMAKE_CURRENT_SOURCE_DIR}/tests")
 
-add_library(lib_objects INTERFACE)
+file(GLOB_RECURSE SRC_FILES src/*.cc)
+file(GLOB_RECURSE LIB_FILES lib/*.cc)
 
-foreach(LIB_SRC IN LISTS LIB_SRC_FILES)
-  get_filename_component(LIB_OBJ "${LIB_SRC}" NAME_WE)
-  add_library(${LIB_OBJ} OBJECT "${LIB_SRC}")
-  target_compile_options(${LIB_OBJ} PRIVATE ${ASAN_FLAGS})
-  target_link_options(${LIB_OBJ} PRIVATE ${ASAN_FLAGS})
-  target_link_libraries(lib_objects INTERFACE $<TARGET_OBJECTS:${LIB_OBJ}>)
-endforeach()
+# Compile all lib/*.cc files into a single OBJECT library
+add_library(lib_objects OBJECT ${LIB_FILES})
+target_compile_options(
+  lib_objects PRIVATE ${COMMON_WARNINGS} ${ASAN_COMPILE_FLAGS}
+)
+target_link_options(lib_objects PRIVATE ${ASAN_LINK_FLAGS})
+target_include_directories(
+  lib_objects PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
 
-file(GLOB_RECURSE TEST_FILES "${CMAKE_CURRENT_SOURCE_DIR}/**/*_test.cc")
+# Build each solution file as its own testable executable
+foreach(SRC_FILE ${SRC_FILES})
+  get_filename_component(EXE_NAME ${SRC_FILE} NAME_WE)
+  add_executable(${EXE_NAME} ${SRC_FILE} $<TARGET_OBJECTS:lib_objects>)
+  target_compile_options(
+    ${EXE_NAME} PRIVATE ${COMMON_WARNINGS} ${ASAN_COMPILE_FLAGS}
+  )
+  target_link_options(${EXE_NAME} PRIVATE ${ASAN_LINK_FLAGS})
+  target_include_directories(
+    ${EXE_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include
+  )
+  target_link_libraries(${EXE_NAME} PRIVATE GTest::gtest GTest::gtest_main)
 
-foreach(TEST_FILE IN LISTS TEST_FILES)
-  get_filename_component(TEST_NAME "${TEST_FILE}" NAME_WE)
-  add_executable(${TEST_NAME} "${TEST_FILE}")
-  target_link_libraries(${TEST_NAME} PRIVATE GTest::gtest_main lib_objects)
-  target_compile_options(${TEST_NAME} PRIVATE ${ASAN_FLAGS})
-  target_link_options(${TEST_NAME} PRIVATE ${ASAN_FLAGS})
-  gtest_discover_tests(${TEST_NAME})
+  gtest_discover_tests(${EXE_NAME})
 endforeach()
