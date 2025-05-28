@@ -23,5 +23,25 @@
     "nums": [0, 4, 3, 0],
     "target": 0,
     "expected": [0, 3]
+  },
+  {
+    "nums": [1, 1, 1, 1],
+    "target": 2,
+    "expected": [0, 1]
+  },
+  {
+    "nums": [5, 5, 5, 5],
+    "target": 10,
+    "expected": [0, 1]
+  },
+  {
+    "nums": [1],
+    "target": 2,
+    "expected": []
+  },
+  {
+    "nums": [],
+    "target": 0,
+    "expected": []
   }
 ]
