@@ -10,5 +10,33 @@
   {
     "input": "pwwkew",
     "expected": 3
+  },
+  {
+    "input": "dvdf",
+    "expected": 3
+  },
+  {
+    "input": "aab",
+    "expected": 2
+  },
+  {
+    "input": "abcde",
+    "expected": 5
+  },
+  {
+    "input": "",
+    "expected": 0
+  },
+  {
+    "input": "a",
+    "expected": 1
+  },
+  {
+    "input": "aa",
+    "expected": 1
+  },
+  {
+    "input": "abca",
+    "expected": 3
   }
 ]
