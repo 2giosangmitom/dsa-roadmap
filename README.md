@@ -46,6 +46,12 @@ flowchart TD
 > [!NOTE]
 > All solutions in this repository are written in **C++ only**. If you're not familiar with C++, I highly recommend learning the basic syntax and core concepts before diving into the problems. You can find a great resource for learning C++ [here](https://www.learncpp.com/).
 
+### Two Pointers
+
+| Link                                                                                          | Solutions           | Difficulty |
+| --------------------------------------------------------------------------------------------- | ------------------- | ---------- |
+| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [C++](./src/005.cc) | Medium     |
+
 ### Linked Lists
 
 | Link                                                              | Solutions           | Difficulty |

@@ -1,0 +1,34 @@
+[
+  {
+    "s": "babad",
+    "expected": ["bab", "aba"]
+  },
+  {
+    "s": "cbbd",
+    "expected": ["bb"]
+  },
+  {
+    "s": "a",
+    "expected": ["a"]
+  },
+  {
+    "s": "ac",
+    "expected": ["a", "c"]
+  },
+  {
+    "s": "",
+    "expected": [""]
+  },
+  {
+    "s": "racecar",
+    "expected": ["racecar"]
+  },
+  {
+    "s": "aabbcc",
+    "expected": ["aa", "bb", "cc"]
+  },
+  {
+    "s": "abccba",
+    "expected": ["abccba"]
+  }
+]
