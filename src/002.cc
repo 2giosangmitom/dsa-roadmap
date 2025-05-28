@@ -6,6 +6,9 @@
 
 class Solution {
 public:
+  // Overall time complexity is O(n) where n is the maximum length of the two
+  // input linked lists. The space complexity is O(n) for the output linked
+  // list.
   ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
     ListNode dummy_head(0);
     ListNode *curr = &dummy_head;
