@@ -55,6 +55,7 @@ TEST(SolutionTest, LongestSubstringWithoutRepeatingCharacters) {
 
   for (auto &tc : test_cases.value()) {
     int actual = solution.lengthOfLongestSubstring(tc.input);
-    EXPECT_EQ(actual, tc.expected) << std::format("s = \"{}\"", tc.input);
+    EXPECT_EQ(actual, tc.expected)
+        << std::format("Failed for s: \"{}\"", tc.input);
   }
 }

@@ -1,5 +1,6 @@
 #include "linked_list.hh"
 #include "utils.hh"
+#include <format>
 #include <gtest/gtest.h>
 #include <nlohmann/json.hpp>
 #include <vector>
@@ -61,7 +62,9 @@ TEST(SolutionTest, AddTwoNumbers) {
     ListNode *expected = create_list(test_case.expected);
 
     ListNode *actual = solution.addTwoNumbers(l1, l2);
-    EXPECT_TRUE(list_equal(actual, expected));
+    EXPECT_TRUE(list_equal(actual, expected)) << std::format(
+        "Failed for l1: {}, l2: {}, expected: {}, actual: {}", test_case.l1,
+        test_case.l2, test_case.expected, list_to_vector(actual));
 
     delete_list({l1, l2, expected, actual});
   }
