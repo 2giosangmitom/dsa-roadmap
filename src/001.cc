@@ -6,9 +6,9 @@
 
 class Solution {
 public:
-  // Overall time complexity is O(n) where n is the number of elements in the
-  // input vector. The space complexity is also O(n) due to the hash map used to
-  // store the numbers and their indices.
+  // Time complexity: O(n), where n is the number of elements in the input
+  // vector. Space complexity: O(n), where n is the number of unique elements in
+  // the input vector.
   std::vector<int> twoSum(std::vector<int> &nums, int target) {
     // Create a hash map to store the numbers and their indices
     std::unordered_map<int, int> num_map;
