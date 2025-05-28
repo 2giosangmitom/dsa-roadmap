@@ -63,3 +63,9 @@ flowchart TD
 | Link                                                                                                                            | Solutions           | Difficulty |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ---------- |
 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C++](./src/003.cc) | Medium     |
+
+### Number Theory
+
+| Link                                                        | Solutions           | Difficulty |
+| ----------------------------------------------------------- | ------------------- | ---------- |
+| [Count Primes](https://leetcode.com/problems/count-primes/) | [C++](./src/204.cc) | Medium     |

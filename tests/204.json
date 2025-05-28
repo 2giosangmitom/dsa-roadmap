@@ -1,0 +1,22 @@
+[
+  {
+    "n": 10,
+    "expected": 4
+  },
+  {
+    "n": 0,
+    "expected": 0
+  },
+  {
+    "n": 1,
+    "expected": 0
+  },
+  {
+    "n": 101,
+    "expected": 25
+  },
+  {
+    "n": 300,
+    "expected": 62
+  }
+]
