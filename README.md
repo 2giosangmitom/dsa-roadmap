@@ -75,3 +75,9 @@ flowchart TD
 | Link                                                        | Solutions           | Difficulty |
 | ----------------------------------------------------------- | ------------------- | ---------- |
 | [Count Primes](https://leetcode.com/problems/count-primes/) | [C++](./src/204.cc) | Medium     |
+
+### Math and Geometry
+
+| Link                                                                  | Solutions           | Difficulty |
+| --------------------------------------------------------------------- | ------------------- | ---------- |
+| [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C++](./src/009.cc) | Easy       |

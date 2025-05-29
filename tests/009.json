@@ -1,0 +1,30 @@
+[
+  {
+    "x": 121,
+    "expected": true
+  },
+  {
+    "x": -121,
+    "expected": false
+  },
+  {
+    "x": 1234567899,
+    "expected": false
+  },
+  {
+    "x": 123321,
+    "expected": true
+  },
+  {
+    "x": 10,
+    "expected": false
+  },
+  {
+    "x": 9,
+    "expected": true
+  },
+  {
+    "x": 0,
+    "expected": true
+  }
+]
