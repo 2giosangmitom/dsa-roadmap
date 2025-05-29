@@ -1,6 +1,5 @@
 #include "utils.hh"
 #include <gtest/gtest.h>
-#include <nlohmann/detail/macro_scope.hpp>
 #include <nlohmann/json.hpp>
 #include <string>
 #include <tuple>
