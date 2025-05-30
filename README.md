@@ -54,9 +54,10 @@ flowchart TD
 
 ### Linked Lists
 
-| Link                                                              | Solutions           | Difficulty |
-| ----------------------------------------------------------------- | ------------------- | ---------- |
-| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [C++](./src/002.cc) | Medium     |
+| Link                                                                           | Solutions           | Difficulty |
+| ------------------------------------------------------------------------------ | ------------------- | ---------- |
+| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)              | [C++](./src/002.cc) | Medium     |
+| [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) | [C++](./src/092.cc) | Medium     |
 
 ### Hash Maps and Sets
 
