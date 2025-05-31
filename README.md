@@ -51,6 +51,7 @@ flowchart TD
 | Link                                                                                          | Solutions           | Difficulty |
 | --------------------------------------------------------------------------------------------- | ------------------- | ---------- |
 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [C++](./src/005.cc) | Medium     |
+| [Count and Say](https://leetcode.com/problems/count-and-say)                                  | [C++](./src/038.cc) | Medium     |
 
 ### Linked Lists
 
