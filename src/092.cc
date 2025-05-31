@@ -1,18 +1,24 @@
 #include "linked_list.hh"
 #include "utils.hh"
 #include <gtest/gtest.h>
-#include <nlohmann/detail/macro_scope.hpp>
 
 class Solution {
 public:
+  // Time Complexity: O(n), where n is the length of the list. We traverse the
+  // list only once. Space Complexity: O(1), as the reversal is performed
+  // in-place by changing node pointers.
   ListNode *reverseBetween(ListNode *head, int left, int right) {
+    // Create a dummy node that points to the head, to simplify edge cases
+    // (e.g., reversing from the first node).
     ListNode dummy_head(0, head);
     ListNode *prev = &dummy_head;
 
+    // Move 'prev' to the node just before position 'left'.
     for (int i = 1; i < left; i++) {
       prev = prev->next;
     }
 
+    // 'curr' points to the first node of the sublist to reverse.
     ListNode *curr = prev->next;
     for (int i = 1; i <= right - left; i++) {
       ListNode *next_node = curr->next;
@@ -25,7 +31,7 @@ public:
   }
 };
 
-//-- Test cases for reverseBetween function
+//------ Test cases for reverseBetween function ------
 struct Data {
   std::vector<int> head;
   int left;
