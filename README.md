@@ -239,6 +239,7 @@ flowchart TD
 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                                 | [C++](./src/solutions_8/solutions_8.hpp)     | Medium     |
 | [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/) | [C++](./src/solutions_747/solutions_747.hpp) | Easy       |
 | [Flood Fill](https://leetcode.com/problems/flood-fill/)                                                           | [C++](./src/solutions_733/solutions_733.hpp) | Easy       |
+| [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion)                                              | [C++](./src/solutions_6/solutions_6.hpp)     | Medium     |
 
 ## 📌 Final Thoughts
 
