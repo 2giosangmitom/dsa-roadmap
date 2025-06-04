@@ -13,6 +13,9 @@ CYAN = "\033[96m"
 RESET = "\033[0m"
 BOLD = "\033[1m"
 
+# Specify C++ compiler to clang++
+os.environ["CXX"] = "clang++"
+
 
 def print_color(msg, color=RESET, bold=False, file=sys.stdout, end="\n"):
     style = color + (BOLD if bold else "")
