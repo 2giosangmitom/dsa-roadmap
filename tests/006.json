@@ -1,0 +1,22 @@
+[
+  {
+    "s": "PAYPALISHIRING",
+    "numRows": 3,
+    "expected": "PAHNAPLSIIGYIR"
+  },
+  {
+    "s": "PAYPALISHIRING",
+    "numRows": 4,
+    "expected": "PINALSIGYAHRPI"
+  },
+  {
+    "s": "A",
+    "numRows": 1,
+    "expected": "A"
+  },
+  {
+    "s": "LUFFYSTRAWHAT",
+    "numRows": 3,
+    "expected": "LYATUFSRWAFTH"
+  }
+]

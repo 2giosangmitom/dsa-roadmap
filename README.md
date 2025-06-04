@@ -83,3 +83,9 @@ flowchart TD
 | Link                                                                  | Solutions           | Difficulty |
 | --------------------------------------------------------------------- | ------------------- | ---------- |
 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C++](./src/009.cc) | Easy       |
+
+### Must do
+
+| Link                                                                 | Solutions           | Difficulty |
+| -------------------------------------------------------------------- | ------------------- | ---------- |
+| [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion) | [C++](./src/006.cc) | Medium     |
