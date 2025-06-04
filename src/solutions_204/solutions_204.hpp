@@ -22,6 +22,8 @@ class Solution {
 
  public:
   int countPrimes(int n) {
+    if (n < 2) return 0;
+
     auto primes = sieve(n);
 
     int count = 0;

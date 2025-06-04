@@ -19,4 +19,4 @@ jobs:
         uses: DeterminateSystems/nix-installer-action@main
 
       - name: Run tests
-        run: nix develop --command bash -c "make test"
+        run: nix develop --command bash -c "./x build all && ./x test all"

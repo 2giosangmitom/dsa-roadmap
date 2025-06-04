@@ -11,9 +11,7 @@ class Solutions_204_Test : public testing::TestWithParam<tuple<int, int>> {
 };
 
 TEST_P(Solutions_204_Test, ) {
-  int n;
-  int expected;
-  tie(n, expected) = GetParam();
+  auto [n, expected] = GetParam();
 
   int actual = solution.countPrimes(n);
 

@@ -2,15 +2,7 @@
 
 Hello 😹, welcome to this LeetCode roadmap.
 
-![Lines of Code](https://tokei.rs/b1/github/2giosangmitom/practice?category=code&style=flat-square)
-
-## 📚 Prerequisites
-
-Know how to write a function in any programming language :)
-
 ## 🗺️ The Roadmap
-
-Here's the visual representation of my DSA learning path:
 
 ```mermaid
 ---
@@ -52,7 +44,7 @@ flowchart TD
 ## 🚀 Let's Go
 
 > [!NOTE]
-> All solutions in this repository are written in **C++ only**. If you're not familiar with C++, I highly recommend learning the basic syntax and core concepts before diving into the problems.
+> All solutions in this repository are written in **C++ only**. If you're not familiar with C++, I highly recommend learning the basic syntax and core concepts before diving into the problems. You can find a great resource for learning C++ [here](https://www.learncpp.com/).
 
 ### Two Pointers
 
