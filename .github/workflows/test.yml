@@ -1,22 +1,19 @@
 name: Test C++
 
-on:
-  push:
-  pull_request:
-
-permissions:
-  contents: read
-  pull-requests: read
+on: [push, pull_request]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Nix
-        uses: DeterminateSystems/nix-installer-action@main
+      - name: Set up Nix
+        uses: DeterminateSystems/determinate-nix-action@v3.6.2
+
+      - name: Build
+        run: nix develop --command "./x build all"
 
       - name: Run tests
-        run: nix develop --command bash -c "./x build all && ./x test all"
+        run: nix develop --command "./x test all"
