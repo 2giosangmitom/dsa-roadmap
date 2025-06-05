@@ -16,9 +16,8 @@
         gtest
         cmake
         clang
-        gnumake
+        ninja
       ];
-      CXX = "${pkgs.clang}/bin/clang++";
     };
     formatter.${system} = pkgs.alejandra;
   };

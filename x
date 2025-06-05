@@ -48,7 +48,7 @@ def run_command(cmd, cwd=None, dry=False, verbose=True):
 
 
 def build(target, dry=False):
-    run_command(["cmake", "-B", "build"], dry=dry)
+    run_command(["cmake", "-B", "build", "-GNinja"], dry=dry)
     if target == "all":
         run_command(["cmake", "--build", "build"], dry=dry)
     else:
