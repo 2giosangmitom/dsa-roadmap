@@ -212,12 +212,12 @@ flowchart TD
 
 ### Backtracking
 
-| Link                                                              | Solutions | Difficulty |
-| ----------------------------------------------------------------- | --------- | ---------- |
-| [Permutations](https://leetcode.com/problems/permutations/)       | Pending   | Medium     |
-| [Permutations II](https://leetcode.com/problems/permutations-ii/) | Pending   | Medium     |
-| [Combinations](https://leetcode.com/problems/combinations/)       | Pending   | Medium     |
-| [Subsets](https://leetcode.com/problems/subsets/)                 | Pending   | Medium     |
+| Link                                                              | Solutions                                  | Difficulty |
+| ----------------------------------------------------------------- | ------------------------------------------ | ---------- |
+| [Permutations](https://leetcode.com/problems/permutations/)       | [C++](./src/solutions_46/solutions_46.hpp) | Medium     |
+| [Permutations II](https://leetcode.com/problems/permutations-ii/) | Pending                                    | Medium     |
+| [Combinations](https://leetcode.com/problems/combinations/)       | Pending                                    | Medium     |
+| [Subsets](https://leetcode.com/problems/subsets/)                 | Pending                                    | Medium     |
 
 ### Sort
 
