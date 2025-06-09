@@ -212,12 +212,15 @@ flowchart TD
 
 ### Backtracking
 
-| Link                                                              | Solutions                                  | Difficulty |
-| ----------------------------------------------------------------- | ------------------------------------------ | ---------- |
-| [Permutations](https://leetcode.com/problems/permutations/)       | [C++](./src/solutions_46/solutions_46.hpp) | Medium     |
-| [Permutations II](https://leetcode.com/problems/permutations-ii/) | Pending                                    | Medium     |
-| [Combinations](https://leetcode.com/problems/combinations/)       | Pending                                    | Medium     |
-| [Subsets](https://leetcode.com/problems/subsets/)                 | [C++](./src/solutions_78/solutions_78.hpp) | Medium     |
+| Link                                                                   | Solutions                                  | Difficulty |
+| ---------------------------------------------------------------------- | ------------------------------------------ | ---------- |
+| [Permutations](https://leetcode.com/problems/permutations/)            | [C++](./src/solutions_46/solutions_46.hpp) | Medium     |
+| [Permutations II](https://leetcode.com/problems/permutations-ii/)      | Pending                                    | Medium     |
+| [Combinations](https://leetcode.com/problems/combinations/)            | Pending                                    | Medium     |
+| [Subsets](https://leetcode.com/problems/subsets/)                      | [C++](./src/solutions_78/solutions_78.hpp) | Medium     |
+| [Combination Sum](https://leetcode.com/problems/combination-sum)       | Pending                                    | Medium     |
+| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii) | Pending                                    | Medium     |
+| [N-Queens](https://leetcode.com/problems/n-queens)                     | Pending                                    | Hard       |
 
 ### Sort
 
