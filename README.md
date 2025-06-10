@@ -221,6 +221,7 @@ flowchart TD
 | [Combination Sum](https://leetcode.com/problems/combination-sum)       | [C++](./src/solutions_39/solutions_39.hpp) | Medium     |
 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii) | Pending                                    | Medium     |
 | [N-Queens](https://leetcode.com/problems/n-queens)                     | [C++](./src/solutions_51/solutions_51.hpp) | Hard       |
+| [N-Queens II](https://leetcode.com/problems/n-queens-ii)               | [C++](./src/solutions_52/solutions_52.hpp) | Hard       |
 
 ### Sort
 
