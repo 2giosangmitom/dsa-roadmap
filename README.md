@@ -220,7 +220,7 @@ flowchart TD
 | [Subsets](https://leetcode.com/problems/subsets/)                      | [C++](./src/solutions_78/solutions_78.hpp) | Medium     |
 | [Combination Sum](https://leetcode.com/problems/combination-sum)       | Pending                                    | Medium     |
 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii) | Pending                                    | Medium     |
-| [N-Queens](https://leetcode.com/problems/n-queens)                     | Pending                                    | Hard       |
+| [N-Queens](https://leetcode.com/problems/n-queens)                     | [C++](./src/solutions_51/solutions_51.hpp) | Hard       |
 
 ### Sort
 
