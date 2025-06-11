@@ -5,18 +5,18 @@ using namespace std;
 
 class Solutions_344_Test
     : public testing::TestWithParam<tuple<vector<char>, vector<char>>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_344_Test, ) {
-  vector<char> s;
-  vector<char> expected;
-  tie(s, expected) = GetParam();
+    vector<char> s;
+    vector<char> expected;
+    tie(s, expected) = GetParam();
 
-  solution.reverseString(s);
+    solution.reverseString(s);
 
-  EXPECT_EQ(s, expected);
+    EXPECT_EQ(s, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

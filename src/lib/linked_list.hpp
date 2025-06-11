@@ -6,16 +6,16 @@
 
 // Definition for a linked list node
 struct ListNode {
-  int val;
-  ListNode *next;
+    int val;
+    ListNode *next;
 
-  // Constructors
-  ListNode();
-  ListNode(int val);
-  ListNode(int val, ListNode *next);
+    // Constructors
+    ListNode();
+    ListNode(int val);
+    ListNode(int val, ListNode *next);
 
-  // Represent list in string
-  std::string to_string() const;
+    // Represent list in string
+    std::string to_string() const;
 };
 
 // Factory function to create linked list

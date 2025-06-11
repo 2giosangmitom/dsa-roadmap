@@ -4,16 +4,16 @@
 
 class Solutions_189_Test
     : public testing::TestWithParam<tuple<vector<int>, int, vector<int>>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_189_Test, ) {
-  auto [nums, k, expected] = GetParam();
+    auto [nums, k, expected] = GetParam();
 
-  solution.rotate(nums, k);
+    solution.rotate(nums, k);
 
-  EXPECT_EQ(nums, expected);
+    EXPECT_EQ(nums, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

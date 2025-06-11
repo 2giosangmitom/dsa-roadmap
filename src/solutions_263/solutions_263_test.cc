@@ -4,16 +4,16 @@
 
 class Solutions_263_Test
     : public testing::TestWithParam<std::tuple<int, bool>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_263_Test, ) {
-  auto [n, expected] = GetParam();
+    auto [n, expected] = GetParam();
 
-  bool actual = solutions.isUgly(n);
+    bool actual = solutions.isUgly(n);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(, Solutions_263_Test,

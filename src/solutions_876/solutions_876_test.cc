@@ -6,24 +6,24 @@
 
 class Solutions_876_Test
     : public testing::TestWithParam<tuple<vector<int>, int>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_876_Test, ) {
-  auto [nums, index] = GetParam();
-  auto head = make_list(nums);
-  ListNode *expected = head;
-  for (int i = 0; i < index; i++) {
-    expected = expected->next;
-  }
+    auto [nums, index] = GetParam();
+    auto head = make_list(nums);
+    ListNode *expected = head;
+    for (int i = 0; i < index; i++) {
+        expected = expected->next;
+    }
 
-  ListNode *actual = solution.middleNode(head);
+    ListNode *actual = solution.middleNode(head);
 
-  ASSERT_NE(actual, nullptr);
-  EXPECT_EQ(actual, expected);
+    ASSERT_NE(actual, nullptr);
+    EXPECT_EQ(actual, expected);
 
-  delete_list({head});
+    delete_list({head});
 }
 
 INSTANTIATE_TEST_SUITE_P(

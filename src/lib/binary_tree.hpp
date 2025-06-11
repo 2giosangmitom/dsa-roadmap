@@ -5,14 +5,14 @@
 
 // Definition for a binary tree node
 struct TreeNode {
-  int val;
-  TreeNode *left;
-  TreeNode *right;
+    int val;
+    TreeNode *left;
+    TreeNode *right;
 
-  // Constructors
-  TreeNode();
-  TreeNode(int x);
-  TreeNode(int x, TreeNode *left, TreeNode *right);
+    // Constructors
+    TreeNode();
+    TreeNode(int x);
+    TreeNode(int x, TreeNode *left, TreeNode *right);
 };
 
 // Factory function to create a binary tree using level-order traversal

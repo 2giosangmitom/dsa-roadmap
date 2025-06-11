@@ -6,16 +6,16 @@
 
 class Solutions_4_Test
     : public testing::TestWithParam<tuple<vector<int>, vector<int>, double>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_4_Test, ) {
-  auto [nums1, nums2, expected] = GetParam();
+    auto [nums1, nums2, expected] = GetParam();
 
-  double actual = solution.findMedianSortedArrays(nums1, nums2);
+    double actual = solution.findMedianSortedArrays(nums1, nums2);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

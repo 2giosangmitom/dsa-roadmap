@@ -6,16 +6,16 @@
 
 class Solutions_424_Test
     : public testing::TestWithParam<tuple<string, int, int>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_424_Test, ) {
-  auto [s, k, expected] = GetParam();
+    auto [s, k, expected] = GetParam();
 
-  int actual = solution.characterReplacement(s, k);
+    int actual = solution.characterReplacement(s, k);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(, Solutions_424_Test,

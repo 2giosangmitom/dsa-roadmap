@@ -5,20 +5,20 @@
 class Solutions_19_Test
     : public testing::TestWithParam<
           std::tuple<std::vector<int>, int, std::vector<int>>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_19_Test, ) {
-  auto [head_values, pos, expected_values] = GetParam();
-  auto head = make_list(head_values);
-  auto expected = make_list(expected_values);
+    auto [head_values, pos, expected_values] = GetParam();
+    auto head = make_list(head_values);
+    auto expected = make_list(expected_values);
 
-  ListNode *actual = solution.removeNthFromEnd(head, pos);
+    ListNode *actual = solution.removeNthFromEnd(head, pos);
 
-  EXPECT_TRUE(actual == expected || *actual == *expected);
+    EXPECT_TRUE(actual == expected || *actual == *expected);
 
-  delete_list({head, expected});
+    delete_list({head, expected});
 }
 
 INSTANTIATE_TEST_SUITE_P(

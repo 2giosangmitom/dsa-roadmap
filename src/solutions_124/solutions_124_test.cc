@@ -4,19 +4,19 @@
 
 class Solutions_124_Test
     : public testing::TestWithParam<std::tuple<std::vector<std::any>, int>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_124_Test, ) {
-  auto [vals, expected] = GetParam();
-  auto root = make_tree(vals);
+    auto [vals, expected] = GetParam();
+    auto root = make_tree(vals);
 
-  int actual = solutions.maxPathSum(root);
+    int actual = solutions.maxPathSum(root);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 
-  delete_tree(root);
+    delete_tree(root);
 }
 
 INSTANTIATE_TEST_SUITE_P(

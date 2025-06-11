@@ -4,16 +4,16 @@
 
 class Solutions_239_Test
     : public testing::TestWithParam<tuple<vector<int>, int, vector<int>>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_239_Test, ) {
-  auto [nums, k, expected] = GetParam();
+    auto [nums, k, expected] = GetParam();
 
-  auto actual = solutions.maxSlidingWindow(nums, k);
+    auto actual = solutions.maxSlidingWindow(nums, k);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

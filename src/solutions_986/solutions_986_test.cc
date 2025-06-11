@@ -7,16 +7,16 @@
 class Solutions_986_Test
     : public testing::TestWithParam<tuple<
           vector<vector<int>>, vector<vector<int>>, vector<vector<int>>>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_986_Test, ) {
-  auto [firstList, secondList, expected] = GetParam();
+    auto [firstList, secondList, expected] = GetParam();
 
-  auto actual = solutions.intervalIntersection(firstList, secondList);
+    auto actual = solutions.intervalIntersection(firstList, secondList);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

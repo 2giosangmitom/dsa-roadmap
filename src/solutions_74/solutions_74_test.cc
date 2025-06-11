@@ -6,16 +6,16 @@
 
 class Solutions_74_Test
     : public testing::TestWithParam<tuple<vector<vector<int>>, int, bool>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_74_Test, ) {
-  auto [matrix, target, expected] = GetParam();
+    auto [matrix, target, expected] = GetParam();
 
-  bool actual = solution.searchMatrix(matrix, target);
+    bool actual = solution.searchMatrix(matrix, target);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

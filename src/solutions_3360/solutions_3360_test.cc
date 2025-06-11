@@ -4,14 +4,14 @@
 using namespace std;
 
 class Solutions_3360_Test : public testing::TestWithParam<tuple<int, bool>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_3360_Test, ) {
-  auto [n, expected] = GetParam();
+    auto [n, expected] = GetParam();
 
-  EXPECT_EQ(solutions.canAliceWin(n), expected);
+    EXPECT_EQ(solutions.canAliceWin(n), expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

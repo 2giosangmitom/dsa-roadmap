@@ -6,18 +6,18 @@
 
 class Solutions_110_Test
     : public testing::TestWithParam<std::tuple<std::vector<std::any>, bool>> {
- protected:
-  Solution sol;
+   protected:
+    Solution sol;
 };
 
 TEST_P(Solutions_110_Test, ) {
-  auto [input, expected] = GetParam();
-  auto root = make_tree(input);
+    auto [input, expected] = GetParam();
+    auto root = make_tree(input);
 
-  bool actual = sol.isBalanced(root);
-  EXPECT_EQ(actual, expected);
+    bool actual = sol.isBalanced(root);
+    EXPECT_EQ(actual, expected);
 
-  delete_tree(root);
+    delete_tree(root);
 }
 
 INSTANTIATE_TEST_SUITE_P(

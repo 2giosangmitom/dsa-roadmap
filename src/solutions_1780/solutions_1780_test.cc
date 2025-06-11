@@ -6,16 +6,16 @@
 using namespace std;
 
 class Solutions_1780_Test : public testing::TestWithParam<tuple<int, bool>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_1780_Test, ) {
-  auto [n, expected] = GetParam();
+    auto [n, expected] = GetParam();
 
-  bool actual = solution.checkPowersOfThree(n);
+    bool actual = solution.checkPowersOfThree(n);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(, Solutions_1780_Test,

@@ -7,17 +7,18 @@
 
 class Solutions_80_Test
     : public testing::TestWithParam<tuple<vector<int>, int, vector<int>>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_80_Test, ) {
-  auto [nums, expected, expected_nums] = GetParam();
+    auto [nums, expected, expected_nums] = GetParam();
 
-  int actual = solutions.removeDuplicates(nums);
+    int actual = solutions.removeDuplicates(nums);
 
-  ASSERT_EQ(actual, expected);
-  EXPECT_TRUE(ranges::equal(nums | ranges::views::take(actual), expected_nums));
+    ASSERT_EQ(actual, expected);
+    EXPECT_TRUE(
+        ranges::equal(nums | ranges::views::take(actual), expected_nums));
 }
 
 INSTANTIATE_TEST_SUITE_P(

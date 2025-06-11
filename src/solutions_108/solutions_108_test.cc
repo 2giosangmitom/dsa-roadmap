@@ -7,24 +7,24 @@
 class Solutions_108_Test
     : public testing::TestWithParam<
           std::tuple<std::vector<int>, std::vector<std::any>>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_108_Test, ) {
-  auto [nums, expected_vals] = GetParam();
-  auto expected = make_tree(expected_vals);
+    auto [nums, expected_vals] = GetParam();
+    auto expected = make_tree(expected_vals);
 
-  auto actual = solutions.sortedArrayToBST(nums);
+    auto actual = solutions.sortedArrayToBST(nums);
 
-  if (actual == nullptr) {
-    EXPECT_TRUE(expected == nullptr);
-  } else {
-    EXPECT_EQ(*actual, *expected);
-  }
+    if (actual == nullptr) {
+        EXPECT_TRUE(expected == nullptr);
+    } else {
+        EXPECT_EQ(*actual, *expected);
+    }
 
-  delete_tree(expected);
-  delete_tree(actual);
+    delete_tree(expected);
+    delete_tree(actual);
 }
 
 INSTANTIATE_TEST_SUITE_P(

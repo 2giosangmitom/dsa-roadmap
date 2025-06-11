@@ -6,24 +6,24 @@
 
 class Solutions_73_Test : public testing::TestWithParam<
                               tuple<vector<vector<int>>, vector<vector<int>>>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_73_Test, first) {
-  auto [matrix, expected] = GetParam();
+    auto [matrix, expected] = GetParam();
 
-  solution.setZeroes(matrix);
+    solution.setZeroes(matrix);
 
-  EXPECT_EQ(matrix, expected);
+    EXPECT_EQ(matrix, expected);
 }
 
 TEST_P(Solutions_73_Test, second) {
-  auto [matrix, expected] = GetParam();
+    auto [matrix, expected] = GetParam();
 
-  solution.setZeroes2(matrix);
+    solution.setZeroes2(matrix);
 
-  EXPECT_EQ(matrix, expected);
+    EXPECT_EQ(matrix, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

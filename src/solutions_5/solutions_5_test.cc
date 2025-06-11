@@ -5,16 +5,16 @@
 #include <tuple>
 
 class Solutions_5_Test : public testing::TestWithParam<tuple<string, string>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_5_Test, ) {
-  auto [s, expected] = GetParam();
+    auto [s, expected] = GetParam();
 
-  string actual = solution.longestPalindrome(s);
+    string actual = solution.longestPalindrome(s);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

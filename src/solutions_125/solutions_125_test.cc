@@ -5,16 +5,16 @@
 #include <tuple>
 
 class Solutions_125_Test : public testing::TestWithParam<tuple<string, bool>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_125_Test, ) {
-  auto [s, expected] = GetParam();
+    auto [s, expected] = GetParam();
 
-  bool actual = solution.isPalindrome(s);
+    bool actual = solution.isPalindrome(s);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

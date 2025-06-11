@@ -7,18 +7,18 @@
 
 class Solutions_692_Test : public testing::TestWithParam<
                                tuple<vector<string>, int, vector<string>>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_692_Test, ) {
-  auto [words, k, expected] = GetParam();
-  sort(expected.begin(), expected.end());
+    auto [words, k, expected] = GetParam();
+    sort(expected.begin(), expected.end());
 
-  auto actual = solutions.topKFrequent(words, k);
-  sort(actual.begin(), actual.end());
+    auto actual = solutions.topKFrequent(words, k);
+    sort(actual.begin(), actual.end());
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

@@ -6,30 +6,30 @@
 
 class Solutions_101_Test
     : public testing::TestWithParam<std::tuple<std::vector<std::any>, bool>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_101_Test, dfs) {
-  auto [tree_vals, expected] = GetParam();
+    auto [tree_vals, expected] = GetParam();
 
-  auto root = make_tree(tree_vals);
-  bool actual = solutions.isSymmetric(root);
+    auto root = make_tree(tree_vals);
+    bool actual = solutions.isSymmetric(root);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 
-  delete_tree(root);
+    delete_tree(root);
 }
 
 TEST_P(Solutions_101_Test, bfs) {
-  auto [tree_vals, expected] = GetParam();
+    auto [tree_vals, expected] = GetParam();
 
-  auto root = make_tree(tree_vals);
-  bool actual = solutions.isSymmetric2(root);
+    auto root = make_tree(tree_vals);
+    bool actual = solutions.isSymmetric2(root);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 
-  delete_tree(root);
+    delete_tree(root);
 }
 
 INSTANTIATE_TEST_SUITE_P(

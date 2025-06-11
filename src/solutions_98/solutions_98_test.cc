@@ -8,18 +8,18 @@
 
 class Solutions_98_Test
     : public testing::TestWithParam<tuple<vector<any>, bool>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_98_Test, ) {
-  auto [vals, expected] = GetParam();
-  auto root = make_tree(vals);
+    auto [vals, expected] = GetParam();
+    auto root = make_tree(vals);
 
-  auto actual = solutions.isValidBST(root);
-  EXPECT_EQ(actual, expected);
+    auto actual = solutions.isValidBST(root);
+    EXPECT_EQ(actual, expected);
 
-  delete_tree(root);
+    delete_tree(root);
 }
 
 INSTANTIATE_TEST_SUITE_P(

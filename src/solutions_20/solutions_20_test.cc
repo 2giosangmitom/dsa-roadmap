@@ -3,16 +3,16 @@
 #include <gtest/gtest.h>
 
 class Solutions_20_Test : public testing::TestWithParam<tuple<string, bool>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_20_Test, ) {
-  auto [s, expected] = GetParam();
+    auto [s, expected] = GetParam();
 
-  bool actual = solution.isValid(s);
+    bool actual = solution.isValid(s);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(, Solutions_20_Test,

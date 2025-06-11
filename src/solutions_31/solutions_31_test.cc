@@ -7,16 +7,16 @@
 
 class Solutions_31_Test
     : public testing::TestWithParam<tuple<vector<int>, vector<int>>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_31_Test, ) {
-  auto [nums, expected] = GetParam();
+    auto [nums, expected] = GetParam();
 
-  solution.nextPermutation(nums);
+    solution.nextPermutation(nums);
 
-  EXPECT_EQ(nums, expected);
+    EXPECT_EQ(nums, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

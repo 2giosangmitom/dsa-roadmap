@@ -6,16 +6,16 @@
 using namespace std;
 
 class Solutions_204_Test : public testing::TestWithParam<tuple<int, int>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_204_Test, ) {
-  auto [n, expected] = GetParam();
+    auto [n, expected] = GetParam();
 
-  int actual = solution.countPrimes(n);
+    int actual = solution.countPrimes(n);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(, Solutions_204_Test,

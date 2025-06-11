@@ -6,16 +6,16 @@
 
 class Solutions_215_Test
     : public testing::TestWithParam<tuple<vector<int>, int, int>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_215_Test, ) {
-  auto [nums, k, expected] = GetParam();
+    auto [nums, k, expected] = GetParam();
 
-  int actual = solutions.findKthLargest(nums, k);
+    int actual = solutions.findKthLargest(nums, k);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

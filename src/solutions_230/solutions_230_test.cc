@@ -4,28 +4,28 @@
 
 class Solutions_230_Test : public testing::TestWithParam<
                                std::tuple<std::vector<std::any>, int, int>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_230_Test, recursive) {
-  auto [tree_vals, k, expected] = GetParam();
-  auto root = make_tree(tree_vals);
+    auto [tree_vals, k, expected] = GetParam();
+    auto root = make_tree(tree_vals);
 
-  int actual = solutions.kthSmallest(root, k);
-  EXPECT_EQ(actual, expected);
+    int actual = solutions.kthSmallest(root, k);
+    EXPECT_EQ(actual, expected);
 
-  delete_tree(root);
+    delete_tree(root);
 }
 
 TEST_P(Solutions_230_Test, iterative) {
-  auto [tree_vals, k, expected] = GetParam();
-  auto root = make_tree(tree_vals);
+    auto [tree_vals, k, expected] = GetParam();
+    auto root = make_tree(tree_vals);
 
-  int actual = solutions.kthSmallest2(root, k);
-  EXPECT_EQ(actual, expected);
+    int actual = solutions.kthSmallest2(root, k);
+    EXPECT_EQ(actual, expected);
 
-  delete_tree(root);
+    delete_tree(root);
 }
 
 INSTANTIATE_TEST_SUITE_P(

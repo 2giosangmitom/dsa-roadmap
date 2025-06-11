@@ -6,24 +6,24 @@
 
 class Solutions_238_Test
     : public testing::TestWithParam<tuple<vector<int>, vector<int>>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_238_Test, first) {
-  auto [nums, expected] = GetParam();
+    auto [nums, expected] = GetParam();
 
-  auto actual = solutions.productExceptSelf(nums);
+    auto actual = solutions.productExceptSelf(nums);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 TEST_P(Solutions_238_Test, second) {
-  auto [nums, expected] = GetParam();
+    auto [nums, expected] = GetParam();
 
-  auto actual = solutions.productExceptSelf2(nums);
+    auto actual = solutions.productExceptSelf2(nums);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

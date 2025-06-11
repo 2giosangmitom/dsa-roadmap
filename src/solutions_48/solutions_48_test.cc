@@ -5,16 +5,16 @@
 class Solutions_48_Test
     : public testing::TestWithParam<std::tuple<std::vector<std::vector<int>>,
                                                std::vector<std::vector<int>>>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_48_Test, ) {
-  auto [matrix, expected] = GetParam();
+    auto [matrix, expected] = GetParam();
 
-  solutions.rotate(matrix);
+    solutions.rotate(matrix);
 
-  EXPECT_EQ(matrix, expected);
+    EXPECT_EQ(matrix, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

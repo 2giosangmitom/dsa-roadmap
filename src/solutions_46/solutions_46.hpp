@@ -4,34 +4,34 @@
 #include <vector>
 
 class Solution {
- private:
-  void solve(const std::vector<int>& nums,
-             std::vector<std::vector<int>>& result, std::vector<int> candidate,
-             std::unordered_set<int>& used) {
-    if (candidate.size() == nums.size()) {
-      result.push_back(std::move(candidate));
-      return;
+   private:
+    void solve(const std::vector<int>& nums,
+               std::vector<std::vector<int>>& result,
+               std::vector<int> candidate, std::unordered_set<int>& used) {
+        if (candidate.size() == nums.size()) {
+            result.push_back(std::move(candidate));
+            return;
+        }
+
+        for (int num : nums) {
+            if (!used.contains(num)) {
+                candidate.push_back(num);
+                used.insert(num);
+                solve(nums, result, candidate, used);
+                candidate.pop_back();
+                used.erase(num);
+            }
+        }
     }
 
-    for (int num : nums) {
-      if (!used.contains(num)) {
-        candidate.push_back(num);
-        used.insert(num);
+   public:
+    std::vector<std::vector<int>> permute(std::vector<int>& nums) {
+        std::vector<std::vector<int>> result;
+        std::vector<int> candidate;
+        std::unordered_set<int> used;
+
         solve(nums, result, candidate, used);
-        candidate.pop_back();
-        used.erase(num);
-      }
+
+        return result;
     }
-  }
-
- public:
-  std::vector<std::vector<int>> permute(std::vector<int>& nums) {
-    std::vector<std::vector<int>> result;
-    std::vector<int> candidate;
-    std::unordered_set<int> used;
-
-    solve(nums, result, candidate, used);
-
-    return result;
-  }
 };

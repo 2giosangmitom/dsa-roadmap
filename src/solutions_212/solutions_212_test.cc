@@ -8,17 +8,17 @@ class Solutions_212_Test
     : public testing::TestWithParam<
           std::tuple<std::vector<std::vector<char>>, std::vector<std::string>,
                      std::vector<std::string>>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_212_Test, ) {
-  auto [board, words, expected] = GetParam();
+    auto [board, words, expected] = GetParam();
 
-  auto actual = solution.findWords(board, words);
+    auto actual = solution.findWords(board, words);
 
-  std::sort(actual.begin(), actual.end());
-  EXPECT_EQ(actual, expected);
+    std::sort(actual.begin(), actual.end());
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

@@ -9,14 +9,14 @@ class Solutions_303_Test
           tuple<vector<int>, vector<tuple<int, int, int>>>> {};
 
 TEST_P(Solutions_303_Test, ) {
-  auto [nums, calls] = GetParam();
+    auto [nums, calls] = GetParam();
 
-  NumArray sol(nums);
+    NumArray sol(nums);
 
-  for (const auto &call : calls) {
-    int actual = sol.sumRange(get<0>(call), get<1>(call));
-    EXPECT_EQ(actual, get<2>(call));
-  }
+    for (const auto &call : calls) {
+        int actual = sol.sumRange(get<0>(call), get<1>(call));
+        EXPECT_EQ(actual, get<2>(call));
+    }
 }
 
 INSTANTIATE_TEST_SUITE_P(

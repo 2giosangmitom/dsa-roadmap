@@ -7,16 +7,16 @@ using namespace std;
 
 class Solutions_1518_Test
     : public testing::TestWithParam<tuple<int, int, int>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_1518_Test, ) {
-  auto [num_bottles, num_exchange, expected] = GetParam();
+    auto [num_bottles, num_exchange, expected] = GetParam();
 
-  int actual = solution.numWaterBottles(num_bottles, num_exchange);
+    int actual = solution.numWaterBottles(num_bottles, num_exchange);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(, Solutions_1518_Test,

@@ -5,16 +5,16 @@
 class Solutions_733_Test
     : public testing::TestWithParam<
           tuple<vector<vector<int>>, int, int, int, vector<vector<int>>>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_733_Test, ) {
-  auto [image, sr, sc, color, expected] = GetParam();
+    auto [image, sr, sc, color, expected] = GetParam();
 
-  auto actual = solution.floodFill(image, sr, sc, color);
+    auto actual = solution.floodFill(image, sr, sc, color);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

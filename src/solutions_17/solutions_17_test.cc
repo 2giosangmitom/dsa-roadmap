@@ -7,16 +7,16 @@
 
 class Solutions_17_Test
     : public testing::TestWithParam<tuple<string, vector<string>>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_17_Test, ) {
-  auto [digits, expected] = GetParam();
+    auto [digits, expected] = GetParam();
 
-  auto actual = solutions.letterCombinations(digits);
+    auto actual = solutions.letterCombinations(digits);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

@@ -4,16 +4,16 @@
 using namespace std;
 
 class Solutions_231_Test : public testing::TestWithParam<tuple<int, bool>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_231_Test, ) {
-  auto [input, expected] = GetParam();
+    auto [input, expected] = GetParam();
 
-  bool actual = solution.isPowerOfTwo(input);
+    bool actual = solution.isPowerOfTwo(input);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

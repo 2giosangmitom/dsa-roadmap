@@ -7,19 +7,19 @@
 class Solutions_92_Test
     : public testing::TestWithParam<
           std::tuple<std::vector<int>, int, int, std::vector<int>>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_92_Test, ) {
-  auto [list_vals, left, right, expected_vals] = GetParam();
-  auto head = make_list(list_vals);
-  auto expected = make_list(expected_vals);
+    auto [list_vals, left, right, expected_vals] = GetParam();
+    auto head = make_list(list_vals);
+    auto expected = make_list(expected_vals);
 
-  auto actual = solutions.reverseBetween(head, left, right);
+    auto actual = solutions.reverseBetween(head, left, right);
 
-  EXPECT_EQ(*actual, *expected);
-  delete_list({actual, expected});
+    EXPECT_EQ(*actual, *expected);
+    delete_list({actual, expected});
 }
 
 INSTANTIATE_TEST_SUITE_P(

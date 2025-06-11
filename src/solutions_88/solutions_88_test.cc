@@ -5,16 +5,16 @@
 class Solutions_88_Test
     : public testing::TestWithParam<
           tuple<vector<int>, int, vector<int>, int, vector<int>>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_88_Test, ) {
-  auto [nums1, m, nums2, n, expected] = GetParam();
+    auto [nums1, m, nums2, n, expected] = GetParam();
 
-  solution.merge(nums1, m, nums2, n);
+    solution.merge(nums1, m, nums2, n);
 
-  EXPECT_EQ(nums1, expected);
+    EXPECT_EQ(nums1, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

@@ -5,24 +5,24 @@
 #include <tuple>
 
 class Solutions_3_Test : public testing::TestWithParam<tuple<string, int>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_3_Test, first) {
-  auto [s, expected] = GetParam();
+    auto [s, expected] = GetParam();
 
-  int actual = solution.lengthOfLongestSubstring(s);
+    int actual = solution.lengthOfLongestSubstring(s);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 TEST_P(Solutions_3_Test, second) {
-  auto [s, expected] = GetParam();
+    auto [s, expected] = GetParam();
 
-  int actual = solution.lengthOfLongestSubstring2(s);
+    int actual = solution.lengthOfLongestSubstring2(s);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

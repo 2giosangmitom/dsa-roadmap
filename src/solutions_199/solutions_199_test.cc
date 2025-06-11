@@ -4,18 +4,18 @@
 
 class Solutions_199_Test
     : public testing::TestWithParam<tuple<vector<any>, vector<int>>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_199_Test, ) {
-  auto [tree_vals, expected] = GetParam();
-  auto tree = make_tree(tree_vals);
+    auto [tree_vals, expected] = GetParam();
+    auto tree = make_tree(tree_vals);
 
-  auto actual = solution.rightSideView(tree);
+    auto actual = solution.rightSideView(tree);
 
-  EXPECT_EQ(actual, expected);
-  delete_tree(tree);
+    EXPECT_EQ(actual, expected);
+    delete_tree(tree);
 }
 
 INSTANTIATE_TEST_SUITE_P(

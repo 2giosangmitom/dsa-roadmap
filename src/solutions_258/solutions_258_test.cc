@@ -4,16 +4,16 @@
 using namespace std;
 
 class Solutions_258_Test : public testing::TestWithParam<tuple<int, int>> {
- protected:
-  Solution sol;
+   protected:
+    Solution sol;
 };
 
 TEST_P(Solutions_258_Test, ) {
-  auto [num, expected] = GetParam();
+    auto [num, expected] = GetParam();
 
-  int actual = sol.addDigits(num);
+    int actual = sol.addDigits(num);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(, Solutions_258_Test,

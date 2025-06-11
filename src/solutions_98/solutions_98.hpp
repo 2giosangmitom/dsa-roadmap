@@ -7,23 +7,25 @@
 using namespace std;
 
 class Solution {
- public:
-  bool isValidBST(TreeNode *root) { return helper(root, INT64_MIN, INT64_MAX); }
-
- private:
-  bool helper(TreeNode *root, long lower_bound, long upper_bound) {
-    if (root == nullptr) {
-      return true;
+   public:
+    bool isValidBST(TreeNode *root) {
+        return helper(root, INT64_MIN, INT64_MAX);
     }
 
-    if (!(root->val > lower_bound && root->val < upper_bound)) {
-      return false;
-    }
+   private:
+    bool helper(TreeNode *root, long lower_bound, long upper_bound) {
+        if (root == nullptr) {
+            return true;
+        }
 
-    if (!(helper(root->left, lower_bound, root->val))) {
-      return false;
-    }
+        if (!(root->val > lower_bound && root->val < upper_bound)) {
+            return false;
+        }
 
-    return helper(root->right, root->val, upper_bound);
-  }
+        if (!(helper(root->left, lower_bound, root->val))) {
+            return false;
+        }
+
+        return helper(root->right, root->val, upper_bound);
+    }
 };

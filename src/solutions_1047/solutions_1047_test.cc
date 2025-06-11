@@ -6,16 +6,16 @@
 
 class Solutions_1047_Test
     : public testing::TestWithParam<tuple<string, string>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_1047_Test, ) {
-  auto [s, expected] = GetParam();
+    auto [s, expected] = GetParam();
 
-  string actual = solutions.removeDuplicates(s);
+    string actual = solutions.removeDuplicates(s);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(, Solutions_1047_Test,

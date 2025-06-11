@@ -7,24 +7,24 @@
 class Solutions_14_Test
     : public testing::TestWithParam<
           std::tuple<std::vector<std::string>, std::string>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_14_Test, first) {
-  auto [strs, expected] = GetParam();
+    auto [strs, expected] = GetParam();
 
-  std::string actual = solution.longestCommonPrefix(strs);
+    std::string actual = solution.longestCommonPrefix(strs);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 TEST_P(Solutions_14_Test, second) {
-  auto [strs, expected] = GetParam();
+    auto [strs, expected] = GetParam();
 
-  std::string actual = solution.longestCommonPrefix2(strs);
+    std::string actual = solution.longestCommonPrefix2(strs);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

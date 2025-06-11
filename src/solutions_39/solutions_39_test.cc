@@ -8,16 +8,16 @@
 class Solutions_39_Test
     : public testing::TestWithParam<
           std::tuple<vector<int>, int, vector<vector<int>>>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_39_Test, ) {
-  auto [candidates, target, expected] = GetParam();
+    auto [candidates, target, expected] = GetParam();
 
-  auto actual = solutions.combinationSum(candidates, target);
+    auto actual = solutions.combinationSum(candidates, target);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

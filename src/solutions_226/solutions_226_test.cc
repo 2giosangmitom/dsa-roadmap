@@ -4,25 +4,25 @@
 
 class Solutions_226_Test
     : public testing::TestWithParam<tuple<vector<any>, vector<any>>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_226_Test, ) {
-  auto [input, expected] = GetParam();
-  auto root = make_tree(input);
-  auto expected_tree = make_tree(expected);
+    auto [input, expected] = GetParam();
+    auto root = make_tree(input);
+    auto expected_tree = make_tree(expected);
 
-  auto actual = solutions.invertTree(root);
+    auto actual = solutions.invertTree(root);
 
-  if (actual == nullptr) {
-    EXPECT_EQ(actual, expected_tree);
-  } else {
-    EXPECT_EQ(*actual, *expected_tree);
-  }
+    if (actual == nullptr) {
+        EXPECT_EQ(actual, expected_tree);
+    } else {
+        EXPECT_EQ(*actual, *expected_tree);
+    }
 
-  delete_tree(root);
-  delete_tree(expected_tree);
+    delete_tree(root);
+    delete_tree(expected_tree);
 }
 
 INSTANTIATE_TEST_SUITE_P(

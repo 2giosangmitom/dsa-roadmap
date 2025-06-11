@@ -5,13 +5,13 @@
 class Solutions_79_Test
     : public testing::TestWithParam<
           std::tuple<std::vector<std::vector<char>>, std::string, bool>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_79_Test, ) {
-  auto [board, word, expected] = GetParam();
-  EXPECT_EQ(solution.exist(board, word), expected);
+    auto [board, word, expected] = GetParam();
+    EXPECT_EQ(solution.exist(board, word), expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

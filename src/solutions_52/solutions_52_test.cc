@@ -3,16 +3,16 @@
 #include <gtest/gtest.h>
 
 class Solutions_57_Test : public testing::TestWithParam<std::tuple<int, int>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_57_Test, ) {
-  auto [n, expected] = GetParam();
+    auto [n, expected] = GetParam();
 
-  auto actual = solutions.totalNQueens(n);
+    auto actual = solutions.totalNQueens(n);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(, Solutions_57_Test,

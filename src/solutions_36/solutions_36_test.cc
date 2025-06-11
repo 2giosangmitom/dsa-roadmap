@@ -8,16 +8,16 @@ using namespace std;
 
 class Solutions_36_Test
     : public testing::TestWithParam<tuple<vector<vector<char>>, bool>> {
- protected:
-  Solution sol;
+   protected:
+    Solution sol;
 };
 
 TEST_P(Solutions_36_Test, ) {
-  auto [board, expected] = GetParam();
+    auto [board, expected] = GetParam();
 
-  bool actual = sol.isValidSudoku(board);
+    bool actual = sol.isValidSudoku(board);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

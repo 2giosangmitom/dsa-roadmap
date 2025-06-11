@@ -4,52 +4,52 @@
 #include <unordered_map>
 
 struct TrieNode {
-  bool is_word;
-  std::unordered_map<char, TrieNode*> children;
+    bool is_word;
+    std::unordered_map<char, TrieNode*> children;
 };
 
 class Trie {
- private:
-  TrieNode* root;
+   private:
+    TrieNode* root;
 
-  void delete_trie(TrieNode* root) {
-    for (auto& p : root->children) {
-      delete_trie(p.second);
+    void delete_trie(TrieNode* root) {
+        for (auto& p : root->children) {
+            delete_trie(p.second);
+        }
+        delete root;
     }
-    delete root;
-  }
 
- public:
-  Trie() : root{new TrieNode{false, {}}} {}
+   public:
+    Trie() : root{new TrieNode{false, {}}} {}
 
-  ~Trie() { delete_trie(root); }
+    ~Trie() { delete_trie(root); }
 
-  void insert(std::string word) {
-    auto curr = root;
-    for (auto c : word) {
-      if (!curr->children.contains(c)) {
-        curr->children[c] = new TrieNode{false, {}};
-      }
-      curr = curr->children[c];
+    void insert(std::string word) {
+        auto curr = root;
+        for (auto c : word) {
+            if (!curr->children.contains(c)) {
+                curr->children[c] = new TrieNode{false, {}};
+            }
+            curr = curr->children[c];
+        }
+        curr->is_word = true;
     }
-    curr->is_word = true;
-  }
 
-  bool search(std::string word) {
-    auto curr = root;
-    for (auto c : word) {
-      if (!curr->children.contains(c)) return false;
-      curr = curr->children[c];
+    bool search(std::string word) {
+        auto curr = root;
+        for (auto c : word) {
+            if (!curr->children.contains(c)) return false;
+            curr = curr->children[c];
+        }
+        return curr->is_word;
     }
-    return curr->is_word;
-  }
 
-  bool startsWith(std::string prefix) {
-    auto curr = root;
-    for (auto c : prefix) {
-      if (!curr->children.contains(c)) return false;
-      curr = curr->children[c];
+    bool startsWith(std::string prefix) {
+        auto curr = root;
+        for (auto c : prefix) {
+            if (!curr->children.contains(c)) return false;
+            curr = curr->children[c];
+        }
+        return true;
     }
-    return true;
-  }
 };

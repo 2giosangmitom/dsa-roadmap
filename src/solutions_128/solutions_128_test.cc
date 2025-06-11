@@ -4,16 +4,16 @@
 
 class Solutions_128_Test
     : public testing::TestWithParam<tuple<vector<int>, int>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_128_Test, ) {
-  auto [input, expected] = GetParam();
+    auto [input, expected] = GetParam();
 
-  int actual = solutions.longestConsecutive(input);
+    int actual = solutions.longestConsecutive(input);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

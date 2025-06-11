@@ -6,16 +6,16 @@
 
 class Solutions_56_Test : public testing::TestWithParam<
                               tuple<vector<vector<int>>, vector<vector<int>>>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_56_Test, ) {
-  auto [intervals, expected] = GetParam();
+    auto [intervals, expected] = GetParam();
 
-  auto actual = solutions.merge(intervals);
+    auto actual = solutions.merge(intervals);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

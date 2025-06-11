@@ -220,7 +220,7 @@ flowchart TD
 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [C++](./src/solutions_17/solutions_17.hpp) | Medium     |
 | [Subsets](https://leetcode.com/problems/subsets/)                                                            | [C++](./src/solutions_78/solutions_78.hpp) | Medium     |
 | [Combination Sum](https://leetcode.com/problems/combination-sum)                                             | [C++](./src/solutions_39/solutions_39.hpp) | Medium     |
-| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii)                                       | Pending                                    | Medium     |
+| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii)                                       | [C++](./src/solutions_40/solutions_40.hpp) | Medium     |
 | [N-Queens](https://leetcode.com/problems/n-queens)                                                           | [C++](./src/solutions_51/solutions_51.hpp) | Hard       |
 | [N-Queens II](https://leetcode.com/problems/n-queens-ii)                                                     | [C++](./src/solutions_52/solutions_52.hpp) | Hard       |
 

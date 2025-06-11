@@ -3,14 +3,14 @@
 #include <gtest/gtest.h>
 
 class Solutions_7_Test : public testing::TestWithParam<tuple<int, int>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_7_Test, ) {
-  auto [input, expected] = GetParam();
-  int actual = solution.reverse(input);
-  EXPECT_EQ(actual, expected);
+    auto [input, expected] = GetParam();
+    int actual = solution.reverse(input);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

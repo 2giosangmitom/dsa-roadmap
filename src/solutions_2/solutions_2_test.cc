@@ -8,21 +8,21 @@
 class Solutions_2_Test
     : public testing::TestWithParam<
           std::tuple<std::vector<int>, std::vector<int>, std::vector<int>>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_2_Test, AddTwoNumbers) {
-  auto [l1_values, l2_values, expected_values] = GetParam();
-  auto l1 = make_list(l1_values);
-  auto l2 = make_list(l2_values);
-  auto expected = make_list(expected_values);
+    auto [l1_values, l2_values, expected_values] = GetParam();
+    auto l1 = make_list(l1_values);
+    auto l2 = make_list(l2_values);
+    auto expected = make_list(expected_values);
 
-  auto actual = solution.addTwoNumbers(l1, l2);
+    auto actual = solution.addTwoNumbers(l1, l2);
 
-  EXPECT_EQ(*actual, *expected);
+    EXPECT_EQ(*actual, *expected);
 
-  delete_list({actual, l1, l2, expected});
+    delete_list({actual, l1, l2, expected});
 }
 
 INSTANTIATE_TEST_SUITE_P(

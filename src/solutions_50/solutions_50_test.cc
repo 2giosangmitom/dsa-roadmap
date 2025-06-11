@@ -7,16 +7,16 @@ using namespace std;
 
 class Solutions_50_Test
     : public testing::TestWithParam<tuple<double, int, double>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_50_Test, ) {
-  auto [x, n, expected] = GetParam();
+    auto [x, n, expected] = GetParam();
 
-  double actual = solution.myPow(x, n);
+    double actual = solution.myPow(x, n);
 
-  EXPECT_NEAR(actual, expected, 0.00001);
+    EXPECT_NEAR(actual, expected, 0.00001);
 }
 
 INSTANTIATE_TEST_SUITE_P(, Solutions_50_Test,

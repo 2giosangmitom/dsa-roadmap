@@ -6,16 +6,16 @@
 
 class Solutions_1512_Test
     : public testing::TestWithParam<tuple<vector<int>, int>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_1512_Test, ) {
-  auto [nums, expected] = GetParam();
+    auto [nums, expected] = GetParam();
 
-  int actual = solution.numIdenticalPairs(nums);
+    int actual = solution.numIdenticalPairs(nums);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

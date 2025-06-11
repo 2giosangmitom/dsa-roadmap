@@ -3,16 +3,16 @@
 #include <gtest/gtest.h>
 
 class Solutions_1358_Test : public testing::TestWithParam<tuple<string, int>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_1358_Test, ) {
-  auto [s, expected] = GetParam();
+    auto [s, expected] = GetParam();
 
-  int actual = solution.numberOfSubstrings(s);
+    int actual = solution.numberOfSubstrings(s);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(, Solutions_1358_Test,

@@ -4,16 +4,16 @@
 
 class Solutions_11_Test
     : public testing::TestWithParam<tuple<vector<int>, int>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_11_Test, ) {
-  auto [height, expected] = GetParam();
+    auto [height, expected] = GetParam();
 
-  int actual = solution.maxArea(height);
+    int actual = solution.maxArea(height);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

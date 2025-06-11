@@ -7,19 +7,19 @@
 
 class Solutions_662_Test
     : public testing::TestWithParam<tuple<vector<any>, int>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_662_Test, ) {
-  auto [tree_vals, expected] = GetParam();
-  auto tree = make_tree(tree_vals);
+    auto [tree_vals, expected] = GetParam();
+    auto tree = make_tree(tree_vals);
 
-  int actual = solutions.widthOfBinaryTree(tree);
+    int actual = solutions.widthOfBinaryTree(tree);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 
-  delete_tree(tree);
+    delete_tree(tree);
 }
 
 INSTANTIATE_TEST_SUITE_P(

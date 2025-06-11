@@ -4,24 +4,24 @@
 
 class Solutions_2965_Test
     : public testing::TestWithParam<tuple<vector<vector<int>>, vector<int>>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_2965_Test, first) {
-  auto [grid, expected] = GetParam();
+    auto [grid, expected] = GetParam();
 
-  auto actual = solution.findMissingAndRepeatedValues(grid);
+    auto actual = solution.findMissingAndRepeatedValues(grid);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 TEST_P(Solutions_2965_Test, second) {
-  auto [grid, expected] = GetParam();
+    auto [grid, expected] = GetParam();
 
-  auto actual = solution.findMissingAndRepeatedValues2(grid);
+    auto actual = solution.findMissingAndRepeatedValues2(grid);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

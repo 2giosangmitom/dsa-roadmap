@@ -7,20 +7,20 @@
 
 class Solutions_27_Test
     : public testing::TestWithParam<tuple<vector<int>, int, int, vector<int>>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 
- public:
+   public:
 };
 
 TEST_P(Solutions_27_Test, ) {
-  auto [nums, val, expected, expected_nums] = GetParam();
+    auto [nums, val, expected, expected_nums] = GetParam();
 
-  int actual = solution.removeElement(nums, val);
-  auto p = nums | ranges::views::take(actual);
+    int actual = solution.removeElement(nums, val);
+    auto p = nums | ranges::views::take(actual);
 
-  EXPECT_EQ(actual, expected);
-  EXPECT_TRUE(ranges::equal(p, expected_nums));
+    EXPECT_EQ(actual, expected);
+    EXPECT_TRUE(ranges::equal(p, expected_nums));
 }
 
 INSTANTIATE_TEST_SUITE_P(

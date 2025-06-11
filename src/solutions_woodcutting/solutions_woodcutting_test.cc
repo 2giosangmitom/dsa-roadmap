@@ -6,14 +6,14 @@
 
 class WoodCuttingTest
     : public testing::TestWithParam<tuple<vector<int>, int, int>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(WoodCuttingTest, ) {
-  auto [heights, k, expected] = GetParam();
-  int actual = solution.solve(heights, k);
-  EXPECT_EQ(actual, expected);
+    auto [heights, k, expected] = GetParam();
+    int actual = solution.solve(heights, k);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

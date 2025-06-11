@@ -5,16 +5,16 @@
 #include <tuple>
 
 class Solutions_8_Test : public testing::TestWithParam<tuple<string, int>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_8_Test, ) {
-  auto [s, expected] = GetParam();
+    auto [s, expected] = GetParam();
 
-  int actual = solution.myAtoi(s);
+    int actual = solution.myAtoi(s);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

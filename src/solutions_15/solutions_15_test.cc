@@ -4,16 +4,16 @@
 
 class Solutions_15_Test
     : public testing::TestWithParam<tuple<vector<int>, vector<vector<int>>>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_15_Test, ) {
-  auto [nums, expected] = GetParam();
+    auto [nums, expected] = GetParam();
 
-  auto actual = solution.threeSum(nums);
+    auto actual = solution.threeSum(nums);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

@@ -5,24 +5,24 @@
 class Solutions_2570_Test
     : public testing::TestWithParam<tuple<
           vector<vector<int>>, vector<vector<int>>, vector<vector<int>>>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_2570_Test, HashMap) {
-  auto [nums1, nums2, expected] = GetParam();
+    auto [nums1, nums2, expected] = GetParam();
 
-  auto actual = solution.mergeArrays(nums1, nums2);
+    auto actual = solution.mergeArrays(nums1, nums2);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 TEST_P(Solutions_2570_Test, TwoPointer) {
-  auto [nums1, nums2, expected] = GetParam();
+    auto [nums1, nums2, expected] = GetParam();
 
-  auto actual = solution.mergeArrays2(nums1, nums2);
+    auto actual = solution.mergeArrays2(nums1, nums2);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

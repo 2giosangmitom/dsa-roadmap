@@ -7,35 +7,35 @@
 class Solutions_160_Test
     : public testing::TestWithParam<
           std::tuple<std::vector<int>, std::vector<int>, int>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_160_Test, ) {
-  auto [headA_vals, headB_vals, intersect_idx] = GetParam();
-  auto headA = make_list(headA_vals);
-  auto headB = make_list(headB_vals);
+    auto [headA_vals, headB_vals, intersect_idx] = GetParam();
+    auto headA = make_list(headA_vals);
+    auto headB = make_list(headB_vals);
 
-  // Create intersection
-  ListNode *intersect_node = intersect_idx == -1 ? nullptr : headA;
-  for (int i = 0; i <= intersect_idx; i++) {
-    intersect_node = intersect_node->next;
-  }
+    // Create intersection
+    ListNode *intersect_node = intersect_idx == -1 ? nullptr : headA;
+    for (int i = 0; i <= intersect_idx; i++) {
+        intersect_node = intersect_node->next;
+    }
 
-  // Connect tailB with intersect_node
-  ListNode *tailB = headB;
-  while (tailB->next != nullptr) {
-    tailB = tailB->next;
-  }
-  tailB->next = intersect_node;
+    // Connect tailB with intersect_node
+    ListNode *tailB = headB;
+    while (tailB->next != nullptr) {
+        tailB = tailB->next;
+    }
+    tailB->next = intersect_node;
 
-  ListNode *actual = solution.getIntersectionNode(headA, headB);
-  EXPECT_EQ(actual, intersect_node);
+    ListNode *actual = solution.getIntersectionNode(headA, headB);
+    EXPECT_EQ(actual, intersect_node);
 
-  // Disconnect tailB and intersect_node to avoid double free
-  tailB->next = nullptr;
+    // Disconnect tailB and intersect_node to avoid double free
+    tailB->next = nullptr;
 
-  delete_list({headA, headB});
+    delete_list({headA, headB});
 }
 
 INSTANTIATE_TEST_SUITE_P(

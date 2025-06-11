@@ -7,16 +7,16 @@
 class Solutions_46_Test
     : public testing::TestWithParam<
           std::tuple<std::vector<int>, std::vector<std::vector<int>>>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_46_Test, ) {
-  auto [nums, expected] = GetParam();
+    auto [nums, expected] = GetParam();
 
-  auto actual = solutions.permute(nums);
+    auto actual = solutions.permute(nums);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

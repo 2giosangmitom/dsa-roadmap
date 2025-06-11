@@ -5,18 +5,18 @@
 class Solutions_144_Test
     : public testing::TestWithParam<
           std::tuple<std::vector<std::any>, std::vector<int>>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_144_Test, ) {
-  auto [root_vals, expected] = GetParam();
+    auto [root_vals, expected] = GetParam();
 
-  auto root = make_tree(root_vals);
-  auto actual = solutions.preorderTraversal(root);
+    auto root = make_tree(root_vals);
+    auto actual = solutions.preorderTraversal(root);
 
-  EXPECT_EQ(actual, expected);
-  delete_tree(root);
+    EXPECT_EQ(actual, expected);
+    delete_tree(root);
 }
 
 INSTANTIATE_TEST_SUITE_P(

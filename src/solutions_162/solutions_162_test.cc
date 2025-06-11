@@ -8,16 +8,16 @@
 
 class Solutions_162_Test
     : public testing::TestWithParam<tuple<vector<int>, unordered_set<int>>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_162_Test, ) {
-  auto [nums, expected] = GetParam();
+    auto [nums, expected] = GetParam();
 
-  int actual = solution.findPeakElement(nums);
+    int actual = solution.findPeakElement(nums);
 
-  EXPECT_TRUE(expected.contains(actual));
+    EXPECT_TRUE(expected.contains(actual));
 }
 
 INSTANTIATE_TEST_SUITE_P(

@@ -9,24 +9,24 @@
 class Solutions_105_Test
     : public testing::TestWithParam<std::tuple<
           std::vector<int>, std::vector<int>, std::vector<std::any>>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_105_Test, ) {
-  auto [preorder, inorder, expected] = GetParam();
-  auto expected_tree = make_tree(expected);
+    auto [preorder, inorder, expected] = GetParam();
+    auto expected_tree = make_tree(expected);
 
-  auto actual = solutions.buildTree(preorder, inorder);
+    auto actual = solutions.buildTree(preorder, inorder);
 
-  if (actual == nullptr) {
-    EXPECT_EQ(expected_tree, nullptr);
-  } else {
-    EXPECT_EQ(*actual, *expected_tree);
-  }
+    if (actual == nullptr) {
+        EXPECT_EQ(expected_tree, nullptr);
+    } else {
+        EXPECT_EQ(*actual, *expected_tree);
+    }
 
-  delete_tree(actual);
-  delete_tree(expected_tree);
+    delete_tree(actual);
+    delete_tree(expected_tree);
 }
 
 INSTANTIATE_TEST_SUITE_P(

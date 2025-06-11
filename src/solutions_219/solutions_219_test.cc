@@ -4,16 +4,16 @@
 
 class Solutions_219_Test
     : public testing::TestWithParam<std::tuple<std::vector<int>, int, bool>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_219_Test, ) {
-  auto [nums, k, expected] = GetParam();
+    auto [nums, k, expected] = GetParam();
 
-  bool actual = solutions.containsNearbyDuplicate(nums, k);
+    bool actual = solutions.containsNearbyDuplicate(nums, k);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(

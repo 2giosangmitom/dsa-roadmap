@@ -6,18 +6,18 @@
 
 class Solutions_26_Test
     : public testing::TestWithParam<tuple<vector<int>, int, vector<int>>> {
- protected:
-  Solution solution;
+   protected:
+    Solution solution;
 };
 
 TEST_P(Solutions_26_Test, ) {
-  auto [nums, expected, expected_nums] = GetParam();
+    auto [nums, expected, expected_nums] = GetParam();
 
-  int actual = solution.removeDuplicates(nums);
-  auto p = nums | ranges::views::take(actual);
+    int actual = solution.removeDuplicates(nums);
+    auto p = nums | ranges::views::take(actual);
 
-  EXPECT_EQ(actual, expected);
-  EXPECT_TRUE(ranges::equal(p, expected_nums));
+    EXPECT_EQ(actual, expected);
+    EXPECT_TRUE(ranges::equal(p, expected_nums));
 }
 
 INSTANTIATE_TEST_SUITE_P(

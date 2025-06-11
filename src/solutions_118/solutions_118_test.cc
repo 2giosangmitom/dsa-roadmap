@@ -6,16 +6,16 @@
 
 class Solutions_118_Test : public testing::TestWithParam<
                                std::tuple<int, std::vector<std::vector<int>>>> {
- protected:
-  Solution solutions;
+   protected:
+    Solution solutions;
 };
 
 TEST_P(Solutions_118_Test, ) {
-  auto [numRows, expected] = GetParam();
+    auto [numRows, expected] = GetParam();
 
-  auto actual = solutions.generate(numRows);
+    auto actual = solutions.generate(numRows);
 
-  EXPECT_EQ(actual, expected);
+    EXPECT_EQ(actual, expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(
