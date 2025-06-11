@@ -22,12 +22,14 @@ TEST_P(Solutions_39_Test, ) {
 
 INSTANTIATE_TEST_SUITE_P(
     , Solutions_39_Test,
-    testing::Values(make_tuple(vector<int>{2, 3, 6, 7}, 7,
-                               vector<vector<int>>{{2, 2, 3}, {7}}),
-                    make_tuple(vector<int>{2, 3, 5}, 8,
-                               vector<vector<int>>{
-                                   {2, 2, 2, 2}, {2, 3, 3}, {3, 5}}),
-                    make_tuple(vector<int>{2}, 1, vector<vector<int>>{}),
-                    make_tuple(vector<int>{1}, 1, vector<vector<int>>{{1}}),
-                    make_tuple(vector<int>{3, 4, 5}, 9,
-                               vector<vector<int>>{{3, 3, 3}, {4, 5}})));
+    testing::Values(
+        make_tuple(vector<int>{2, 3, 6, 7}, 7,
+                   vector<vector<int>>{{2, 2, 3}, {7}}),
+        make_tuple(vector<int>{2, 3, 5}, 8,
+                   vector<vector<int>>{{2, 2, 2, 2}, {2, 3, 3}, {3, 5}}),
+        make_tuple(vector<int>{2}, 1, vector<vector<int>>{}),
+        make_tuple(vector<int>{1}, 1, vector<vector<int>>{{1}}),
+        make_tuple(vector<int>{3, 4, 5}, 9,
+                   vector<vector<int>>{{3, 3, 3}, {4, 5}}),
+        make_tuple(vector<int>{8, 7, 4, 3}, 11,
+                   vector<vector<int>>{{3, 4, 4}, {3, 8}, {4, 7}})));

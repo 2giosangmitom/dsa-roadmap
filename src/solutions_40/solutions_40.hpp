@@ -19,8 +19,8 @@ class Solution {
 
         const size_t n = candidates.size();
         while (i < n) {
-            // Optimization: if current candidate is larger than target, we can
-            // break and don't try any case
+            // Optimization: since the candidates is sorted, if current
+            // candidate is larger than target, we can break early
             if (candidates[i] > target) {
                 break;
             }
