@@ -7,13 +7,13 @@ class Solution {
    private:
     void solve(const std::vector<int>& nums,
                std::vector<std::vector<int>>& result,
-               std::vector<int> candidate, std::unordered_set<int>& used) {
+               std::vector<int>& candidate, std::unordered_set<int>& used) {
         if (candidate.size() == nums.size()) {
-            result.push_back(std::move(candidate));
+            result.push_back(candidate);
             return;
         }
 
-        for (int num : nums) {
+        for (const int& num : nums) {
             if (!used.contains(num)) {
                 candidate.push_back(num);
                 used.insert(num);
