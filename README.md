@@ -69,7 +69,7 @@ flowchart TD
 | Link                                                                                                                               | Solutions                                    | Difficulty |
 | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                                                  | [C++](./src/solutions_2/solutions_2.hpp)     | Medium     |
-| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers-ii)                                                                | [C++](./src/solutions_445/solutions_445.hpp) | Medium     |
+| [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)                                                             | [C++](./src/solutions_445/solutions_445.hpp) | Medium     |
 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)                                                           | [C++](./src/solutions_206/solutions_206.hpp) | Easy       |
 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii?envType=problem-list-v2&envId=linked-list)           | [C++](./src/solutions_92/solutions_92.hpp)   | Medium     |
 | [Rotate List](https://leetcode.com/problems/rotate-list)                                                                           | [C++](./src/solutions_61/solutions_61.hpp)   | Medium     |
