@@ -5,9 +5,9 @@
 class Solution {
    public:
     ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
-        ListNode *res = nullptr;
+        ListNode dummy_head(0);
         int carry = 0;
-        ListNode *head = res;
+        ListNode *curr = &dummy_head;
 
         while (l1 != nullptr || l2 != nullptr || carry != 0) {
             int digit1 = l1 ? l1->val : 0;
@@ -18,18 +18,13 @@ class Solution {
             carry = sum / 10;
 
             ListNode *new_node = new ListNode(digit);
-            if (!head) {
-                res = new_node;
-                head = res;
-            } else {
-                head->next = new_node;
-                head = head->next;
-            }
+            curr->next = new_node;
+            curr = curr->next;
 
             l1 = l1 ? l1->next : nullptr;
             l2 = l2 ? l2->next : nullptr;
         }
 
-        return res;
+        return dummy_head.next;
     }
 };
