@@ -17,6 +17,7 @@
         cmake
         clang
         ninja
+        python3Minimal
       ];
     };
     formatter.${system} = pkgs.alejandra;
