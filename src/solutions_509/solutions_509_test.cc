@@ -12,9 +12,14 @@ class Solutions_509_Test : public ::testing::TestWithParam<Tt> {
     Solution sol;
 };
 
-TEST_P(Solutions_509_Test, ) {
+TEST_P(Solutions_509_Test, BottomUp) {
     Tt tc = GetParam();
     EXPECT_EQ(sol.fib(tc.input), tc.expected);
+}
+
+TEST_P(Solutions_509_Test, TopDown) {
+    Tt tc = GetParam();
+    EXPECT_EQ(sol.fib2(tc.input), tc.expected);
 }
 
 INSTANTIATE_TEST_SUITE_P(FibTests, Solutions_509_Test,
