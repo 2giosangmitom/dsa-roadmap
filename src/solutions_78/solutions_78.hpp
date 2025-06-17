@@ -1,26 +1,27 @@
 #pragma once
 
 #include <vector>
+using namespace std;
 
 class Solution {
    private:
-    void solve(const std::vector<int>& nums, size_t i, std::vector<int> subset,
-               std::vector<std::vector<int>>& result) {
-        if (i == nums.size()) {
-            result.push_back(subset);
-            return;
-        }
+    void solve(const vector<int>& nums, size_t i, vector<int>& subset,
+               vector<vector<int>>& result) {
+        result.push_back(subset);
 
-        solve(nums, i + 1, subset, result);
-        subset.push_back(nums[i]);
-        solve(nums, i + 1, subset, result);
+        for (; i < nums.size(); i++) {
+            subset.push_back(nums[i]);
+            solve(nums, i + 1, subset, result);
+            subset.pop_back();
+        }
     }
 
    public:
-    std::vector<std::vector<int>> subsets(std::vector<int>& nums) {
-        std::vector<std::vector<int>> result;
+    vector<vector<int>> subsets(vector<int>& nums) {
+        vector<vector<int>> result;
+        vector<int> subset;
 
-        solve(nums, 0, {}, result);
+        solve(nums, 0, subset, result);
 
         return result;
     }
