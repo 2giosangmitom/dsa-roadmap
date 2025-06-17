@@ -1,36 +1,37 @@
 #pragma once
 
-#include <unordered_set>
 #include <vector>
+using namespace std;
 
 class Solution {
    private:
-    void solve(const std::vector<int>& nums,
-               std::vector<std::vector<int>>& result,
-               std::vector<int>& candidate, std::unordered_set<int>& used) {
+    void solve(const vector<int>& nums, vector<bool>& used,
+               vector<int>& candidate, vector<vector<int>>& result) {
         if (candidate.size() == nums.size()) {
             result.push_back(candidate);
             return;
         }
 
-        for (const int& num : nums) {
-            if (!used.contains(num)) {
-                candidate.push_back(num);
-                used.insert(num);
-                solve(nums, result, candidate, used);
-                candidate.pop_back();
-                used.erase(num);
+        for (size_t i = 0; i < nums.size(); i++) {
+            if (used[i]) {
+                continue;
             }
+
+            candidate.push_back(nums[i]);
+            used[i] = true;
+            solve(nums, used, candidate, result);
+            used[i] = false;
+            candidate.pop_back();
         }
     }
 
    public:
-    std::vector<std::vector<int>> permute(std::vector<int>& nums) {
-        std::vector<std::vector<int>> result;
-        std::vector<int> candidate;
-        std::unordered_set<int> used;
+    vector<vector<int>> permute(vector<int>& nums) {
+        vector<bool> used(6, false);
+        vector<int> candidate;
+        vector<vector<int>> result;
 
-        solve(nums, result, candidate, used);
+        solve(nums, used, candidate, result);
 
         return result;
     }
