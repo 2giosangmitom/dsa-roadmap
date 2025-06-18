@@ -244,6 +244,7 @@ flowchart TD
 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii) | [C++](./src/solutions_119/solutions_119.hpp) | Easy       |
 | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number)        | [C++](./src/solutions_509/solutions_509.hpp) | Easy       |
 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs)          | [C++](./src/solutions_70/solutions_70.hpp)   | Easy       |
+| [Coin Change](https://leetcode.com/problems/coin-change)                  | [C++](./src/solutions_322/solutions_322.hpp) | Medium     |
 
 ### Must try
 
