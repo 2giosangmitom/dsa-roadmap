@@ -247,6 +247,7 @@ flowchart TD
 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs)                   | [C++](./src/solutions_70/solutions_70.hpp)   | Easy       |
 | [Coin Change](https://leetcode.com/problems/coin-change)                           | [C++](./src/solutions_322/solutions_322.hpp) | Medium     |
 | [Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets) | [C++](./src/solutions_983/solutions_983.hpp) | Medium     |
+| [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs) | [C++](./src/solutions_746/solutions_746.hpp) | Easy       |
 
 ### Must try
 
