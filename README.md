@@ -249,6 +249,7 @@ flowchart TD
 | [Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets) | [C++](./src/solutions_983/solutions_983.hpp)    | Medium     |
 | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs) | [C++](./src/solutions_746/solutions_746.hpp)    | Easy       |
 | [Unique Paths](https://leetcode.com/problems/unique-paths)                         | [C++](./src/solutions_62/solutions_62_test.hpp) | Medium     |
+| [Maximal Square](https://leetcode.com/problems/maximal-square)                     | [C++](./src/solutions_221/solutions_221.hpp)    | Medium     |
 
 ### Must try
 
