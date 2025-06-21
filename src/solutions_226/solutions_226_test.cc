@@ -8,12 +8,29 @@ class Solutions_226_Test
     Solution solutions;
 };
 
-TEST_P(Solutions_226_Test, ) {
+TEST_P(Solutions_226_Test, Stack) {
     auto [input, expected] = GetParam();
     auto root = make_tree(input);
     auto expected_tree = make_tree(expected);
 
     auto actual = solutions.invertTree(root);
+
+    if (actual == nullptr) {
+        EXPECT_EQ(actual, expected_tree);
+    } else {
+        EXPECT_EQ(*actual, *expected_tree);
+    }
+
+    delete_tree(root);
+    delete_tree(expected_tree);
+}
+
+TEST_P(Solutions_226_Test, Recursion) {
+    auto [input, expected] = GetParam();
+    auto root = make_tree(input);
+    auto expected_tree = make_tree(expected);
+
+    auto actual = solutions.invertTree2(root);
 
     if (actual == nullptr) {
         EXPECT_EQ(actual, expected_tree);

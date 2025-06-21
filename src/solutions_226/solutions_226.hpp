@@ -6,6 +6,18 @@
 using namespace std;
 
 class Solution {
+   private:
+    void helper(TreeNode *root) {
+        if (!root) {
+            return;
+        }
+
+        swap(root->left, root->right);
+
+        helper(root->left);
+        helper(root->right);
+    }
+
    public:
     TreeNode *invertTree(TreeNode *root) {
         if (root == nullptr) return nullptr;
@@ -26,6 +38,12 @@ class Solution {
                 stack.push(top->right);
             }
         }
+
+        return root;
+    }
+
+    TreeNode *invertTree2(TreeNode *root) {
+        helper(root);
 
         return root;
     }
