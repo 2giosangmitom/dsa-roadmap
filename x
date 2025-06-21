@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 
 import argparse
-import subprocess
 import os
+import subprocess
 import sys
+from pathlib import Path
+from textwrap import dedent, shorten
 import re
+import asyncio
 
-# ANSI color codes for enhanced output formatting
+# Colors
 GREEN = "\033[92m"
 RED = "\033[91m"
 YELLOW = "\033[93m"
@@ -15,214 +18,234 @@ RESET = "\033[0m"
 BOLD = "\033[1m"
 
 os.environ["CXX"] = "clang++"
+ANSI_ESCAPE = re.compile(r"\x1b\[[0-9;]*m")
 
 
-def print_color(msg, color=RESET, bold=False, file=sys.stdout, end="\n"):
+def strip_ansi(text):
+    return ANSI_ESCAPE.sub("", text)
+
+
+def print_color(msg, color=RESET, bold=False, end="\n", file=sys.stdout):
     style = color + (BOLD if bold else "")
     print(f"{style}{msg}{RESET}", file=file, end=end)
 
 
-def run_command(cmd, cwd=None, dry=False, verbose=True):
+def print_table(headers, rows):
+    widths = [
+        max(len(strip_ansi(str(cell))) for cell in col) for col in zip(headers, *rows)
+    ]
+    sep = "+-" + "-+-".join("-" * w for w in widths) + "-+"
+
+    def format_row(row):
+        return (
+            "| "
+            + " | ".join(
+                f"{cell}{' ' * (widths[i] - len(strip_ansi(str(cell))))}"
+                for i, cell in enumerate(row)
+            )
+            + " |"
+        )
+
+    print(sep)
+    print(format_row(headers))
+    print(sep)
+    for row in rows:
+        print(format_row(row))
+    print(sep)
+
+
+def run_command(cmd, dry=False, verbose=True, cwd=None):
     print_color(f"$ {' '.join(cmd)}", CYAN, bold=True)
     if dry:
         return 0
     try:
-        result = subprocess.run(
+        subprocess.run(
             cmd,
             check=True,
             cwd=cwd,
             stdout=None if verbose else subprocess.PIPE,
             stderr=None if verbose else subprocess.PIPE,
         )
-        return result.returncode
+        return 0
     except subprocess.CalledProcessError as e:
         print_color(
             f"✗ Command failed: {' '.join(cmd)}", RED, bold=True, file=sys.stderr
         )
-        if not verbose and e.stdout:
-            print(e.stdout.decode(), file=sys.stderr)
-        if not verbose and e.stderr:
-            print(e.stderr.decode(), file=sys.stderr)
+        if not verbose:
+            if e.stdout:
+                sys.stderr.write(e.stdout.decode())
+            if e.stderr:
+                sys.stderr.write(e.stderr.decode())
         sys.exit(e.returncode)
 
 
-def build(target, dry=False):
-    run_command(["cmake", "-B", "build", "-GNinja"], dry=dry)
+def build(args):
+    run_command(["cmake", "-B", "build", "-GNinja"], dry=args.dry)
     build_cmd = ["cmake", "--build", "build"]
-    if target != "all":
-        build_cmd += ["--target", f"solutions_{target}_test"]
-    run_command(build_cmd, dry=dry)
+    if args.target != "all":
+        build_cmd += ["--target", f"solutions_{args.target}_test"]
+    run_command(build_cmd, dry=args.dry)
 
 
-def test(target, dry=False, verbose=False):
-    dir_path = os.path.join("build", "bin")
-    if not os.path.isdir(dir_path):
+async def run_single_test(file_path, verbose=False, dry=False):
+    name = file_path.name
+    if dry:
+        return [name, "DRY RUN", "Skipped execution"]
+
+    proc = await asyncio.create_subprocess_exec(
+        str(file_path),
+        stdout=None if verbose else asyncio.subprocess.DEVNULL,
+        stderr=None if verbose else asyncio.subprocess.DEVNULL,
+    )
+    retcode = await proc.wait()
+    status = f"{GREEN}PASSED{RESET}" if retcode == 0 else f"{RED}FAILED{RESET}"
+    return [name, status, f"Exit code: {retcode}"], retcode
+
+
+def test(args):
+    bin_dir = Path("build/bin")
+    if not bin_dir.is_dir():
         print_color(
-            f"Test directory '{dir_path}' does not exist. Please build first.",
+            f"Test directory '{bin_dir}' does not exist. Please build first.",
             RED,
             bold=True,
             file=sys.stderr,
         )
         sys.exit(1)
 
-    def run_test(file_path):
-        print_color(f"▶ Running {file_path}", YELLOW)
-        if dry:
-            return 0
-        ret = subprocess.call(
-            file_path,
-            stdout=None if verbose else subprocess.DEVNULL,
-            stderr=None if verbose else subprocess.DEVNULL,
+    if args.target == "all":
+        test_files = sorted(
+            f for f in bin_dir.iterdir() if f.is_file() and os.access(f, os.X_OK)
         )
-        if ret == 0:
-            print_color(f"✓ {os.path.basename(file_path)} PASSED", GREEN, bold=True)
-        else:
+    else:
+        test_file = bin_dir / f"solutions_{args.target}_test"
+        if not test_file.exists() or not os.access(test_file, os.X_OK):
             print_color(
-                f"✗ {os.path.basename(file_path)} FAILED (exit {ret})",
+                f"Test executable '{test_file}' not found or not executable.",
                 RED,
                 bold=True,
-                file=sys.stderr,
-            )
-        return ret
-
-    if target == "all":
-        files = [
-            os.path.join(dir_path, f)
-            for f in os.listdir(dir_path)
-            if os.access(os.path.join(dir_path, f), os.X_OK)
-            and os.path.isfile(os.path.join(dir_path, f))
-        ]
-        if not files:
-            print_color(
-                f"No executables found in '{dir_path}'.",
-                RED,
-                bold=True,
-                file=sys.stderr,
             )
             sys.exit(1)
+        test_files = [test_file]
+
+    async def run_all_tests():
+        tasks = [
+            run_single_test(f, verbose=args.verbose, dry=args.dry) for f in test_files
+        ]
+        results = await asyncio.gather(*tasks)
+        summary_rows = []
         any_failed = False
-        for file_path in sorted(files):
-            if run_test(file_path) != 0:
+        for res in results:
+            row, ret = res if isinstance(res, tuple) else (res, 0)
+            summary_rows.append(row)
+            if ret != 0:
                 any_failed = True
+
+        print()
+        print_color("Test Results Summary:", bold=True)
+        print_table(["Test Executable", "Status", "Details"], summary_rows)
         if any_failed:
             sys.exit(1)
-    else:
-        file_path = os.path.join(dir_path, f"solutions_{target}_test")
-        if not os.path.isfile(file_path) or not os.access(file_path, os.X_OK):
-            print_color(
-                f"Test executable '{file_path}' not found or not executable.",
-                RED,
-                bold=True,
-                file=sys.stderr,
-            )
-            sys.exit(1)
-        if run_test(file_path) != 0:
-            sys.exit(1)
+
+    asyncio.run(run_all_tests())
 
 
-def add_solution(problem_number, dry=False):
-    hpp_dir = f"src/solutions_{problem_number}"
-    hpp_path = f"{hpp_dir}/solutions_{problem_number}.hpp"
-    test_path = f"{hpp_dir}/solutions_{problem_number}_test.cc"
+def add(args):
+    problem_number = args.problem_number
+    hpp_dir = Path(f"src/solutions_{problem_number}")
+    hpp_path = hpp_dir / f"solutions_{problem_number}.hpp"
+    test_path = hpp_dir / f"solutions_{problem_number}_test.cc"
 
-    if os.path.exists(hpp_path) or os.path.exists(test_path):
+    if hpp_path.exists() or test_path.exists():
         print_color("Solution files already exist.", RED, bold=True, file=sys.stderr)
         sys.exit(1)
-    if dry:
+
+    if args.dry:
         print_color(f"Would create: {hpp_path}", CYAN)
         print_color(f"Would create: {test_path}", CYAN)
         return
 
-    os.makedirs(hpp_dir, exist_ok=True)
-    # OLD TEMPLATE (unchanged class name)
-    with open(hpp_path, "w") as hpp_file:
-        hpp_file.write("""#pragma once
+    hpp_dir.mkdir(parents=True, exist_ok=True)
+    hpp_path.write_text(
+        dedent("""\
+        #pragma once
 
-class Solution {
-public:
-};
-""")
+        class Solution {
+        public:
+        };
+    """)
+    )
     print_color(f"Created {hpp_path}", GREEN)
 
-    with open(test_path, "w") as test_file:
-        test_file.write(f"""#include "solutions_{problem_number}.hpp"
-#include <gtest/gtest.h>
-""")
+    test_path.write_text(
+        f"""#include "solutions_{problem_number}.hpp"\n#include <gtest/gtest.h>\n"""
+    )
     print_color(f"Created {test_path}", GREEN)
 
 
-def check_readme():
-    src_dir = "src"
-    pattern = re.compile(r"solutions_(\d+)\.hpp$")
-    missing = []
-    all_solutions = []
-    for root, _, files in os.walk(src_dir):
-        for file in files:
-            match = pattern.match(file)
-            if match:
-                num = match.group(1)
-                rel_path = os.path.relpath(os.path.join(root, file), start=".")
-                all_solutions.append((num, rel_path))
+def check_readme(args=None):
+    src_dir = Path("src")
+    all_solutions = list(src_dir.glob("solutions_*/solutions_*.hpp"))
 
     if not all_solutions:
         print_color("No solutions found in src/.", RED, bold=True, file=sys.stderr)
         sys.exit(1)
 
-    with open("README.md", "r", encoding="utf-8") as f:
+    with open("README.md", encoding="utf-8") as f:
         readme = f.read()
 
-    for num, path in all_solutions:
-        if path not in readme and f"solutions_{num}" not in readme:
-            missing.append((num, path))
+    missing = [str(p) for p in all_solutions if str(p) not in readme]
 
     if not missing:
-        print_color(
-            "All solutions in src/ are included in README.md.", GREEN, bold=True
-        )
+        print_color("✓ All solutions are included in README.md", GREEN, bold=True)
     else:
-        print_color("Missing solutions in README.md:", RED, bold=True)
-        for _, path in missing:
-            print_color(f"  - {path}", YELLOW)
+        print_color("✗ Missing solutions in README.md:", RED, bold=True)
+        rows = [[shorten(p, width=60), f"{RED}NOT FOUND{RESET}"] for p in missing]
+        print_table(["Solution File", "README Status"], rows)
         sys.exit(1)
 
 
 def main():
-    parser = argparse.ArgumentParser(description="LeetCode Repository Manager")
+    parser = argparse.ArgumentParser(
+        prog="x",
+        description="📦 LeetCode C++ Project Manager",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+
     parser.add_argument(
         "--dry", action="store_true", help="Print commands instead of executing"
     )
+
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    build_parser = subparsers.add_parser("build", help="Build the project or a target")
-    build_parser.add_argument(
-        "target", help="Target to build (use 'all' for all targets)"
+    # build
+    p_build = subparsers.add_parser(
+        "build", help="Build the project or a specific target"
     )
+    p_build.add_argument("target", help="Target to build (e.g. 123 or 'all')")
+    p_build.set_defaults(func=build)
 
-    test_parser = subparsers.add_parser(
-        "test", help="Test all binaries or a specific target"
+    # test
+    p_test = subparsers.add_parser("test", help="Run test executables")
+    p_test.add_argument("target", help="Test target (e.g. 123 or 'all')")
+    p_test.add_argument(
+        "--verbose", action="store_true", help="Show output from test binaries"
     )
-    test_parser.add_argument(
-        "target", help="Test target (use 'all' for all executables)"
-    )
-    test_parser.add_argument(
-        "--verbose", action="store_true", help="Show test output instead of hiding it"
-    )
+    p_test.set_defaults(func=test)
 
-    add_parser = subparsers.add_parser("add", help="Add a new solution")
-    add_parser.add_argument("problem_number", help="Problem number to add")
+    # add
+    p_add = subparsers.add_parser("add", help="Create a solution + test skeleton")
+    p_add.add_argument("problem_number", help="Problem number to add")
+    p_add.set_defaults(func=add)
 
-    subparsers.add_parser("check", help="Check all solutions are in README.md")
+    # check
+    p_check = subparsers.add_parser(
+        "check", help="Check all solutions are listed in README.md"
+    )
+    p_check.set_defaults(func=check_readme)
 
     args = parser.parse_args()
-
-    if args.command == "build":
-        build(args.target, dry=args.dry)
-    elif args.command == "test":
-        test(args.target, dry=args.dry, verbose=args.verbose)
-    elif args.command == "add":
-        add_solution(args.problem_number, dry=args.dry)
-    elif args.command == "check":
-        check_readme()
+    args.func(args)
 
 
 if __name__ == "__main__":
