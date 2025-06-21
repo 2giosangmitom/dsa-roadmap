@@ -50,7 +50,7 @@ def build(target, dry=False):
     run_command(["cmake", "-B", "build", "-GNinja"], dry=dry)
     build_cmd = ["cmake", "--build", "build"]
     if target != "all":
-        build_cmd += ["--target", target]
+        build_cmd += ["--target", f"solutions_{target}_test"]
     run_command(build_cmd, dry=dry)
 
 
@@ -107,7 +107,7 @@ def test(target, dry=False, verbose=False):
         if any_failed:
             sys.exit(1)
     else:
-        file_path = os.path.join(dir_path, target)
+        file_path = os.path.join(dir_path, f"solutions_{target}_test")
         if not os.path.isfile(file_path) or not os.access(file_path, os.X_OK):
             print_color(
                 f"Test executable '{file_path}' not found or not executable.",
