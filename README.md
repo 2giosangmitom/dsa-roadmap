@@ -251,6 +251,7 @@ flowchart TD
 | [Unique Paths](https://leetcode.com/problems/unique-paths)                         | [C++](./src/solutions_62/solutions_62.hpp)   | Medium     |
 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii)                   | [C++](./src/solutions_63/solutions_63.hpp)   | Medium     |
 | [Maximal Square](https://leetcode.com/problems/maximal-square)                     | [C++](./src/solutions_221/solutions_221.hpp) | Medium     |
+| [House Robber](https://leetcode.com/problems/house-robber)                         | [C++](./src/solutions_198/solutions_198.hpp) | Medium     |
 
 ### Must try
 
