@@ -215,19 +215,20 @@ flowchart TD
 
 ### Backtracking
 
-| Link                                                                                                         | Solutions                                  | Difficulty |
-| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------ | ---------- |
-| [Permutations](https://leetcode.com/problems/permutations/)                                                  | [C++](./src/solutions_46/solutions_46.hpp) | Medium     |
-| [Permutations II](https://leetcode.com/problems/permutations-ii/)                                            | [C++](./src/solutions_47/solutions_47.hpp) | Medium     |
-| [Combinations](https://leetcode.com/problems/combinations/)                                                  | [C++](./src/solutions_77/solutions_77.hpp) | Medium     |
-| [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [C++](./src/solutions_17/solutions_17.hpp) | Medium     |
-| [Subsets](https://leetcode.com/problems/subsets/)                                                            | [C++](./src/solutions_78/solutions_78.hpp) | Medium     |
-| [Subsets II](https://leetcode.com/problems/subsets-ii)                                                       | [C++](./src/solutions_90/solutions_90.hpp) | Medium     |
-| [Combination Sum](https://leetcode.com/problems/combination-sum)                                             | [C++](./src/solutions_39/solutions_39.hpp) | Medium     |
-| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii)                                       | [C++](./src/solutions_40/solutions_40.hpp) | Medium     |
-| [N-Queens](https://leetcode.com/problems/n-queens)                                                           | [C++](./src/solutions_51/solutions_51.hpp) | Hard       |
-| [N-Queens II](https://leetcode.com/problems/n-queens-ii)                                                     | [C++](./src/solutions_52/solutions_52.hpp) | Hard       |
-| [Sudoku Solver](https://leetcode.com/problems/sudoku-solver)                                                 | [C++](./src/solutions_37/solutions_37.hpp) | Hard       |
+| Link                                                                                                         | Solutions                                      | Difficulty |
+| ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------- | ---------- |
+| [Permutations](https://leetcode.com/problems/permutations/)                                                  | [C++](./src/solutions_46/solutions_46.hpp)     | Medium     |
+| [Permutations II](https://leetcode.com/problems/permutations-ii/)                                            | [C++](./src/solutions_47/solutions_47.hpp)     | Medium     |
+| [Combinations](https://leetcode.com/problems/combinations/)                                                  | [C++](./src/solutions_77/solutions_77.hpp)     | Medium     |
+| [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [C++](./src/solutions_17/solutions_17.hpp)     | Medium     |
+| [Subsets](https://leetcode.com/problems/subsets/)                                                            | [C++](./src/solutions_78/solutions_78.hpp)     | Medium     |
+| [Subsets II](https://leetcode.com/problems/subsets-ii)                                                       | [C++](./src/solutions_90/solutions_90.hpp)     | Medium     |
+| [Combination Sum](https://leetcode.com/problems/combination-sum)                                             | [C++](./src/solutions_39/solutions_39.hpp)     | Medium     |
+| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii)                                       | [C++](./src/solutions_40/solutions_40.hpp)     | Medium     |
+| [N-Queens](https://leetcode.com/problems/n-queens)                                                           | [C++](./src/solutions_51/solutions_51.hpp)     | Hard       |
+| [N-Queens II](https://leetcode.com/problems/n-queens-ii)                                                     | [C++](./src/solutions_52/solutions_52.hpp)     | Hard       |
+| [Sudoku Solver](https://leetcode.com/problems/sudoku-solver)                                                 | [C++](./src/solutions_37/solutions_37.hpp)     | Hard       |
+| [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence)                       | [C++](./src/solutions_1143/solutions_1143.hpp) | Medium     |
 
 ### Sort
 
