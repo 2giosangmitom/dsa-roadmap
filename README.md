@@ -254,6 +254,7 @@ flowchart TD
 | [Maximal Square](https://leetcode.com/problems/maximal-square)                     | [C++](./src/solutions_221/solutions_221.hpp) | Medium     |
 | [House Robber](https://leetcode.com/problems/house-robber)                         | [C++](./src/solutions_198/solutions_198.hpp) | Medium     |
 | [Target Sum](https://leetcode.com/problems/target-sum)                             | [C++](./src/solutions_494/solutions_494.hpp) | Medium     |
+| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray)                 | [C++](./src/solutions_53/solutions_53.hpp)   | Medium     |
 
 ### Must try
 
