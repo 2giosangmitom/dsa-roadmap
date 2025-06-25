@@ -22,4 +22,21 @@ class Solution {
 
         return max_sum;
     }
+
+    // Traditional DP
+    int maxSubArray2(vector<int>& nums) {
+        if (nums.empty()) {
+            return 0;
+        }
+        size_t n = nums.size();
+        vector<int> dp(n);
+        int max_sum = dp[0] = nums[0];
+
+        for (size_t i = 1; i < n; i++) {
+            dp[i] = std::max(nums[i], dp[i - 1] + nums[i]);
+            max_sum = std::max(dp[i], max_sum);
+        }
+
+        return max_sum;
+    }
 };
