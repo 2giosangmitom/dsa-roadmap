@@ -1,6 +1,6 @@
-# LeetCode Patterns
+# DSA Roadmap
 
-Hello 😹, welcome to this LeetCode roadmap.
+Hello 😹, welcome to this DSA Roadmap. This is my personal DSA roadmap with LeetCode.
 
 ## 🗺️ The Roadmap
 
