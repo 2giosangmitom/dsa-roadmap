@@ -4,6 +4,7 @@
 #include <cstdint>
 #include <random>
 #include <span>
+#include <utility>
 #include <vector>
 using namespace std;
 
@@ -35,6 +36,26 @@ class Solution {
     // Merge sort
     vector<int> sortArray4(vector<int> &nums) {
         merge_sort(nums);
+        return nums;
+    }
+
+    // Bubble sort
+    vector<int> sortArray5(vector<int> &nums) {
+        size_t n = nums.size();
+
+        for (size_t i = 0; i < n; i++) {
+            bool have_swap = false;
+            for (size_t j = 0; j < n - i - 1; j++) {
+                if (nums[j] > nums[j + 1]) {
+                    swap(nums[j], nums[j + 1]);
+                    have_swap = true;
+                }
+            }
+            if (!have_swap) {
+                break;
+            }
+        }
+
         return nums;
     }
 
