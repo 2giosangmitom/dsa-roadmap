@@ -14,32 +14,6 @@ class Solution {
         return merge(left_head, right_head);
     }
 
-    // Insertion sort for linked list (TLE)
-    ListNode *sortList2(ListNode *head) {
-        if (!head || !head->next) {
-            return head;
-        }
-
-        ListNode dummy(0);
-
-        while (head) {
-            ListNode *curr = head;
-            head = head->next;
-
-            // Find insertion position
-            ListNode *prev = &dummy;
-            while (prev->next && prev->next->val < curr->val) {
-                prev = prev->next;
-            }
-
-            // Insert curr after prev
-            curr->next = prev->next;
-            prev->next = curr;
-        }
-
-        return dummy.next;
-    }
-
    private:
     ListNode *split(ListNode *head) {
         ListNode *fast = head;

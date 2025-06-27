@@ -24,21 +24,6 @@ TEST_P(Solutions_148_Test, merge_sort) {
     delete_list({actual, expected_list});
 }
 
-TEST_P(Solutions_148_Test, insertion_sort) {
-    auto [nums, expected] = GetParam();
-    auto expected_list = make_list(expected);
-
-    auto actual = solutions.sortList2(make_list(nums));
-
-    if (!actual) {
-        EXPECT_TRUE(expected_list == nullptr);
-    } else {
-        EXPECT_EQ(*actual, *expected_list) << "Actual: " << actual << std::endl
-                                           << "Expected: " << expected_list;
-    }
-    delete_list({actual, expected_list});
-}
-
 INSTANTIATE_TEST_SUITE_P(
     , Solutions_148_Test,
     testing::Values(make_tuple(std::vector<int>{4, 2, 1, 3},

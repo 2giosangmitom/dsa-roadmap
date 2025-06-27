@@ -230,13 +230,14 @@ flowchart TD
 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver)                                                 | [C++](./src/solutions_37/solutions_37.hpp)     | Hard       |
 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence)                       | [C++](./src/solutions_1143/solutions_1143.hpp) | Medium     |
 
-### Sort
+### Sorting
 
-| Link                                                          | Solutions                                    | Difficulty |
-| ------------------------------------------------------------- | -------------------------------------------- | ---------- |
-| [Sort an Array](https://leetcode.com/problems/sort-an-array/) | [C++](./src/solutions_912/solutions_912.hpp) | Medium     |
-| [Sort List](https://leetcode.com/problems/sort-list)          | [C++](./src/solutions_148/solutions_148.hpp) | Medium     |
-| [Sort Colors](https://leetcode.com/problems/sort-colors)      | [C++](./src/solutions_75/solutions_75.hpp)   | Medium     |
+| Link                                                                     | Solutions                                    | Difficulty |
+| ------------------------------------------------------------------------ | -------------------------------------------- | ---------- |
+| [Sort an Array](https://leetcode.com/problems/sort-an-array/)            | [C++](./src/solutions_912/solutions_912.hpp) | Medium     |
+| [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list) | [C++](./src/solutions_147/solutions_147.hpp) | Medium     |
+| [Sort List](https://leetcode.com/problems/sort-list)                     | [C++](./src/solutions_148/solutions_148.hpp) | Medium     |
+| [Sort Colors](https://leetcode.com/problems/sort-colors)                 | [C++](./src/solutions_75/solutions_75.hpp)   | Medium     |
 
 ### Dynamic Programming
 
