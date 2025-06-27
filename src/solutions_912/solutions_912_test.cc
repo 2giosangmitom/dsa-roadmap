@@ -50,6 +50,14 @@ TEST_P(Solutions_912_Test, bubble_sort) {
     EXPECT_EQ(actual, expected);
 }
 
+TEST_P(Solutions_912_Test, insertion_sort) {
+    auto [nums, expected] = GetParam();
+
+    auto actual = solutions.sortArray6(nums);
+
+    EXPECT_EQ(actual, expected);
+}
+
 INSTANTIATE_TEST_SUITE_P(
     , Solutions_912_Test,
     testing::Values(

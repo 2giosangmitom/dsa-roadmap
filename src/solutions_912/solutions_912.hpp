@@ -59,6 +59,23 @@ class Solution {
         return nums;
     }
 
+    // Insertion sort
+    vector<int> sortArray6(vector<int> &nums) {
+        size_t n = nums.size();
+        for (size_t i = 1; i < n; i++) {
+            int key = nums[i];
+            int j = i - 1;
+
+            while (j >= 0 && nums[j] > key) {
+                nums[j + 1] = nums[j];
+                j--;
+            }
+            nums[j + 1] = key;
+        }
+
+        return nums;
+    }
+
    private:
     void quick_sort(vector<int> &nums, int64_t left, int64_t right) {
         if (left >= right) {
