@@ -259,6 +259,12 @@ flowchart TD
 | [Target Sum](https://leetcode.com/problems/target-sum)                             | [C++](./src/solutions_494/solutions_494.hpp) | Medium     |
 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray)                 | [C++](./src/solutions_53/solutions_53.hpp)   | Medium     |
 
+### Greedy
+
+| Link                                                 | Solutions                                  | Difficulty |
+| ---------------------------------------------------- | ------------------------------------------ | ---------- |
+| [Jump Game](https://leetcode.com/problems/jump-game) | [C++](./src/solutions_55/solutions_55.hpp) | Medium     |
+
 ### Must try
 
 | Link                                                                                                              | Solutions                                    | Difficulty |
