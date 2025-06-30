@@ -164,12 +164,13 @@ flowchart TD
 
 ### Prefix Sum
 
-| Link                                                                                        | Solutions                                    | Difficulty |
-| ------------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
-| [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)     | [C++](./src/solutions_303/solutions_303.hpp) | Easy       |
-| [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)               | [C++](./src/solutions_560/solutions_560.hpp) | Medium     |
-| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [C++](./src/solutions_238/solutions_238.hpp) | Medium     |
-| [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)       | [C++](./src/solutions_209/solutions_209.hpp) | Medium     |
+| Link                                                                                           | Solutions                                      | Difficulty |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
+| [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)        | [C++](./src/solutions_303/solutions_303.hpp)   | Easy       |
+| [Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array) | [C++](./src/solutions_1991/solutions_1991.hpp) | Easy       |
+| [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                  | [C++](./src/solutions_560/solutions_560.hpp)   | Medium     |
+| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)    | [C++](./src/solutions_238/solutions_238.hpp)   | Medium     |
+| [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)          | [C++](./src/solutions_209/solutions_209.hpp)   | Medium     |
 
 ### Number Theory
 
