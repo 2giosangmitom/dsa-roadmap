@@ -207,13 +207,14 @@ flowchart TD
 
 ### Tries
 
-| Link                                                                                                                   | Solutions                                    | Difficulty |
-| ---------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
-| [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)                               | [C++](./src/solutions_208/solutions_208.hpp) | Medium     |
-| [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                          | [C++](./src/solutions_14/solutions_14.hpp)   | Easy       |
-| [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure) | [C++](./src/solutions_211/solutions_211.hpp) | Medium     |
-| [Word Search](https://leetcode.com/problems/word-search)                                                               | [C++](./src/solutions_79/solutions_79.hpp)   | Medium     |
-| [Word Search II](https://leetcode.com/problems/word-search-ii)                                                         | [C++](./src/solutions_212/solutions_212.hpp) | Hard       |
+| Link                                                                                                                   | Solutions                                      | Difficulty |
+| ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
+| [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)                               | [C++](./src/solutions_208/solutions_208.hpp)   | Medium     |
+| [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                          | [C++](./src/solutions_14/solutions_14.hpp)     | Easy       |
+| [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure) | [C++](./src/solutions_211/solutions_211.hpp)   | Medium     |
+| [Word Search](https://leetcode.com/problems/word-search)                                                               | [C++](./src/solutions_79/solutions_79.hpp)     | Medium     |
+| [Word Search II](https://leetcode.com/problems/word-search-ii)                                                         | [C++](./src/solutions_212/solutions_212.hpp)   | Hard       |
+| [Partition String](https://leetcode.com/problems/partition-string)                                                     | [C++](./src/solutions_3597/solutions_3597.hpp) | Medium     |
 
 ### Backtracking
 
