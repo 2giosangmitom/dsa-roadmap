@@ -259,6 +259,7 @@ flowchart TD
 | [House Robber](https://leetcode.com/problems/house-robber)                         | [C++](./src/solutions_198/solutions_198.hpp) | Medium     |
 | [Target Sum](https://leetcode.com/problems/target-sum)                             | [C++](./src/solutions_494/solutions_494.hpp) | Medium     |
 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray)                 | [C++](./src/solutions_53/solutions_53.hpp)   | Medium     |
+| [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum)                 | [C++](./src/solutions_64/solutions_64.hpp)   | Medium     |
 
 ### Greedy
 
