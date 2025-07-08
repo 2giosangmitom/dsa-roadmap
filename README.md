@@ -263,10 +263,11 @@ flowchart TD
 
 ### Greedy
 
-| Link                                                     | Solutions                                    | Difficulty |
-| -------------------------------------------------------- | -------------------------------------------- | ---------- |
-| [Jump Game](https://leetcode.com/problems/jump-game)     | [C++](./src/solutions_55/solutions_55.hpp)   | Medium     |
-| [Gas Station](https://leetcode.com/problems/gas-station) | [C++](./src/solutions_134/solutions_134.hpp) | Medium     |
+| Link                                                                                                             | Solutions                                      | Difficulty |
+| ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
+| [Jump Game](https://leetcode.com/problems/jump-game)                                                             | [C++](./src/solutions_55/solutions_55.hpp)     | Medium     |
+| [Gas Station](https://leetcode.com/problems/gas-station)                                                         | [C++](./src/solutions_134/solutions_134.hpp)   | Medium     |
+| [Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations) | [C++](./src/solutions_1005/solutions_1005.hpp) | Easy       |
 
 ### Must try
 
