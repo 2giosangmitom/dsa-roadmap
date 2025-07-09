@@ -67,20 +67,21 @@ flowchart TD
 
 ### Linked Lists
 
-| Link                                                                                                                               | Solutions                                    | Difficulty |
-| ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
-| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                                                  | [C++](./src/solutions_2/solutions_2.hpp)     | Medium     |
-| [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)                                                             | [C++](./src/solutions_445/solutions_445.hpp) | Medium     |
-| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)                                                           | [C++](./src/solutions_206/solutions_206.hpp) | Easy       |
-| [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii?envType=problem-list-v2&envId=linked-list)           | [C++](./src/solutions_92/solutions_92.hpp)   | Medium     |
-| [Rotate List](https://leetcode.com/problems/rotate-list)                                                                           | [C++](./src/solutions_61/solutions_61.hpp)   | Medium     |
-| [Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/)                  | [C++](./src/solutions_430/solutions_430.hpp) | Medium     |
-| [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements?envType=problem-list-v2&envId=linked-list) | [C++](./src/solutions_203/solutions_203.hpp) | Easy       |
-| [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)                                | [C++](./src/solutions_19/solutions_19.hpp)   | Medium     |
-| [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                                              | [C++](./src/solutions_876/solutions_876.hpp) | Easy       |
-| [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)                                | [C++](./src/solutions_160/solutions_160.hpp) | Easy       |
-| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                                              | [C++](./src/solutions_141/solutions_141.hpp) | Easy       |
-| [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)                                                           | [C++](./src/solutions_24/solutions_24.hpp)   | Medium     |
+| Link                                                                                                              | Solutions                                    | Difficulty |
+| ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
+| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                                 | [C++](./src/solutions_2/solutions_2.hpp)     | Medium     |
+| [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)                                            | [C++](./src/solutions_445/solutions_445.hpp) | Medium     |
+| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)                                          | [C++](./src/solutions_206/solutions_206.hpp) | Easy       |
+| [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)                                    | [C++](./src/solutions_92/solutions_92.hpp)   | Medium     |
+| [Rotate List](https://leetcode.com/problems/rotate-list)                                                          | [C++](./src/solutions_61/solutions_61.hpp)   | Medium     |
+| [Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/) | [C++](./src/solutions_430/solutions_430.hpp) | Medium     |
+| [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)                          | [C++](./src/solutions_203/solutions_203.hpp) | Easy       |
+| [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)               | [C++](./src/solutions_19/solutions_19.hpp)   | Medium     |
+| [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                             | [C++](./src/solutions_876/solutions_876.hpp) | Easy       |
+| [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)               | [C++](./src/solutions_160/solutions_160.hpp) | Easy       |
+| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                             | [C++](./src/solutions_141/solutions_141.hpp) | Easy       |
+| [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)                                          | [C++](./src/solutions_24/solutions_24.hpp)   | Medium     |
+| [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)                                        | [C++](./src/solutions_328/solutions_328.hpp) | Medium     |
 
 ### Hash Maps and Hash Sets
 
