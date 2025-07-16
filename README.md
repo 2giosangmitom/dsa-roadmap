@@ -268,6 +268,7 @@ flowchart TD
 | Link                                                                                                             | Solutions                                      | Difficulty |
 | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
 | [Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations) | [C++](./src/solutions_1005/solutions_1005.hpp) | Easy       |
+| [Can Place Flowers](https://leetcode.com/problems/can-place-flowers)                                             | [C++](./src/solutions_605/solutions_605.hpp)   | Easy       |
 | [Jump Game](https://leetcode.com/problems/jump-game)                                                             | [C++](./src/solutions_55/solutions_55.hpp)     | Medium     |
 | [Gas Station](https://leetcode.com/problems/gas-station)                                                         | [C++](./src/solutions_134/solutions_134.hpp)   | Medium     |
 | [Candy](https://leetcode.com/problems/candy)                                                                     | [C++](./src/solutions_135/solutions_135.hpp)   | Hard       |
