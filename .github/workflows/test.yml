@@ -16,7 +16,7 @@ jobs:
         uses: DeterminateSystems/determinate-nix-action@v3.8.2
 
       - name: Build
-        run: nix develop --command bash -c "./x build all"
+        run: nix develop --command bash -c "cmake -B build && cmake --build build -j$(nproc)"
 
       - name: Run tests
-        run: nix develop --command bash -c "./x test all"
+        run: nix develop --command bash -c "ctest --test-dir build"

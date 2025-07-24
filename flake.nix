@@ -10,14 +10,17 @@
   }: let
     system = "x86_64-linux";
     pkgs = import nixpkgs {inherit system;};
+    lib = nixpkgs.lib;
   in {
-    devShells.${system}.default = pkgs.mkShell {
+    devShells.${system}.default = pkgs.mkShell.override {stdenv = pkgs.clangStdenv;} {
       packages = with pkgs; [
         gtest
         cmake
-        clang
-        ninja
-        python3Minimal
+      ];
+
+      CPATH = builtins.concatStringsSep ":" [
+        (lib.makeSearchPathOutput "dev" "include" [pkgs.gtest])
+        (lib.makeSearchPath "resource-root/include" [pkgs.clang])
       ];
     };
     formatter.${system} = pkgs.alejandra;
