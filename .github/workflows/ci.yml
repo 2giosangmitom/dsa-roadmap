@@ -1,4 +1,4 @@
-name: Test C++
+name: CI
 
 on: [push, pull_request]
 
@@ -6,8 +6,9 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
+    name: Test C++
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
