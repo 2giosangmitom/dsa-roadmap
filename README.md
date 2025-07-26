@@ -65,6 +65,7 @@ flowchart TD
 | [Next Permutation](https://leetcode.com/problems/next-permutation/)                                             | [C++](./src/solutions_31/solutions_31.hpp)     | Medium     |
 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [C++](./src/solutions_80/solutions_80.hpp)     | Medium     |
 | [Rotate Array](https://leetcode.com/problems/rotate-array)                                                      | [C++](./src/solutions_189/solutions_189.hpp)   | Medium     |
+| [4Sum](https://leetcode.com/problems/4sum)                                                                      | [C++](./src/solutions_18/solutions_18.hpp)     | Medium     |
 
 ### Linked Lists
 
