@@ -274,6 +274,12 @@ flowchart TD
 | [Gas Station](https://leetcode.com/problems/gas-station)                                                         | [C++](./src/solutions_134/solutions_134.hpp)   | Medium     |
 | [Candy](https://leetcode.com/problems/candy)                                                                     | [C++](./src/solutions_135/solutions_135.hpp)   | Hard       |
 
+### Bit Manipulation
+
+| Link                                                                                     | Solutions                                      | Difficulty |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
+| [Number of Even and Odd Bits](https://leetcode.com/problems/number-of-even-and-odd-bits) | [C++](./src/solutions_2595/solutions_2595.hpp) | Easy       |
+
 ### Must try
 
 | Link                                                                                                              | Solutions                                    | Difficulty |
