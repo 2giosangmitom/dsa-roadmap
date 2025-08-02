@@ -263,6 +263,7 @@ flowchart TD
 | [Target Sum](https://leetcode.com/problems/target-sum)                             | [C++](./src/solutions_494/solutions_494.hpp) | Medium     |
 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray)                 | [C++](./src/solutions_53/solutions_53.hpp)   | Medium     |
 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum)                 | [C++](./src/solutions_64/solutions_64.hpp)   | Medium     |
+| [Coin Change II](https://leetcode.com/problems/coin-change-ii)                     | [C++](./src/solutions_518/solutions_518.hpp) | Medium     |
 
 ### Greedy
 
