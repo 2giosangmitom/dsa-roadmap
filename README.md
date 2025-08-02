@@ -121,6 +121,7 @@ flowchart TD
 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/)                                                                             | [C++](./src/solutions_162/solutions_162.hpp)                 | Medium     |
 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)                                                                 | [C++](./src/solutions_528/solutions_528.hpp)                 | Medium     |
 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)                                                         | [C++](./src/solutions_4/solutions_4.hpp)                     | Hard       |
+| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)                                                    | [C++](./src/solutions_300/solutions_300.hpp)                 | Medium     |
 
 ### Math
 
