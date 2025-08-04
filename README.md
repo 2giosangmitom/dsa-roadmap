@@ -282,6 +282,7 @@ flowchart TD
 | ---------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
 | [Number of Even and Odd Bits](https://leetcode.com/problems/number-of-even-and-odd-bits) | [C++](./src/solutions_2595/solutions_2595.hpp) | Easy       |
 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                      | [C++](./src/solutions_191/solutions_191.hpp)   | Easy       |
+| [Reverse Bits](https://leetcode.com/problems/reverse-bits/)                              | [C++](./src/solutions_190/solutions_190.hpp)   | Easy       |
 
 ### Must try
 
