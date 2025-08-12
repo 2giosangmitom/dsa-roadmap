@@ -6,12 +6,11 @@
 using namespace std;
 
 class Solution {
-    string repeat_string(string& s, int num) {
-        string res;
-        for (int i = 0; i < num; ++i) {
-            res += s;
+    void repeat_string(string& s, int num) {
+        string base = s;
+        for (int i = 1; i < num; ++i) {
+            s += base;
         }
-        return res;
     }
 
    public:
@@ -25,14 +24,13 @@ class Solution {
                 current_num = current_num * 10 + (c - '0');
             } else {
                 if (c == '[') {
-                    st.push({current_num, result});
-                    result.clear();
+                    st.push({current_num, std::move(result)});
                     current_num = 0;
                 } else if (c == ']') {
                     auto pair = st.top();
                     st.pop();
-                    result =
-                        pair.second + repeat_string(result, pair.first);
+                    repeat_string(result, pair.first);
+                    result = std::move(pair.second) + result;
                 } else {
                     result += c;
                 }
