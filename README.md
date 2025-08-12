@@ -146,6 +146,7 @@ flowchart TD
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                                               | [C++](./src/solutions_20/solutions_20.hpp)     | Easy       |
 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)                         | [C++](./src/solutions_232/solutions_232.hpp)   | Easy       |
 | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)                                   | [C++](./src/solutions_503/solutions_503.hpp)   | Medium     |
+| [Decode String](https://leetcode.com/problems/decode-string)                                                        | [C++](./src/solutions_394/solutions_394.hpp)   | Medium     |
 | [Basic Calculator](https://leetcode.com/problems/basic-calculator/)                                                 | [C++](./src/solutions_224/solutions_224.hpp)   | Hard       |
 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                     | [C++](./src/solutions_239/solutions_239.hpp)   | Hard       |
 
