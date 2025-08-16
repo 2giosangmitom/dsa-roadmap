@@ -286,6 +286,12 @@ flowchart TD
 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/)                              | [C++](./src/solutions_190/solutions_190.hpp)   | Easy       |
 | [Hamming Distance](https://leetcode.com/problems/hamming-distance/)                      | [C++](./src/solutions_461/solutions_461.hpp)   | Easy       |
 
+### Graph
+
+| Link                                                                                       | Solutions                                      | Difficulty |
+| ------------------------------------------------------------------------------------------ | ---------------------------------------------- | ---------- |
+| [Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph) | [C++](./src/solutions_1971/solutions_1971.hpp) | Easy       |
+
 ### Must try
 
 | Link                                                                                                              | Solutions                                    | Difficulty |
