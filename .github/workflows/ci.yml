@@ -11,7 +11,7 @@ jobs:
     name: Test C++
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Nix
         uses: DeterminateSystems/determinate-nix-action@v3.8.5
