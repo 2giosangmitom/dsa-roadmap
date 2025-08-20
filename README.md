@@ -292,6 +292,7 @@ flowchart TD
 | ------------------------------------------------------------------------------------------ | ---------------------------------------------- | ---------- |
 | [Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph) | [C++](./src/solutions_1971/solutions_1971.hpp) | Easy       |
 | [Clone Graph](https://leetcode.com/problems/clone-graph)                                   | [C++](./src/solutions_133/solutions_133.hpp)   | Medium     |
+| [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph)       | [C++](./src/solutions_1791/solutions_1791.hpp) | Easy       |
 
 ### Must try
 
