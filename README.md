@@ -291,6 +291,7 @@ flowchart TD
 | Link                                                                                       | Solutions                                      | Difficulty |
 | ------------------------------------------------------------------------------------------ | ---------------------------------------------- | ---------- |
 | [Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph) | [C++](./src/solutions_1971/solutions_1971.hpp) | Easy       |
+| [Clone Graph](https://leetcode.com/problems/clone-graph)                                   | [C++](./src/solutions_133/solutions_133.hpp)   | Medium     |
 
 ### Must try
 
