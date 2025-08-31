@@ -294,6 +294,7 @@ flowchart TD
 | [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph)       | [C++](./src/solutions_1791/solutions_1791.hpp) | Easy       |
 | [Clone Graph](https://leetcode.com/problems/clone-graph)                                   | [C++](./src/solutions_133/solutions_133.hpp)   | Medium     |
 | [Number of Islands](https://leetcode.com/problems/number-of-islands)                       | [C++](./src/solutions_200/solutions_200.hpp)   | Medium     |
+| [Rotting Oranges](https://leetcode.com/problems/rotting-oranges)                           | [C++](./src/solutions_994/solutions_994.hpp)   | Medium     |
 
 ### Must try
 
