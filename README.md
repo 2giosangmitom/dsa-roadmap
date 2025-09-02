@@ -1,3 +1,9 @@
+It's about one year since I started solving problems on LeetCode. During this time, I've learned a lot about data structures and algorithms (DSA). To help others who are also on their DSA journey, I've created this DSA roadmap that outlines the key topics and problems to focus on. This roadmap is designed to guide you through the essential concepts and problem-solving techniques in a structured manner.
+
+![My profile](./myprofile.png)
+
+I think I should stop updating this repository as it becomes too large, I think below problems are enough for a good understanding of DSA. I think it's time to focus on my career and real-world projects. Thank you for your interest in this repository, and I hope it has been helpful in your DSA journey. Happy coding! 😸
+
 # DSA Roadmap
 
 Hello 😹, welcome to this DSA Roadmap. This is my personal DSA roadmap with LeetCode.
