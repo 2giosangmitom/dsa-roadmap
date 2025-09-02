@@ -295,6 +295,7 @@ flowchart TD
 | [Clone Graph](https://leetcode.com/problems/clone-graph)                                   | [C++](./src/solutions_133/solutions_133.hpp)   | Medium     |
 | [Number of Islands](https://leetcode.com/problems/number-of-islands)                       | [C++](./src/solutions_200/solutions_200.hpp)   | Medium     |
 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges)                           | [C++](./src/solutions_994/solutions_994.hpp)   | Medium     |
+| [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)                   | [C++](./src/solutions_785/solutions_785.hpp)   | Medium     |
 
 ### Must try
 
@@ -304,9 +305,3 @@ flowchart TD
 | [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/) | [C++](./src/solutions_747/solutions_747.hpp) | Easy       |
 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                                 | [C++](./src/solutions_8/solutions_8.hpp)     | Medium     |
 | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion)                                              | [C++](./src/solutions_6/solutions_6.hpp)     | Medium     |
-
-## 📌 Final Thoughts
-
-I will continue to refine this roadmap as I grow and learn more. Whether you're just starting out or revisiting DSA for interviews, I hope this resource helps guide your journey.
-
-Happy coding! ✨
