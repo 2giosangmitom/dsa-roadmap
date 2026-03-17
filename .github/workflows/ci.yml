@@ -8,16 +8,13 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: Test C++
+    name: Test Rust
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
 
-      - name: Set up Nix
-        uses: DeterminateSystems/determinate-nix-action@v3.17.0
-
-      - name: Build
-        run: nix develop --command bash -c "cmake -B build && cmake --build build -j$(nproc)"
+      - name: Set up Rust
+        uses: actions/setup-rust@v1
 
       - name: Run tests
-        run: nix develop --command bash -c "ctest --test-dir build"
+        run: cargo test --verbose
