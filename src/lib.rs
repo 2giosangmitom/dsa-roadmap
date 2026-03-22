@@ -2,3 +2,4 @@
 
 mod two_sum;
 mod valid_palindrome;
+mod remove_element;
