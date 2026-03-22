@@ -18,7 +18,7 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::Solution;
-    use rstest::*;
+    use rstest::rstest;
 
     #[rstest]
     #[case("abc", "ahbgdc", true)]
