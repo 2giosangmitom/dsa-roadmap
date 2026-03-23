@@ -1,4 +1,4 @@
-use crate::linked_list::linked_list::ListNode;
+use crate::linked_list::data_structure::ListNode;
 
 struct Solution;
 

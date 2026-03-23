@@ -1,7 +1,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn reverse_string(s: &mut Vec<char>) {
+    pub fn reverse_string(s: &mut [char]) {
         let (mut left, mut right) = (0, s.len() - 1);
 
         while left < right {
