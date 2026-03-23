@@ -15,7 +15,6 @@ flowchart TD
     B --> E[Binary Search]
     B --> F[Sliding Window]
     B --> G[Prefix Sums]
-    B --> L[Number Theory]
 
     %% Intermediate Concepts
     C --> D[Fast and Slow Pointers]
@@ -34,7 +33,7 @@ flowchart TD
     Y --> K[Dynamic Programming]
     K --> O[Bit Manipulation]
     K --> V[Greedy]
-    K --> M[Math and Geometry]
+    K --> M[Math]
 
     %% Additional Paths
     W --> Q
@@ -141,6 +140,10 @@ flowchart TD
 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                                                                                      | TODO                      | Medium     |
 | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion)                                                                                                   | TODO                      | Medium     |
 | [Lexicographically Smallest Negated Permutation that Sums to Target](https://leetcode.com/problems/lexicographically-smallest-negated-permutation-that-sums-to-target) | TODO                      | Medium     |
+| [Three Divisors](https://leetcode.com/problems/three-divisors)                                                                                                         | TODO                      | Easy       |
+| [Ugly Number](https://leetcode.com/problems/ugly-number)                                                                                                               | TODO                      | Easy       |
+| [Count Primes](https://leetcode.com/problems/count-primes/)                                                                                                            | TODO                      | Medium     |
+| [Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/)                                                                        | TODO                      | Medium     |
 
 ### Stacks and Queues
 
@@ -180,15 +183,6 @@ flowchart TD
 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                  | TODO      | Medium     |
 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)    | TODO      | Medium     |
 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)          | TODO      | Medium     |
-
-### Number Theory
-
-| Link                                                                                            | Solutions | Difficulty |
-| ----------------------------------------------------------------------------------------------- | --------- | ---------- |
-| [Three Divisors](https://leetcode.com/problems/three-divisors)                                  | TODO      | Easy       |
-| [Ugly Number](https://leetcode.com/problems/ugly-number)                                        | TODO      | Easy       |
-| [Count Primes](https://leetcode.com/problems/count-primes/)                                     | TODO      | Medium     |
-| [Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/) | TODO      | Medium     |
 
 ### Trees
 
