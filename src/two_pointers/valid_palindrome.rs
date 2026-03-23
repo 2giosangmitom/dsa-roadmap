@@ -11,7 +11,7 @@ impl Solution {
                 i += 1;
             } else if !c2.is_ascii_alphanumeric() {
                 j -= 1;
-            } else if c1.to_ascii_lowercase() != c2.to_ascii_lowercase() {
+            } else if !c1.eq_ignore_ascii_case(&c2) {
                 return false;
             } else {
                 i += 1;
