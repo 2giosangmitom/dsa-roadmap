@@ -125,18 +125,22 @@ flowchart TD
 
 ### Math
 
-| Link                                                                                                                      | Solutions                 | Difficulty |
-| ------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ---------- |
-| [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/)                                                   | TODO                      | Easy       |
-| [Water Bottles](https://leetcode.com/problems/water-bottles/)                                                             | TODO                      | Easy       |
-| [Add Digits](https://leetcode.com/problems/add-digits/)                                                                   | TODO                      | Easy       |
-| [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                     | TODO                      | Easy       |
-| [Power of Two](https://leetcode.com/problems/power-of-two/)                                                               | TODO                      | Easy       |
-| [Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/) | TODO                      | Medium     |
-| [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                         | TODO                      | Medium     |
-| [Pow(x, n)](https://leetcode.com/problems/powx-n/)                                                                        | [Rust](./src/math/pow.rs) | Medium     |
-| [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)                                                 | TODO                      | Medium     |
-| [Rotate Image](https://leetcode.com/problems/rotate-image)                                                                | TODO                      | Medium     |
+| Link                                                                                                                                                                   | Solutions                 | Difficulty |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ---------- |
+| [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/)                                                                                                | TODO                      | Easy       |
+| [Water Bottles](https://leetcode.com/problems/water-bottles/)                                                                                                          | TODO                      | Easy       |
+| [Add Digits](https://leetcode.com/problems/add-digits/)                                                                                                                | TODO                      | Easy       |
+| [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                                                                  | TODO                      | Easy       |
+| [Power of Two](https://leetcode.com/problems/power-of-two/)                                                                                                            | TODO                      | Easy       |
+| [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/)                                                      | TODO                      | Easy       |
+| [Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/)                                              | TODO                      | Medium     |
+| [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                                                                      | TODO                      | Medium     |
+| [Pow(x, n)](https://leetcode.com/problems/powx-n/)                                                                                                                     | [Rust](./src/math/pow.rs) | Medium     |
+| [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)                                                                                              | TODO                      | Medium     |
+| [Rotate Image](https://leetcode.com/problems/rotate-image)                                                                                                             | TODO                      | Medium     |
+| [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                                                                                      | TODO                      | Medium     |
+| [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion)                                                                                                   | TODO                      | Medium     |
+| [Lexicographically Smallest Negated Permutation that Sums to Target](https://leetcode.com/problems/lexicographically-smallest-negated-permutation-that-sums-to-target) | TODO                      | Medium     |
 
 ### Stacks and Queues
 
@@ -292,16 +296,8 @@ flowchart TD
 | ------------------------------------------------------------------------------------------ | --------- | ---------- |
 | [Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph) | TODO      | Easy       |
 | [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph)       | TODO      | Easy       |
+| [Flood Fill](https://leetcode.com/problems/flood-fill/)                                    | TODO      | Easy       |
 | [Clone Graph](https://leetcode.com/problems/clone-graph)                                   | TODO      | Medium     |
 | [Number of Islands](https://leetcode.com/problems/number-of-islands)                       | TODO      | Medium     |
 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges)                           | TODO      | Medium     |
 | [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)                   | TODO      | Medium     |
-
-### Must try
-
-| Link                                                                                                              | Solutions | Difficulty |
-| ----------------------------------------------------------------------------------------------------------------- | --------- | ---------- |
-| [Flood Fill](https://leetcode.com/problems/flood-fill/)                                                           | TODO      | Easy       |
-| [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/) | TODO      | Easy       |
-| [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                                 | TODO      | Medium     |
-| [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion)                                              | TODO      | Medium     |
