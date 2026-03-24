@@ -47,24 +47,24 @@ flowchart TD
 
 ### Two Pointers
 
-| Link                                                                                                            | Solutions                                               | Difficulty |
-| --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | ---------- |
-| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                             | [Rust](./src/two_pointers/valid_palindrome.rs)          | Easy       |
-| [Remove Element](https://leetcode.com/problems/remove-element/)                                                 | [Rust](./src/two_pointers/remove_element.rs)            | Easy       |
-| [Is Subsequence](https://leetcode.com/problems/is-subsequence)                                                  | [Rust](./src/two_pointers/is_subsequence.rs)            | Easy       |
-| [Reverse String](https://leetcode.com/problems/reverse-string/)                                                 | [Rust](./src/two_pointers/reverse_string.rs)            | Easy       |
-| [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/)   | TODO                                                    | Easy       |
-| [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                                         | TODO                                                    | Easy       |
-| [Move Zeroes](https://leetcode.com/problems/move-zeroes)                                                        | TODO                                                    | Easy       |
-| [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)       | TODO                                                    | Easy       |
-| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                           | [Rust](./src/two_pointers/container_with_most_water.rs) | Medium     |
-| [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)           | [Rust](./src/two_pointers/two_sum.rs)                   | Medium     |
-| [3Sum](https://leetcode.com/problems/3sum/)                                                                     | TODO                                                    | Medium     |
-| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                   | TODO                                                    | Medium     |
-| [Next Permutation](https://leetcode.com/problems/next-permutation/)                                             | TODO                                                    | Medium     |
-| [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | TODO                                                    | Medium     |
-| [Rotate Array](https://leetcode.com/problems/rotate-array)                                                      | TODO                                                    | Medium     |
-| [4Sum](https://leetcode.com/problems/4sum)                                                                      | TODO                                                    | Medium     |
+| Link                                                                                                            | Solutions                                                           | Difficulty |
+| --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ---------- |
+| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                             | [Rust](./src/two_pointers/valid_palindrome.rs)                      | Easy       |
+| [Remove Element](https://leetcode.com/problems/remove-element/)                                                 | [Rust](./src/two_pointers/remove_element.rs)                        | Easy       |
+| [Is Subsequence](https://leetcode.com/problems/is-subsequence)                                                  | [Rust](./src/two_pointers/is_subsequence.rs)                        | Easy       |
+| [Reverse String](https://leetcode.com/problems/reverse-string/)                                                 | [Rust](./src/two_pointers/reverse_string.rs)                        | Easy       |
+| [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/)   | [Rust](./src/two_pointers/merge_two_2d_arrays_by_summing_values.rs) | Easy       |
+| [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                                         | TODO                                                                | Easy       |
+| [Move Zeroes](https://leetcode.com/problems/move-zeroes)                                                        | TODO                                                                | Easy       |
+| [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)       | TODO                                                                | Easy       |
+| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                           | [Rust](./src/two_pointers/container_with_most_water.rs)             | Medium     |
+| [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)           | [Rust](./src/two_pointers/two_sum.rs)                               | Medium     |
+| [3Sum](https://leetcode.com/problems/3sum/)                                                                     | TODO                                                                | Medium     |
+| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                   | TODO                                                                | Medium     |
+| [Next Permutation](https://leetcode.com/problems/next-permutation/)                                             | TODO                                                                | Medium     |
+| [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | TODO                                                                | Medium     |
+| [Rotate Array](https://leetcode.com/problems/rotate-array)                                                      | TODO                                                                | Medium     |
+| [4Sum](https://leetcode.com/problems/4sum)                                                                      | TODO                                                                | Medium     |
 
 ### Linked Lists
 
