@@ -75,17 +75,33 @@ impl Solution {
         Self::merge_sort(&mut nums, 0, n - 1);
         nums
     }
+
+    pub fn sort_array_quick(mut nums: Vec<i32>) -> Vec<i32> {
+        let n = nums.len();
+        Self::quick_sort(&mut nums, 0, (n - 1) as i32);
+        nums
+    }
 }
 
 #[cfg(test)]
 mod tests {
     use super::Solution;
-    use rstest::rstest;
+    use rstest::*;
+    use rstest_reuse::{apply, template};
 
+    #[template]
     #[rstest]
     #[case(vec![5, 2, 3, 1], vec![1, 2, 3, 5])]
     #[case(vec![5, 1, 1, 2, 0, 0], vec![0, 0, 1, 1, 2, 5])]
-    fn test(#[case] input: Vec<i32>, #[case] expected: Vec<i32>) {
+    fn test_template(#[case] input: Vec<i32>, #[case] expected: Vec<i32>) {}
+
+    #[apply(test_template)]
+    fn test_merge_sort(#[case] input: Vec<i32>, #[case] expected: Vec<i32>) {
         assert_eq!(Solution::sort_array(input), expected);
+    }
+
+    #[apply(test_template)]
+    fn test_quick_sort(#[case] input: Vec<i32>, #[case] expected: Vec<i32>) {
+        assert_eq!(Solution::sort_array_quick(input), expected);
     }
 }
