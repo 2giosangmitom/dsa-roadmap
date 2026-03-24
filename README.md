@@ -238,12 +238,12 @@ flowchart TD
 
 ### Sorting
 
-| Link                                                                     | Solutions | Difficulty |
-| ------------------------------------------------------------------------ | --------- | ---------- |
-| [Sort an Array](https://leetcode.com/problems/sort-an-array/)            | TODO      | Medium     |
-| [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list) | TODO      | Medium     |
-| [Sort List](https://leetcode.com/problems/sort-list)                     | TODO      | Medium     |
-| [Sort Colors](https://leetcode.com/problems/sort-colors)                 | TODO      | Medium     |
+| Link                                                                     | Solutions                              | Difficulty |
+| ------------------------------------------------------------------------ | -------------------------------------- | ---------- |
+| [Sort an Array](https://leetcode.com/problems/sort-an-array/)            | [Rust](./src/sorting/sort_an_array.rs) | Medium     |
+| [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list) | TODO                                   | Medium     |
+| [Sort List](https://leetcode.com/problems/sort-list)                     | TODO                                   | Medium     |
+| [Sort Colors](https://leetcode.com/problems/sort-colors)                 | TODO                                   | Medium     |
 
 ### Dynamic Programming
 
