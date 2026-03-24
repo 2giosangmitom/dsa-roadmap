@@ -221,20 +221,20 @@ flowchart TD
 
 ### Backtracking
 
-| Link                                                                                                         | Solutions | Difficulty |
-| ------------------------------------------------------------------------------------------------------------ | --------- | ---------- |
-| [Permutations](https://leetcode.com/problems/permutations/)                                                  | TODO      | Medium     |
-| [Permutations II](https://leetcode.com/problems/permutations-ii/)                                            | TODO      | Medium     |
-| [Combinations](https://leetcode.com/problems/combinations/)                                                  | TODO      | Medium     |
-| [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | TODO      | Medium     |
-| [Subsets](https://leetcode.com/problems/subsets/)                                                            | TODO      | Medium     |
-| [Subsets II](https://leetcode.com/problems/subsets-ii)                                                       | TODO      | Medium     |
-| [Combination Sum](https://leetcode.com/problems/combination-sum)                                             | TODO      | Medium     |
-| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii)                                       | TODO      | Medium     |
-| [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence)                       | TODO      | Medium     |
-| [N-Queens](https://leetcode.com/problems/n-queens)                                                           | TODO      | Hard       |
-| [N-Queens II](https://leetcode.com/problems/n-queens-ii)                                                     | TODO      | Hard       |
-| [Sudoku Solver](https://leetcode.com/problems/sudoku-solver)                                                 | TODO      | Hard       |
+| Link                                                                                                         | Solutions                                  | Difficulty |
+| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------ | ---------- |
+| [Permutations](https://leetcode.com/problems/permutations/)                                                  | [Rust](./src/backtracking/permutations.rs) | Medium     |
+| [Permutations II](https://leetcode.com/problems/permutations-ii/)                                            | TODO                                       | Medium     |
+| [Combinations](https://leetcode.com/problems/combinations/)                                                  | TODO                                       | Medium     |
+| [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | TODO                                       | Medium     |
+| [Subsets](https://leetcode.com/problems/subsets/)                                                            | TODO                                       | Medium     |
+| [Subsets II](https://leetcode.com/problems/subsets-ii)                                                       | TODO                                       | Medium     |
+| [Combination Sum](https://leetcode.com/problems/combination-sum)                                             | TODO                                       | Medium     |
+| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii)                                       | TODO                                       | Medium     |
+| [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence)                       | TODO                                       | Medium     |
+| [N-Queens](https://leetcode.com/problems/n-queens)                                                           | TODO                                       | Hard       |
+| [N-Queens II](https://leetcode.com/problems/n-queens-ii)                                                     | TODO                                       | Hard       |
+| [Sudoku Solver](https://leetcode.com/problems/sudoku-solver)                                                 | TODO                                       | Hard       |
 
 ### Sorting
 

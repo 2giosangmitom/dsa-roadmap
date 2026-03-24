@@ -1,5 +1,6 @@
 #![allow(dead_code)]
 
+mod backtracking;
 mod hash_map;
 mod linked_list;
 mod math;
