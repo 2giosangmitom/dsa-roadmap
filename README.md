@@ -114,7 +114,6 @@ flowchart TD
 | [Binary Search](https://leetcode.com/problems/binary-search/)                                                                                     | TODO      | Easy       |
 | [Maximum Count of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/)   | TODO      | Easy       |
 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | TODO      | Medium     |
-| [WoodCutting Made Easy](https://www.interviewbit.com/problems/woodcutting-made-easy/)                                                             | TODO      | Medium     |
 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)                                                   | TODO      | Medium     |
 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)                                                                           | TODO      | Medium     |
 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/)                                                                             | TODO      | Medium     |
