@@ -75,7 +75,7 @@ flowchart TD
 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                             | TODO                                             | Easy       |
 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)               | TODO                                             | Easy       |
 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                             | TODO                                             | Easy       |
-| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                                 | TODO                                             | Medium     |
+| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                                 | [Rust](./src/linked_list/add_two_numbers.rs)     | Medium     |
 | [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)                                            | TODO                                             | Medium     |
 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)                                    | TODO                                             | Medium     |
 | [Rotate List](https://leetcode.com/problems/rotate-list)                                                          | TODO                                             | Medium     |
