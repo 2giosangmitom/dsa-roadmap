@@ -2,6 +2,7 @@
 
 mod backtracking;
 mod dynamic_programming;
+mod graph;
 mod hash_map;
 mod linked_list;
 mod math;

@@ -285,12 +285,12 @@ flowchart TD
 
 ### Graph
 
-| Link                                                                                       | Solutions | Difficulty |
-| ------------------------------------------------------------------------------------------ | --------- | ---------- |
-| [Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph) | TODO      | Easy       |
-| [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph)       | TODO      | Easy       |
-| [Flood Fill](https://leetcode.com/problems/flood-fill/)                                    | TODO      | Easy       |
-| [Clone Graph](https://leetcode.com/problems/clone-graph)                                   | TODO      | Medium     |
-| [Number of Islands](https://leetcode.com/problems/number-of-islands)                       | TODO      | Medium     |
-| [Rotting Oranges](https://leetcode.com/problems/rotting-oranges)                           | TODO      | Medium     |
-| [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)                   | TODO      | Medium     |
+| Link                                                                                       | Solutions                         | Difficulty |
+| ------------------------------------------------------------------------------------------ | --------------------------------- | ---------- |
+| [Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph) | TODO                              | Easy       |
+| [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph)       | TODO                              | Easy       |
+| [Flood Fill](https://leetcode.com/problems/flood-fill/)                                    | [Rust](./src/graph/flood_fill.rs) | Easy       |
+| [Clone Graph](https://leetcode.com/problems/clone-graph)                                   | TODO                              | Medium     |
+| [Number of Islands](https://leetcode.com/problems/number-of-islands)                       | TODO                              | Medium     |
+| [Rotting Oranges](https://leetcode.com/problems/rotting-oranges)                           | TODO                              | Medium     |
+| [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)                   | TODO                              | Medium     |
