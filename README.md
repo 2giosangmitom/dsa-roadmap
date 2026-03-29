@@ -101,11 +101,11 @@ flowchart TD
 
 ### Sliding Window
 
-| Link                                                                                                                                        | Solutions | Difficulty |
-| ------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ---------- |
-| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)             | TODO      | Medium     |
-| [Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | TODO      | Medium     |
-| [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)                           | TODO      | Medium     |
+| Link                                                                                                                                        | Solutions                                                                      | Difficulty |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ---------- |
+| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)             | [Rust](./src/sliding_window/longest_substring_without_repeating_characters.rs) | Medium     |
+| [Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | TODO                                                                           | Medium     |
+| [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)                           | TODO                                                                           | Medium     |
 
 ### Binary Search
 

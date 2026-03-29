@@ -1,9 +1,10 @@
 #![allow(dead_code)]
 
 mod backtracking;
+mod dynamic_programming;
 mod hash_map;
 mod linked_list;
 mod math;
-mod two_pointers;
+mod sliding_window;
 mod sorting;
-mod dynamic_programming;
+mod two_pointers;
