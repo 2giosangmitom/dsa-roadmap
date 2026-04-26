@@ -148,7 +148,7 @@ flowchart TD
 
 | Link                                                                                                                | Solutions | Difficulty |
 | ------------------------------------------------------------------------------------------------------------------- | --------- | ---------- |
-| [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | TODO      | Easy       |
+| [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | [Rust](./src/stack_and_queue/remove_all_adjacent_duplicates_in_string.rs) | Easy       |
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                                               | TODO      | Easy       |
 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)                         | TODO      | Easy       |
 | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)                                   | TODO      | Medium     |
