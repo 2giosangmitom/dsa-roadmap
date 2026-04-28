@@ -146,15 +146,15 @@ flowchart TD
 
 ### Stacks and Queues
 
-| Link                                                                                                                | Solutions | Difficulty |
-| ------------------------------------------------------------------------------------------------------------------- | --------- | ---------- |
+| Link                                                                                                                | Solutions                                                                 | Difficulty |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ---------- |
 | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | [Rust](./src/stack_and_queue/remove_all_adjacent_duplicates_in_string.rs) | Easy       |
-| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                                               | TODO      | Easy       |
-| [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)                         | TODO      | Easy       |
-| [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)                                   | TODO      | Medium     |
-| [Decode String](https://leetcode.com/problems/decode-string)                                                        | TODO      | Medium     |
-| [Basic Calculator](https://leetcode.com/problems/basic-calculator/)                                                 | TODO      | Hard       |
-| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                     | TODO      | Hard       |
+| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                                               | TODO                                                                      | Easy       |
+| [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)                         | TODO                                                                      | Easy       |
+| [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)                                   | TODO                                                                      | Medium     |
+| [Decode String](https://leetcode.com/problems/decode-string)                                                        | TODO                                                                      | Medium     |
+| [Basic Calculator](https://leetcode.com/problems/basic-calculator/)                                                 | TODO                                                                      | Hard       |
+| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                     | TODO                                                                      | Hard       |
 
 ### Heaps
 
@@ -246,23 +246,23 @@ flowchart TD
 
 ### Dynamic Programming
 
-| Link                                                                               | Solutions                                            | Difficulty |
-| ---------------------------------------------------------------------------------- | ---------------------------------------------------- | ---------- |
-| [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)                | TODO                                                 | Easy       |
-| [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii)          | TODO                                                 | Easy       |
-| [Fibonacci Number](https://leetcode.com/problems/fibonacci-number)                 | TODO                                                 | Easy       |
-| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs)                   | [Rust](./src/dynamic_programming/climbing_stairs.rs) | Easy       |
-| [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs) | TODO                                                 | Easy       |
-| [Coin Change](https://leetcode.com/problems/coin-change)                           | TODO                                                 | Medium     |
-| [Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets) | TODO                                                 | Medium     |
-| [Unique Paths](https://leetcode.com/problems/unique-paths)                         | TODO                                                 | Medium     |
-| [Unique Paths II](https://leetcode.com/problems/unique-paths-ii)                   | TODO                                                 | Medium     |
-| [Maximal Square](https://leetcode.com/problems/maximal-square)                     | TODO                                                 | Medium     |
-| [House Robber](https://leetcode.com/problems/house-robber)                         | TODO                                                 | Medium     |
-| [Target Sum](https://leetcode.com/problems/target-sum)                             | TODO                                                 | Medium     |
-| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray)                 | TODO                                                 | Medium     |
-| [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum)                 | TODO                                                 | Medium     |
-| [Coin Change II](https://leetcode.com/problems/coin-change-ii)                     | TODO                                                 | Medium     |
+| Link                                                                               | Solutions                                              | Difficulty |
+| ---------------------------------------------------------------------------------- | ------------------------------------------------------ | ---------- |
+| [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)                | [Rust](./src/dynamic_programming/pascal_triangle.rs)   | Easy       |
+| [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii)          | [Rust](./src/dynamic_programming/pascal_triangle_2.rs) | Easy       |
+| [Fibonacci Number](https://leetcode.com/problems/fibonacci-number)                 | TODO                                                   | Easy       |
+| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs)                   | [Rust](./src/dynamic_programming/climbing_stairs.rs)   | Easy       |
+| [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs) | TODO                                                   | Easy       |
+| [Coin Change](https://leetcode.com/problems/coin-change)                           | TODO                                                   | Medium     |
+| [Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets) | TODO                                                   | Medium     |
+| [Unique Paths](https://leetcode.com/problems/unique-paths)                         | TODO                                                   | Medium     |
+| [Unique Paths II](https://leetcode.com/problems/unique-paths-ii)                   | TODO                                                   | Medium     |
+| [Maximal Square](https://leetcode.com/problems/maximal-square)                     | TODO                                                   | Medium     |
+| [House Robber](https://leetcode.com/problems/house-robber)                         | TODO                                                   | Medium     |
+| [Target Sum](https://leetcode.com/problems/target-sum)                             | TODO                                                   | Medium     |
+| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray)                 | TODO                                                   | Medium     |
+| [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum)                 | TODO                                                   | Medium     |
+| [Coin Change II](https://leetcode.com/problems/coin-change-ii)                     | TODO                                                   | Medium     |
 
 ### Greedy
 
