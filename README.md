@@ -129,7 +129,6 @@ flowchart TD
 | [Water Bottles](https://leetcode.com/problems/water-bottles/)                                                                                                          | TODO                      | Easy       |
 | [Add Digits](https://leetcode.com/problems/add-digits/)                                                                                                                | TODO                      | Easy       |
 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                                                                  | TODO                      | Easy       |
-| [Power of Two](https://leetcode.com/problems/power-of-two/)                                                                                                            | TODO                      | Easy       |
 | [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/)                                                      | TODO                      | Easy       |
 | [Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/)                                              | TODO                      | Medium     |
 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                                                                      | TODO                      | Medium     |
@@ -276,12 +275,13 @@ flowchart TD
 
 ### Bit Manipulation
 
-| Link                                                                                     | Solutions | Difficulty |
-| ---------------------------------------------------------------------------------------- | --------- | ---------- |
-| [Number of Even and Odd Bits](https://leetcode.com/problems/number-of-even-and-odd-bits) | TODO      | Easy       |
-| [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                      | TODO      | Easy       |
-| [Reverse Bits](https://leetcode.com/problems/reverse-bits/)                              | TODO      | Easy       |
-| [Hamming Distance](https://leetcode.com/problems/hamming-distance/)                      | TODO      | Easy       |
+| Link                                                                                     | Solutions                                      | Difficulty |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
+| [Number of Even and Odd Bits](https://leetcode.com/problems/number-of-even-and-odd-bits) | TODO                                           | Easy       |
+| [Power of Two](https://leetcode.com/problems/power-of-two/)                              | [Rust](./src/bit_manipulation/power_of_two.rs) | Easy       |
+| [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                      | TODO                                           | Easy       |
+| [Reverse Bits](https://leetcode.com/problems/reverse-bits/)                              | TODO                                           | Easy       |
+| [Hamming Distance](https://leetcode.com/problems/hamming-distance/)                      | TODO                                           | Easy       |
 
 ### Graph
 

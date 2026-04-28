@@ -10,3 +10,4 @@ mod sliding_window;
 mod sorting;
 mod stack_and_queue;
 mod two_pointers;
+mod bit_manipulation;
