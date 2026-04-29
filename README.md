@@ -275,13 +275,13 @@ flowchart TD
 
 ### Bit Manipulation
 
-| Link                                                                                     | Solutions                                      | Difficulty |
-| ---------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
-| [Number of Even and Odd Bits](https://leetcode.com/problems/number-of-even-and-odd-bits) | TODO                                           | Easy       |
-| [Power of Two](https://leetcode.com/problems/power-of-two/)                              | [Rust](./src/bit_manipulation/power_of_two.rs) | Easy       |
-| [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                      | TODO                                           | Easy       |
-| [Reverse Bits](https://leetcode.com/problems/reverse-bits/)                              | TODO                                           | Easy       |
-| [Hamming Distance](https://leetcode.com/problems/hamming-distance/)                      | TODO                                           | Easy       |
+| Link                                                                                     | Solutions                                          | Difficulty |
+| ---------------------------------------------------------------------------------------- | -------------------------------------------------- | ---------- |
+| [Number of Even and Odd Bits](https://leetcode.com/problems/number-of-even-and-odd-bits) | TODO                                               | Easy       |
+| [Power of Two](https://leetcode.com/problems/power-of-two/)                              | [Rust](./src/bit_manipulation/power_of_two.rs)     | Easy       |
+| [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                      | [Rust](./src/bit_manipulation/number_of_1_bits.rs) | Easy       |
+| [Reverse Bits](https://leetcode.com/problems/reverse-bits/)                              | TODO                                               | Easy       |
+| [Hamming Distance](https://leetcode.com/problems/hamming-distance/)                      | TODO                                               | Easy       |
 
 ### Graph
 
