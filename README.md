@@ -174,13 +174,13 @@ flowchart TD
 
 ### Prefix Sum
 
-| Link                                                                                           | Solutions | Difficulty |
-| ---------------------------------------------------------------------------------------------- | --------- | ---------- |
-| [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)        | TODO      | Easy       |
-| [Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array) | TODO      | Easy       |
-| [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                  | TODO      | Medium     |
-| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)    | TODO      | Medium     |
-| [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)          | TODO      | Medium     |
+| Link                                                                                           | Solutions                                             | Difficulty |
+| ---------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ---------- |
+| [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)        | [Rust](./src/prefix_sum/range_sum_query_immutable.rs) | Easy       |
+| [Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array) | TODO                                                  | Easy       |
+| [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                  | TODO                                                  | Medium     |
+| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)    | TODO                                                  | Medium     |
+| [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)          | TODO                                                  | Medium     |
 
 ### Trees
 

@@ -11,3 +11,4 @@ mod sorting;
 mod stack_and_queue;
 mod two_pointers;
 mod bit_manipulation;
+mod prefix_sum;
