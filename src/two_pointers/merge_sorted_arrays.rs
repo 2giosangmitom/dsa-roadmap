@@ -1,7 +1,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn merge(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {
+    pub fn merge(nums1: &mut [i32], m: i32, nums2: &mut [i32], n: i32) {
         let mut i = m - 1;
         let mut j = n - 1;
         let mut k = (m + n) - 1;
