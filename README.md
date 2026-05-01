@@ -54,7 +54,7 @@ flowchart TD
 | [Is Subsequence](https://leetcode.com/problems/is-subsequence)                                                  | [Rust](./src/two_pointers/is_subsequence.rs)                        | Easy       |
 | [Reverse String](https://leetcode.com/problems/reverse-string/)                                                 | [Rust](./src/two_pointers/reverse_string.rs)                        | Easy       |
 | [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/)   | [Rust](./src/two_pointers/merge_two_2d_arrays_by_summing_values.rs) | Easy       |
-| [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                                         | TODO                                                                | Easy       |
+| [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                                         | [Rust](./src/two_pointers/merge_sorted_arrays.rs)                   | Easy       |
 | [Move Zeroes](https://leetcode.com/problems/move-zeroes)                                                        | [Rust](./src/two_pointers/move_zeros.rs)                            | Easy       |
 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)       | TODO                                                                | Easy       |
 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                           | [Rust](./src/two_pointers/container_with_most_water.rs)             | Medium     |

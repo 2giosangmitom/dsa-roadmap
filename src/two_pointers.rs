@@ -1,5 +1,6 @@
 mod container_with_most_water;
 mod is_subsequence;
+mod merge_sorted_arrays;
 mod merge_two_2d_arrays_by_summing_values;
 mod move_zeros;
 mod remove_element;
