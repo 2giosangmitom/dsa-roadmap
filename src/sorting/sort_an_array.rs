@@ -70,6 +70,37 @@ impl Solution {
         }
     }
 
+    fn heapify(nums: &mut [i32], i: usize, n: usize) {
+        let mut max = i;
+        let left = i * 2 + 1;
+        let right = i * 2 + 2;
+
+        if left < n && nums[left] > nums[max] {
+            max = left;
+        }
+
+        if right < n && nums[right] > nums[max] {
+            max = right;
+        }
+
+        if max != i {
+            nums.swap(i, max);
+            Self::heapify(nums, max, n);
+        }
+    }
+
+    fn heap_sort(nums: &mut [i32]) {
+        let n = nums.len();
+        for i in (0..=n / 2).rev() {
+            Self::heapify(nums, i, n);
+        }
+
+        for i in 0..n - 1 {
+            nums.swap(0, n - i - 1);
+            Self::heapify(nums, 0, n - i - 1);
+        }
+    }
+
     pub fn sort_array(mut nums: Vec<i32>) -> Vec<i32> {
         let n = nums.len();
         Self::merge_sort(&mut nums, 0, n - 1);
@@ -79,6 +110,11 @@ impl Solution {
     pub fn sort_array_quick(mut nums: Vec<i32>) -> Vec<i32> {
         let n = nums.len();
         Self::quick_sort(&mut nums, 0, (n - 1) as i32);
+        nums
+    }
+
+    pub fn sort_array_heap(mut nums: Vec<i32>) -> Vec<i32> {
+        Self::heap_sort(&mut nums);
         nums
     }
 }
@@ -103,5 +139,10 @@ mod tests {
     #[apply(test_template)]
     fn test_quick_sort(#[case] input: Vec<i32>, #[case] expected: Vec<i32>) {
         assert_eq!(Solution::sort_array_quick(input), expected);
+    }
+
+    #[apply(test_template)]
+    fn test_heap_sort(#[case] input: Vec<i32>, #[case] expected: Vec<i32>) {
+        assert_eq!(Solution::sort_array_heap(input), expected);
     }
 }
