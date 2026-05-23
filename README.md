@@ -230,7 +230,7 @@ flowchart TD
 | [Combination Sum](https://leetcode.com/problems/combination-sum)                                             | TODO                                       | Medium     |
 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii)                                       | TODO                                       | Medium     |
 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence)                       | TODO                                       | Medium     |
-| [N-Queens](https://leetcode.com/problems/n-queens)                                                           | TODO                                       | Hard       |
+| [N-Queens](https://leetcode.com/problems/n-queens)                                                           | [Rust](./src/backtracking/n_queens.rs)     | Hard       |
 | [N-Queens II](https://leetcode.com/problems/n-queens-ii)                                                     | TODO                                       | Hard       |
 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver)                                                 | TODO                                       | Hard       |
 
