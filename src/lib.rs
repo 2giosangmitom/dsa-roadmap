@@ -11,5 +11,5 @@ mod prefix_sum;
 mod sliding_window;
 mod sorting;
 mod stack_and_queue;
-mod two_pointers;
 mod trees;
+mod two_pointers;
