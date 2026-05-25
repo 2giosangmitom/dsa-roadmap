@@ -184,27 +184,27 @@ flowchart TD
 
 ### Trees
 
-| Link                                                                                                                                                 | Solutions                                             | Difficulty |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ---------- |
-| [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)                                                         | [Rust](./src/trees/binary_tree_inorder_traversal.rs)  | Easy       |
-| [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)                                                       | [Rust](./src/trees/binary_tree_preorder_traversal.rs) | Easy       |
-| [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)                                                     | TODO                                                  | Easy       |
-| [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)                                                           | TODO                                                  | Easy       |
-| [Symmetric Tree](https://leetcode.com/problems/symmetric-tree)                                                                                       | TODO                                                  | Easy       |
-| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                                                                              | TODO                                                  | Easy       |
-| [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)                                                           | TODO                                                  | Easy       |
-| [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)                                                                          | TODO                                                  | Easy       |
-| [Path Sum](https://leetcode.com/problems/path-sum)                                                                                                   | TODO                                                  | Easy       |
-| [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)                               | TODO                                                  | Easy       |
-| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)                                                            | TODO                                                  | Medium     |
-| [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/)                                                          | TODO                                                  | Medium     |
-| [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)                                                            | TODO                                                  | Medium     |
-| [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)                                                         | TODO                                                  | Medium     |
-| [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)                                     | TODO                                                  | Medium     |
-| [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | TODO                                                  | Medium     |
-| [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum)                                                           | TODO                                                  | Hard       |
-| [Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree)                                 | TODO                                                  | Hard       |
-| [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)                                         | TODO                                                  | Hard       |
+| Link                                                                                                                                                 | Solutions                                              | Difficulty |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | ---------- |
+| [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)                                                         | [Rust](./src/trees/binary_tree_inorder_traversal.rs)   | Easy       |
+| [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)                                                       | [Rust](./src/trees/binary_tree_preorder_traversal.rs)  | Easy       |
+| [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)                                                     | [Rust](./src/trees/binary_tree_postorder_traversal.rs) | Easy       |
+| [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)                                                           | TODO                                                   | Easy       |
+| [Symmetric Tree](https://leetcode.com/problems/symmetric-tree)                                                                                       | TODO                                                   | Easy       |
+| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                                                                              | TODO                                                   | Easy       |
+| [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)                                                           | TODO                                                   | Easy       |
+| [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)                                                                          | TODO                                                   | Easy       |
+| [Path Sum](https://leetcode.com/problems/path-sum)                                                                                                   | TODO                                                   | Easy       |
+| [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)                               | TODO                                                   | Easy       |
+| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)                                                            | TODO                                                   | Medium     |
+| [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/)                                                          | TODO                                                   | Medium     |
+| [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)                                                            | TODO                                                   | Medium     |
+| [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)                                                         | TODO                                                   | Medium     |
+| [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)                                     | TODO                                                   | Medium     |
+| [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | TODO                                                   | Medium     |
+| [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum)                                                           | TODO                                                   | Hard       |
+| [Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree)                                 | TODO                                                   | Hard       |
+| [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)                                         | TODO                                                   | Hard       |
 
 ### Tries
 
