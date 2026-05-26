@@ -68,21 +68,21 @@ flowchart TD
 
 ### Linked Lists
 
-| Link                                                                                                              | Solutions                                        | Difficulty |
-| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ---------- |
-| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)                                          | [Rust](./src/linked_list/reverse_linked_list.rs) | Easy       |
-| [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)                          | TODO                                             | Easy       |
-| [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                             | TODO                                             | Easy       |
-| [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)               | TODO                                             | Easy       |
-| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                             | TODO                                             | Easy       |
-| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                                 | [Rust](./src/linked_list/add_two_numbers.rs)     | Medium     |
-| [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)                                            | TODO                                             | Medium     |
-| [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)                                    | TODO                                             | Medium     |
-| [Rotate List](https://leetcode.com/problems/rotate-list)                                                          | TODO                                             | Medium     |
-| [Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/) | TODO                                             | Medium     |
-| [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)               | TODO                                             | Medium     |
-| [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)                                          | TODO                                             | Medium     |
-| [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)                                        | TODO                                             | Medium     |
+| Link                                                                                                              | Solutions                                                | Difficulty |
+| ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ---------- |
+| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)                                          | [Rust](./src/linked_list/reverse_linked_list.rs)         | Easy       |
+| [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)                          | [Rust](./src/linked_list/remove_linked_list_elements.rs) | Easy       |
+| [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                             | TODO                                                     | Easy       |
+| [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)               | TODO                                                     | Easy       |
+| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                             | TODO                                                     | Easy       |
+| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                                 | [Rust](./src/linked_list/add_two_numbers.rs)             | Medium     |
+| [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)                                            | TODO                                                     | Medium     |
+| [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)                                    | TODO                                                     | Medium     |
+| [Rotate List](https://leetcode.com/problems/rotate-list)                                                          | TODO                                                     | Medium     |
+| [Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/) | TODO                                                     | Medium     |
+| [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)               | TODO                                                     | Medium     |
+| [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)                                          | TODO                                                     | Medium     |
+| [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)                                        | TODO                                                     | Medium     |
 
 ### Hash Maps and Hash Sets
 
