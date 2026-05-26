@@ -3,3 +3,4 @@ mod binary_tree_postorder_traversal;
 mod binary_tree_preorder_traversal;
 mod data_structure;
 mod maximum_depth_of_binary_tree;
+mod symmetric_tree;
