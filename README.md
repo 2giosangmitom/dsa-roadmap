@@ -61,7 +61,7 @@ flowchart TD
 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)           | [Rust](./src/two_pointers/two_sum.rs)                               | Medium     |
 | [3Sum](https://leetcode.com/problems/3sum/)                                                                     | TODO                                                                | Medium     |
 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                   | TODO                                                                | Medium     |
-| [Next Permutation](https://leetcode.com/problems/next-permutation/)                                             | TODO                                                                | Medium     |
+| [Next Permutation](https://leetcode.com/problems/next-permutation/)                                             | [Rust](./src/two_pointers/next_permutation.rs)                      | Medium     |
 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | TODO                                                                | Medium     |
 | [Rotate Array](https://leetcode.com/problems/rotate-array)                                                      | TODO                                                                | Medium     |
 | [4Sum](https://leetcode.com/problems/4sum)                                                                      | TODO                                                                | Medium     |
