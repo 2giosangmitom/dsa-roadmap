@@ -152,7 +152,7 @@ flowchart TD
 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)                         | TODO                                                                      | Easy       |
 | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)                                   | TODO                                                                      | Medium     |
 | [Decode String](https://leetcode.com/problems/decode-string)                                                        | TODO                                                                      | Medium     |
-| [Basic Calculator](https://leetcode.com/problems/basic-calculator/)                                                 | TODO                                                                      | Hard       |
+| [Basic Calculator](https://leetcode.com/problems/basic-calculator/)                                                 | [Rust](./src/stack_and_queue/basic_calculator.rs)                         | Hard       |
 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                     | TODO                                                                      | Hard       |
 
 ### Heaps
