@@ -1,6 +1,7 @@
 #![allow(dead_code)]
 
 mod backtracking;
+mod binary_search;
 mod bit_manipulation;
 mod dynamic_programming;
 mod graph;

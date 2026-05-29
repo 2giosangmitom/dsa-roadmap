@@ -109,17 +109,17 @@ flowchart TD
 
 ### Binary Search
 
-| Link                                                                                                                                              | Solutions | Difficulty |
-| ------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ---------- |
-| [Binary Search](https://leetcode.com/problems/binary-search/)                                                                                     | TODO      | Easy       |
-| [Maximum Count of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/)   | TODO      | Easy       |
-| [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | TODO      | Medium     |
-| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)                                                   | TODO      | Medium     |
-| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)                                                                           | TODO      | Medium     |
-| [Find Peak Element](https://leetcode.com/problems/find-peak-element/)                                                                             | TODO      | Medium     |
-| [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)                                                                 | TODO      | Medium     |
-| [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)                                                         | TODO      | Hard       |
-| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)                                                    | TODO      | Medium     |
+| Link                                                                                                                                              | Solutions                                             | Difficulty |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ---------- |
+| [Binary Search](https://leetcode.com/problems/binary-search/)                                                                                     | [Rust](./src/binary_search/binary_search_on_array.rs) | Easy       |
+| [Maximum Count of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/)   | TODO                                                  | Easy       |
+| [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | TODO                                                  | Medium     |
+| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)                                                   | TODO                                                  | Medium     |
+| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)                                                                           | TODO                                                  | Medium     |
+| [Find Peak Element](https://leetcode.com/problems/find-peak-element/)                                                                             | TODO                                                  | Medium     |
+| [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)                                                                 | TODO                                                  | Medium     |
+| [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)                                                         | TODO                                                  | Hard       |
+| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)                                                    | TODO                                                  | Medium     |
 
 ### Math
 
