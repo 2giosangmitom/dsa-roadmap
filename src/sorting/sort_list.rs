@@ -15,20 +15,23 @@ impl Solution {
     }
 
     fn split(head: Option<Box<ListNode>>) -> (Option<Box<ListNode>>, Option<Box<ListNode>>) {
-        let mut dummy = Box::new(ListNode { val: 0, next: head });
-        let mut slow = &mut dummy as *mut Box<ListNode>;
-        let mut fast = &mut dummy as *mut Box<ListNode>;
-
-        unsafe {
-            while (*fast).next.is_some() && (*fast).next.as_ref().unwrap().next.is_some() {
-                fast = (*fast).next.as_mut().unwrap().next.as_mut().unwrap();
-                slow = (*slow).next.as_mut().unwrap();
-            }
-
-            let right = (*slow).next.take();
-            let left = dummy.next.take();
-            (left, right)
+        let mut len = 0;
+        let mut cur = head.as_ref();
+        while let Some(node) = cur {
+            len += 1;
+            cur = node.next.as_ref();
         }
+
+        let mid = len / 2;
+        let mut dummy = Box::new(ListNode { val: 0, next: head });
+        let mut curr = &mut dummy;
+        for _ in 0..mid {
+            curr = curr.next.as_mut().unwrap();
+        }
+
+        let right = curr.next.take();
+        let left = dummy.next.take();
+        (left, right)
     }
 
     fn merge(left: Option<Box<ListNode>>, right: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
