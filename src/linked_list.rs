@@ -1,6 +1,6 @@
 mod add_two_numbers;
 mod add_two_numbers_ii;
-mod data_structure;
+pub mod data_structure;
 mod flatten_a_multilevel_doubly_linked_list;
 mod intersection_of_two_linked_lists;
 mod linked_list_cycle;

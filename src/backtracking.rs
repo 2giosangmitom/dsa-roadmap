@@ -1,2 +1,12 @@
+mod combination_sum;
+mod combination_sum_ii;
+mod combinations;
+mod letter_combinations_of_a_phone_number;
+mod longest_common_subsequence;
 mod n_queens;
+mod n_queens_ii;
 mod permutations;
+mod permutations_ii;
+mod subsets;
+mod subsets_ii;
+mod sudoku_solver;

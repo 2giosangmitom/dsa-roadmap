@@ -1,1 +1,5 @@
+mod find_the_middle_index_in_array;
+mod minimum_size_subarray_sum;
+mod product_of_array_except_self;
 mod range_sum_query_immutable;
+mod subarray_sum_equals_k;

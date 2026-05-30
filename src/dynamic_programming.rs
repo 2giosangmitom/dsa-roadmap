@@ -1,3 +1,15 @@
 mod climbing_stairs;
+mod coin_change;
+mod coin_change_ii;
+mod fibonacci_number;
+mod house_robber;
+mod maximal_square;
+mod maximum_subarray;
+mod min_cost_climbing_stairs;
+mod minimum_cost_for_tickets;
+mod minimum_path_sum;
 mod pascal_triangle;
 mod pascal_triangle_2;
+mod target_sum;
+mod unique_paths;
+mod unique_paths_ii;

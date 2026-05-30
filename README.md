@@ -146,149 +146,149 @@ flowchart TD
 | Link                                                                                                                | Solutions                                                                 | Difficulty |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ---------- |
 | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | [Rust](./src/stack_and_queue/remove_all_adjacent_duplicates_in_string.rs) | Easy       |
-| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                                               | TODO                                                                      | Easy       |
-| [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)                         | TODO                                                                      | Easy       |
-| [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)                                   | TODO                                                                      | Medium     |
-| [Decode String](https://leetcode.com/problems/decode-string)                                                        | TODO                                                                      | Medium     |
+| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                                               | [Rust](./src/stack_and_queue/valid_parentheses.rs)                        | Easy       |
+| [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)                         | [Rust](./src/stack_and_queue/implement_queue_using_stacks.rs)             | Easy       |
+| [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)                                   | [Rust](./src/stack_and_queue/next_greater_element_ii.rs)                  | Medium     |
+| [Decode String](https://leetcode.com/problems/decode-string)                                                        | [Rust](./src/stack_and_queue/decode_string.rs)                            | Medium     |
 | [Basic Calculator](https://leetcode.com/problems/basic-calculator/)                                                 | [Rust](./src/stack_and_queue/basic_calculator.rs)                         | Hard       |
-| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                     | TODO                                                                      | Hard       |
+| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                     | [Rust](./src/stack_and_queue/sliding_window_maximum.rs)                   | Hard       |
 
 ### Heaps
 
-| Link                                                                                              | Solutions | Difficulty |
-| ------------------------------------------------------------------------------------------------- | --------- | ---------- |
-| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                 | TODO      | Medium     |
-| [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/)                       | TODO      | Medium     |
-| [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | TODO      | Medium     |
-| [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)                       | TODO      | Hard       |
-| [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)       | TODO      | Hard       |
+| Link                                                                                              | Solutions                                              | Difficulty |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | ---------- |
+| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                 | [Rust](./src/heaps/top_k_frequent_elements.rs)         | Medium     |
+| [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/)                       | [Rust](./src/heaps/top_k_frequent_words.rs)            | Medium     |
+| [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [Rust](./src/heaps/kth_largest_element_in_an_array.rs) | Medium     |
+| [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)                       | [Rust](./src/heaps/merge_k_sorted_lists.rs)            | Hard       |
+| [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)       | [Rust](./src/heaps/find_median_from_data_stream.rs)    | Hard       |
 
 ### Intervals
 
-| Link                                                                                      | Solutions | Difficulty |
-| ----------------------------------------------------------------------------------------- | --------- | ---------- |
-| [Merge Intervals](https://leetcode.com/problems/merge-intervals/)                         | TODO      | Medium     |
-| [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | TODO      | Medium     |
+| Link                                                                                      | Solutions                                              | Difficulty |
+| ----------------------------------------------------------------------------------------- | ------------------------------------------------------ | ---------- |
+| [Merge Intervals](https://leetcode.com/problems/merge-intervals/)                         | [Rust](./src/intervals/merge_intervals.rs)             | Medium     |
+| [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | [Rust](./src/intervals/interval_list_intersections.rs) | Medium     |
 
 ### Prefix Sum
 
-| Link                                                                                           | Solutions                                             | Difficulty |
-| ---------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ---------- |
-| [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)        | [Rust](./src/prefix_sum/range_sum_query_immutable.rs) | Easy       |
-| [Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array) | TODO                                                  | Easy       |
-| [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                  | TODO                                                  | Medium     |
-| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)    | TODO                                                  | Medium     |
-| [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)          | TODO                                                  | Medium     |
+| Link                                                                                           | Solutions                                                  | Difficulty |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ---------- |
+| [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)        | [Rust](./src/prefix_sum/range_sum_query_immutable.rs)      | Easy       |
+| [Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array) | [Rust](./src/prefix_sum/find_the_middle_index_in_array.rs) | Easy       |
+| [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                  | [Rust](./src/prefix_sum/subarray_sum_equals_k.rs)          | Medium     |
+| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)    | [Rust](./src/prefix_sum/product_of_array_except_self.rs)   | Medium     |
+| [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)          | [Rust](./src/prefix_sum/minimum_size_subarray_sum.rs)      | Medium     |
 
 ### Trees
 
-| Link                                                                                                                                                 | Solutions                                              | Difficulty |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | ---------- |
-| [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)                                                         | [Rust](./src/trees/binary_tree_inorder_traversal.rs)   | Easy       |
-| [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)                                                       | [Rust](./src/trees/binary_tree_preorder_traversal.rs)  | Easy       |
-| [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)                                                     | [Rust](./src/trees/binary_tree_postorder_traversal.rs) | Easy       |
-| [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)                                                           | [Rust](./src/trees/maximum_depth_of_binary_tree.rs)    | Easy       |
-| [Symmetric Tree](https://leetcode.com/problems/symmetric-tree)                                                                                       | [Rust](./src/trees/symmetric_tree.rs)                  | Easy       |
-| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                                                                              | TODO                                                   | Easy       |
-| [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)                                                           | TODO                                                   | Easy       |
-| [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)                                                                          | TODO                                                   | Easy       |
-| [Path Sum](https://leetcode.com/problems/path-sum)                                                                                                   | TODO                                                   | Easy       |
-| [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)                               | TODO                                                   | Easy       |
-| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)                                                            | TODO                                                   | Medium     |
-| [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/)                                                          | TODO                                                   | Medium     |
-| [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)                                                            | TODO                                                   | Medium     |
-| [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)                                                         | TODO                                                   | Medium     |
-| [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)                                     | TODO                                                   | Medium     |
-| [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | TODO                                                   | Medium     |
-| [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum)                                                           | TODO                                                   | Hard       |
-| [Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree)                                 | TODO                                                   | Hard       |
-| [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)                                         | TODO                                                   | Hard       |
+| Link                                                                                                                                                 | Solutions                                                                        | Difficulty |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ---------- |
+| [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)                                                         | [Rust](./src/trees/binary_tree_inorder_traversal.rs)                             | Easy       |
+| [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)                                                       | [Rust](./src/trees/binary_tree_preorder_traversal.rs)                            | Easy       |
+| [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)                                                     | [Rust](./src/trees/binary_tree_postorder_traversal.rs)                           | Easy       |
+| [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)                                                           | [Rust](./src/trees/maximum_depth_of_binary_tree.rs)                              | Easy       |
+| [Symmetric Tree](https://leetcode.com/problems/symmetric-tree)                                                                                       | [Rust](./src/trees/symmetric_tree.rs)                                            | Easy       |
+| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                                                                              | [Rust](./src/trees/invert_binary_tree.rs)                                        | Easy       |
+| [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)                                                           | [Rust](./src/trees/minimum_depth_of_binary_tree.rs)                              | Easy       |
+| [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)                                                                          | [Rust](./src/trees/balanced_binary_tree.rs)                                      | Easy       |
+| [Path Sum](https://leetcode.com/problems/path-sum)                                                                                                   | [Rust](./src/trees/path_sum.rs)                                                  | Easy       |
+| [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)                               | [Rust](./src/trees/convert_sorted_array_to_binary_search_tree.rs)                | Easy       |
+| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)                                                            | [Rust](./src/trees/binary_tree_right_side_view.rs)                               | Medium     |
+| [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/)                                                          | [Rust](./src/trees/maximum_width_of_binary_tree.rs)                              | Medium     |
+| [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)                                                            | [Rust](./src/trees/validate_binary_search_tree.rs)                               | Medium     |
+| [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)                                                         | [Rust](./src/trees/kth_smallest_element_in_a_bst.rs)                             | Medium     |
+| [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)                                     | [Rust](./src/trees/lowest_common_ancestor_of_a_binary_tree.rs)                   | Medium     |
+| [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | [Rust](./src/trees/construct_binary_tree_from_preorder_and_inorder_traversal.rs) | Medium     |
+| [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum)                                                           | [Rust](./src/trees/binary_tree_maximum_path_sum.rs)                              | Hard       |
+| [Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree)                                 | [Rust](./src/trees/vertical_order_traversal_of_a_binary_tree.rs)                 | Hard       |
+| [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)                                         | [Rust](./src/trees/serialize_and_deserialize_binary_tree.rs)                     | Hard       |
 
 ### Tries
 
-| Link                                                                                                                   | Solutions | Difficulty |
-| ---------------------------------------------------------------------------------------------------------------------- | --------- | ---------- |
-| [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                          | TODO      | Easy       |
-| [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)                               | TODO      | Medium     |
-| [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure) | TODO      | Medium     |
-| [Word Search](https://leetcode.com/problems/word-search)                                                               | TODO      | Medium     |
-| [Partition String](https://leetcode.com/problems/partition-string)                                                     | TODO      | Medium     |
-| [Word Search II](https://leetcode.com/problems/word-search-ii)                                                         | TODO      | Hard       |
+| Link                                                                                                                   | Solutions                                                         | Difficulty |
+| ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ---------- |
+| [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                          | [Rust](./src/tries/longest_common_prefix.rs)                      | Easy       |
+| [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)                               | [Rust](./src/tries/implement_trie.rs)                             | Medium     |
+| [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure) | [Rust](./src/tries/design_add_and_search_words_data_structure.rs) | Medium     |
+| [Word Search](https://leetcode.com/problems/word-search)                                                               | [Rust](./src/tries/word_search.rs)                                | Medium     |
+| [Partition String](https://leetcode.com/problems/partition-string)                                                     | [Rust](./src/tries/partition_string.rs)                           | Medium     |
+| [Word Search II](https://leetcode.com/problems/word-search-ii)                                                         | [Rust](./src/tries/word_search_ii.rs)                             | Hard       |
 
 ### Backtracking
 
-| Link                                                                                                         | Solutions                                  | Difficulty |
-| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------ | ---------- |
-| [Permutations](https://leetcode.com/problems/permutations/)                                                  | [Rust](./src/backtracking/permutations.rs) | Medium     |
-| [Permutations II](https://leetcode.com/problems/permutations-ii/)                                            | TODO                                       | Medium     |
-| [Combinations](https://leetcode.com/problems/combinations/)                                                  | TODO                                       | Medium     |
-| [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | TODO                                       | Medium     |
-| [Subsets](https://leetcode.com/problems/subsets/)                                                            | TODO                                       | Medium     |
-| [Subsets II](https://leetcode.com/problems/subsets-ii)                                                       | TODO                                       | Medium     |
-| [Combination Sum](https://leetcode.com/problems/combination-sum)                                             | TODO                                       | Medium     |
-| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii)                                       | TODO                                       | Medium     |
-| [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence)                       | TODO                                       | Medium     |
-| [N-Queens](https://leetcode.com/problems/n-queens)                                                           | [Rust](./src/backtracking/n_queens.rs)     | Hard       |
-| [N-Queens II](https://leetcode.com/problems/n-queens-ii)                                                     | TODO                                       | Hard       |
-| [Sudoku Solver](https://leetcode.com/problems/sudoku-solver)                                                 | TODO                                       | Hard       |
+| Link                                                                                                         | Solutions                                                           | Difficulty |
+| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- | ---------- |
+| [Permutations](https://leetcode.com/problems/permutations/)                                                  | [Rust](./src/backtracking/permutations.rs)                          | Medium     |
+| [Permutations II](https://leetcode.com/problems/permutations-ii/)                                            | [Rust](./src/backtracking/permutations_ii.rs)                       | Medium     |
+| [Combinations](https://leetcode.com/problems/combinations/)                                                  | [Rust](./src/backtracking/combinations.rs)                          | Medium     |
+| [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Rust](./src/backtracking/letter_combinations_of_a_phone_number.rs) | Medium     |
+| [Subsets](https://leetcode.com/problems/subsets/)                                                            | [Rust](./src/backtracking/subsets.rs)                               | Medium     |
+| [Subsets II](https://leetcode.com/problems/subsets-ii)                                                       | [Rust](./src/backtracking/subsets_ii.rs)                            | Medium     |
+| [Combination Sum](https://leetcode.com/problems/combination-sum)                                             | [Rust](./src/backtracking/combination_sum.rs)                       | Medium     |
+| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii)                                       | [Rust](./src/backtracking/combination_sum_ii.rs)                    | Medium     |
+| [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence)                       | [Rust](./src/backtracking/longest_common_subsequence.rs)            | Medium     |
+| [N-Queens](https://leetcode.com/problems/n-queens)                                                           | [Rust](./src/backtracking/n_queens.rs)                              | Hard       |
+| [N-Queens II](https://leetcode.com/problems/n-queens-ii)                                                     | [Rust](./src/backtracking/n_queens_ii.rs)                           | Hard       |
+| [Sudoku Solver](https://leetcode.com/problems/sudoku-solver)                                                 | [Rust](./src/backtracking/sudoku_solver.rs)                         | Hard       |
 
 ### Sorting
 
-| Link                                                                     | Solutions                              | Difficulty |
-| ------------------------------------------------------------------------ | -------------------------------------- | ---------- |
-| [Sort an Array](https://leetcode.com/problems/sort-an-array/)            | [Rust](./src/sorting/sort_an_array.rs) | Medium     |
-| [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list) | TODO                                   | Medium     |
-| [Sort List](https://leetcode.com/problems/sort-list)                     | TODO                                   | Medium     |
-| [Sort Colors](https://leetcode.com/problems/sort-colors)                 | TODO                                   | Medium     |
+| Link                                                                     | Solutions                                    | Difficulty |
+| ------------------------------------------------------------------------ | -------------------------------------------- | ---------- |
+| [Sort an Array](https://leetcode.com/problems/sort-an-array/)            | [Rust](./src/sorting/sort_an_array.rs)       | Medium     |
+| [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list) | [Rust](./src/sorting/insertion_sort_list.rs) | Medium     |
+| [Sort List](https://leetcode.com/problems/sort-list)                     | [Rust](./src/sorting/sort_list.rs)           | Medium     |
+| [Sort Colors](https://leetcode.com/problems/sort-colors)                 | [Rust](./src/sorting/sort_colors.rs)         | Medium     |
 
 ### Dynamic Programming
 
-| Link                                                                               | Solutions                                              | Difficulty |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------ | ---------- |
-| [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)                | [Rust](./src/dynamic_programming/pascal_triangle.rs)   | Easy       |
-| [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii)          | [Rust](./src/dynamic_programming/pascal_triangle_2.rs) | Easy       |
-| [Fibonacci Number](https://leetcode.com/problems/fibonacci-number)                 | TODO                                                   | Easy       |
-| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs)                   | [Rust](./src/dynamic_programming/climbing_stairs.rs)   | Easy       |
-| [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs) | TODO                                                   | Easy       |
-| [Coin Change](https://leetcode.com/problems/coin-change)                           | TODO                                                   | Medium     |
-| [Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets) | TODO                                                   | Medium     |
-| [Unique Paths](https://leetcode.com/problems/unique-paths)                         | TODO                                                   | Medium     |
-| [Unique Paths II](https://leetcode.com/problems/unique-paths-ii)                   | TODO                                                   | Medium     |
-| [Maximal Square](https://leetcode.com/problems/maximal-square)                     | TODO                                                   | Medium     |
-| [House Robber](https://leetcode.com/problems/house-robber)                         | TODO                                                   | Medium     |
-| [Target Sum](https://leetcode.com/problems/target-sum)                             | TODO                                                   | Medium     |
-| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray)                 | TODO                                                   | Medium     |
-| [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum)                 | TODO                                                   | Medium     |
-| [Coin Change II](https://leetcode.com/problems/coin-change-ii)                     | TODO                                                   | Medium     |
+| Link                                                                               | Solutions                                                     | Difficulty |
+| ---------------------------------------------------------------------------------- | ------------------------------------------------------------- | ---------- |
+| [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)                | [Rust](./src/dynamic_programming/pascal_triangle.rs)          | Easy       |
+| [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii)          | [Rust](./src/dynamic_programming/pascal_triangle_2.rs)        | Easy       |
+| [Fibonacci Number](https://leetcode.com/problems/fibonacci-number)                 | [Rust](./src/dynamic_programming/fibonacci_number.rs)         | Easy       |
+| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs)                   | [Rust](./src/dynamic_programming/climbing_stairs.rs)          | Easy       |
+| [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs) | [Rust](./src/dynamic_programming/min_cost_climbing_stairs.rs) | Easy       |
+| [Coin Change](https://leetcode.com/problems/coin-change)                           | [Rust](./src/dynamic_programming/coin_change.rs)              | Medium     |
+| [Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets) | [Rust](./src/dynamic_programming/minimum_cost_for_tickets.rs) | Medium     |
+| [Unique Paths](https://leetcode.com/problems/unique-paths)                         | [Rust](./src/dynamic_programming/unique_paths.rs)             | Medium     |
+| [Unique Paths II](https://leetcode.com/problems/unique-paths-ii)                   | [Rust](./src/dynamic_programming/unique_paths_ii.rs)          | Medium     |
+| [Maximal Square](https://leetcode.com/problems/maximal-square)                     | [Rust](./src/dynamic_programming/maximal_square.rs)           | Medium     |
+| [House Robber](https://leetcode.com/problems/house-robber)                         | [Rust](./src/dynamic_programming/house_robber.rs)             | Medium     |
+| [Target Sum](https://leetcode.com/problems/target-sum)                             | [Rust](./src/dynamic_programming/target_sum.rs)               | Medium     |
+| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray)                 | [Rust](./src/dynamic_programming/maximum_subarray.rs)         | Medium     |
+| [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum)                 | [Rust](./src/dynamic_programming/minimum_path_sum.rs)         | Medium     |
+| [Coin Change II](https://leetcode.com/problems/coin-change-ii)                     | [Rust](./src/dynamic_programming/coin_change_ii.rs)           | Medium     |
 
 ### Greedy
 
-| Link                                                                                                             | Solutions | Difficulty |
-| ---------------------------------------------------------------------------------------------------------------- | --------- | ---------- |
-| [Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations) | TODO      | Easy       |
-| [Can Place Flowers](https://leetcode.com/problems/can-place-flowers)                                             | TODO      | Easy       |
-| [Jump Game](https://leetcode.com/problems/jump-game)                                                             | TODO      | Medium     |
-| [Gas Station](https://leetcode.com/problems/gas-station)                                                         | TODO      | Medium     |
-| [Candy](https://leetcode.com/problems/candy)                                                                     | TODO      | Hard       |
+| Link                                                                                                             | Solutions                                                       | Difficulty |
+| ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------- |
+| [Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations) | [Rust](./src/greedy/maximize_sum_of_array_after_k_negations.rs) | Easy       |
+| [Can Place Flowers](https://leetcode.com/problems/can-place-flowers)                                             | [Rust](./src/greedy/can_place_flowers.rs)                       | Easy       |
+| [Jump Game](https://leetcode.com/problems/jump-game)                                                             | [Rust](./src/greedy/jump_game.rs)                               | Medium     |
+| [Gas Station](https://leetcode.com/problems/gas-station)                                                         | [Rust](./src/greedy/gas_station.rs)                             | Medium     |
+| [Candy](https://leetcode.com/problems/candy)                                                                     | [Rust](./src/greedy/candy.rs)                                   | Hard       |
 
 ### Bit Manipulation
 
-| Link                                                                                     | Solutions                                          | Difficulty |
-| ---------------------------------------------------------------------------------------- | -------------------------------------------------- | ---------- |
-| [Number of Even and Odd Bits](https://leetcode.com/problems/number-of-even-and-odd-bits) | TODO                                               | Easy       |
-| [Power of Two](https://leetcode.com/problems/power-of-two/)                              | [Rust](./src/bit_manipulation/power_of_two.rs)     | Easy       |
-| [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                      | [Rust](./src/bit_manipulation/number_of_1_bits.rs) | Easy       |
-| [Reverse Bits](https://leetcode.com/problems/reverse-bits/)                              | TODO                                               | Easy       |
-| [Hamming Distance](https://leetcode.com/problems/hamming-distance/)                      | TODO                                               | Easy       |
+| Link                                                                                     | Solutions                                                     | Difficulty |
+| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ---------- |
+| [Number of Even and Odd Bits](https://leetcode.com/problems/number-of-even-and-odd-bits) | [Rust](./src/bit_manipulation/number_of_even_and_odd_bits.rs) | Easy       |
+| [Power of Two](https://leetcode.com/problems/power-of-two/)                              | [Rust](./src/bit_manipulation/power_of_two.rs)                | Easy       |
+| [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                      | [Rust](./src/bit_manipulation/number_of_1_bits.rs)            | Easy       |
+| [Reverse Bits](https://leetcode.com/problems/reverse-bits/)                              | [Rust](./src/bit_manipulation/reverse_bits.rs)                | Easy       |
+| [Hamming Distance](https://leetcode.com/problems/hamming-distance/)                      | [Rust](./src/bit_manipulation/hamming_distance.rs)            | Easy       |
 
 ### Graph
 
-| Link                                                                                       | Solutions                         | Difficulty |
-| ------------------------------------------------------------------------------------------ | --------------------------------- | ---------- |
-| [Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph) | TODO                              | Easy       |
-| [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph)       | TODO                              | Easy       |
-| [Flood Fill](https://leetcode.com/problems/flood-fill/)                                    | [Rust](./src/graph/flood_fill.rs) | Easy       |
-| [Clone Graph](https://leetcode.com/problems/clone-graph)                                   | TODO                              | Medium     |
-| [Number of Islands](https://leetcode.com/problems/number-of-islands)                       | TODO                              | Medium     |
-| [Rotting Oranges](https://leetcode.com/problems/rotting-oranges)                           | TODO                              | Medium     |
-| [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)                   | TODO                              | Medium     |
+| Link                                                                                       | Solutions                                           | Difficulty |
+| ------------------------------------------------------------------------------------------ | --------------------------------------------------- | ---------- |
+| [Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph) | [Rust](./src/graph/find_if_path_exists_in_graph.rs) | Easy       |
+| [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph)       | [Rust](./src/graph/find_center_of_star_graph.rs)    | Easy       |
+| [Flood Fill](https://leetcode.com/problems/flood-fill/)                                    | [Rust](./src/graph/flood_fill.rs)                   | Easy       |
+| [Clone Graph](https://leetcode.com/problems/clone-graph)                                   | [Rust](./src/graph/clone_graph.rs)                  | Medium     |
+| [Number of Islands](https://leetcode.com/problems/number-of-islands)                       | [Rust](./src/graph/number_of_islands.rs)            | Medium     |
+| [Rotting Oranges](https://leetcode.com/problems/rotting-oranges)                           | [Rust](./src/graph/rotting_oranges.rs)              | Medium     |
+| [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)                   | [Rust](./src/graph/is_graph_bipartite.rs)           | Medium     |
