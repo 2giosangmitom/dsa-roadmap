@@ -86,18 +86,18 @@ flowchart TD
 
 ### Hash Maps and Hash Sets
 
-| Link                                                                                                          | Solutions                              | Difficulty |
-| ------------------------------------------------------------------------------------------------------------- | -------------------------------------- | ---------- |
-| [Two Sum](https://leetcode.com/problems/two-sum/)                                                             | [Rust](./src/hash_map/two_sum.rs)      | Easy       |
-| [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)           | TODO                                   | Easy       |
-| [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) | TODO                                   | Easy       |
-| [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)                                   | TODO                                   | Easy       |
-| [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                           | TODO                                   | Easy       |
-| [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)                                 | TODO                                   | Easy       |
-| [LRU Cache](https://leetcode.com/problems/lru-cache/)                                                         | TODO                                   | Medium     |
-| [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                                   | [Rust](./src/hash_map/valid_sudoku.rs) | Medium     |
-| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)                   | TODO                                   | Medium     |
-| [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                                         | TODO                                   | Medium     |
+| Link                                                                                                          | Solutions                                                  | Difficulty |
+| ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ---------- |
+| [Two Sum](https://leetcode.com/problems/two-sum/)                                                             | [Rust](./src/hash_map/two_sum.rs)                          | Easy       |
+| [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)           | [Rust](./src/hash_map/find_missing_and_repeated_values.rs) | Easy       |
+| [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) | TODO                                                       | Easy       |
+| [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)                                   | TODO                                                       | Easy       |
+| [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                           | TODO                                                       | Easy       |
+| [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)                                 | TODO                                                       | Easy       |
+| [LRU Cache](https://leetcode.com/problems/lru-cache/)                                                         | TODO                                                       | Medium     |
+| [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                                   | [Rust](./src/hash_map/valid_sudoku.rs)                     | Medium     |
+| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)                   | TODO                                                       | Medium     |
+| [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                                         | TODO                                                       | Medium     |
 
 ### Sliding Window
 
