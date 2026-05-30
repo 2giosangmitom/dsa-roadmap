@@ -1,1 +1,3 @@
+mod longest_repeating_character_replacement;
 mod longest_substring_without_repeating_characters;
+mod number_of_substrings_containing_all_three_characters;

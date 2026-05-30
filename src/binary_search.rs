@@ -1,1 +1,9 @@
 mod binary_search_on_array;
+mod find_first_and_last_position_of_element_in_sorted_array;
+mod find_peak_element;
+mod longest_increasing_subsequence;
+mod maximum_count_of_positive_integer_and_negative_integer;
+mod median_of_two_sorted_arrays;
+mod random_pick_with_weight;
+mod search_a_2d_matrix;
+mod search_in_rotated_sorted_array;

@@ -86,60 +86,60 @@ flowchart TD
 
 ### Hash Maps and Hash Sets
 
-| Link                                                                                                          | Solutions                                                  | Difficulty |
-| ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ---------- |
-| [Two Sum](https://leetcode.com/problems/two-sum/)                                                             | [Rust](./src/hash_map/two_sum.rs)                          | Easy       |
-| [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)           | [Rust](./src/hash_map/find_missing_and_repeated_values.rs) | Easy       |
-| [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) | TODO                                                       | Easy       |
-| [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)                                   | TODO                                                       | Easy       |
-| [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                           | TODO                                                       | Easy       |
-| [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)                                 | TODO                                                       | Easy       |
-| [LRU Cache](https://leetcode.com/problems/lru-cache/)                                                         | TODO                                                       | Medium     |
-| [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                                   | [Rust](./src/hash_map/valid_sudoku.rs)                     | Medium     |
-| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)                   | TODO                                                       | Medium     |
-| [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                                         | TODO                                                       | Medium     |
+| Link                                                                                                          | Solutions                                                       | Difficulty |
+| ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------- |
+| [Two Sum](https://leetcode.com/problems/two-sum/)                                                             | [Rust](./src/hash_map/two_sum.rs)                               | Easy       |
+| [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)           | [Rust](./src/hash_map/find_missing_and_repeated_values.rs)      | Easy       |
+| [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) | [Rust](./src/hash_map/merge_two_2d_arrays_by_summing_values.rs) | Easy       |
+| [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)                                   | [Rust](./src/hash_map/number_of_good_pairs.rs)                  | Easy       |
+| [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                           | [Rust](./src/hash_map/roman_to_integer.rs)                      | Easy       |
+| [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)                                 | [Rust](./src/hash_map/contains_duplicate_ii.rs)                 | Easy       |
+| [LRU Cache](https://leetcode.com/problems/lru-cache/)                                                         | [Rust](./src/hash_map/lru_cache.rs)                             | Medium     |
+| [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                                   | [Rust](./src/hash_map/valid_sudoku.rs)                          | Medium     |
+| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)                   | [Rust](./src/hash_map/longest_consecutive_sequence.rs)          | Medium     |
+| [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                                         | [Rust](./src/hash_map/set_matrix_zeroes.rs)                     | Medium     |
 
 ### Sliding Window
 
-| Link                                                                                                                                        | Solutions                                                                      | Difficulty |
-| ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ---------- |
-| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)             | [Rust](./src/sliding_window/longest_substring_without_repeating_characters.rs) | Medium     |
-| [Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | TODO                                                                           | Medium     |
-| [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)                           | TODO                                                                           | Medium     |
+| Link                                                                                                                                        | Solutions                                                                            | Difficulty |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------- |
+| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)             | [Rust](./src/sliding_window/longest_substring_without_repeating_characters.rs)       | Medium     |
+| [Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | [Rust](./src/sliding_window/number_of_substrings_containing_all_three_characters.rs) | Medium     |
+| [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)                           | [Rust](./src/sliding_window/longest_repeating_character_replacement.rs)              | Medium     |
 
 ### Binary Search
 
-| Link                                                                                                                                              | Solutions                                             | Difficulty |
-| ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ---------- |
-| [Binary Search](https://leetcode.com/problems/binary-search/)                                                                                     | [Rust](./src/binary_search/binary_search_on_array.rs) | Easy       |
-| [Maximum Count of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/)   | TODO                                                  | Easy       |
-| [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | TODO                                                  | Medium     |
-| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)                                                   | TODO                                                  | Medium     |
-| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)                                                                           | TODO                                                  | Medium     |
-| [Find Peak Element](https://leetcode.com/problems/find-peak-element/)                                                                             | TODO                                                  | Medium     |
-| [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)                                                                 | TODO                                                  | Medium     |
-| [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)                                                         | TODO                                                  | Hard       |
-| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)                                                    | TODO                                                  | Medium     |
+| Link                                                                                                                                              | Solutions                                                                              | Difficulty |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ---------- |
+| [Binary Search](https://leetcode.com/problems/binary-search/)                                                                                     | [Rust](./src/binary_search/binary_search_on_array.rs)                                  | Easy       |
+| [Maximum Count of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/)   | [Rust](./src/binary_search/maximum_count_of_positive_integer_and_negative_integer.rs)  | Easy       |
+| [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Rust](./src/binary_search/find_first_and_last_position_of_element_in_sorted_array.rs) | Medium     |
+| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)                                                   | [Rust](./src/binary_search/search_in_rotated_sorted_array.rs)                          | Medium     |
+| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)                                                                           | [Rust](./src/binary_search/search_a_2d_matrix.rs)                                      | Medium     |
+| [Find Peak Element](https://leetcode.com/problems/find-peak-element/)                                                                             | [Rust](./src/binary_search/find_peak_element.rs)                                       | Medium     |
+| [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)                                                                 | [Rust](./src/binary_search/random_pick_with_weight.rs)                                 | Medium     |
+| [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)                                                         | [Rust](./src/binary_search/median_of_two_sorted_arrays.rs)                             | Hard       |
+| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)                                                    | [Rust](./src/binary_search/longest_increasing_subsequence.rs)                          | Medium     |
 
 ### Math
 
-| Link                                                                                                                                                                   | Solutions                 | Difficulty |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ---------- |
-| [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/)                                                                                                | TODO                      | Easy       |
-| [Water Bottles](https://leetcode.com/problems/water-bottles/)                                                                                                          | TODO                      | Easy       |
-| [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                                                                  | TODO                      | Easy       |
-| [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/)                                                      | TODO                      | Easy       |
-| [Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/)                                              | TODO                      | Medium     |
-| [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                                                                      | TODO                      | Medium     |
-| [Pow(x, n)](https://leetcode.com/problems/powx-n/)                                                                                                                     | [Rust](./src/math/pow.rs) | Medium     |
-| [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)                                                                                              | TODO                      | Medium     |
-| [Rotate Image](https://leetcode.com/problems/rotate-image)                                                                                                             | TODO                      | Medium     |
-| [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                                                                                      | TODO                      | Medium     |
-| [Lexicographically Smallest Negated Permutation that Sums to Target](https://leetcode.com/problems/lexicographically-smallest-negated-permutation-that-sums-to-target) | TODO                      | Medium     |
-| [Three Divisors](https://leetcode.com/problems/three-divisors)                                                                                                         | TODO                      | Easy       |
-| [Ugly Number](https://leetcode.com/problems/ugly-number)                                                                                                               | TODO                      | Easy       |
-| [Count Primes](https://leetcode.com/problems/count-primes/)                                                                                                            | TODO                      | Medium     |
-| [Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/)                                                                        | TODO                      | Medium     |
+| Link                                                                                                                                                                   | Solutions                                                                                | Difficulty |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------- |
+| [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/)                                                                                                | [Rust](./src/math/stone_removal_game.rs)                                                 | Easy       |
+| [Water Bottles](https://leetcode.com/problems/water-bottles/)                                                                                                          | [Rust](./src/math/water_bottles.rs)                                                      | Easy       |
+| [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                                                                  | [Rust](./src/math/palindrome_number.rs)                                                  | Easy       |
+| [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/)                                                      | [Rust](./src/math/largest_number_at_least_twice_of_others.rs)                            | Easy       |
+| [Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/)                                              | [Rust](./src/math/check_if_number_is_a_sum_of_powers_of_three.rs)                        | Medium     |
+| [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                                                                      | [Rust](./src/math/reverse_integer.rs)                                                    | Medium     |
+| [Pow(x, n)](https://leetcode.com/problems/powx-n/)                                                                                                                     | [Rust](./src/math/pow.rs)                                                                | Medium     |
+| [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)                                                                                              | [Rust](./src/math/basic_calculator_ii.rs)                                                | Medium     |
+| [Rotate Image](https://leetcode.com/problems/rotate-image)                                                                                                             | [Rust](./src/math/rotate_image.rs)                                                       | Medium     |
+| [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                                                                                      | [Rust](./src/math/string_to_integer_atoi.rs)                                             | Medium     |
+| [Lexicographically Smallest Negated Permutation that Sums to Target](https://leetcode.com/problems/lexicographically-smallest-negated-permutation-that-sums-to-target) | [Rust](./src/math/lexicographically_smallest_negated_permutation_that_sums_to_target.rs) | Medium     |
+| [Three Divisors](https://leetcode.com/problems/three-divisors)                                                                                                         | [Rust](./src/math/three_divisors.rs)                                                     | Easy       |
+| [Ugly Number](https://leetcode.com/problems/ugly-number)                                                                                                               | [Rust](./src/math/ugly_number.rs)                                                        | Easy       |
+| [Count Primes](https://leetcode.com/problems/count-primes/)                                                                                                            | [Rust](./src/math/count_primes.rs)                                                       | Medium     |
+| [Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/)                                                                        | [Rust](./src/math/closest_prime_numbers_in_range.rs)                                     | Medium     |
 
 ### Stacks and Queues
 

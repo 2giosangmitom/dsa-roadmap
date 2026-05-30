@@ -1,3 +1,10 @@
+mod contains_duplicate_ii;
 mod find_missing_and_repeated_values;
+mod longest_consecutive_sequence;
+mod lru_cache;
+mod merge_two_2d_arrays_by_summing_values;
+mod number_of_good_pairs;
+mod roman_to_integer;
+mod set_matrix_zeroes;
 mod two_sum;
 mod valid_sudoku;

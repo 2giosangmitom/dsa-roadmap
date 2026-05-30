@@ -1,1 +1,15 @@
+mod basic_calculator_ii;
+mod check_if_number_is_a_sum_of_powers_of_three;
+mod closest_prime_numbers_in_range;
+mod count_primes;
+mod largest_number_at_least_twice_of_others;
+mod lexicographically_smallest_negated_permutation_that_sums_to_target;
+mod palindrome_number;
 mod pow;
+mod reverse_integer;
+mod rotate_image;
+mod stone_removal_game;
+mod string_to_integer_atoi;
+mod three_divisors;
+mod ugly_number;
+mod water_bottles;
