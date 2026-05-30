@@ -1,10 +1,16 @@
 mod container_with_most_water;
+mod four_sum;
 mod is_subsequence;
+mod longest_palindromic_substring;
 mod merge_sorted_arrays;
 mod merge_two_2d_arrays_by_summing_values;
 mod move_zeros;
 mod next_permutation;
+mod remove_duplicates_from_sorted_array;
+mod remove_duplicates_from_sorted_array_ii;
 mod remove_element;
 mod reverse_string;
+mod rotate_array;
+mod three_sum;
 mod two_sum;
 mod valid_palindrome;

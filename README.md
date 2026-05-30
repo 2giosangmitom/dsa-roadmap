@@ -47,42 +47,42 @@ flowchart TD
 
 ### Two Pointers
 
-| Link                                                                                                            | Solutions                                                           | Difficulty |
-| --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ---------- |
-| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                             | [Rust](./src/two_pointers/valid_palindrome.rs)                      | Easy       |
-| [Remove Element](https://leetcode.com/problems/remove-element/)                                                 | [Rust](./src/two_pointers/remove_element.rs)                        | Easy       |
-| [Is Subsequence](https://leetcode.com/problems/is-subsequence)                                                  | [Rust](./src/two_pointers/is_subsequence.rs)                        | Easy       |
-| [Reverse String](https://leetcode.com/problems/reverse-string/)                                                 | [Rust](./src/two_pointers/reverse_string.rs)                        | Easy       |
-| [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/)   | [Rust](./src/two_pointers/merge_two_2d_arrays_by_summing_values.rs) | Easy       |
-| [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                                         | [Rust](./src/two_pointers/merge_sorted_arrays.rs)                   | Easy       |
-| [Move Zeroes](https://leetcode.com/problems/move-zeroes)                                                        | [Rust](./src/two_pointers/move_zeros.rs)                            | Easy       |
-| [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)       | TODO                                                                | Easy       |
-| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                           | [Rust](./src/two_pointers/container_with_most_water.rs)             | Medium     |
-| [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)           | [Rust](./src/two_pointers/two_sum.rs)                               | Medium     |
-| [3Sum](https://leetcode.com/problems/3sum/)                                                                     | TODO                                                                | Medium     |
-| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                   | TODO                                                                | Medium     |
-| [Next Permutation](https://leetcode.com/problems/next-permutation/)                                             | [Rust](./src/two_pointers/next_permutation.rs)                      | Medium     |
-| [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | TODO                                                                | Medium     |
-| [Rotate Array](https://leetcode.com/problems/rotate-array)                                                      | TODO                                                                | Medium     |
-| [4Sum](https://leetcode.com/problems/4sum)                                                                      | TODO                                                                | Medium     |
+| Link                                                                                                            | Solutions                                                            | Difficulty |
+| --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------- |
+| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                             | [Rust](./src/two_pointers/valid_palindrome.rs)                       | Easy       |
+| [Remove Element](https://leetcode.com/problems/remove-element/)                                                 | [Rust](./src/two_pointers/remove_element.rs)                         | Easy       |
+| [Is Subsequence](https://leetcode.com/problems/is-subsequence)                                                  | [Rust](./src/two_pointers/is_subsequence.rs)                         | Easy       |
+| [Reverse String](https://leetcode.com/problems/reverse-string/)                                                 | [Rust](./src/two_pointers/reverse_string.rs)                         | Easy       |
+| [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/)   | [Rust](./src/two_pointers/merge_two_2d_arrays_by_summing_values.rs)  | Easy       |
+| [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                                         | [Rust](./src/two_pointers/merge_sorted_arrays.rs)                    | Easy       |
+| [Move Zeroes](https://leetcode.com/problems/move-zeroes)                                                        | [Rust](./src/two_pointers/move_zeros.rs)                             | Easy       |
+| [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)       | [Rust](./src/two_pointers/remove_duplicates_from_sorted_array.rs)    | Easy       |
+| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                           | [Rust](./src/two_pointers/container_with_most_water.rs)              | Medium     |
+| [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)           | [Rust](./src/two_pointers/two_sum.rs)                                | Medium     |
+| [3Sum](https://leetcode.com/problems/3sum/)                                                                     | [Rust](./src/two_pointers/three_sum.rs)                              | Medium     |
+| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                   | [Rust](./src/two_pointers/longest_palindromic_substring.rs)          | Medium     |
+| [Next Permutation](https://leetcode.com/problems/next-permutation/)                                             | [Rust](./src/two_pointers/next_permutation.rs)                       | Medium     |
+| [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [Rust](./src/two_pointers/remove_duplicates_from_sorted_array_ii.rs) | Medium     |
+| [Rotate Array](https://leetcode.com/problems/rotate-array)                                                      | [Rust](./src/two_pointers/rotate_array.rs)                           | Medium     |
+| [4Sum](https://leetcode.com/problems/4sum)                                                                      | [Rust](./src/two_pointers/four_sum.rs)                               | Medium     |
 
 ### Linked Lists
 
-| Link                                                                                                              | Solutions                                                | Difficulty |
-| ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ---------- |
-| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)                                          | [Rust](./src/linked_list/reverse_linked_list.rs)         | Easy       |
-| [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)                          | [Rust](./src/linked_list/remove_linked_list_elements.rs) | Easy       |
-| [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                             | TODO                                                     | Easy       |
-| [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)               | TODO                                                     | Easy       |
-| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                             | TODO                                                     | Easy       |
-| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                                 | [Rust](./src/linked_list/add_two_numbers.rs)             | Medium     |
-| [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)                                            | TODO                                                     | Medium     |
-| [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)                                    | TODO                                                     | Medium     |
-| [Rotate List](https://leetcode.com/problems/rotate-list)                                                          | TODO                                                     | Medium     |
-| [Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/) | TODO                                                     | Medium     |
-| [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)               | TODO                                                     | Medium     |
-| [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)                                          | TODO                                                     | Medium     |
-| [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)                                        | TODO                                                     | Medium     |
+| Link                                                                                                              | Solutions                                                            | Difficulty |
+| ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------- |
+| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)                                          | [Rust](./src/linked_list/reverse_linked_list.rs)                     | Easy       |
+| [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)                          | [Rust](./src/linked_list/remove_linked_list_elements.rs)             | Easy       |
+| [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                             | [Rust](./src/linked_list/middle_of_the_linked_list.rs)               | Easy       |
+| [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)               | [Rust](./src/linked_list/intersection_of_two_linked_lists.rs)        | Easy       |
+| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                             | [Rust](./src/linked_list/linked_list_cycle.rs)                       | Easy       |
+| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                                 | [Rust](./src/linked_list/add_two_numbers.rs)                         | Medium     |
+| [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)                                            | [Rust](./src/linked_list/add_two_numbers_ii.rs)                      | Medium     |
+| [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)                                    | [Rust](./src/linked_list/reverse_linked_list_ii.rs)                  | Medium     |
+| [Rotate List](https://leetcode.com/problems/rotate-list)                                                          | [Rust](./src/linked_list/rotate_list.rs)                             | Medium     |
+| [Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/) | [Rust](./src/linked_list/flatten_a_multilevel_doubly_linked_list.rs) | Medium     |
+| [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)               | [Rust](./src/linked_list/remove_nth_node_from_end_of_list.rs)        | Medium     |
+| [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)                                          | [Rust](./src/linked_list/swap_nodes_in_pairs.rs)                     | Medium     |
+| [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)                                        | [Rust](./src/linked_list/odd_even_linked_list.rs)                    | Medium     |
 
 ### Hash Maps and Hash Sets
 
@@ -127,7 +127,6 @@ flowchart TD
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ---------- |
 | [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/)                                                                                                | TODO                      | Easy       |
 | [Water Bottles](https://leetcode.com/problems/water-bottles/)                                                                                                          | TODO                      | Easy       |
-| [Add Digits](https://leetcode.com/problems/add-digits/)                                                                                                                | TODO                      | Easy       |
 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                                                                  | TODO                      | Easy       |
 | [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/)                                                      | TODO                      | Easy       |
 | [Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/)                                              | TODO                      | Medium     |
@@ -136,7 +135,6 @@ flowchart TD
 | [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)                                                                                              | TODO                      | Medium     |
 | [Rotate Image](https://leetcode.com/problems/rotate-image)                                                                                                             | TODO                      | Medium     |
 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                                                                                      | TODO                      | Medium     |
-| [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion)                                                                                                   | TODO                      | Medium     |
 | [Lexicographically Smallest Negated Permutation that Sums to Target](https://leetcode.com/problems/lexicographically-smallest-negated-permutation-that-sums-to-target) | TODO                      | Medium     |
 | [Three Divisors](https://leetcode.com/problems/three-divisors)                                                                                                         | TODO                      | Easy       |
 | [Ugly Number](https://leetcode.com/problems/ugly-number)                                                                                                               | TODO                      | Easy       |

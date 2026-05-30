@@ -39,6 +39,91 @@ impl ListNode {
     }
 }
 
+use std::cell::RefCell;
+use std::rc::Rc;
+
+pub type RcListNodeRef = Rc<RefCell<RcListNode>>;
+
+#[derive(Debug)]
+pub struct RcListNode {
+    pub val: i32,
+    pub next: Option<RcListNodeRef>,
+}
+
+impl RcListNode {
+    pub fn new(val: i32) -> RcListNodeRef {
+        Rc::new(RefCell::new(RcListNode { val, next: None }))
+    }
+
+    pub fn from_vec(values: Vec<i32>) -> Option<RcListNodeRef> {
+        let mut head: Option<RcListNodeRef> = None;
+        let mut tail: Option<RcListNodeRef> = None;
+
+        for value in values {
+            let node = RcListNode::new(value);
+            if let Some(tail_node) = tail {
+                tail_node.borrow_mut().next = Some(node.clone());
+                tail = Some(node);
+            } else {
+                head = Some(node.clone());
+                tail = Some(node);
+            }
+        }
+
+        head
+    }
+
+    pub fn to_vec_limit(head: Option<RcListNodeRef>, limit: usize) -> Vec<i32> {
+        let mut result = Vec::new();
+        let mut current = head;
+        let mut steps = 0;
+
+        while let Some(node) = current {
+            if steps >= limit {
+                break;
+            }
+            result.push(node.borrow().val);
+            current = node.borrow().next.clone();
+            steps += 1;
+        }
+
+        result
+    }
+}
+
+pub type DoublyNodeRef = Rc<RefCell<DoublyNode>>;
+
+#[derive(Debug)]
+pub struct DoublyNode {
+    pub val: i32,
+    pub prev: Option<DoublyNodeRef>,
+    pub next: Option<DoublyNodeRef>,
+    pub child: Option<DoublyNodeRef>,
+}
+
+impl DoublyNode {
+    pub fn new(val: i32) -> DoublyNodeRef {
+        Rc::new(RefCell::new(DoublyNode {
+            val,
+            prev: None,
+            next: None,
+            child: None,
+        }))
+    }
+
+    pub fn to_vec(head: Option<DoublyNodeRef>) -> Vec<i32> {
+        let mut result = Vec::new();
+        let mut current = head;
+
+        while let Some(node) = current {
+            result.push(node.borrow().val);
+            current = node.borrow().next.clone();
+        }
+
+        result
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
